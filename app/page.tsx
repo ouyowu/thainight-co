@@ -7,11 +7,15 @@ const homeDescription =
 
 export const metadata = pageMeta(homeTitle, homeDescription, "/");
 
-
 const bangkokGuides = [
   { href: "/bangkok/", label: "Bangkok overview" },
   { href: "/bangkok/cowboy-vs-nana/", label: "Soi Cowboy vs Nana Plaza" },
   { href: "/bangkok/one-night-plan/", label: "One-night plan" },
+  { href: "/bangkok/getting-around/", label: "Getting around" },
+  { href: "/bangkok/airport/", label: "Airport to nightlife" },
+  { href: "/bangkok/night-activities/", label: "Night activities" },
+  { href: "/bangkok/bar-types/", label: "Bar types" },
+  { href: "/bangkok/ladies-night/", label: "Ladies night" },
   { href: "/bangkok/hotels-nana-asok/", label: "Stay near Nana & Asok" },
   { href: "/bangkok/hotels-soi-cowboy/", label: "Stay near Soi Cowboy" },
   { href: "/bangkok/areas/soi-cowboy/", label: "Soi Cowboy" },
@@ -24,6 +28,10 @@ const pattayaGuides = [
   { href: "/pattaya/", label: "Pattaya overview" },
   { href: "/pattaya/walking-street-vs-soi-6/", label: "Walking Street vs Soi 6" },
   { href: "/pattaya/one-night-plan/", label: "One-night plan" },
+  { href: "/pattaya/getting-around/", label: "Getting around" },
+  { href: "/pattaya/airport/", label: "Airport to nightlife" },
+  { href: "/pattaya/night-activities/", label: "Night activities" },
+  { href: "/pattaya/bar-types/", label: "Bar types" },
   { href: "/pattaya/hotels-walking-street/", label: "Stay near Walking Street" },
   { href: "/pattaya/areas/walking-street/", label: "Walking Street" },
   { href: "/pattaya/areas/soi-6/", label: "Soi 6" },
@@ -47,7 +55,6 @@ export default function HomePage() {
       <p className="mt-2 text-base leading-7 text-zinc-200">
         No fluff. No paid bar rankings. Just what actually works.
       </p>
-
       <p className="mt-8 text-base leading-7 text-zinc-200">
         Recent note (Oct 2026):
         <br />
@@ -64,7 +71,6 @@ export default function HomePage() {
           Soi 6
         </Link>
       </p>
-
       <h2 className="mt-10 text-lg font-semibold">Start here</h2>
       <ul className="mt-3 space-y-2">
         <li>
@@ -85,6 +91,10 @@ export default function HomePage() {
           <Link href="/budgets/" className="text-accent hover:underline">
             Budgets
           </Link>
+          {" · "}
+          <Link href="/cash/" className="text-accent hover:underline">
+            Cash
+          </Link>
         </li>
         <li>
           <Link href="/bangkok/faq/" className="text-accent hover:underline">
@@ -101,7 +111,6 @@ export default function HomePage() {
           </Link>
         </li>
       </ul>
-
       <h2 className="mt-10 text-lg font-semibold">Bangkok</h2>
       <ul className="mt-3 space-y-2">
         {bangkokGuides.map((link) => (
@@ -112,7 +121,6 @@ export default function HomePage() {
           </li>
         ))}
       </ul>
-
       <h2 className="mt-10 text-lg font-semibold">Pattaya</h2>
       <ul className="mt-3 space-y-2">
         {pattayaGuides.map((link) => (
@@ -123,7 +131,6 @@ export default function HomePage() {
           </li>
         ))}
       </ul>
-
       <p className="mt-10 text-base leading-7 text-zinc-200">
         Thailand’s nightlife moves fast. Prices and rules change. Thai Night collects practical
         information from recent visitor reports so you can plan a night without guessing — then
