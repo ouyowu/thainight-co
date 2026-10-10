@@ -1,5 +1,7 @@
+import { AffiliateCta } from "@/components/AffiliateCta";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
+import { affiliates } from "@/lib/affiliates";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -59,6 +61,13 @@ export default function PricesPage() {
           <li>Paying round-by-round reduces bill surprises.</li>
           <li>Low season (roughly May–Oct) can be 10–30% cheaper in some places.</li>
         </ul>
+      </section>
+
+      <section>
+        <p>Airport transfers and day trips can be booked in advance.</p>
+        <p className="mt-3">
+          → <AffiliateCta href={affiliates.klook} label="See options on Klook" />
+        </p>
       </section>
     </PageShell>
   );

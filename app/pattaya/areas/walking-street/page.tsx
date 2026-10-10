@@ -1,5 +1,7 @@
+import { HotelsNearBlock } from "@/components/HotelsNearBlock";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
+import { affiliates } from "@/lib/affiliates";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -90,6 +92,8 @@ export default function WalkingStreetPage() {
           <li>Use Grab or baht bus; avoid random high fixed-price offers late at night</li>
         </ul>
       </section>
+
+      <HotelsNearBlock href={affiliates.hotelWalkingStreet} area="Walking Street" />
     </PageShell>
   );
 }

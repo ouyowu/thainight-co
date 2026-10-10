@@ -1,5 +1,7 @@
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
+import { StayNearbyBlock } from "@/components/StayNearbyBlock";
+import { affiliates } from "@/lib/affiliates";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -87,6 +89,11 @@ export default function PattayaFirstTimerPage() {
           <li>Keep small bills (100s and 50s)</li>
         </ul>
       </section>
+
+      <StayNearbyBlock
+        href={affiliates.hotelPattaya}
+        cta="Check current hotel deals near Walking Street or Central Pattaya"
+      />
     </PageShell>
   );
 }

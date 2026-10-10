@@ -1,4 +1,6 @@
+import { HotelsNearBlock } from "@/components/HotelsNearBlock";
 import { PageShell } from "@/components/PageShell";
+import { affiliates } from "@/lib/affiliates";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -28,6 +30,8 @@ export default function LkMetroPage() {
           premium.
         </p>
       </section>
+
+      <HotelsNearBlock href={affiliates.hotelLkMetro} area="LK Metro" />
     </PageShell>
   );
 }

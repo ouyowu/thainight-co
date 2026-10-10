@@ -1,5 +1,7 @@
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
+import { StayNearbyBlock } from "@/components/StayNearbyBlock";
+import { affiliates } from "@/lib/affiliates";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -90,6 +92,11 @@ export default function BangkokFirstTimerPage() {
           Stay near BTS Nana or BTS Asok. You can walk or take a 5–10 minute ride to the main areas.
         </p>
       </section>
+
+      <StayNearbyBlock
+        href={affiliates.hotelBangkok}
+        cta="Check current hotel deals near Nana and Asok"
+      />
     </PageShell>
   );
 }

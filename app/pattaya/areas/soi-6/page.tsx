@@ -1,5 +1,7 @@
+import { HotelsNearBlock } from "@/components/HotelsNearBlock";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
+import { affiliates } from "@/lib/affiliates";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -107,6 +109,8 @@ export default function Soi6Page() {
           <li>The street is busy and well-lit during peak hours</li>
         </ul>
       </section>
+
+      <HotelsNearBlock href={affiliates.hotelSoi6} area="Soi 6" />
     </PageShell>
   );
 }

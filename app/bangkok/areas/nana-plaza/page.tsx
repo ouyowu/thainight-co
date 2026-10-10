@@ -1,5 +1,7 @@
+import { HotelsNearBlock } from "@/components/HotelsNearBlock";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
+import { affiliates } from "@/lib/affiliates";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -101,6 +103,8 @@ export default function NanaPlazaPage() {
           <li>Use Grab/Bolt for the ride back</li>
         </ul>
       </section>
+
+      <HotelsNearBlock href={affiliates.hotelNanaPlaza} area="Nana Plaza" />
     </PageShell>
   );
 }

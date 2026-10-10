@@ -1,5 +1,7 @@
+import { HotelsNearBlock } from "@/components/HotelsNearBlock";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
+import { affiliates } from "@/lib/affiliates";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -89,6 +91,8 @@ export default function SoiCowboyPage() {
           <li>Less “upstairs tout” pressure than some other areas</li>
         </ul>
       </section>
+
+      <HotelsNearBlock href={affiliates.hotelSoiCowboy} area="Soi Cowboy" />
     </PageShell>
   );
 }
