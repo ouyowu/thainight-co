@@ -12,7 +12,7 @@ export const metadata = pageMeta(
 
 export default function PattayaOneNightPlanPage() {
   return (
-    <PageShell title="One Night in Pattaya – Sample Plans (2026)">
+    <PageShell path="/pattaya/one-night-plan/" title="One Night in Pattaya – Sample Plans (2026)">
       <Section title="Plan A — Cabaret + Walking Street (classic first night)">
         <ol className="list-decimal space-y-1 pl-5">
           <li>Early show at Tiffany’s or Alcazar — see <A href="/pattaya/cabaret-shows/">cabaret shows</A></li>

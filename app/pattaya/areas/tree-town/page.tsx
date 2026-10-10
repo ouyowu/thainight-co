@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
+import { GuidePhoto } from "@/components/GuidePhoto";
+import { photos } from "@/lib/photos";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -10,7 +12,9 @@ export const metadata = pageMeta(
 
 export default function TreeTownPage() {
   return (
-    <PageShell title="Tree Town Pattaya 2026">
+    <PageShell path="/pattaya/areas/tree-town/" title="Tree Town Pattaya 2026">
+      <GuidePhoto {...photos.centralPattaya} />
+      <p className="text-sm text-muted">No licensed courtyard photo of Tree Town is in this set. The photo is CentralFestival on Beach Road; Tree Town is inland on/near Soi Buakhao.</p>
       <p>
         Tree Town is an <strong>open-air bar and food complex</strong> on/near Soi Buakhao. Multiple
         bars, street food, live music overlapping in one compound — more “festival courtyard” than

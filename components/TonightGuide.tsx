@@ -20,9 +20,10 @@ type TonightGuideProps = {
 export function TonightGuide({ city, children }: TonightGuideProps) {
   const firstTimer =
     city === "Bangkok" ? "/bangkok/first-timer/" : "/pattaya/first-timer/";
+  const path = city === "Bangkok" ? "/bangkok/tonight/" : "/pattaya/tonight/";
 
   return (
-    <PageShell title={`Tonight in ${city}`} showUpdated={false}>
+    <PageShell path={path} title={`Tonight in ${city}`} showUpdated={false}>
       {children ?? <p className="text-sm text-muted">Last checked: {LAST_CHECKED}</p>}
       <section>
         <h2 className="text-lg font-semibold text-foreground">What’s on this week</h2>

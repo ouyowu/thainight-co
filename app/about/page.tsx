@@ -10,7 +10,7 @@ export const metadata = pageMeta(
 
 export default function AboutPage() {
   return (
-    <PageShell title="About Thai Night">
+    <PageShell path="/about/" title="About Thai Night">
       <p>
         Thai Night is a free practical guide to nightlife in Bangkok and Pattaya: bars, rooftops,
         clubs, live music, shows, night markets and getting around safely.

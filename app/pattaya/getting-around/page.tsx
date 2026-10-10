@@ -10,7 +10,7 @@ export const metadata = pageMeta(
 
 export default function PattayaGettingAroundPage() {
   return (
-    <PageShell title="Getting Around Pattaya at Night (2026)">
+    <PageShell path="/pattaya/getting-around/" title="Getting Around Pattaya at Night (2026)">
       <p>
         Pattaya is compact. Baht buses cover the main loops for a small flat fare; Grab and Bolt
         cover everything else. Avoid opaque fixed prices from touts at the Walking Street ends.

@@ -10,7 +10,7 @@ export const metadata = pageMeta(
 
 export default function BangkokLadiesNightPage() {
   return (
-    <PageShell title="Bangkok Ladies Night 2026">
+    <PageShell path="/bangkok/ladies-night/" title="Bangkok Ladies Night 2026">
       <p>
         “Ladies night” here means a <strong>club or rooftop promo</strong> — free or cheaper entry
         or drinks for women on a named night. It shows up

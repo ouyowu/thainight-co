@@ -3,6 +3,8 @@ import { FaqList } from "@/components/FaqList";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
 import { A, Bullets, Related, Section } from "@/components/Prose";
+import { GuidePhoto } from "@/components/GuidePhoto";
+import { photos } from "@/lib/photos";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -14,9 +16,11 @@ export const metadata = pageMeta(
 export default function JomtienBeachRoadPage() {
   return (
     <PageShell
+      path="/pattaya/areas/jomtien-beach-road/"
       title="Jomtien Beach Road Nightlife (2026)"
       lead="South of Central Pattaya, Jomtien is the sunset-and-sea-breeze night: beach bars, hotel rooftops and live-music cafes. Come for the light, not for a club crawl."
     >
+      <GuidePhoto {...photos.jomtien} />
       <Section title="What it is for">
         <Bullets>
           <li>Sunset drinks facing the Gulf</li>

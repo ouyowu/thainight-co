@@ -10,7 +10,7 @@ export const metadata = pageMeta(
 
 export default function BangkokGettingAroundPage() {
   return (
-    <PageShell title="Getting Around Bangkok at Night (2026)">
+    <PageShell path="/bangkok/getting-around/" title="Getting Around Bangkok at Night (2026)">
       <p>
         Use the BTS and MRT while they run, walk short hops, and switch to Grab or Bolt late at
         night. Trains stop around midnight — check the last train for your line.

@@ -48,7 +48,7 @@ const scams = [
 
 export default function ScamsPage() {
   return (
-    <PageShell title="Common Nightlife Scams in Bangkok & Pattaya (2026)">
+    <PageShell path="/scams/" title="Common Nightlife Scams in Bangkok & Pattaya (2026)">
       <ol className="list-decimal space-y-5 pl-5">
         {scams.map((scam) => (
           <li key={scam.title}>
