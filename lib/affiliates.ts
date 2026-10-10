@@ -9,6 +9,10 @@ export const affiliates = {
   hotelSukhumvit: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_SUKHUMVIT),
   hotelWalkingStreet: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_WALKING_STREET),
   hotelChiangMai: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_CHIANG_MAI),
+  hotelPhuket: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_PHUKET),
+  cabaretPhuket: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_CABARET_PHUKET),
+  muayThaiPhuket: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_MUAY_THAI_PHUKET),
+  transferPhuketAirport: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_TRANSFER_PHUKET_AIRPORT),
   hotelBeachRoad: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_BEACH_ROAD),
   klook: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_KLOOK),
   // Activity / ticket deep links (Klook, GetYourGuide, etc.)
