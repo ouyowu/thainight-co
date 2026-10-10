@@ -11,7 +11,22 @@ export const metadata = pageMeta(
 
 export default function PattayaPage() {
   return (
-    <PageShell title="Pattaya Nightlife Guide 2026 – Walking Street, Soi 6 & LK Metro">
+    <PageShell
+      title="Pattaya Nightlife Guide 2026 – Walking Street, Soi 6 & LK Metro"
+      belowTitle={
+        <p className="mt-3 text-base leading-7 text-zinc-200">
+          New here? Start with the{" "}
+          <Link href="/pattaya/first-timer/" className="text-accent hover:underline">
+            First-Timer Guide
+          </Link>{" "}
+          or a{" "}
+          <Link href="/pattaya/one-night-plan/" className="text-accent hover:underline">
+            one-night plan
+          </Link>
+          .
+        </p>
+      }
+    >
       <section>
         <h2 className="text-lg font-semibold text-foreground">Quick Overview</h2>
         <p className="mt-2">
