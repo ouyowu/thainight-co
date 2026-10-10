@@ -101,6 +101,57 @@ export default function BangkokPage() {
           </li>
         </ul>
       </section>
+
+      <section>
+        <h2 className="text-lg font-semibold text-foreground">More Bangkok guides</h2>
+        <ul className="mt-2 space-y-1">
+          <li>
+            <Link href="/bangkok/first-timer/" className="text-accent hover:underline">
+              First-timer guide
+            </Link>
+          </li>
+          <li>
+            <Link href="/bangkok/one-night-plan/" className="text-accent hover:underline">
+              One-night sample plans
+            </Link>
+          </li>
+          <li>
+            <Link href="/bangkok/areas/soi-cowboy/" className="text-accent hover:underline">
+              Soi Cowboy
+            </Link>
+          </li>
+          <li>
+            <Link href="/bangkok/areas/soi-cowboy/bars/" className="text-accent hover:underline">
+              Soi Cowboy bars
+            </Link>
+          </li>
+          <li>
+            <Link href="/bangkok/areas/nana-plaza/" className="text-accent hover:underline">
+              Nana Plaza
+            </Link>
+          </li>
+          <li>
+            <Link href="/bangkok/areas/nana-plaza/floors/" className="text-accent hover:underline">
+              Nana Plaza floors
+            </Link>
+          </li>
+          <li>
+            <Link href="/bangkok/areas/patpong/" className="text-accent hover:underline">
+              Patpong
+            </Link>
+          </li>
+          <li>
+            <Link href="/bangkok/areas/soi-11/" className="text-accent hover:underline">
+              Soi 11
+            </Link>
+          </li>
+          <li>
+            <Link href="/bangkok/areas/rca-thonglor/" className="text-accent hover:underline">
+              RCA & Thonglor
+            </Link>
+          </li>
+        </ul>
+      </section>
     </PageShell>
   );
 }

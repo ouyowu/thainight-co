@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HotelsNearBlock } from "@/components/HotelsNearBlock";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
@@ -47,6 +48,13 @@ export default function NanaPlazaPage() {
         </ul>
         <p className="mt-3">
           Walk all three floors once before sitting down. It only takes 10–15 minutes.
+        </p>
+        <p className="mt-3">
+          Floor-by-floor walk:{" "}
+          <Link href="/bangkok/areas/nana-plaza/floors/" className="text-accent hover:underline">
+            Nana Plaza floors
+          </Link>
+          .
         </p>
       </section>
 

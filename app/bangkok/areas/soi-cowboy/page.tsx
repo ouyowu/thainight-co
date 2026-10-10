@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HotelsNearBlock } from "@/components/HotelsNearBlock";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
@@ -26,6 +27,13 @@ export default function SoiCowboyPage() {
         <p className="mt-2">
           Compared with Nana Plaza: Less dense, more predictable prices, easier to leave if you
           don’t like a bar.
+        </p>
+        <p className="mt-3">
+          Bar names and room notes:{" "}
+          <Link href="/bangkok/areas/soi-cowboy/bars/" className="text-accent hover:underline">
+            Soi Cowboy bars
+          </Link>
+          .
         </p>
       </section>
 

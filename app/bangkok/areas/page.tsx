@@ -41,6 +41,16 @@ export default function BangkokAreasPage() {
             Soi 11
           </Link>
         </li>
+        <li>
+          <Link href="/bangkok/areas/patpong/" className="text-accent hover:underline">
+            Patpong
+          </Link>
+        </li>
+        <li>
+          <Link href="/bangkok/areas/rca-thonglor/" className="text-accent hover:underline">
+            RCA & Thonglor
+          </Link>
+        </li>
       </ul>
       <p>
         Do Cowboy and Nana on different nights if you have time. Do not start in Patpong. Street
