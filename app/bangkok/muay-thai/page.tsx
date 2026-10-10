@@ -2,12 +2,12 @@ import { BookingBox } from "@/components/BookingBox";
 import { FaqList } from "@/components/FaqList";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
-import { A, Bullets, Related, Section } from "@/components/Prose";
+import { A, Bullets, CheckedNote, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Muay Thai in Bangkok 2026 – Rajadamnern vs Lumpinee, Tickets & Seats",
-  "How to watch Muay Thai in Bangkok: Rajadamnern and Lumpinee stadiums compared, fight nights, seat classes, how to buy tickets and how to fit it into a night out.",
+  "Muay Thai Tickets Bangkok 2026 – Rajadamnern & Lumpinee Prices, Seats, Schedule",
+  "Muay Thai ticket prices in Bangkok for 2026: Rajadamnern from 1,000 THB and Lumpinee from 1,000 THB, seat classes, weekly fight schedule, how to buy and ticket scams.",
   "/bangkok/muay-thai/",
 );
 
@@ -15,7 +15,7 @@ export default function MuayThaiBangkokPage() {
   return (
     <PageShell
       path="/bangkok/muay-thai/"
-      title="Muay Thai in Bangkok (2026) – Rajadamnern vs Lumpinee"
+      title="Muay Thai Tickets in Bangkok (2026) – Rajadamnern vs Lumpinee"
       lead="A live fight card is one of the best nights out in Bangkok. Pick the stadium by night and location, pick the seat by how close you want to be."
     >
       <Section title="The two big stadiums">
@@ -31,6 +31,44 @@ export default function MuayThaiBangkokPage() {
           ]}
         />
         <p>Schedules change with promotions and holidays. Confirm the card and start time on the day.</p>
+      </Section>
+
+      <Section title="2026 ticket prices">
+        <PriceTable
+          caption="Rajadamnern ticket prices 2026"
+          headers={["Rajadamnern seat", "Door price (THB)", "Notes"]}
+          rows={[
+            ["Third class", "1,000", "Standing/bench, local crowd; not sold in advance"],
+            ["Second class (Leo)", "1,500", "Full ring view"],
+            ["Club class", "1,800", "Assigned seat; best value for most"],
+            ["Singha Ringside", "2,500", "Closest to the ring"],
+            ["VIP / lounge (free-flow beer)", "3,500–4,500+", "Balcony and box options on big nights"],
+          ]}
+        />
+        <PriceTable
+          caption="Lumpinee ticket prices 2026"
+          headers={["Lumpinee event", "Seat", "Door price (THB)"]}
+          rows={[
+            ["Saturday Super Champ", "Grandstand / Club / Ringside", "1,000 / 1,500 / 2,000"],
+            ["ONE Lumpinee (Friday)", "Cat 3 / Cat 2 / Cat 1 / Ringside", "1,000 / 2,000 / 2,750 / 3,500"],
+          ]}
+        />
+        <p>Online booking platforms often sell below door price; the official Rajadamnern site adds a small card fee.</p>
+        <CheckedNote />
+      </Section>
+
+      <Section title="Rajadamnern weekly schedule">
+        <PriceTable
+          caption="Rajadamnern weekly schedule"
+          headers={["Day", "Event", "Start"]}
+          rows={[
+            ["Mon, Tue, Fri", "Rajadamnern Knockout", "about 19:00"],
+            ["Wed", "Suek Muay Thai Palangmai", "about 18:00"],
+            ["Thu", "Suek Petchyindee", "about 18:00"],
+            ["Sat", "Rajadamnern World Series", "about 18:15–19:00"],
+            ["Sun", "Suek Kiatpetch", "about 18:00"],
+          ]}
+        />
       </Section>
 
       <Section title="Seat classes">
@@ -68,6 +106,7 @@ export default function MuayThaiBangkokPage() {
           { q: "Which stadium is better for a first visit?", a: "Rajadamnern: central, fights most nights, easy to combine with the old town and Khao San." },
           { q: "How long does a card last?", a: "Usually three to four hours. Main events come later in the evening; you don’t need to stay for every fight." },
           { q: "Can I take photos?", a: "Generally yes without flash. Video rules vary — ask staff." },
+          { q: "How much are Muay Thai tickets in Bangkok in 2026?", a: "Rajadamnern runs from 1,000 THB (third class) to 2,500 THB ringside and more for VIP. Lumpinee Saturday Super Champ is 1,000–2,000 THB; ONE Lumpinee Fridays 1,000–3,500 THB." },
         ]}
       />
 

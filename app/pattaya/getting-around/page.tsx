@@ -21,6 +21,7 @@ export default function PattayaGettingAroundPage() {
           <li>Pickup trucks with bench seats loop Beach Road (southbound) and Second Road (northbound).</li>
           <li>Flag one down, ride, press the buzzer, pay the driver at the window — usually 10–20 THB on the loop.</li>
           <li>If you ask to go off the route, it becomes a private hire: agree the price before you get in.</li>
+          <li>Full guide: <A href="/pattaya/baht-bus/">baht bus prices and routes</A>.</li>
         </Bullets>
       </Section>
 
