@@ -95,6 +95,11 @@ export default function BangkokPage() {
             </Link>
           </li>
           <li>
+            <Link href="/bangkok/faq/" className="text-accent hover:underline">
+              Bangkok FAQ
+            </Link>
+          </li>
+          <li>
             <Link href="/bangkok/areas/soi-cowboy/" className="text-accent hover:underline">
               Soi Cowboy detailed guide
             </Link>
@@ -123,6 +128,11 @@ export default function BangkokPage() {
           <li>
             <Link href="/bangkok/first-timer/" className="text-accent hover:underline">
               First-timer guide
+            </Link>
+          </li>
+          <li>
+            <Link href="/bangkok/faq/" className="text-accent hover:underline">
+              FAQ
             </Link>
           </li>
           <li>

@@ -98,6 +98,11 @@ export default function PattayaPage() {
             </Link>
           </li>
           <li>
+            <Link href="/pattaya/faq/" className="text-accent hover:underline">
+              Pattaya FAQ
+            </Link>
+          </li>
+          <li>
             <Link href="/pattaya/areas/walking-street/" className="text-accent hover:underline">
               Walking Street detailed guide
             </Link>
@@ -126,6 +131,11 @@ export default function PattayaPage() {
           <li>
             <Link href="/pattaya/first-timer/" className="text-accent hover:underline">
               First-timer guide
+            </Link>
+          </li>
+          <li>
+            <Link href="/pattaya/faq/" className="text-accent hover:underline">
+              FAQ
             </Link>
           </li>
           <li>
