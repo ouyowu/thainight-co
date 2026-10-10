@@ -14,7 +14,7 @@ export default function TreeTownPage() {
       <p>
         Tree Town is an <strong>open-air bar and food complex</strong> on/near Soi Buakhao. Multiple
         bars, street food, live music overlapping in one compound — more “festival courtyard” than
-        a single go-go street.
+        a single bar street.
       </p>
 
       <section>
@@ -51,10 +51,9 @@ export default function TreeTownPage() {
         <ul className="mt-2 list-disc space-y-1 pl-5">
           <li>Walk the whole complex once before sitting</li>
           <li>
-            Good as a <strong>start</strong> to the night, not always as the only destination if you
-            want go-go or clubs
+            Good as a <strong>start</strong> to the night; move to Walking Street later if you want clubs
           </li>
-          <li>Combine with Soi Buakhao / LK Metro on the same evening</li>
+          <li>Combine with Soi Buakhao on the same evening</li>
         </ul>
       </section>
 

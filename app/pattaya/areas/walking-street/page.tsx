@@ -1,133 +1,94 @@
-import Link from "next/link";
-import { HotelCta } from "@/components/HotelCta";
+import { BookingBox } from "@/components/BookingBox";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
+import { A, Bullets, Related, Section } from "@/components/Prose";
+import { StayNearby } from "@/components/StayNearby";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Walking Street Pattaya Guide 2026 – Prices & Clubs",
-  "Walking Street complete guide: 2026 prices, go-go and club scene, best arrival time and how to avoid common bill issues.",
+  "Walking Street Pattaya Guide 2026 – Prices, Clubs & Live Music",
+  "Walking Street guide: 2026 drink prices, clubs and live music, best arrival time, seafood, and how to avoid common bill and tout issues.",
   "/pattaya/areas/walking-street/",
 );
 
 export default function WalkingStreetPage() {
   return (
     <PageShell title="Walking Street Pattaya Guide 2026 – Prices, Clubs & What to Expect">
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Quick Overview</h2>
-        <p className="mt-2">
-          Walking Street is Pattaya’s most famous nightlife strip — neon, go-go bars, clubs, live
-          music, heavy foot traffic. It’s the “big show” version of Pattaya nightlife. Higher prices
-          and more intensity than Soi 6 or LK Metro.
+      <Section title="Quick overview">
+        <p>
+          Walking Street is Pattaya’s famous nightlife strip — neon, clubs, live-music bars,
+          seafood restaurants and heavy foot traffic. It is worth seeing once even if you don’t
+          stay long. Prices are higher than elsewhere in town.
         </p>
-        <p className="mt-3">
-          Best for: First-time visitors who want the classic experience and the full spectacle.
+        <p>
+          Best for: first-time visitors who want the spectacle. Not ideal for: the cheapest drinks
+          or a quiet evening — try <A href="/pattaya/areas/tree-town/">Tree Town</A> for that.
         </p>
-        <p className="mt-2">
-          Not ideal for: People looking for the cheapest drinks or a low-pressure evening.
+        <p className="text-sm text-muted">
+          Parts of the street include adult-entertainment venues, which Thai Night does not cover.
         </p>
-        <p className="mt-3">
-          Venue types and example names:{" "}
-          <Link href="/pattaya/areas/walking-street/venues/" className="text-accent hover:underline">
-            Walking Street venues
-          </Link>
-          .
-        </p>
-      </section>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Location & Timing</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>South end of Pattaya Beach Road</li>
-          <li>Becomes pedestrian in the evening</li>
-          <li>Best window for first-timers: 21:30–00:00</li>
-          <li>Clubs and later venues stay active after midnight</li>
-        </ul>
-      </section>
+      <Section title="Location & timing">
+        <Bullets>
+          <li>South end of Pattaya Beach Road, running toward Bali Hai pier</li>
+          <li>Closes to traffic and becomes pedestrian in the evening</li>
+          <li>Best window for a first walk: 21:30–00:00</li>
+          <li>Clubs peak after midnight</li>
+        </Bullets>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">2026 Typical Prices</h2>
-        <div className="mt-3">
-          <PriceTable
-            caption="2026 Typical Prices"
-            headers={["Item", "Price"]}
-            rows={[
-              ["Beer (go-go / main venues)", "150–220 THB"],
-              ["Lady drink", "180–300 THB"],
-              ["Cocktail", "250–400 THB"],
-              ["Go-go bar fine", "1,000–2,500 THB"],
-              ["Short-time total (bar fine + her fee)", "often 4,000–7,000+ THB"],
-              ["Drinks-only casual night", "1,500–3,500 THB"],
-              ["Full go-go night", "5,000–10,000+ THB possible"],
-            ]}
-          />
-        </div>
-      </section>
+      <Section title="2026 typical prices">
+        <PriceTable
+          caption="2026 typical prices"
+          headers={["Item", "Price"]}
+          rows={[
+            ["Beer, bar or club", "150–250 THB"],
+            ["Cocktail", "250–400 THB"],
+            ["Club entry, busy nights", "Sometimes charged; may include a drink"],
+            ["Drinks-only night", "1,500–3,500 THB"],
+          ]}
+        />
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Recommended First Approach</h2>
-        <ol className="mt-2 list-decimal space-y-1 pl-5">
-          <li>Eat dinner first</li>
+      <Section title="Recommended first approach">
+        <ol className="list-decimal space-y-1 pl-5">
+          <li>Eat first — seafood on the street, or cheaper food inland</li>
           <li>Arrive around 21:30–22:00</li>
-          <li>Walk the full length once without entering every place</li>
-          <li>Pick one or two stops</li>
-          <li>Decide your spending limit before the second round of drinks</li>
+          <li>Walk the full length once before sitting anywhere</li>
+          <li>Pick one live-music bar, then a club if you want</li>
+          <li>Set a spending limit before the second round</li>
         </ol>
-      </section>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Walking Street vs Other Areas</h2>
-        <div className="mt-3">
-          <PriceTable
-            caption="Walking Street vs Other Areas"
-            headers={["Area", "When", "Style", "Cost", "Notes"]}
-            rows={[
-              ["Walking Street", "Late evening", "Spectacle, clubs, go-go", "Highest", "Good for the classic experience"],
-              ["Soi 6", "Afternoon–early evening", "Direct beer bars", "Lower", "Good if you know what you want"],
-              ["LK Metro", "Evening", "Compact go-go + music", "Mid", "Often easier / lower pressure"],
-            ]}
-          />
-        </div>
-      </section>
+      <Section title="Practical tips">
+        <Bullets>
+          <li>Check the menu price before ordering; watch the bill tab</li>
+          <li>Ignore touts offering “free shows” on side sois</li>
+          <li>Keep phones and wallets in front pockets in crowds</li>
+          <li>Use Grab or a baht bus; avoid high fixed-price offers at the street ends</li>
+        </Bullets>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Practical Tips</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>Confirm lady drink and bar fine prices before ordering rounds</li>
-          <li>Watch for padded bills — pay attention to the slip bin</li>
-          <li>Clubs may have entry fees on busy nights (sometimes includes a drink)</li>
-          <li>Use Grab or baht bus; avoid random high fixed-price offers late at night</li>
-        </ul>
-      </section>
+      <BookingBox
+        items={[
+          { label: "Cabaret show before Walking Street", link: "cabaretPattaya" },
+          { label: "Muay Thai tickets", link: "muayThaiPattaya" },
+        ]}
+      />
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Next steps</h2>
-        <p className="mt-2">
-          <Link href="/pattaya/areas/walking-street/venues/" className="text-accent hover:underline">
-            Venue types
-          </Link>{" "}
-          ·{" "}
-          <Link href="/pattaya/areas/soi-6/" className="text-accent hover:underline">
-            Soi 6
-          </Link>{" "}
-          ·{" "}
-          <Link href="/pattaya/first-timer/" className="text-accent hover:underline">
-            First-timer
-          </Link>{" "}
-          ·{" "}
-          <Link href="/prices/" className="text-accent hover:underline">
-            Prices
-          </Link>
-        </p>
-        <p className="mt-3">
-          <Link href="/pattaya/hotels-walking-street/" className="text-accent hover:underline">
-            Where to stay near Walking Street
-          </Link>
-        </p>
-        <div className="mt-3">
-          <HotelCta label="Hotels near Walking Street" />
-        </div>
-      </section>
+      <Related
+        links={[
+          { href: "/pattaya/first-timer/", label: "First-timer" },
+          { href: "/pattaya/areas/tree-town/", label: "Tree Town" },
+          { href: "/prices/", label: "Prices" },
+          { href: "/pattaya/hotels-walking-street/", label: "Where to stay" },
+        ]}
+      />
+
+      <StayNearby label="Hotels near Walking Street" link="hotelWalkingStreet">
+        <p className="mt-2">Central Pattaya or southern Beach Road keeps the walk home short.</p>
+      </StayNearby>
     </PageShell>
   );
 }

@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { AreaSketch } from "@/components/AreaSketch";
-import { HotelCta } from "@/components/HotelCta";
+import { StayNearby } from "@/components/StayNearby";
 import { PageShell } from "@/components/PageShell";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Where to Stay Near Walking Street Pattaya 2026",
-  "Central Pattaya, Beach Road and Second Road tradeoffs for a Walking Street night. Pick the block, not a hotel list.",
+  "Central Pattaya, Beach Road or Second Road for Walking Street, shows and Tree Town. Pick the block, not a hotel list.",
   "/pattaya/hotels-walking-street/",
 );
 
@@ -30,7 +30,7 @@ export default function HotelsWalkingStreetPage() {
               { label: "Walking Street", note: "South end, night", accent: true },
               { label: "Central Pattaya", note: "Between the roads", accent: true },
               { label: "Second Road", note: "Inland, cheaper hop" },
-              { label: "Soi 6", note: "Short hop, not the same night" },
+              { label: "Soi Buakhao", note: "Inland, budget bars & food" },
             ]}
           />
         </div>
@@ -38,12 +38,12 @@ export default function HotelsWalkingStreetPage() {
           One hotel in this cluster covers{" "}
           <Link href="/pattaya/areas/walking-street/" className="text-accent hover:underline">
             Walking Street
+          </Link>
+          , the cabaret theatres on Second Road and{" "}
+          <Link href="/pattaya/areas/tree-town/" className="text-accent hover:underline">
+            Tree Town
           </Link>{" "}
-          and keeps{" "}
-          <Link href="/pattaya/areas/soi-6/" className="text-accent hover:underline">
-            Soi 6
-          </Link>{" "}
-          a short hop. Don’t split the trip across two distant bases.
+          as short hops. Don’t split the trip across two distant bases.
         </p>
       </section>
 
@@ -52,8 +52,8 @@ export default function HotelsWalkingStreetPage() {
         <ul className="mt-2 list-disc space-y-1 pl-5">
           <li>
             <strong>Central Pattaya.</strong> Default. Between Beach Road and Second Road. Food,
-            Grab, 7-Eleven, short ride to the Walking Street gate. Also the least stupid base if you
-            do Soi 6 or LK Metro on another day.
+            Grab, 7-Eleven, short ride to the Walking Street gate. Also the easiest base for Soi Buakhao and the cabaret
+            shows on another night.
           </li>
           <li>
             <strong>Beach Road, nearer the south end.</strong> Shortest walk to the strip. More
@@ -76,7 +76,7 @@ export default function HotelsWalkingStreetPage() {
       <section>
         <h2 className="text-lg font-semibold text-foreground">Stay types</h2>
         <p className="mt-2">
-          Types only. Example of type: a mid hotel a few sois off Walking Street with a late desk.
+          Types only. Example of type: a mid hotel a few sois off Beach Road with a 24-hour desk.
           No brand, no invented rate.
         </p>
         <ul className="mt-2 list-disc space-y-1 pl-5">
@@ -84,10 +84,6 @@ export default function HotelsWalkingStreetPage() {
           <li>Beach Road high-rise — walk, noise, sea on one side.</li>
           <li>Second Road / one soi in — sleep and a short hop.</li>
         </ul>
-        <p className="mt-3">
-          Guest policy is not uniform. If ST is on the table, ask before you book. Paying a Walking
-          Street bar fine and then losing the argument at reception is a wasted night.
-        </p>
       </section>
 
       <section>
@@ -114,8 +110,8 @@ export default function HotelsWalkingStreetPage() {
 
       <p>
         Related:{" "}
-        <Link href="/pattaya/walking-street-vs-soi-6/" className="text-accent hover:underline">
-          Walking Street vs Soi 6
+        <Link href="/pattaya/cabaret-shows/" className="text-accent hover:underline">
+          Cabaret shows
         </Link>
         ,{" "}
         <Link href="/pattaya/one-night-plan/" className="text-accent hover:underline">
@@ -131,16 +127,12 @@ export default function HotelsWalkingStreetPage() {
         </Link>
       </p>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Stay nearby</h2>
+      <StayNearby label="Check hotels near Walking Street / Central Pattaya" link="hotelWalkingStreet">
         <p className="mt-2">
           One search: Walking Street / Central Pattaya. Beach Road or Second Road is a filter, not
           a second booking.
         </p>
-        <div className="mt-3">
-          <HotelCta label="Check hotels near Walking Street / Central Pattaya" />
-        </div>
-      </section>
+      </StayNearby>
     </PageShell>
   );
 }

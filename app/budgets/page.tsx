@@ -1,11 +1,11 @@
-import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
+import { A, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Nightlife Budgets 2026 – Bangkok & Pattaya",
-  "Realistic nightlife budget bands for Bangkok and Pattaya in 2026: drinks-only, mid nights and full go-go evenings.",
+  "Realistic nightlife budget bands for Bangkok and Pattaya in 2026: casual bar nights, rooftop evenings, club nights and show nights.",
   "/budgets/",
 );
 
@@ -13,97 +13,57 @@ export default function BudgetsPage() {
   return (
     <PageShell title="Nightlife Budgets 2026">
       <p>
-        These are <strong>planning bands</strong>, not promises. Confirm prices on the spot. High
-        season (roughly Nov–Apr) leans higher.
+        These are <strong>planning bands per person</strong>, not promises. They exclude your
+        hotel. High season (roughly Nov–Apr) leans higher.
       </p>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Bangkok</h2>
-        <div className="mt-3">
-          <PriceTable
-            caption="Bangkok budgets"
-            headers={["Band", "THB", "What it covers"]}
-            rows={[
-              ["Drinks only", "500–1,500", "3–6 beers on Cowboy/Nana, no bar fine"],
-              [
-                "Mid night",
-                "2,000–4,000",
-                "Drinks + some lady drinks, maybe one bar fine without ST",
-              ],
-              ["Full ST night", "4,000–8,000+", "Drinks + bar fine + girl’s ST fee"],
-            ]}
-          />
-        </div>
-        <p className="mt-3">
-          Easiest control: start on{" "}
-          <Link href="/bangkok/areas/soi-cowboy/" className="text-accent hover:underline">
-            <strong>Soi Cowboy</strong>
-          </Link>
-          , pay round by round.
-        </p>
-      </section>
+      <Section title="Bangkok">
+        <PriceTable
+          caption="Bangkok budgets"
+          headers={["Night", "THB", "What it covers"]}
+          rows={[
+            ["Casual bars", "500–1,500", "4–6 beers on Soi 11 or Khao San, Grab home"],
+            ["Rooftop + bars", "1,500–3,000", "2 rooftop cocktails, dinner, a few bar drinks"],
+            ["Club night", "2,000–4,000", "Entry, drinks, late Grab"],
+            ["Show night", "1,500–4,000+", "Muay Thai or cabaret ticket plus drinks"],
+          ]}
+        />
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Pattaya</h2>
-        <div className="mt-3">
-          <PriceTable
-            caption="Pattaya budgets"
-            headers={["Band", "THB", "What it covers"]}
-            rows={[
-              ["Budget beer-bar", "700–2,000", "Buakhao / Tree Town / casual LK drinks"],
-              [
-                "Soi 6 short-time",
-                "2,500–5,000+",
-                "Depends heavily on minimums and negotiation — confirm first",
-              ],
-              [
-                "Walking Street go-go",
-                "4,000–10,000+",
-                "Easy to climb with lady drinks + fine + ST",
-              ],
-              ["Club add-on", "+300–1,000", "Cover + extra drinks"],
-            ]}
-          />
-        </div>
-      </section>
+      <Section title="Pattaya">
+        <PriceTable
+          caption="Pattaya budgets"
+          headers={["Night", "THB", "What it covers"]}
+          rows={[
+            ["Beer-bar night", "500–1,500", "Tree Town / Soi Buakhao drinks and food"],
+            ["Walking Street", "1,500–3,500", "Bar and club drinks, cover where charged"],
+            ["Show night", "1,000–3,000+", "Cabaret or Muay Thai ticket plus drinks"],
+          ]}
+        />
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Rules that save money</h2>
-        <ol className="mt-2 list-decimal space-y-1 pl-5">
+      <Section title="Rules that save money">
+        <ol className="list-decimal space-y-1 pl-5">
           <li>Eat first</li>
-          <li>Set a number before the first lady drink</li>
-          <li>Ask every price out loud</li>
-          <li>One “main” venue is enough on night one</li>
-          <li>Walking Street is a premium zone by default</li>
+          <li>Use happy hours — most bars run them before 21:00</li>
+          <li>Check for “++” on hotel-bar menus</li>
+          <li>One rooftop is enough; finish the night somewhere cheaper</li>
+          <li>Book shows online in advance when it’s cheaper than the door</li>
         </ol>
-      </section>
+      </Section>
 
       <p>
-        Sleep in the same cluster you drink in. Hotel rates are not listed here — pick the block:{" "}
-        <Link href="/bangkok/hotels-nana-asok/" className="text-accent hover:underline">
-          Nana & Asok
-        </Link>
-        ,{" "}
-        <Link href="/bangkok/hotels-soi-cowboy/" className="text-accent hover:underline">
-          Soi Cowboy
-        </Link>
-        ,{" "}
-        <Link href="/pattaya/hotels-walking-street/" className="text-accent hover:underline">
-          Walking Street / Central
-        </Link>
-        .
+        Sleep in the same area you go out in:{" "}
+        <A href="/bangkok/hotels-nana-asok/">Bangkok (Sukhumvit)</A>,{" "}
+        <A href="/pattaya/hotels-walking-street/">Pattaya (Walking Street / Central)</A>.
       </p>
-
-      <p>
-        Links:{" "}
-        <Link href="/prices/" className="text-accent hover:underline">
-          Full price tables
-        </Link>
-        ,{" "}
-        <Link href="/scams/" className="text-accent hover:underline">
-          Scams
-        </Link>
-      </p>
+      <Related
+        links={[
+          { href: "/prices/", label: "Full price tables" },
+          { href: "/cash/", label: "Cash" },
+          { href: "/scams/", label: "Scams" },
+        ]}
+      />
     </PageShell>
   );
 }

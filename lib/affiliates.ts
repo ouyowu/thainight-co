@@ -1,15 +1,29 @@
 function affiliateHref(value: string | undefined): string {
   const trimmed = value?.trim();
-  return trimmed || "#";
+  return trimmed || "";
 }
 
 export const affiliates = {
   hotelBangkok: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_BANGKOK),
   hotelPattaya: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_PATTAYA),
-  hotelSoiCowboy: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_SOI_COWBOY),
-  hotelNanaPlaza: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_NANA_PLAZA),
+  hotelSukhumvit: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_SUKHUMVIT),
   hotelWalkingStreet: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_WALKING_STREET),
-  hotelSoi6: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_SOI_6),
-  hotelLkMetro: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_LK_METRO),
+  hotelBeachRoad: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_BEACH_ROAD),
   klook: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_KLOOK),
+  // Activity / ticket deep links (Klook, GetYourGuide, etc.)
+  muayThaiBangkok: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_MUAY_THAI_BANGKOK),
+  muayThaiPattaya: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_MUAY_THAI_PATTAYA),
+  cabaretBangkok: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_CABARET_BANGKOK),
+  cabaretPattaya: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_CABARET_PATTAYA),
+  dinnerCruise: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_DINNER_CRUISE),
+  rooftopBangkok: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_ROOFTOP_BANGKOK),
+  transferBangkokPattaya: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_TRANSFER_BKK_PATTAYA),
+  esim: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_ESIM),
 } as const;
+
+export type AffiliateKey = keyof typeof affiliates;
+
+/** True when a real affiliate URL is configured (not empty / placeholder). */
+export function hasAffiliate(href: string | undefined): href is string {
+  return Boolean(href && href !== "#");
+}

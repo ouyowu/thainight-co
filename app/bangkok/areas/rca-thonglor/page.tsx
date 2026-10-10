@@ -5,7 +5,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "RCA & Thonglor Nightlife 2026 – Clubs Overview",
-  "Short practical overview of RCA and Thonglor for club-focused nights in Bangkok 2026.",
+  "RCA and Thonglor for club and cocktail nights in Bangkok 2026: cover charges, ID checks, dress code and how to get there.",
   "/bangkok/areas/rca-thonglor/",
 );
 
@@ -13,7 +13,7 @@ export default function RcaThonglorPage() {
   return (
     <PageShell title="RCA & Thonglor Nightlife 2026">
       <p>
-        If you want <strong>clubs</strong> rather than go-go, two names matter: <strong>RCA</strong>{" "}
+        For <strong>clubs</strong> and polished bar nights, two names matter: <strong>RCA</strong>{" "}
         (Royal City Avenue) and <strong>Thonglor</strong>.
       </p>
 
@@ -55,8 +55,7 @@ export default function RcaThonglorPage() {
           />
         </div>
         <p className="mt-3">
-          Go-go visitors usually do <strong>not</strong> need RCA/Thonglor unless they specifically
-          want a club night.
+          Warm up with a rooftop such as Octave (BTS Thong Lo) before Thonglor bars.
         </p>
       </section>
 

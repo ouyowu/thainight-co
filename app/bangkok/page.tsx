@@ -1,11 +1,13 @@
-import Link from "next/link";
+import { BookingBox } from "@/components/BookingBox";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
+import { A, Bullets, LinkList, Section } from "@/components/Prose";
+import { bangkokAreas, bangkokGuides } from "@/lib/guides";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Bangkok Nightlife Guide 2026 – Areas & Prices",
-  "Complete Bangkok nightlife overview: Soi Cowboy, Nana Plaza, prices, first-timer advice and how the main areas compare in 2026.",
+  "Bangkok Nightlife Guide 2026 – Areas, Rooftops & Prices",
+  "Bangkok nightlife overview: rooftop bars, Soi 11, RCA and Thonglor clubs, Muay Thai, cabaret and night markets. 2026 prices and first-timer advice.",
   "/bangkok/",
 );
 
@@ -15,225 +17,88 @@ export default function BangkokPage() {
       title="Bangkok Nightlife Guide 2026 – Areas, Prices & First-Timer Advice"
       belowTitle={
         <p className="mt-3 text-base leading-7 text-zinc-200">
-          New here? Start with the{" "}
-          <Link href="/bangkok/first-timer/" className="text-accent hover:underline">
-            First-Timer Guide
-          </Link>{" "}
-          or a{" "}
-          <Link href="/bangkok/one-night-plan/" className="text-accent hover:underline">
-            one-night plan
-          </Link>
-          .
+          New here? Start with the <A href="/bangkok/first-timer/">first-timer guide</A> or a{" "}
+          <A href="/bangkok/one-night-plan/">one-night plan</A>.
         </p>
       }
     >
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Quick Overview</h2>
-        <p className="mt-2">
-          Bangkok’s main adult nightlife is concentrated in a few well-known areas around Sukhumvit.
-          The two primary go-go zones are Soi Cowboy and Nana Plaza. They are close to each other,
-          easy to reach by BTS, and suitable for both first-timers and returning visitors.
+      <Section title="Quick overview">
+        <p>
+          Bangkok nightlife is spread across a few clear zones. Sukhumvit (Nana to Asok) is the
+          easiest base: Soi 11 bars and clubs, hotel rooftops, BTS on the doorstep. Thonglor and
+          Ekkamai are the upscale bar strip. RCA is the purpose-built club street. Silom and the
+          riverside hold the famous sky bars, Patpong night market and Asiatique.
         </p>
-      </section>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Main Areas at a Glance</h2>
-        <div className="mt-3">
-          <PriceTable
-            caption="Main Areas at a Glance"
-            headers={["Area", "Role", "What it is", "First-timer"]}
-            rows={[
-              ["Soi Cowboy", "Easiest first night", "Open-air street, compact", "Excellent"],
-              ["Nana Plaza", "Variety & shows", "3-floor complex, denser", "Very good"],
-              ["Patpong", "Curiosity / market", "Older, more touristy", "Low priority"],
-              ["Soi 11", "Mixed bars & clubs", "International, less “go-go only”", "Good for non-go-go nights"],
-            ]}
-          />
-        </div>
-      </section>
+      <Section title="Main areas at a glance">
+        <PriceTable
+          caption="Main areas at a glance"
+          headers={["Area", "Best for", "Feel", "First-timer"]}
+          rows={[
+            ["Sukhumvit Soi 11", "Bars, rooftops, clubs", "International, walkable", "Excellent"],
+            ["Thonglor / Ekkamai", "Cocktail bars, live music", "Upscale, local crowd", "Very good"],
+            ["RCA", "Big clubs", "Late, loud, ID checks", "Good for club nights"],
+            ["Silom / riverside", "Sky bars, Patpong market", "Views, tourist-heavy", "Good early evening"],
+          ]}
+        />
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Recommended Starting Point</h2>
-        <p className="mt-2">
-          Most first-timers do best starting on Soi Cowboy. It is linear, open-air, and easier to
-          read. Nana Plaza is better once you want more options or bigger productions.
+      <Section title="Things to do at night">
+        <Bullets>
+          <li>
+            <A href="/bangkok/rooftop-bars/">Rooftop bars</A> — Sky Bar, Vertigo, Octave and
+            cheaper alternatives.
+          </li>
+          <li>
+            <A href="/bangkok/muay-thai/">Muay Thai</A> — Rajadamnern fights most nights; Lumpinee
+            on weekends.
+          </li>
+          <li>
+            <A href="/bangkok/night-activities/">Cabaret, river cruises and night markets</A>.
+          </li>
+        </Bullets>
+      </Section>
+
+      <BookingBox
+        items={[
+          { label: "Muay Thai tickets (Rajadamnern / Lumpinee)", link: "muayThaiBangkok" },
+          { label: "Calypso Cabaret tickets", link: "cabaretBangkok" },
+          { label: "Chao Phraya dinner cruise", link: "dinnerCruise" },
+          { label: "Hotels in Sukhumvit", link: "hotelBangkok" },
+        ]}
+      />
+
+      <Section title="2026 price snapshot">
+        <Bullets>
+          <li>Beer in an ordinary Sukhumvit bar: roughly 100–200 THB</li>
+          <li>Cocktail on a hotel rooftop: commonly 400–900 THB+</li>
+          <li>Club entry on RCA: often 300–500 THB, sometimes with a drink</li>
+        </Bullets>
+        <p>
+          → Full details on the <A href="/prices/">prices page</A>.
         </p>
-      </section>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">2026 Price Snapshot (Go-Go style)</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>Beer: 150–200 THB</li>
-          <li>Lady drink: 200–280 THB</li>
-          <li>Bar fine (ST): 800–1,500 THB</li>
-          <li>Full short-time night: commonly 4,000–8,000+ THB</li>
-        </ul>
-        <p className="mt-3">
-          → Full details on the{" "}
-          <Link href="/prices/" className="text-accent hover:underline">
-            Prices page
-          </Link>
-        </p>
-      </section>
-
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Practical Notes</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>Stay near BTS Nana or BTS Asok for easy access</li>
-          <li>Use Grab or Bolt late at night</li>
-          <li>Confirm lady drink and bar fine prices before ordering</li>
+      <Section title="Practical notes">
+        <Bullets>
+          <li>Stay near BTS Nana, Asok or Phrom Phong for an easy night</li>
+          <li>Use Grab or Bolt late at night; insist on the meter in taxis</li>
+          <li>Rooftops enforce dress codes — no flip-flops, shorts or sleeveless tops</li>
           <li>Never follow street touts upstairs for “cheap shows”</li>
-        </ul>
-      </section>
+        </Bullets>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Quick Links</h2>
-        <ul className="mt-2 space-y-1">
-          <li>
-            <Link href="/bangkok/first-timer/" className="text-accent hover:underline">
-              Bangkok First-Timer Guide
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/faq/" className="text-accent hover:underline">
-              Bangkok FAQ
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/getting-around/" className="text-accent hover:underline">
-              Getting around
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/airport/" className="text-accent hover:underline">
-              Airport to nightlife
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/areas/soi-cowboy/" className="text-accent hover:underline">
-              Soi Cowboy detailed guide
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/areas/nana-plaza/" className="text-accent hover:underline">
-              Nana Plaza detailed guide
-            </Link>
-          </li>
-          <li>
-            <Link href="/scams/" className="text-accent hover:underline">
-              Scams to avoid
-            </Link>
-          </li>
-          <li>
-            <Link href="/prices/" className="text-accent hover:underline">
-              Current prices
-            </Link>
-          </li>
-        </ul>
-      </section>
+      <Section title="Bangkok guides">
+        <LinkList links={bangkokGuides} />
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">More Bangkok guides</h2>
-        <ul className="mt-2 space-y-1">
-          <li>
-            <Link href="/bangkok/first-timer/" className="text-accent hover:underline">
-              First-timer guide
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/faq/" className="text-accent hover:underline">
-              FAQ
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/getting-around/" className="text-accent hover:underline">
-              Getting around
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/airport/" className="text-accent hover:underline">
-              Airport to nightlife
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/night-activities/" className="text-accent hover:underline">
-              Night activities
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/bar-types/" className="text-accent hover:underline">
-              Bar types
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/ladies-night/" className="text-accent hover:underline">
-              Ladies night
-            </Link>
-          </li>
-          <li>
-            <Link href="/cash/" className="text-accent hover:underline">
-              Cash
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/one-night-plan/" className="text-accent hover:underline">
-              One-night sample plans
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/areas/soi-cowboy/" className="text-accent hover:underline">
-              Soi Cowboy
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/areas/soi-cowboy/bars/" className="text-accent hover:underline">
-              Soi Cowboy bars
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/areas/soi-cowboy/baccara/" className="text-accent hover:underline">
-              Baccara
-            </Link>
-            {" · "}
-            <Link href="/bangkok/areas/soi-cowboy/dollhouse/" className="text-accent hover:underline">
-              Dollhouse
-            </Link>
-            {" · "}
-            <Link href="/bangkok/areas/soi-cowboy/tilac/" className="text-accent hover:underline">
-              Tilac
-            </Link>
-            {" · "}
-            <Link href="/bangkok/areas/soi-cowboy/shark/" className="text-accent hover:underline">
-              Shark
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/areas/nana-plaza/" className="text-accent hover:underline">
-              Nana Plaza
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/areas/nana-plaza/floors/" className="text-accent hover:underline">
-              Nana Plaza floors
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/areas/patpong/" className="text-accent hover:underline">
-              Patpong
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/areas/soi-11/" className="text-accent hover:underline">
-              Soi 11
-            </Link>
-          </li>
-          <li>
-            <Link href="/bangkok/areas/rca-thonglor/" className="text-accent hover:underline">
-              RCA & Thonglor
-            </Link>
-          </li>
-        </ul>
-      </section>
+      <Section title="Bangkok areas">
+        <LinkList links={bangkokAreas} />
+        <p className="text-sm text-muted">
+          Thai Night does not cover adult-entertainment venues.
+        </p>
+      </Section>
     </PageShell>
   );
 }

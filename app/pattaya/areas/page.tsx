@@ -1,61 +1,32 @@
-import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
+import { A, Bullets } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
-export const metadata = pageMeta(
-  "Pattaya Nightlife Areas",
-  "Three areas cover almost every first visit. Pick by energy, not by brochure photos.",
-  "/pattaya/areas/",
-);
+const lead =
+  "A few areas cover almost every Pattaya night out. Pick by energy and budget, not by brochure photos.";
+
+export const metadata = pageMeta("Pattaya Nightlife Areas 2026", lead, "/pattaya/areas/");
 
 export default function PattayaAreasPage() {
   return (
-    <PageShell
-      title="Pattaya Nightlife Areas"
-      lead="Three areas cover almost every first visit. Pick by energy, not by brochure photos."
-    >
+    <PageShell title="Pattaya Nightlife Areas" lead={lead}>
       <PriceTable
         caption="Pattaya nightlife areas"
-        headers={["Area", "Hours", "Style", "Cost"]}
+        headers={["Area", "Peak hours", "Style", "Cost"]}
         rows={[
-          ["Walking Street", "21:30–01:00", "Go-go, clubs, spectacle", "Higher"],
-          ["Soi 6", "14:00–22:00", "Open beer bars, short-time focused", "Lower"],
-          ["LK Metro", "20:00–01:00", "Go-go, slightly calmer", "Mid"],
+          ["Walking Street", "21:30–02:00", "Clubs, live music, spectacle", "Higher"],
+          ["Tree Town", "18:00–late", "Open-air bars, bands, food", "Lower"],
+          ["Soi Buakhao", "19:00–late", "Beer bars, street food", "Lower"],
+          ["Beach Road / Jomtien", "Sunset–late", "Beach bars", "Mid"],
         ]}
       />
-      <ul className="space-y-2">
-        <li>
-          <Link href="/pattaya/areas/walking-street/" className="text-accent hover:underline">
-            Walking Street
-          </Link>{" "}
-          — good for seeing the famous strip.
-        </li>
-        <li>
-          <Link href="/pattaya/areas/soi-6/" className="text-accent hover:underline">
-            Soi 6
-          </Link>{" "}
-          — good if you know what you want.
-        </li>
-        <li>
-          <Link href="/pattaya/areas/lk-metro/" className="text-accent hover:underline">
-            LK Metro
-          </Link>{" "}
-          — often recommended as an easier start.
-        </li>
-        <li>
-          <Link href="/pattaya/areas/soi-buakhao/" className="text-accent hover:underline">
-            Soi Buakhao
-          </Link>{" "}
-          — budget beer bars, lower pressure.
-        </li>
-        <li>
-          <Link href="/pattaya/areas/tree-town/" className="text-accent hover:underline">
-            Tree Town
-          </Link>{" "}
-          — open-air bars and food on/near Buakhao.
-        </li>
-      </ul>
+      <Bullets>
+        <li><A href="/pattaya/areas/walking-street/">Walking Street</A> — the famous strip.</li>
+        <li><A href="/pattaya/areas/tree-town/">Tree Town</A> — open-air courtyard with bands and food.</li>
+        <li><A href="/pattaya/areas/soi-buakhao/">Soi Buakhao</A> — budget beer bars, lower pressure.</li>
+      </Bullets>
+      <p className="text-sm text-muted">Thai Night does not cover adult-entertainment venues.</p>
     </PageShell>
   );
 }

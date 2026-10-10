@@ -1,211 +1,69 @@
-import Link from "next/link";
-import { FaqJsonLd } from "@/components/FaqJsonLd";
+import { FaqList, type FaqItem } from "@/components/FaqList";
 import { PageShell } from "@/components/PageShell";
+import { Related } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
-const faqItems = [
+const faqItems: FaqItem[] = [
   {
-    q: "Soi Cowboy or Nana Plaza for the first night?",
-    a: "Soi Cowboy for the easiest layout (one open street). Nana Plaza if you want more venues in one complex. Many people do Cowboy first, Nana on another night.",
+    q: "Where should I go on my first night?",
+    a: "Sukhumvit Soi 11 is the easiest start: bars, a rooftop and clubs within a short walk of BTS Nana. Thonglor suits a more polished cocktail night; RCA suits a big club night.",
   },
   {
-    q: "Do I need a reservation?",
-    a: "No for normal go-go visits. Walk in. Peak hours can mean standing room only in popular bars.",
+    q: "Which rooftop bar is best?",
+    a: "Sky Bar (lebua) and Vertigo (Banyan Tree) are the famous views, at a premium. Octave (Thonglor) and hotel rooftops around Asok are easier on the budget. See the rooftop bars guide for dress codes and hours.",
   },
   {
-    q: "What is a bar fine?",
-    a: "Money paid to the bar so a staff member can leave. Her time/fee is separate and agreed with her. Confirm both numbers before you leave.",
+    q: "Is there a dress code?",
+    a: "Rooftops and many clubs refuse shorts, flip-flops, sleeveless tops and sportswear. Long trousers and closed shoes are the safe default.",
   },
   {
-    q: "What is a lady drink?",
-    a: "A drink you buy for someone sitting with you. Price is higher than your own beer. Ask the price before the first one.",
+    q: "What is the legal drinking age, and do clubs check ID?",
+    a: "The legal drinking age in Thailand is 20. Clubs check ID, often strictly. Bring your passport or a clear copy plus another photo ID.",
   },
   {
-    q: "How much cash should I carry?",
-    a: "Enough for your planned night plus a buffer. Don’t flash large stacks. Use the hotel safe for the rest. Many places are cash-friendly; don’t assume every bar takes card.",
+    q: "What time should I go out?",
+    a: "Rooftops are best from sunset (around 18:00). Bars fill from about 21:00. Clubs get busy after 23:00. Closing times depend on the area and licence — some designated zones run later than others, so check the venue.",
   },
   {
-    q: "What time should I go?",
-    a: "Roughly 21:00–22:00 start is practical. Earlier is quieter; after midnight is busier and some places wind down near 02:00 on Cowboy.",
+    q: "Are there days when bars don’t serve alcohol?",
+    a: "Yes. Alcohol sales are restricted on some Buddhist holidays and on election days. Many bars close or serve soft drinks only. Check the calendar before you plan a big night.",
   },
   {
     q: "Is Patpong worth it?",
-    a: "For the night market and a short look, yes. For the main go-go night in 2026, Cowboy or Nana are stronger. Never follow touts upstairs for “cheap shows.”",
+    a: "For the night market and a short look, yes. Never follow touts upstairs for “cheap shows” — that is a classic overcharge trap.",
+  },
+  {
+    q: "How much cash should I carry?",
+    a: "Enough for your planned night plus a buffer. Rooftops and hotel bars take cards; street bars and markets mostly don’t. Leave the rest in the hotel safe.",
   },
   {
     q: "Where should I stay?",
-    a: "Near BTS Nana or Asok keeps transport simple.",
+    a: "Near BTS Nana, Asok or Phrom Phong on Sukhumvit keeps transport simple and puts Soi 11, rooftops and Thonglor a short ride away.",
   },
   {
     q: "Is it safe?",
-    a: "Use normal big-city caution. Biggest issues are bills, touts, and transport overcharge — not random violence. See Scams and Safety.",
+    a: "Use normal big-city caution. The common problems are bills, touts, drink spiking in rare cases and transport overcharges — not random violence. See Scams and Safety.",
   },
 ];
 
 export const metadata = pageMeta(
   "Bangkok Nightlife FAQ 2026",
-  "Common questions about Bangkok nightlife: Soi Cowboy vs Nana Plaza, prices, bar fines, safety and first-timer tips.",
+  "Common questions about Bangkok nightlife: where to go first, rooftops, dress codes, ID checks, closing times, alcohol ban days and safety.",
   "/bangkok/faq/",
 );
 
 export default function BangkokFaqPage() {
   return (
     <PageShell title="Bangkok Nightlife FAQ 2026">
-      <FaqJsonLd items={faqItems} />
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">
-          Soi Cowboy or Nana Plaza for the first night?
-        </h2>
-        <p className="mt-2">
-          <strong>Soi Cowboy</strong> for the easiest layout (one open street).
-        </p>
-        <p className="mt-2">
-          <strong>Nana Plaza</strong> if you want more venues in one complex.
-        </p>
-        <p className="mt-2">Many people do Cowboy first, Nana on another night.</p>
-        <p className="mt-2">
-          Full comparison:{" "}
-          <Link href="/bangkok/cowboy-vs-nana/" className="text-accent hover:underline">
-            Soi Cowboy vs Nana Plaza
-          </Link>
-        </p>
-      </section>
-
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Do I need a reservation?</h2>
-        <p className="mt-2">
-          No for normal go-go visits. Walk in. Peak hours can mean standing room only in popular
-          bars.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">What is a bar fine?</h2>
-        <p className="mt-2">
-          Money paid <strong>to the bar</strong> so a staff member can leave.
-        </p>
-        <p className="mt-2">
-          Her time/fee is <strong>separate</strong> and agreed with her. Confirm both numbers before
-          you leave.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">What is a lady drink?</h2>
-        <p className="mt-2">
-          A drink you buy for someone sitting with you. Price is higher than your own beer. Ask the
-          price before the first one.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">How much cash should I carry?</h2>
-        <p className="mt-2">
-          Enough for your planned night plus a buffer. Don’t flash large stacks. Use the hotel safe
-          for the rest. Many places are cash-friendly; don’t assume every bar takes card. Practical
-          notes: {" "}
-          <Link href="/cash/" className="text-accent hover:underline">
-            How much cash
-          </Link>
-          .
-        </p>
-      </section>
-
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">What time should I go?</h2>
-        <p className="mt-2">
-          Roughly <strong>21:00–22:00</strong> start is practical. Earlier is quieter; after
-          midnight is busier and some places wind down near 02:00 on Cowboy.
-        </p>
-      </section>
-
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Is Patpong worth it?</h2>
-        <p className="mt-2">
-          For the <strong>night market</strong> and a short look, yes.
-        </p>
-        <p className="mt-2">
-          For the main go-go night in 2026, <strong>Cowboy or Nana</strong> are stronger. Never
-          follow touts upstairs for “cheap shows.”
-        </p>
-      </section>
-
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Where should I stay?</h2>
-        <p className="mt-2">
-          Near <strong>BTS Nana</strong> or <strong>Asok</strong> keeps transport simple.{" "}
-          <Link href="/bangkok/getting-around/" className="text-accent hover:underline">
-            Getting around
-          </Link>
-          {" · "}
-          <Link href="/bangkok/airport/" className="text-accent hover:underline">
-            Airport
-          </Link>
-          .
-        </p>
-      </section>
-
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Is it safe?</h2>
-        <p className="mt-2">
-          Use normal big-city caution. Biggest issues are{" "}
-          <strong>bills, touts, and transport overcharge</strong> — not random violence. See{" "}
-          <Link href="/scams/" className="text-accent hover:underline">
-            Scams
-          </Link>{" "}
-          and{" "}
-          <Link href="/safety/" className="text-accent hover:underline">
-            Safety
-          </Link>
-          .
-        </p>
-      </section>
-
-      <p>
-        Related:{" "}
-        <Link href="/bangkok/first-timer/" className="text-accent hover:underline">
-          First-timer guide
-        </Link>
-        ,{" "}
-        <Link href="/prices/" className="text-accent hover:underline">
-          Prices
-        </Link>
-        ,{" "}
-        <Link href="/bangkok/one-night-plan/" className="text-accent hover:underline">
-          One-night plans
-        </Link>
-        ,{" "}
-        <Link href="/bangkok/cowboy-vs-nana/" className="text-accent hover:underline">
-          Soi Cowboy vs Nana Plaza
-        </Link>
-        ,{" "}
-        <Link href="/bangkok/getting-around/" className="text-accent hover:underline">
-          Getting around
-        </Link>
-        ,{" "}
-        <Link href="/bangkok/airport/" className="text-accent hover:underline">
-          Airport
-        </Link>
-        ,{" "}
-        <Link href="/bangkok/night-activities/" className="text-accent hover:underline">
-          Night activities
-        </Link>
-        ,{" "}
-        <Link href="/bangkok/bar-types/" className="text-accent hover:underline">
-          Bar types
-        </Link>
-        ,{" "}
-        <Link href="/cash/" className="text-accent hover:underline">
-          Cash
-        </Link>
-      </p>
-      <p className="mt-2">
-        Stay nearby / hotel notes:{" "}
-        <Link href="/bangkok/first-timer/" className="text-accent hover:underline">
-          First-timer guide
-        </Link>{" "}
-        (Stay nearby).
-      </p>
+      <FaqList items={faqItems} />
+      <Related
+        links={[
+          { href: "/bangkok/first-timer/", label: "First-timer guide" },
+          { href: "/bangkok/rooftop-bars/", label: "Rooftop bars" },
+          { href: "/scams/", label: "Scams" },
+          { href: "/safety/", label: "Safety" },
+        ]}
+      />
     </PageShell>
   );
 }

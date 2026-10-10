@@ -1,4 +1,9 @@
-export const SITE_URL = "https://thainight.co";
+// Canonical origin. Set NEXT_PUBLIC_SITE_URL once this site owns a domain.
+// Do NOT point it at thainight.co while that domain serves a different site:
+// every canonical would then point at pages that don't match.
+export const SITE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://thainight-co.vercel.app"
+).replace(/\/$/, "");
 export const SITE_NAME = "Thai Night";
 export const LAST_UPDATED = "October 2026";
 
@@ -22,20 +27,12 @@ export const routes = [
   "/bangkok/getting-around/",
   "/bangkok/airport/",
   "/bangkok/night-activities/",
+  "/bangkok/rooftop-bars/",
+  "/bangkok/muay-thai/",
   "/bangkok/ladies-night/",
   "/bangkok/bar-types/",
-  "/bangkok/cowboy-vs-nana/",
   "/bangkok/hotels-nana-asok/",
-  "/bangkok/hotels-soi-cowboy/",
   "/bangkok/areas/",
-  "/bangkok/areas/nana-plaza/",
-  "/bangkok/areas/nana-plaza/floors/",
-  "/bangkok/areas/soi-cowboy/",
-  "/bangkok/areas/soi-cowboy/bars/",
-  "/bangkok/areas/soi-cowboy/baccara/",
-  "/bangkok/areas/soi-cowboy/dollhouse/",
-  "/bangkok/areas/soi-cowboy/tilac/",
-  "/bangkok/areas/soi-cowboy/shark/",
   "/bangkok/areas/soi-11/",
   "/bangkok/areas/patpong/",
   "/bangkok/areas/rca-thonglor/",
@@ -48,18 +45,13 @@ export const routes = [
   "/pattaya/getting-around/",
   "/pattaya/airport/",
   "/pattaya/night-activities/",
+  "/pattaya/cabaret-shows/",
   "/pattaya/bar-types/",
-  "/pattaya/walking-street-vs-soi-6/",
   "/pattaya/hotels-walking-street/",
   "/pattaya/areas/",
   "/pattaya/areas/walking-street/",
-  "/pattaya/areas/walking-street/venues/",
-  "/pattaya/areas/walking-street/windmill/",
-  "/pattaya/areas/walking-street/sapphire/",
-  "/pattaya/areas/soi-6/",
   "/pattaya/areas/soi-buakhao/",
   "/pattaya/areas/tree-town/",
-  "/pattaya/areas/lk-metro/",
   "/pattaya/one-night-plan/",
   "/pattaya/prices/",
   "/pattaya/tonight/",
@@ -70,4 +62,5 @@ export const routes = [
   "/safety/",
   "/about/",
   "/disclaimer/",
+  "/affiliate-disclosure/",
 ] as const;

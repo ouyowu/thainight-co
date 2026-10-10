@@ -1,10 +1,11 @@
-import Link from "next/link";
+import { BookingBox } from "@/components/BookingBox";
 import { PageShell } from "@/components/PageShell";
+import { A, Bullets, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Bangkok Night Activities 2026 – Muay Thai, Rooftops, Markets",
-  "How to sequence Muay Thai evening stadiums, Soi 11 rooftops and night markets with Soi Cowboy or Nana Plaza. Practical 2026 order, not a ticket list.",
+  "Bangkok Night Activities 2026 – Muay Thai, Cabaret, Cruises, Markets",
+  "Things to do in Bangkok at night: Muay Thai stadiums, Calypso Cabaret, Chao Phraya dinner cruises, rooftops and night markets — and how to sequence them.",
   "/bangkok/night-activities/",
 );
 
@@ -12,85 +13,71 @@ export default function BangkokNightActivitiesPage() {
   return (
     <PageShell title="Bangkok Night Activities 2026">
       <p>
-        You can stack a “normal” Bangkok evening in front of go-go — or skip it. One night: do not
-        try stadium + rooftop + Cowboy + Nana at full intensity. Pick a sequence.
+        One anchor activity plus drinks makes a better night than four rushed ones. Pick one from
+        below, then finish on <A href="/bangkok/areas/soi-11/">Soi 11</A> or near your hotel.
       </p>
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Muay Thai (evening stadiums)</h2>
-        <p className="mt-2">
-          Evening fights are a type of night out, not a bar. The two names people use as types are{" "}
-          <strong>Rajadamnern</strong> and <strong>Lumpinee</strong> — stadium formats, not a Thai
-          Night ranking and not a live card. Confirm the card, start time, and seat class on the
-          day. This page does not publish ticket prices.
+
+      <Section title="Muay Thai">
+        <p>
+          Rajadamnern (old town) runs fights most nights; Lumpinee (Ram Inthra, north Bangkok) is
+          strongest on Friday and Saturday. Seat class matters more than the venue for a first
+          visit. Full guide: <A href="/bangkok/muay-thai/">Muay Thai in Bangkok</A>.
         </p>
-        <p className="mt-2">
-          Sequence: stadium earlier, then Grab to Sukhumvit for{" "}
-          <Link href="/bangkok/areas/soi-cowboy/" className="text-accent hover:underline">
-            Soi Cowboy
-          </Link>{" "}
-          or{" "}
-          <Link href="/bangkok/areas/nana-plaza/" className="text-accent hover:underline">
-            Nana Plaza
-          </Link>
-          . If you only have one night and go-go is the goal, skip the stadium.
+      </Section>
+
+      <Section title="Cabaret: Calypso at Asiatique">
+        <p>
+          Calypso Cabaret is Bangkok’s long-running cabaret show at Asiatique The Riverfront, with
+          evening shows of about 70 minutes. Book ahead on weekends. Get there via BTS Saphan Taksin
+          and the free shuttle boat from Sathorn Pier, then eat at Asiatique before or after.
         </p>
-      </section>
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Soi 11 rooftops and bars</h2>
-        <p className="mt-2">
-          <Link href="/bangkok/areas/soi-11/" className="text-accent hover:underline">
-            Soi 11
-          </Link>{" "}
-          is the non-go-go strip near BTS Nana: rooftops, cocktail bars, live music, clubs. Useful
-          as a contrast night or a warm-up. Drink prices often carry a rooftop/club premium versus
-          ordinary street bars. Peak roughly 22:00–02:00, stronger on weekends.
+      </Section>
+
+      <Section title="Chao Phraya dinner cruise">
+        <p>
+          Two-hour buffet or set-menu cruises leave from Asiatique, ICONSIAM and River City past the
+          lit-up temples and Grand Palace. Good for couples and groups; dress smart casual.
         </p>
-        <p className="mt-2">
-          Easy combine: Soi 11 early → short ride/walk toward Nana Plaza or Cowboy later (or the
-          reverse). Club-heavy nights also live on{" "}
-          <Link href="/bangkok/areas/rca-thonglor/" className="text-accent hover:underline">
-            RCA & Thonglor
-          </Link>
-          .
+      </Section>
+
+      <Section title="Rooftop bars">
+        <p>
+          Sunset is the best hour. Sky Bar, Vertigo and Sky Beach for the big views; Octave and
+          Sukhumvit hotel rooftops for value. See <A href="/bangkok/rooftop-bars/">rooftop bars</A>.
         </p>
-      </section>
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Night markets (including Patpong)</h2>
-        <p className="mt-2">
-          <Link href="/bangkok/areas/patpong/" className="text-accent hover:underline">
-            Patpong
-          </Link>{" "}
-          is market + history + a low-pressure drink — not the main go-go night in 2026. Arrive
-          after 19:00 for market atmosphere. Never follow touts upstairs for “cheap shows.” Grab/Bolt
-          back to Sukhumvit if that is your hotel.
-        </p>
-        <p className="mt-2">
-          Treat any other night market the same way: food and walking first. Then one go-go sit, not
-          a second district.
-        </p>
-      </section>
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">How to sequence with Cowboy / Nana</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>One night, go-go only: Cowboy first (easiest layout), Nana if you still want more.</li>
-          <li>One night, mixed: market or Soi 11 early → one strip. Not both stadium and two plazas.</li>
-          <li>Two nights: stadium or rooftops on one; Cowboy / Nana on the other.</li>
-        </ul>
-      </section>
-      <p>
-        Related:{" "}
-        <Link href="/bangkok/first-timer/" className="text-accent hover:underline">
-          First-timer
-        </Link>
-        ,{" "}
-        <Link href="/bangkok/one-night-plan/" className="text-accent hover:underline">
-          One-night plans
-        </Link>
-        ,{" "}
-        <Link href="/bangkok/bar-types/" className="text-accent hover:underline">
-          Bar types
-        </Link>
-      </p>
+      </Section>
+
+      <Section title="Night markets">
+        <Bullets>
+          <li><A href="/bangkok/areas/patpong/">Patpong</A> — Silom night market; skip any upstairs “show” offers.</li>
+          <li>Asiatique — riverside market, restaurants and the big wheel.</li>
+          <li>Jodd Fairs and other weekend-style markets — food first; check the current location and days, as markets move.</li>
+        </Bullets>
+      </Section>
+
+      <BookingBox
+        items={[
+          { label: "Muay Thai tickets", link: "muayThaiBangkok" },
+          { label: "Calypso Cabaret tickets", link: "cabaretBangkok" },
+          { label: "Chao Phraya dinner cruise", link: "dinnerCruise" },
+        ]}
+      />
+
+      <Section title="How to sequence">
+        <Bullets>
+          <li>One night: activity early (18:00–21:00) → drinks on Soi 11 or near the hotel.</li>
+          <li>Two nights: riverside (cruise or Calypso) one night; rooftop + Soi 11 the other.</li>
+          <li>Don’t combine a stadium and a dinner cruise — they’re on opposite sides of town.</li>
+        </Bullets>
+      </Section>
+
+      <Related
+        links={[
+          { href: "/bangkok/first-timer/", label: "First-timer" },
+          { href: "/bangkok/one-night-plan/", label: "One-night plans" },
+          { href: "/bangkok/bar-types/", label: "Bar types" },
+        ]}
+      />
     </PageShell>
   );
 }

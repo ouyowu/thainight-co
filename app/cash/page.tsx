@@ -1,100 +1,62 @@
-import Link from "next/link";
+import { BookingBox } from "@/components/BookingBox";
 import { PageShell } from "@/components/PageShell";
+import { A, Bullets, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "How Much Cash for Bangkok & Pattaya Nightlife 2026",
-  "ATM, hotel safe, and how much cash to carry for Bangkok and Pattaya nightlife. Use published 2026 price and budget bands.",
+  "Cash & Payments for Bangkok & Pattaya Nightlife 2026",
+  "ATM fees, cards vs cash, QR payments and how much to carry for a night out in Bangkok and Pattaya in 2026.",
   "/cash/",
 );
 
 export default function CashPage() {
   return (
-    <PageShell title="How Much Cash for Bangkok & Pattaya Nightlife 2026">
+    <PageShell title="Cash & Payments for a Night Out (2026)">
       <p>
-        Carry enough for the night you actually planned, plus a buffer. Don’t flash large stacks.
-        Hotel safe for the rest. Many bars are cash-friendly — don’t assume card.
+        Carry enough for the night you planned, plus a buffer. Leave the rest in the hotel safe.
+        Hotel bars and rooftops take cards; street bars, markets and small bars are mostly cash.
       </p>
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">ATM and the safe</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>Pull what you need for that night. Leave the rest locked.</li>
-          <li>Keep small bills (100s and 50s) for drinks paid round by round.</li>
-          <li>
-            Don’t flash cash on the street or at the table. Same rule on{" "}
-            <Link href="/scams/" className="text-accent hover:underline">
-              Scams
-            </Link>
-            .
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">How much — use the published bands</h2>
-        <p className="mt-2">
-          No new ranges here. Size the envelope from{" "}
-          <Link href="/prices/" className="text-accent hover:underline">
-            Prices
-          </Link>{" "}
-          and{" "}
-          <Link href="/budgets/" className="text-accent hover:underline">
-            Budgets
-          </Link>
-          , then add a buffer.
+
+      <Section title="ATMs">
+        <Bullets>
+          <li>Thai ATMs charge foreign cards a flat fee per withdrawal (commonly around 220–250 THB). Fewer, larger withdrawals cost less.</li>
+          <li>Decline the ATM’s own currency conversion — choose to be charged in baht.</li>
+          <li>Use ATMs inside banks or malls rather than dark street machines.</li>
+        </Bullets>
+      </Section>
+
+      <Section title="Cards and QR">
+        <Bullets>
+          <li>Rooftops, hotel bars and clubs generally accept Visa / Mastercard.</li>
+          <li>Thai QR (PromptPay) is everywhere, but usually needs a Thai bank app or a travel app that supports it.</li>
+          <li>When paying by card, choose baht, not your home currency.</li>
+        </Bullets>
+      </Section>
+
+      <Section title="How much to carry">
+        <p>
+          Size it from the <A href="/budgets/">budget bands</A>, then add a buffer for a late Grab
+          or an extra round. Keep 100 and 50 baht notes for smaller bars and baht buses.
         </p>
-        <p className="mt-2">
-          Bangkok drinks-only planning band: 500–1,500 THB. Mid night: 2,000–4,000. Full ST night:
-          4,000–8,000+.
-        </p>
-        <p className="mt-2">
-          Cowboy street drinks (2026): beer 150–200 · lady drink 220–260 · bar fine often around
-          1,000 (800–1,200). Nana lady drinks run 220–280; bar fine 1,000–1,500.
-        </p>
-        <p className="mt-2">
-          Pattaya drinks-only on Walking Street: 1,500–3,500. Walking Street go-go night band:
-          4,000–10,000+. Soi 6 ST is widely variable — confirm live. Budget beer-bar / Buakhao
-          style: 700–2,000.
-        </p>
-        <p className="mt-2">
-          High season (roughly Nov–Apr) leans to the high end of those bands. Confirm on the spot.
-        </p>
-      </section>
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Practical</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>Pay round by round when you can. That cuts bill surprises and how much you need in one wad.</li>
-          <li>Bar fine and her fee are two payments. Budget both if ST is possible.</li>
-          <li>
-            Bangkok cash FAQ:{" "}
-            <Link href="/bangkok/faq/" className="text-accent hover:underline">
-              Bangkok FAQ
-            </Link>
-            . Pattaya spend bands:{" "}
-            <Link href="/pattaya/faq/" className="text-accent hover:underline">
-              Pattaya FAQ
-            </Link>
-            .
-          </li>
-        </ul>
-      </section>
-      <p>
-        Related:{" "}
-        <Link href="/bangkok/getting-around/" className="text-accent hover:underline">
-          Bangkok getting around
-        </Link>
-        ,{" "}
-        <Link href="/pattaya/getting-around/" className="text-accent hover:underline">
-          Pattaya getting around
-        </Link>
-        ,{" "}
-        <Link href="/prices/" className="text-accent hover:underline">
-          Prices
-        </Link>
-        ,{" "}
-        <Link href="/budgets/" className="text-accent hover:underline">
-          Budgets
-        </Link>
-      </p>
+      </Section>
+
+      <BookingBox items={[{ label: "Thailand eSIM (for Grab and maps)", link: "esim" }]} />
+
+      <Section title="Practical">
+        <Bullets>
+          <li>Don’t flash cash on the street or at the table. See <A href="/scams/">scams</A>.</li>
+          <li>Pay round by round in smaller bars — fewer bill surprises.</li>
+          <li>Photograph your card details? No. Keep a backup card in the hotel safe instead.</li>
+        </Bullets>
+      </Section>
+
+      <Related
+        links={[
+          { href: "/prices/", label: "Prices" },
+          { href: "/bangkok/getting-around/", label: "Bangkok getting around" },
+          { href: "/pattaya/getting-around/", label: "Pattaya getting around" },
+        ]}
+      />
     </PageShell>
   );
 }

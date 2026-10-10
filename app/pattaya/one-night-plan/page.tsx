@@ -1,93 +1,69 @@
-import Link from "next/link";
-import { HotelCta } from "@/components/HotelCta";
+import { BookingBox } from "@/components/BookingBox";
 import { PageShell } from "@/components/PageShell";
+import { A, Related, Section } from "@/components/Prose";
+import { StayNearby } from "@/components/StayNearby";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "One Night in Pattaya Nightlife – 2026 Sample Plans",
-  "Sample one-night plans for Pattaya: Walking Street first-timer, Soi 6 day-to-evening, and budget Buakhao routes.",
+  "Sample one-night plans for Pattaya: cabaret and Walking Street, Muay Thai, budget Tree Town and Soi Buakhao, and a beachfront evening.",
   "/pattaya/one-night-plan/",
 );
 
 export default function PattayaOneNightPlanPage() {
   return (
     <PageShell title="One Night in Pattaya – Sample Plans (2026)">
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">
-          Plan A — Classic first night (Walking Street)
-        </h2>
-        <ol className="mt-2 list-decimal space-y-1 pl-5">
-          <li>Dinner before 21:00</li>
-          <li>21:30–22:00 enter Walking Street, full walk</li>
-          <li>
-            One go-go <strong>or</strong> one club sit
-          </li>
-          <li>Hard stop; Grab home</li>
+      <Section title="Plan A — Cabaret + Walking Street (classic first night)">
+        <ol className="list-decimal space-y-1 pl-5">
+          <li>Early show at Tiffany’s or Alcazar — see <A href="/pattaya/cabaret-shows/">cabaret shows</A></li>
+          <li>Dinner — seafood near Walking Street</li>
+          <li>22:00 — full walk of <A href="/pattaya/areas/walking-street/">Walking Street</A></li>
+          <li>One live-music bar or club, then Grab home</li>
         </ol>
-      </section>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Plan B — Soi 6 focused</h2>
-        <ol className="mt-2 list-decimal space-y-1 pl-5">
-          <li>Arrive mid/late afternoon</li>
-          <li>Full street walk first</li>
-          <li>
-            Confirm room fee + girl’s fee + any drink minimum <strong>before</strong> sitting
-          </li>
-          <li>Keep first stop short so you can compare</li>
+      <Section title="Plan B — Muay Thai night">
+        <ol className="list-decimal space-y-1 pl-5">
+          <li>Evening card at a Pattaya stadium — see <A href="/pattaya/night-activities/">night activities</A></li>
+          <li>Late dinner on Soi Buakhao</li>
+          <li>A beer at <A href="/pattaya/areas/tree-town/">Tree Town</A></li>
         </ol>
-        <p className="mt-3">
-          See also: recent notes on drink minimums →{" "}
-          <Link href="/pattaya/tonight/" className="text-accent hover:underline">
-            Pattaya Tonight
-          </Link>
-        </p>
-      </section>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Plan C — Budget / lower pressure</h2>
-        <ol className="mt-2 list-decimal space-y-1 pl-5">
-          <li>Soi Buakhao or Tree Town for food + beer</li>
-          <li>Optional: LK Metro for compact go-go look</li>
+      <Section title="Plan C — Budget / relaxed">
+        <ol className="list-decimal space-y-1 pl-5">
+          <li><A href="/pattaya/areas/soi-buakhao/">Soi Buakhao</A> street food</li>
+          <li>Tree Town for bands and cheap beer</li>
           <li>Skip Walking Street premium pricing</li>
         </ol>
-      </section>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Plan D — Two-zone night</h2>
-        <ol className="mt-2 list-decimal space-y-1 pl-5">
-          <li>Early: Buakhao / Tree Town</li>
-          <li>Later: short look at Walking Street for the spectacle</li>
-          <li>Don’t try to “do everything” fully in one night</li>
+      <Section title="Plan D — Beachfront evening">
+        <ol className="list-decimal space-y-1 pl-5">
+          <li>Sunset on Beach Road or a seafront bar</li>
+          <li>Promenade walk south toward Walking Street</li>
+          <li>Short look at the neon, then home — don’t try to do everything in one night</li>
         </ol>
-      </section>
+      </Section>
 
-      <p>
-        Links:{" "}
-        <Link href="/pattaya/first-timer/" className="text-accent hover:underline">
-          First-timer
-        </Link>
-        ,{" "}
-        <Link href="/prices/" className="text-accent hover:underline">
-          Prices
-        </Link>
-        ,{" "}
-        <Link href="/scams/" className="text-accent hover:underline">
-          Scams
-        </Link>
-        ,{" "}
-        <Link href="/pattaya/walking-street-vs-soi-6/" className="text-accent hover:underline">
-          Walking Street vs Soi 6
-        </Link>
-      </p>
+      <BookingBox
+        items={[
+          { label: "Cabaret show tickets", link: "cabaretPattaya" },
+          { label: "Muay Thai tickets", link: "muayThaiPattaya" },
+        ]}
+      />
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Stay nearby</h2>
+      <Related
+        links={[
+          { href: "/pattaya/first-timer/", label: "First-timer" },
+          { href: "/prices/", label: "Prices" },
+          { href: "/scams/", label: "Scams" },
+        ]}
+      />
+
+      <StayNearby label="Hotels near Walking Street / Central Pattaya" link="hotelWalkingStreet">
         <p className="mt-2">Central Pattaya or near Walking Street cuts transport friction.</p>
-        <div className="mt-3">
-          <HotelCta label="Hotels near Walking Street / Central Pattaya" />
-        </div>
-      </section>
+      </StayNearby>
     </PageShell>
   );
 }
