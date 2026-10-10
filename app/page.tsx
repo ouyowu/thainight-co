@@ -1,5 +1,7 @@
+import { GuidePhoto } from "@/components/GuidePhoto";
 import { A, LinkList } from "@/components/Prose";
 import { bangkokAreas, bangkokGuides, generalGuides, pattayaAreas, pattayaGuides } from "@/lib/guides";
+import { photos } from "@/lib/photos";
 import { pageMeta } from "@/lib/seo";
 
 const homeTitle = "Thai Night – Bangkok & Pattaya Nightlife Guides 2026";
@@ -13,21 +15,25 @@ const highlights = [
     href: "/bangkok/rooftop-bars/",
     title: "Bangkok rooftop bars",
     note: "Which sky bar fits your budget, dress code and area.",
+    photo: photos.rooftop,
   },
   {
     href: "/bangkok/muay-thai/",
     title: "Muay Thai fight nights",
     note: "Rajadamnern vs Lumpinee, seat classes, how to buy.",
+    photo: photos.muayThai,
   },
   {
     href: "/pattaya/cabaret-shows/",
     title: "Pattaya cabaret shows",
     note: "Tiffany’s vs Alcazar: show length, times, seats.",
+    photo: photos.cabaret,
   },
   {
     href: "/scams/",
     title: "Nightlife scams",
     note: "Bill padding, tout shows, taxi meters — and how to avoid them.",
+    photo: photos.taxiMeter,
   },
 ];
 
@@ -52,10 +58,13 @@ export default function HomePage() {
           <a
             key={item.href}
             href={item.href}
-            className="block rounded-lg border border-line bg-card p-4 transition-colors hover:border-accent/60"
+            className="block overflow-hidden rounded-lg border border-line bg-card transition-colors hover:border-accent/60"
           >
-            <span className="font-semibold text-foreground">{item.title}</span>
-            <span className="mt-1 block text-sm text-muted">{item.note}</span>
+            <div className="px-3 pt-3">
+              <GuidePhoto {...item.photo} compact />
+            </div>
+            <span className="block px-4 pb-1 pt-2 font-semibold text-foreground">{item.title}</span>
+            <span className="block px-4 pb-4 text-sm text-muted">{item.note}</span>
           </a>
         ))}
       </div>
