@@ -58,6 +58,15 @@ export const chiangMaiGuides = [
   { href: "/chiang-mai/old-city-nightlife/", label: "Old City & riverside live music" },
 ] as const;
 
+export const phuketGuides = [
+  { href: "/phuket/bangla-road/", label: "Bangla Road clubs & prices" },
+  { href: "/phuket/beach-clubs/", label: "Beach clubs: minimum spend" },
+  { href: "/phuket/simon-cabaret/", label: "Simon Cabaret tickets" },
+  { href: "/phuket/muay-thai/", label: "Muay Thai: Bangla & Patong stadiums" },
+  { href: "/phuket/night-markets/", label: "Night markets" },
+  { href: "/phuket/airport-to-patong-taxi-price/", label: "Airport → Patong taxi price" },
+] as const;
+
 export const generalGuides = [
   { href: "/prices/", label: "Prices" },
   { href: "/budgets/", label: "Budgets" },
