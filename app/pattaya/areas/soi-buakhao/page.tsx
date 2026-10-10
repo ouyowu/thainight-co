@@ -1,10 +1,10 @@
-import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
+import { A, Bullets, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Soi Buakhao Pattaya 2026 – Budget Nightlife Guide",
-  "Soi Buakhao nightlife in 2026: cheaper beer bars, relaxed pace, and how it compares to Walking Street and Soi 6.",
+  "Soi Buakhao Pattaya 2026 – Budget Nightlife & Food Guide",
+  "Soi Buakhao in 2026: cheap beer bars, sports pubs, street food and live music, and how it compares to Walking Street.",
   "/pattaya/areas/soi-buakhao/",
 );
 
@@ -12,84 +12,49 @@ export default function SoiBuakhaoPage() {
   return (
     <PageShell title="Soi Buakhao Pattaya 2026">
       <p>
-        Soi Buakhao is central Pattaya’s <strong>budget-friendly</strong> nightlife corridor
-        (between Second and Third Road). Beer bars, sports pubs, casual food — lower prices and
-        lower pressure than Walking Street.
+        Soi Buakhao is central Pattaya’s <strong>budget-friendly</strong> nightlife and food
+        corridor, between Second and Third Road. Beer bars, sports pubs, live music and street food
+        — lower prices and a more relaxed pace than Walking Street.
       </p>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Best for</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>Drinks-only nights without go-go pricing</li>
-          <li>Expats / long-stay visitors</li>
-          <li>Warm-up before LK Metro or a later move elsewhere</li>
-        </ul>
-      </section>
+      <Section title="Best for">
+        <Bullets>
+          <li>Cheap drinks-and-food nights</li>
+          <li>Watching football in a sports pub</li>
+          <li>A warm-up before Tree Town or Walking Street</li>
+        </Bullets>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Not ideal for</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>The classic neon “Walking Street spectacle”</li>
-          <li>People who only want Soi 6-style short-time street energy</li>
-        </ul>
-      </section>
+      <Section title="Not ideal for">
+        <Bullets>
+          <li>The neon “Walking Street spectacle”</li>
+          <li>Upscale cocktails</li>
+        </Bullets>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">2026 price feel</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>
-            Local beer often <strong>70–120 THB</strong> (happy hour can be lower)
-          </li>
-          <li>Lady drinks lower than Walking Street go-gos when present</li>
-          <li>
-            A simple drinks + food night can stay in the <strong>1,000–3,000 THB</strong> planning
-            range if you stay in beer bars
-          </li>
-        </ul>
-      </section>
+      <Section title="2026 price feel">
+        <Bullets>
+          <li>Local beer often <strong>70–120 THB</strong>, lower at happy hour</li>
+          <li>Street-food dinners for well under 200 THB</li>
+          <li>A drinks + food night can stay around <strong>500–1,500 THB</strong></li>
+        </Bullets>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">How it connects</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>
-            <Link href="/pattaya/areas/lk-metro/" className="text-accent hover:underline">
-              <strong>LK Metro</strong>
-            </Link>{" "}
-            sits off the Buakhao side — compact go-go option without full Walking Street prices
-          </li>
-          <li>
-            <Link href="/pattaya/areas/tree-town/" className="text-accent hover:underline">
-              <strong>Tree Town</strong>
-            </Link>{" "}
-            (open complex on/near Buakhao) — bars + food + live music in one open area
-          </li>
-          <li>Easy base if your hotel is central</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">First approach</h2>
-        <ol className="mt-2 list-decimal space-y-1 pl-5">
+      <Section title="First approach">
+        <ol className="list-decimal space-y-1 pl-5">
           <li>Start with food</li>
-          <li>One or two beer bars</li>
-          <li>Decide whether to continue to LK Metro, Tree Town, or head home</li>
+          <li>One or two bars — follow the live music</li>
+          <li>Continue to <A href="/pattaya/areas/tree-town/">Tree Town</A>, or head home</li>
         </ol>
-      </section>
+      </Section>
 
-      <p>
-        Links:{" "}
-        <Link href="/pattaya/areas/lk-metro/" className="text-accent hover:underline">
-          LK Metro
-        </Link>
-        ,{" "}
-        <Link href="/pattaya/" className="text-accent hover:underline">
-          Pattaya overview
-        </Link>
-        ,{" "}
-        <Link href="/prices/" className="text-accent hover:underline">
-          Prices
-        </Link>
-      </p>
+      <Related
+        links={[
+          { href: "/pattaya/", label: "Pattaya overview" },
+          { href: "/pattaya/areas/tree-town/", label: "Tree Town" },
+          { href: "/prices/", label: "Prices" },
+        ]}
+      />
     </PageShell>
   );
 }

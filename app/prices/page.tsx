@@ -1,12 +1,12 @@
-import { AffiliateCta } from "@/components/AffiliateCta";
+import { BookingBox } from "@/components/BookingBox";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
-import { affiliates } from "@/lib/affiliates";
+import { A, Bullets, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Thailand Nightlife Prices 2026 – Bangkok & Pattaya",
-  "2026 price reference for Bangkok and Pattaya: beer, lady drinks, bar fines and short-time ranges by area.",
+  "2026 price reference for Bangkok and Pattaya nightlife: beer, cocktails, rooftop bars, club entry, shows and late-night transport.",
   "/prices/",
 );
 
@@ -14,58 +14,72 @@ export default function PricesPage() {
   return (
     <PageShell title="Thailand Nightlife Prices 2026 – Bangkok & Pattaya Quick Reference">
       <p>
-        Prices are approximate ranges based on recent visitor reports. Always confirm on the spot.
-        High season (Nov–Apr) tends toward the higher end.
+        Prices are approximate ranges in Thai baht, based on venue menus and recent visitor
+        reports. Always confirm on the spot. High season (Nov–Apr) leans to the higher end. Many
+        hotel bars add 10% service charge and 7% VAT on top of menu prices (shown as “++”).
       </p>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Bangkok</h2>
-        <div className="mt-3">
-          <PriceTable
-            caption="Bangkok nightlife prices"
-            headers={["Item", "Soi Cowboy", "Nana Plaza", "Notes"]}
-            rows={[
-              ["Beer", "150–200", "150–200", "—"],
-              ["Lady drink", "220–260", "220–280", "Confirm before ordering"],
-              ["Bar fine (ST)", "800–1,200", "1,000–1,500", "Paid to the bar"],
-              ["Girl’s ST fee", "2,500–4,000", "2,500–4,000", "Negotiated with her"],
-              ["Casual night (drinks only)", "500–1,000", "500–1,200", "—"],
-              ["Full ST night", "4,000–7,000+", "5,000–8,000+", "—"],
-            ]}
-          />
-        </div>
-      </section>
+      <Section title="Bangkok">
+        <PriceTable
+          caption="Bangkok nightlife prices"
+          headers={["Item", "Typical range (THB)", "Notes"]}
+          rows={[
+            ["Beer, street or open bar", "80–150", "Cheapest on Khao San and in markets"],
+            ["Beer, Sukhumvit / Soi 11 bar", "120–220", "Happy hours common before 21:00"],
+            ["Cocktail, cocktail bar", "250–450", "Thonglor / Ekkamai range"],
+            ["Cocktail, hotel rooftop", "400–900+", "Often ++ on top"],
+            ["Club entry (RCA etc.)", "300–500", "Sometimes includes a drink"],
+            ["Grab across Sukhumvit", "80–200", "Surge late at night"],
+          ]}
+        />
+        <p>
+          City detail: <A href="/bangkok/prices/">Bangkok prices</A>.
+        </p>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Pattaya</h2>
-        <div className="mt-3">
-          <PriceTable
-            caption="Pattaya nightlife prices"
-            headers={["Item", "Soi 6", "Walking Street (Go-Go)", "LK Metro (approx.)"]}
-            rows={[
-              ["Beer", "70–120", "150–220", "80–150"],
-              ["Lady drink", "120–220", "180–300", "150–220"],
-              ["Bar / room fee", "400–800", "1,000–2,500", "800–1,500"],
-              ["Short-time total", "1,500–3,500", "4,000–7,000+", "3,000–5,500"],
-              ["Drinks-only night", "700–1,500", "1,500–3,500", "1,000–2,500"],
-            ]}
-          />
-        </div>
-      </section>
+      <Section title="Pattaya">
+        <PriceTable
+          caption="Pattaya nightlife prices"
+          headers={["Item", "Typical range (THB)", "Notes"]}
+          rows={[
+            ["Beer, open beer bar", "60–130", "Soi Buakhao, Tree Town"],
+            ["Beer, Walking Street bar / club", "150–250", "Premium zone"],
+            ["Cocktail, club", "250–400", "—"],
+            ["Baht bus, fixed route", "10–20 per person", "Private hire costs much more — agree first"],
+          ]}
+        />
+        <p>
+          City detail: <A href="/pattaya/prices/">Pattaya prices</A>.
+        </p>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Key Reminders</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>Bar fine ≠ girl’s fee. Two separate payments.</li>
-          <li>Lady drinks add up faster than most people expect.</li>
-          <li>Paying round-by-round reduces bill surprises.</li>
-          <li>Low season (roughly May–Oct) can be 10–30% cheaper in some places.</li>
-        </ul>
-      </section>
+      <Section title="Shows and activities">
+        <p>
+          Ticket prices for <A href="/bangkok/muay-thai/">Muay Thai</A> and{" "}
+          <A href="/pattaya/cabaret-shows/">cabaret shows</A> vary by seat class and date. Check
+          the live price on the booking page rather than trusting a fixed number.
+        </p>
+      </Section>
 
-      <p>
-        <AffiliateCta href={affiliates.klook} label="Airport transfers" />
-      </p>
+      <BookingBox
+        items={[
+          { label: "Airport & city transfers", link: "klook" },
+          { label: "Bangkok → Pattaya transfer", link: "transferBangkokPattaya" },
+          { label: "Thailand eSIM", link: "esim" },
+        ]}
+      />
+
+      <Section title="Key reminders">
+        <Bullets>
+          <li>Check the menu price before you order, especially in bars without a printed menu.</li>
+          <li>Paying round by round reduces bill surprises.</li>
+          <li>Look for “++” — it adds about 17% to hotel-bar prices.</li>
+          <li>Low season (roughly May–Oct) can be cheaper, with more promotions.</li>
+        </Bullets>
+        <p>
+          Plan the whole night: <A href="/budgets/">budget bands</A> · <A href="/cash/">cash</A>.
+        </p>
+      </Section>
     </PageShell>
   );
 }

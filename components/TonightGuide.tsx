@@ -5,13 +5,6 @@ import { PriceTable } from "@/components/PriceTable";
 
 const LAST_CHECKED = "October 2026";
 
-const placeholderEvents = [
-  { venue: "—", type: "Club / Live music / Special night / Regular", notes: "—", source: "—" },
-  { venue: "—", type: "Club / Live music / Special night / Regular", notes: "—", source: "—" },
-  { venue: "—", type: "Club / Live music / Special night / Regular", notes: "—", source: "—" },
-  { venue: "—", type: "Club / Live music / Special night / Regular", notes: "—", source: "—" },
-] as const;
-
 const weekly = [
   ["Mon–Wed", "Quieter"],
   ["Thu", "Building up"],
@@ -31,21 +24,12 @@ export function TonightGuide({ city, children }: TonightGuideProps) {
   return (
     <PageShell title={`Tonight in ${city}`} showUpdated={false}>
       {children ?? <p className="text-sm text-muted">Last checked: {LAST_CHECKED}</p>}
-
       <section>
         <h2 className="text-lg font-semibold text-foreground">What’s on this week</h2>
-        <div className="mt-3">
-          <PriceTable
-            caption="What’s on this week"
-            headers={["Venue / Area", "Type", "Notes", "Source"]}
-            rows={placeholderEvents.map((event) => [
-              event.venue,
-              event.type,
-              event.notes,
-              event.source,
-            ])}
-          />
-        </div>
+        <p className="mt-2">
+          We only list events we have confirmed. Nothing confirmed for this week yet — check venue
+          social pages and the guides below.
+        </p>
       </section>
 
       <section>
@@ -78,6 +62,11 @@ export function TonightGuide({ city, children }: TonightGuideProps) {
           <li>
             <Link href="/prices/" className="text-accent hover:underline">
               Current Prices
+            </Link>
+          </li>
+          <li>
+            <Link href={city === "Bangkok" ? "/bangkok/night-activities/" : "/pattaya/night-activities/"} className="text-accent hover:underline">
+              Night activities
             </Link>
           </li>
           <li>

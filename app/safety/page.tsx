@@ -24,7 +24,8 @@ export default function SafetyPage() {
         <h2 className="text-lg font-semibold text-foreground">On the street and in bars</h2>
         <ul className="mt-2 list-disc space-y-1 pl-5">
           <li>Pay round by round when you can; watch the slip bin</li>
-          <li>Confirm lady drink and bar fine prices before ordering</li>
+          <li>Check menu prices before ordering</li>
+          <li>Watch your drink being made; don’t leave it unattended</li>
           <li>Don’t follow street touts upstairs for “cheap shows”</li>
           <li>Keep your phone and wallet in a front pocket or secure place</li>
         </ul>
@@ -43,7 +44,7 @@ export default function SafetyPage() {
         <h2 className="text-lg font-semibold text-foreground">If something goes wrong</h2>
         <ul className="mt-2 list-disc space-y-1 pl-5">
           <li>
-            Tourist Police: <strong>1155</strong>
+            Tourist Police: <strong>1155</strong> · Police: <strong>191</strong> · Ambulance: <strong>1669</strong>
           </li>
           <li>Stay calm, move to a well-lit public area, and contact your hotel if needed</li>
         </ul>

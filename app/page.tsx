@@ -1,42 +1,34 @@
-import Link from "next/link";
+import { A, LinkList } from "@/components/Prose";
+import { bangkokAreas, bangkokGuides, generalGuides, pattayaAreas, pattayaGuides } from "@/lib/guides";
 import { pageMeta } from "@/lib/seo";
 
 const homeTitle = "Thai Night – Bangkok & Pattaya Nightlife Guides 2026";
 const homeDescription =
-  "Practical nightlife guides for Bangkok and Pattaya. Real 2026 prices, area comparisons, first-timer tips and common scams. No fluff.";
+  "Practical nightlife guides for Bangkok and Pattaya: rooftop bars, clubs, Muay Thai, cabaret shows, night markets, real 2026 prices and common scams.";
 
 export const metadata = pageMeta(homeTitle, homeDescription, "/");
 
-const bangkokGuides = [
-  { href: "/bangkok/", label: "Bangkok overview" },
-  { href: "/bangkok/cowboy-vs-nana/", label: "Soi Cowboy vs Nana Plaza" },
-  { href: "/bangkok/one-night-plan/", label: "One-night plan" },
-  { href: "/bangkok/getting-around/", label: "Getting around" },
-  { href: "/bangkok/airport/", label: "Airport to nightlife" },
-  { href: "/bangkok/night-activities/", label: "Night activities" },
-  { href: "/bangkok/bar-types/", label: "Bar types" },
-  { href: "/bangkok/ladies-night/", label: "Ladies night" },
-  { href: "/bangkok/hotels-nana-asok/", label: "Stay near Nana & Asok" },
-  { href: "/bangkok/hotels-soi-cowboy/", label: "Stay near Soi Cowboy" },
-  { href: "/bangkok/areas/soi-cowboy/", label: "Soi Cowboy" },
-  { href: "/bangkok/areas/nana-plaza/", label: "Nana Plaza" },
-  { href: "/bangkok/areas/soi-11/", label: "Soi 11" },
-  { href: "/bangkok/areas/patpong/", label: "Patpong" },
-];
-
-const pattayaGuides = [
-  { href: "/pattaya/", label: "Pattaya overview" },
-  { href: "/pattaya/walking-street-vs-soi-6/", label: "Walking Street vs Soi 6" },
-  { href: "/pattaya/one-night-plan/", label: "One-night plan" },
-  { href: "/pattaya/getting-around/", label: "Getting around" },
-  { href: "/pattaya/airport/", label: "Airport to nightlife" },
-  { href: "/pattaya/night-activities/", label: "Night activities" },
-  { href: "/pattaya/bar-types/", label: "Bar types" },
-  { href: "/pattaya/hotels-walking-street/", label: "Stay near Walking Street" },
-  { href: "/pattaya/areas/walking-street/", label: "Walking Street" },
-  { href: "/pattaya/areas/soi-6/", label: "Soi 6" },
-  { href: "/pattaya/areas/lk-metro/", label: "LK Metro" },
-  { href: "/pattaya/areas/soi-buakhao/", label: "Soi Buakhao" },
+const highlights = [
+  {
+    href: "/bangkok/rooftop-bars/",
+    title: "Bangkok rooftop bars",
+    note: "Which sky bar fits your budget, dress code and area.",
+  },
+  {
+    href: "/bangkok/muay-thai/",
+    title: "Muay Thai fight nights",
+    note: "Rajadamnern vs Lumpinee, seat classes, how to buy.",
+  },
+  {
+    href: "/pattaya/cabaret-shows/",
+    title: "Pattaya cabaret shows",
+    note: "Tiffany’s vs Alcazar: show length, times, seats.",
+  },
+  {
+    href: "/scams/",
+    title: "Nightlife scams",
+    note: "Bill padding, tout shows, taxi meters — and how to avoid them.",
+  },
 ];
 
 export default function HomePage() {
@@ -47,94 +39,77 @@ export default function HomePage() {
       </h1>
       <p className="mt-6 text-2xl font-semibold text-foreground">Know before you go.</p>
       <p className="mt-2 text-lg leading-7 text-zinc-100">
-        Real prices, real areas, real scams — updated for 2026.
+        Rooftops, clubs, live music, fight nights and night markets — with real 2026 prices.
       </p>
       <p className="mt-5 text-base leading-7 text-zinc-200">
-        Free guides for first-timers and returning visitors.
+        Free guides for first-timers and returning visitors. No paid rankings. Just what actually
+        works, and what to confirm on the spot.
       </p>
-      <p className="mt-2 text-base leading-7 text-zinc-200">
-        No fluff. No paid bar rankings. Just what actually works.
-      </p>
-      <p className="mt-8 text-base leading-7 text-zinc-200">
-        Recent note (Oct 2026):
-        <br />
-        Some Soi 6 bars now ask for lady-drink minimums before short-time.
-        <br />
-        Always confirm room fee + girl’s fee + any minimum before you sit down.
-      </p>
-      <p className="mt-3 text-base leading-7 text-zinc-200">
-        <Link href="/pattaya/tonight/" className="text-accent hover:underline">
-          Pattaya Tonight
-        </Link>
-        {" · "}
-        <Link href="/pattaya/areas/soi-6/" className="text-accent hover:underline">
-          Soi 6
-        </Link>
-      </p>
+
+      <h2 className="mt-10 text-lg font-semibold">Popular right now</h2>
+      <div className="mt-3 grid gap-3 sm:grid-cols-2">
+        {highlights.map((item) => (
+          <a
+            key={item.href}
+            href={item.href}
+            className="block rounded-lg border border-line bg-card p-4 transition-colors hover:border-accent/60"
+          >
+            <span className="font-semibold text-foreground">{item.title}</span>
+            <span className="mt-1 block text-sm text-muted">{item.note}</span>
+          </a>
+        ))}
+      </div>
+
       <h2 className="mt-10 text-lg font-semibold">Start here</h2>
       <ul className="mt-3 space-y-2">
         <li>
-          <Link href="/bangkok/first-timer/" className="text-accent hover:underline">
-            Bangkok First-Timer Guide
-          </Link>
-        </li>
-        <li>
-          <Link href="/pattaya/first-timer/" className="text-accent hover:underline">
-            Pattaya First-Timer Guide
-          </Link>
-        </li>
-        <li>
-          <Link href="/prices/" className="text-accent hover:underline">
-            Prices
-          </Link>{" "}
-          and{" "}
-          <Link href="/budgets/" className="text-accent hover:underline">
-            Budgets
-          </Link>
+          <A href="/bangkok/first-timer/">Bangkok first-timer guide</A>
           {" · "}
-          <Link href="/cash/" className="text-accent hover:underline">
-            Cash
-          </Link>
+          <A href="/pattaya/first-timer/">Pattaya first-timer guide</A>
         </li>
         <li>
-          <Link href="/bangkok/faq/" className="text-accent hover:underline">
-            Bangkok FAQ
-          </Link>
+          <A href="/bangkok/one-night-plan/">One night in Bangkok</A>
           {" · "}
-          <Link href="/pattaya/faq/" className="text-accent hover:underline">
-            Pattaya FAQ
-          </Link>
-        </li>
-        <li>
-          <Link href="/scams/" className="text-accent hover:underline">
-            Scams
-          </Link>
+          <A href="/pattaya/one-night-plan/">One night in Pattaya</A>
         </li>
       </ul>
-      <h2 className="mt-10 text-lg font-semibold">Bangkok</h2>
-      <ul className="mt-3 space-y-2">
-        {bangkokGuides.map((link) => (
-          <li key={link.href}>
-            <Link href={link.href} className="text-accent hover:underline">
-              {link.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
-      <h2 className="mt-10 text-lg font-semibold">Pattaya</h2>
-      <ul className="mt-3 space-y-2">
-        {pattayaGuides.map((link) => (
-          <li key={link.href}>
-            <Link href={link.href} className="text-accent hover:underline">
-              {link.label}
-            </Link>
-          </li>
-        ))}
-      </ul>
+
+      <div className="mt-10 grid gap-8 sm:grid-cols-2">
+        <section>
+          <h2 className="text-lg font-semibold">
+            <A href="/bangkok/">Bangkok</A>
+          </h2>
+          <div className="mt-3 text-sm">
+            <LinkList links={bangkokGuides} />
+          </div>
+          <h3 className="mt-4 text-sm font-semibold text-muted">Areas</h3>
+          <div className="mt-2 text-sm">
+            <LinkList links={bangkokAreas} />
+          </div>
+        </section>
+        <section>
+          <h2 className="text-lg font-semibold">
+            <A href="/pattaya/">Pattaya</A>
+          </h2>
+          <div className="mt-3 text-sm">
+            <LinkList links={pattayaGuides} />
+          </div>
+          <h3 className="mt-4 text-sm font-semibold text-muted">Areas</h3>
+          <div className="mt-2 text-sm">
+            <LinkList links={pattayaAreas} />
+          </div>
+        </section>
+      </div>
+
+      <h2 className="mt-10 text-lg font-semibold">Money & safety</h2>
+      <div className="mt-3">
+        <LinkList links={generalGuides} />
+      </div>
+
       <p className="mt-10 text-base leading-7 text-zinc-200">
         Thailand’s nightlife moves fast. Prices and rules change. Thai Night collects practical
-        information from recent visitor reports so you can plan a night without guessing — then
-        confirm everything on the spot.
+        information from venues, public sources and recent visitor reports so you can plan a night
+        without guessing — then confirm everything on the spot.
       </p>
     </div>
   );

@@ -1,50 +1,44 @@
-import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
+import { A, Related } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
-export const metadata = pageMeta(
-  "Bangkok Nightlife Prices (2026)",
-  "These are go-go ranges for Soi Cowboy and Nana Plaza. Individual bars sit inside the band. Confirm the number before you order.",
-  "/bangkok/prices/",
-);
+const lead =
+  "Typical 2026 ranges for a night out in Bangkok, from street bars to hotel rooftops. Individual venues sit inside the band. Confirm before you order.";
+
+export const metadata = pageMeta("Bangkok Nightlife Prices (2026)", lead, "/bangkok/prices/");
 
 export default function BangkokPricesPage() {
   return (
-    <PageShell
-      title="Bangkok Nightlife Prices (2026)"
-      lead="These are go-go ranges for Soi Cowboy and Nana Plaza. Individual bars sit inside the band. Confirm the number before you order."
-    >
+    <PageShell title="Bangkok Nightlife Prices (2026)" lead={lead}>
       <PriceTable
-        caption="Bangkok 2026 go-go prices"
+        caption="Bangkok 2026 nightlife prices"
         headers={["Item", "Typical range"]}
         rows={[
-          ["Beer", "150–200 THB"],
-          ["Lady drink", "200–260 THB"],
-          ["Bar fine (ST)", "800–1,200 THB"],
-          ["Girl’s short-time fee", "2,500–4,000 THB"],
-          ["Full night (drinks + bar fine + ST)", "4,000–7,000+ THB"],
+          ["Beer, street / Khao San", "80–150 THB"],
+          ["Beer, Sukhumvit bar", "120–220 THB"],
+          ["Craft beer", "250–400 THB"],
+          ["Cocktail, cocktail bar", "250–450 THB"],
+          ["Cocktail, hotel rooftop", "400–900+ THB (often ++)"],
+          ["Club entry", "300–500 THB"],
+          ["Grab across Sukhumvit", "80–200 THB"],
         ]}
       />
       <p>
-        Bar fine = paid to the bar so she can leave. Her fee = negotiated directly with her. Always
-        confirm both numbers before you leave the bar.
+        “++” means 10% service charge plus 7% VAT are added to the menu price. Hotel bars and most
+        rooftops use it; street bars usually don’t.
       </p>
       <p>
-        Pay round by round when possible. A padded bill is easier when everything sits on one tab.
-        Watch the slips that go into the plastic bin on your table.
+        Sky bars with an entry fee: some, such as the observation-deck style bars, charge entry that
+        includes one drink. Details on <A href="/bangkok/rooftop-bars/">rooftop bars</A>.
       </p>
-      <p>
-        National lookup:{" "}
-        <Link href="/prices/" className="text-accent hover:underline">
-          current prices (2026)
-        </Link>
-        . Scam list:{" "}
-        <Link href="/scams/" className="text-accent hover:underline">
-          common scams
-        </Link>
-        .
-      </p>
+      <Related
+        links={[
+          { href: "/prices/", label: "All prices" },
+          { href: "/budgets/", label: "Budgets" },
+          { href: "/bangkok/first-timer/", label: "First-timer guide" },
+        ]}
+      />
     </PageShell>
   );
 }

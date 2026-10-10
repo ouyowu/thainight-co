@@ -24,3 +24,12 @@ Then create a **new** Vercel project named `thainight` (not `thaielehub-web`) fr
 Domain `thainight.co` is already on the Vercel team and verified. It is still attached to a stale project (`thainight-next-preview`). Remove it there, add `thainight.co` and `www.thainight.co` to the new project.
 
 Cloudflare nameservers are in use (`alberto` / `asa`). Point `@` and `www` CNAME to `cname.vercel-dns.com`, or switch to `ns1.vercel-dns.com` / `ns2.vercel-dns.com`.
+
+## Configuration
+
+- `NEXT_PUBLIC_SITE_URL` — canonical origin. Unset = `https://thainight-co.vercel.app`. Set to `https://thainight.co` only once that domain serves this site.
+- `NEXT_PUBLIC_AFFILIATE_*` — affiliate URLs (see `.env.example`). Any block whose URL is empty is hidden, so pages never show dead `#` links.
+
+## Content scope
+
+Bars, rooftops, clubs, live music, shows, Muay Thai, night markets, transport and safety. Adult-entertainment venues are out of scope; retired URLs 308-redirect to the nearest hub (see `next.config.ts`).

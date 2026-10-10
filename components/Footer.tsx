@@ -55,7 +55,7 @@ export function Footer() {
           </Link>
         </p>
         <p>
-          © Thai Night. For adults 18+. Information is for general guidance only and may change.
+          © Thai Night. Legal drinking age in Thailand is 20. Information is for general guidance only and may change.
           Confirm prices and conditions locally. We are not responsible for third-party venues or
           services.
         </p>

@@ -1,10 +1,11 @@
-import Link from "next/link";
+import { BookingBox } from "@/components/BookingBox";
 import { PageShell } from "@/components/PageShell";
+import { A, Bullets, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Pattaya Night Activities 2026 – Walking Street to Buakhao",
-  "Walking Street spectacle, Soi 6 daytime-evening, LK Metro, Buakhao and Tree Town — and when not to do jet-ski. Practical 2026 order.",
+  "Pattaya Night Activities 2026 – Cabaret, Muay Thai, Markets, Bars",
+  "Things to do in Pattaya at night: cabaret shows, Muay Thai at Max Muay Thai Stadium, night markets, Walking Street and Tree Town — and how to sequence them.",
   "/pattaya/night-activities/",
 );
 
@@ -12,89 +13,77 @@ export default function PattayaNightActivitiesPage() {
   return (
     <PageShell title="Pattaya Night Activities 2026">
       <p>
-        Pattaya nights are area choices, not a checklist. One night: pick a spectacle or a simpler
-        street. Do not stack Walking Street clubs and Soi 6 at full intensity, then add a beach toy.
+        Pick one anchor for the evening, then a bar area. Shows and fights start early, so they fit
+        neatly before Walking Street.
       </p>
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Walking Street spectacle</h2>
-        <p className="mt-2">
-          <Link href="/pattaya/areas/walking-street/" className="text-accent hover:underline">
-            Walking Street
-          </Link>{" "}
-          is the neon strip: go-go, clubs, live music, heavy foot traffic. Pedestrian in the
-          evening. First-timers: 21:30–22:00, full walk once, then one sit. Clubs stay active after
-          midnight. Higher prices and more intensity than Soi 6 or LK Metro.
+
+      <Section title="Cabaret shows">
+        <p>
+          Tiffany’s and Alcazar on Pattaya 2nd Road run several shows a night, each a little over an
+          hour. Full comparison: <A href="/pattaya/cabaret-shows/">cabaret shows</A>.
         </p>
-      </section>
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Soi 6 daytime–evening</h2>
-        <p className="mt-2">
-          <Link href="/pattaya/areas/soi-6/" className="text-accent hover:underline">
-            Soi 6
-          </Link>{" "}
-          is daytime-friendly and more direct. Peak usually 14:00–22:00. Quieter late versus Walking
-          Street. Different energy — not a club strip. Confirm room fee, girl’s fee, and any drink
-          minimum before you sit.
+      </Section>
+
+      <Section title="Muay Thai">
+        <p>
+          Max Muay Thai Stadium, on Sukhumvit Road next to King Power Pattaya, holds regular
+          evening cards, typically starting around 19:00. Check the card and seat options on the
+          day; VIP seats cost noticeably more than standard ones.
         </p>
-      </section>
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">LK Metro</h2>
-        <p className="mt-2">
-          <Link href="/pattaya/areas/lk-metro/" className="text-accent hover:underline">
-            LK Metro
-          </Link>{" "}
-          is compact go-go off the Soi Diana / Buakhao side. Smaller and generally less
-          tourist-heavy than Walking Street. Many visitors find it more manageable for a first or
-          second night.
+      </Section>
+
+      <Section title="Walking Street">
+        <p>
+          The neon strip with clubs and live music — best after 21:30. See the{" "}
+          <A href="/pattaya/areas/walking-street/">Walking Street guide</A>.
         </p>
-      </section>
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Buakhao / Tree Town</h2>
-        <p className="mt-2">
-          <Link href="/pattaya/areas/soi-buakhao/" className="text-accent hover:underline">
-            Soi Buakhao
-          </Link>{" "}
-          is the budget beer-bar corridor.{" "}
-          <Link href="/pattaya/areas/tree-town/" className="text-accent hover:underline">
-            Tree Town
-          </Link>{" "}
-          is the open courtyard: food, live music, several bars in one compound. Good start or
-          drinks-only night. Not the classic neon spectacle.
+      </Section>
+
+      <Section title="Tree Town & Soi Buakhao">
+        <p>
+          <A href="/pattaya/areas/tree-town/">Tree Town</A> is an open courtyard of bars, bands and
+          food; <A href="/pattaya/areas/soi-buakhao/">Soi Buakhao</A> is the budget beer-bar and
+          street-food strip. Good for a relaxed night or a cheap start.
         </p>
-      </section>
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">When NOT to do jet-ski</h2>
-        <p className="mt-2">
-          Main beach jet-ski rentals have a long-running damage-claim scam. Do not add this to a
-          nightlife day. Avoid, or photograph everything if you still rent. Details:{" "}
-          <Link href="/scams/" className="text-accent hover:underline">
-            Scams
-          </Link>
-          .
+      </Section>
+
+      <Section title="Night markets">
+        <p>
+          Pattaya has several evening markets for street food and shopping, some only on certain
+          days of the week. Check the current days before you go and eat early — food stalls sell
+          out.
         </p>
-      </section>
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Simple sequences</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>One night only → Walking Street for the full atmosphere.</li>
-          <li>Two nights → Walking Street one night; Soi 6 or LK Metro another.</li>
-          <li>Lower pressure first → LK Metro, or Buakhao / Tree Town then decide.</li>
-        </ul>
-      </section>
-      <p>
-        Related:{" "}
-        <Link href="/pattaya/first-timer/" className="text-accent hover:underline">
-          First-timer
-        </Link>
-        ,{" "}
-        <Link href="/pattaya/bar-types/" className="text-accent hover:underline">
-          Bar types
-        </Link>
-        ,{" "}
-        <Link href="/pattaya/walking-street-vs-soi-6/" className="text-accent hover:underline">
-          Walking Street vs Soi 6
-        </Link>
-      </p>
+      </Section>
+
+      <BookingBox
+        items={[
+          { label: "Cabaret show tickets", link: "cabaretPattaya" },
+          { label: "Muay Thai tickets", link: "muayThaiPattaya" },
+        ]}
+      />
+
+      <Section title="When NOT to do jet-ski">
+        <p>
+          Main-beach jet-ski rentals have a long-running damage-claim scam. Avoid, or photograph
+          everything if you still rent. Details: <A href="/scams/">scams</A>.
+        </p>
+      </Section>
+
+      <Section title="Simple sequences">
+        <Bullets>
+          <li>One night → cabaret early, then Walking Street.</li>
+          <li>Two nights → show + Walking Street one night; Muay Thai + Tree Town the other.</li>
+          <li>Budget → Soi Buakhao food, Tree Town bands.</li>
+        </Bullets>
+      </Section>
+
+      <Related
+        links={[
+          { href: "/pattaya/first-timer/", label: "First-timer" },
+          { href: "/pattaya/bar-types/", label: "Bar types" },
+          { href: "/pattaya/one-night-plan/", label: "One-night plans" },
+        ]}
+      />
     </PageShell>
   );
 }

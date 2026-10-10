@@ -14,8 +14,8 @@ export function DisclaimerCopy({ heading = "h2" }: DisclaimerCopyProps) {
         are not liable for any loss, injury, or dispute arising from the use of this information.
       </p>
       <p className="mt-3">
-        This website is intended for users aged 18 and over. Some content discusses adult
-        entertainment venues.
+        This website is intended for adults. The legal drinking age in Thailand is 20. Please
+        drink responsibly and never drink and drive.
       </p>
       <p className="mt-3">
         Affiliate Disclosure: Some links on this site are affiliate links. If you book through them,
