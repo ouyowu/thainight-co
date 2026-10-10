@@ -1,4 +1,9 @@
-export const SITE_URL = "https://thainight.co";
+// Canonical origin. Set NEXT_PUBLIC_SITE_URL once this site owns a domain.
+// Do NOT point it at thainight.co while that domain serves a different site:
+// every canonical would then point at pages that don't match.
+export const SITE_URL = (
+  process.env.NEXT_PUBLIC_SITE_URL?.trim() || "https://thainight-co.vercel.app"
+).replace(/\/$/, "");
 export const SITE_NAME = "Thai Night";
 export const LAST_UPDATED = "October 2026";
 
@@ -70,4 +75,5 @@ export const routes = [
   "/safety/",
   "/about/",
   "/disclaimer/",
+  "/affiliate-disclosure/",
 ] as const;

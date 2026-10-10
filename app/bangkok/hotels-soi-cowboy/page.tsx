@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { AreaSketch } from "@/components/AreaSketch";
-import { HotelCta } from "@/components/HotelCta";
+import { StayNearby } from "@/components/StayNearby";
 import { PageShell } from "@/components/PageShell";
 import { pageMeta } from "@/lib/seo";
 
@@ -119,13 +119,9 @@ export default function HotelsSoiCowboyPage() {
         </Link>
       </p>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Stay nearby</h2>
+      <StayNearby label="Check hotels near Soi Cowboy / Asok" link="hotelSoiCowboy">
         <p className="mt-2">Filter Asok / Soi 21–23. One search. Confirm the walk, not the brand.</p>
-        <div className="mt-3">
-          <HotelCta label="Check hotels near Soi Cowboy / Asok" />
-        </div>
-      </section>
+      </StayNearby>
     </PageShell>
   );
 }

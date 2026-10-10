@@ -50,6 +50,9 @@ export function Footer() {
           <Link href="/disclaimer/" className="hover:text-accent">
             Disclaimer
           </Link>
+          <Link href="/affiliate-disclosure/" className="hover:text-accent">
+            Affiliate disclosure
+          </Link>
         </p>
         <p>
           © Thai Night. For adults 18+. Information is for general guidance only and may change.

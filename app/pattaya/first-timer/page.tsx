@@ -172,7 +172,7 @@ export default function PattayaFirstTimerPage() {
           .
         </p>
         <div className="mt-3">
-          <HotelCta label="Hotels near Walking Street / Central Pattaya" helper />
+          <HotelCta label="Hotels near Walking Street / Central Pattaya" link="hotelWalkingStreet" />
         </div>
       </section>
     </PageShell>

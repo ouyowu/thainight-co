@@ -1,23 +1,19 @@
+import { AffiliateCta } from "@/components/AffiliateCta";
+import { affiliates, hasAffiliate, type AffiliateKey } from "@/lib/affiliates";
+
 type HotelCtaProps = {
   label: string;
-  helper?: boolean;
+  /** Which configured affiliate URL to use. */
+  link: AffiliateKey;
 };
 
-export function HotelCta({ label, helper = false }: HotelCtaProps) {
+/** Hotel search link. Hidden entirely until the affiliate URL env var is set. */
+export function HotelCta({ label, link }: HotelCtaProps) {
+  const href = affiliates[link];
+  if (!hasAffiliate(href)) return null;
   return (
-    <>
-      <p>
-        →{" "}
-        <a href="#" className="text-accent hover:underline" target="_blank" rel="sponsored noopener">
-          {label}
-        </a>{" "}
-        (#)
-      </p>
-      {helper ? (
-        <p className="mt-2 italic">
-          <em>(Replace # with your affiliate URL)</em>
-        </p>
-      ) : null}
-    </>
+    <p>
+      → <AffiliateCta href={href} label={label} />
+    </p>
   );
 }

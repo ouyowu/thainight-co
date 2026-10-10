@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HotelCta } from "@/components/HotelCta";
+import { StayNearby } from "@/components/StayNearby";
 import { PageShell } from "@/components/PageShell";
 import { pageMeta } from "@/lib/seo";
 
@@ -81,13 +81,9 @@ export default function PattayaOneNightPlanPage() {
         </Link>
       </p>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Stay nearby</h2>
+      <StayNearby label="Hotels near Walking Street / Central Pattaya" link="hotelWalkingStreet">
         <p className="mt-2">Central Pattaya or near Walking Street cuts transport friction.</p>
-        <div className="mt-3">
-          <HotelCta label="Hotels near Walking Street / Central Pattaya" />
-        </div>
-      </section>
+      </StayNearby>
     </PageShell>
   );
 }

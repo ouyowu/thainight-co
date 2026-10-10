@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HotelCta } from "@/components/HotelCta";
+import { StayNearby } from "@/components/StayNearby";
 import { PageShell } from "@/components/PageShell";
 import { pageMeta } from "@/lib/seo";
 
@@ -94,13 +94,9 @@ export default function OneNightPlanPage() {
           Soi Cowboy vs Nana Plaza
         </Link>
       </p>
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Stay nearby</h2>
+      <StayNearby label="Hotels near Nana / Asok" link="hotelBangkok">
         <p className="mt-2">Staying near BTS Nana or Asok keeps the night simple.</p>
-        <div className="mt-3">
-          <HotelCta label="Hotels near Nana / Asok" />
-        </div>
-      </section>
+      </StayNearby>
     </PageShell>
   );
 }

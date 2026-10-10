@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { AreaSketch } from "@/components/AreaSketch";
-import { HotelCta } from "@/components/HotelCta";
+import { StayNearby } from "@/components/StayNearby";
 import { PageShell } from "@/components/PageShell";
 import { pageMeta } from "@/lib/seo";
 
@@ -131,16 +131,12 @@ export default function HotelsWalkingStreetPage() {
         </Link>
       </p>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Stay nearby</h2>
+      <StayNearby label="Check hotels near Walking Street / Central Pattaya" link="hotelWalkingStreet">
         <p className="mt-2">
           One search: Walking Street / Central Pattaya. Beach Road or Second Road is a filter, not
           a second booking.
         </p>
-        <div className="mt-3">
-          <HotelCta label="Check hotels near Walking Street / Central Pattaya" />
-        </div>
-      </section>
+      </StayNearby>
     </PageShell>
   );
 }

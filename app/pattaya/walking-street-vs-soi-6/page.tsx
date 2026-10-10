@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { HotelCta } from "@/components/HotelCta";
+import { StayNearby } from "@/components/StayNearby";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
 import { pageMeta } from "@/lib/seo";
@@ -93,16 +93,12 @@ export default function WalkingStreetVsSoi6Page() {
         </Link>
       </p>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Stay nearby</h2>
+      <StayNearby label="Hotels near Walking Street / Central Pattaya" link="hotelWalkingStreet">
         <p className="mt-2">
           Central Pattaya covers Walking Street and keeps Soi 6 a short hop. One hotel search is
           enough — don’t split the night across two distant bases.
         </p>
-        <div className="mt-3">
-          <HotelCta label="Hotels near Walking Street / Central Pattaya" />
-        </div>
-      </section>
+      </StayNearby>
     </PageShell>
   );
 }

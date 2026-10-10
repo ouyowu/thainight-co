@@ -125,7 +125,7 @@ export default function WalkingStreetPage() {
           </Link>
         </p>
         <div className="mt-3">
-          <HotelCta label="Hotels near Walking Street" />
+          <HotelCta label="Hotels near Walking Street" link="hotelWalkingStreet" />
         </div>
       </section>
     </PageShell>

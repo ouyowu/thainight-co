@@ -1,4 +1,5 @@
 import { AffiliateCta } from "@/components/AffiliateCta";
+import { hasAffiliate } from "@/lib/affiliates";
 
 type HotelsNearBlockProps = {
   href: string;
@@ -6,6 +7,7 @@ type HotelsNearBlockProps = {
 };
 
 export function HotelsNearBlock({ href, cta }: HotelsNearBlockProps) {
+  if (!hasAffiliate(href)) return null;
   return (
     <section>
       <p>Staying nearby makes the night simpler.</p>

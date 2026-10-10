@@ -136,7 +136,7 @@ export default function NanaPlazaPage() {
           </Link>
         </p>
         <div className="mt-3">
-          <HotelCta label="Hotels near Nana Plaza" />
+          <HotelCta label="Hotels near Nana Plaza" link="hotelNanaPlaza" />
         </div>
       </section>
     </PageShell>

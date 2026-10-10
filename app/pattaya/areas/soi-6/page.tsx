@@ -140,7 +140,7 @@ export default function Soi6Page() {
         </p>
         <p className="mt-3">Some bars ask for drink minimums — confirm before you sit.</p>
         <div className="mt-3">
-          <HotelCta label="Hotels near Soi 6 / Beach Road" />
+          <HotelCta label="Hotels near Soi 6 / Beach Road" link="hotelSoi6" />
         </div>
       </section>
     </PageShell>

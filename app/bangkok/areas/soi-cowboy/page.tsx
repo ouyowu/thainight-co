@@ -126,7 +126,7 @@ export default function SoiCowboyPage() {
           .
         </p>
         <div className="mt-3">
-          <HotelCta label="Hotels near Soi Cowboy / Asok" />
+          <HotelCta label="Hotels near Soi Cowboy / Asok" link="hotelSoiCowboy" />
         </div>
       </section>
     </PageShell>

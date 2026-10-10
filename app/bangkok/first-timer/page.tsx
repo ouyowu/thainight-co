@@ -163,7 +163,7 @@ export default function BangkokFirstTimerPage() {
           .
         </p>
         <div className="mt-3">
-          <HotelCta label="Hotels near Nana / Asok" helper />
+          <HotelCta label="Hotels near Nana / Asok" link="hotelBangkok" />
         </div>
       </section>
     </PageShell>
