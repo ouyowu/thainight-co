@@ -8,6 +8,7 @@ export const affiliates = {
   hotelPattaya: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_PATTAYA),
   hotelSukhumvit: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_SUKHUMVIT),
   hotelWalkingStreet: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_WALKING_STREET),
+  hotelChiangMai: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_CHIANG_MAI),
   hotelBeachRoad: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_BEACH_ROAD),
   klook: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_KLOOK),
   // Activity / ticket deep links (Klook, GetYourGuide, etc.)

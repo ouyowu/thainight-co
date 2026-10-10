@@ -18,25 +18,25 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Thai Night – Bangkok & Pattaya Nightlife Guides 2026",
+    default: "Thai Night – Bangkok, Pattaya & Chiang Mai Nightlife Guides 2026",
     template: "%s",
   },
   description:
-    "Practical nightlife guides for Bangkok and Pattaya. Real 2026 prices, area comparisons, first-timer tips and common scams. No fluff.",
+    "Practical nightlife guides for Bangkok, Pattaya and Chiang Mai. Real 2026 prices, area comparisons, first-timer tips and common scams. No fluff.",
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
     url: SITE_URL,
     locale: "en_US",
-    title: "Thai Night – Bangkok & Pattaya Nightlife Guides 2026",
+    title: "Thai Night – Bangkok, Pattaya & Chiang Mai Nightlife Guides 2026",
     description:
-      "Practical nightlife guides for Bangkok and Pattaya. Real 2026 prices, area comparisons, first-timer tips and common scams. No fluff.",
+      "Practical nightlife guides for Bangkok, Pattaya and Chiang Mai. Real 2026 prices, area comparisons, first-timer tips and common scams. No fluff.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Thai Night – Bangkok & Pattaya Nightlife Guides 2026",
+    title: "Thai Night – Bangkok, Pattaya & Chiang Mai Nightlife Guides 2026",
     description:
-      "Practical nightlife guides for Bangkok and Pattaya. Real 2026 prices, area comparisons, first-timer tips and common scams. No fluff.",
+      "Practical nightlife guides for Bangkok, Pattaya and Chiang Mai. Real 2026 prices, area comparisons, first-timer tips and common scams. No fluff.",
   },
   robots: {
     index: true,

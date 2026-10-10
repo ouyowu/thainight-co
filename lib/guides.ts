@@ -8,6 +8,7 @@ export const bangkokGuides = [
   { href: "/bangkok/sky-bar/", label: "Sky Bar dress code" },
   { href: "/bangkok/muay-thai/", label: "Muay Thai tickets & prices" },
   { href: "/bangkok/dinner-cruise/", label: "Dinner cruise prices" },
+  { href: "/bangkok/calypso-cabaret/", label: "Calypso Cabaret tickets" },
   { href: "/bangkok/night-markets/", label: "Night markets" },
   { href: "/bangkok/night-activities/", label: "Night activities: cabaret, markets, river" },
   { href: "/bangkok/bar-types/", label: "Bar & club types" },
@@ -16,6 +17,7 @@ export const bangkokGuides = [
   { href: "/bangkok/getting-around/", label: "Getting around at night" },
   { href: "/bangkok/taxi-fare/", label: "Taxi fares & scams" },
   { href: "/bangkok/airport/", label: "Airport to city" },
+  { href: "/bangkok/airport-to-sukhumvit-taxi-price/", label: "Airport → Sukhumvit taxi price" },
   { href: "/bangkok/faq/", label: "FAQ" },
 ] as const;
 
@@ -30,7 +32,7 @@ export const pattayaGuides = [
   { href: "/pattaya/first-timer/", label: "First-timer guide" },
   { href: "/pattaya/one-night-plan/", label: "One-night plans" },
   { href: "/pattaya/cabaret-shows/", label: "Cabaret show tickets" },
-  { href: "/pattaya/tiffany-show/", label: "Tiffanyâs Show prices" },
+  { href: "/pattaya/tiffany-show/", label: "Tiffany’s Show prices" },
   { href: "/pattaya/alcazar-show/", label: "Alcazar Show prices" },
   { href: "/pattaya/night-activities/", label: "Night activities: Muay Thai, markets" },
   { href: "/pattaya/bar-types/", label: "Bar & club types" },
@@ -39,7 +41,7 @@ export const pattayaGuides = [
   { href: "/pattaya/baht-bus/", label: "Baht bus prices" },
   { href: "/pattaya/bangkok-to-pattaya/", label: "Bangkok to Pattaya transfer" },
   { href: "/pattaya/airport/", label: "Airport / Bangkok to Pattaya" },
-  { href: "/pattaya/bangkok-airport-to-pattaya-taxi-price/", label: "Airport â Pattaya taxi price" },
+  { href: "/pattaya/bangkok-airport-to-pattaya-taxi-price/", label: "Airport → Pattaya taxi price" },
   { href: "/pattaya/faq/", label: "FAQ" },
 ] as const;
 
@@ -48,6 +50,12 @@ export const pattayaAreas = [
   { href: "/pattaya/areas/jomtien-beach-road/", label: "Jomtien Beach Road" },
   { href: "/pattaya/areas/soi-buakhao/", label: "Soi Buakhao" },
   { href: "/pattaya/areas/tree-town/", label: "Tree Town" },
+] as const;
+
+export const chiangMaiGuides = [
+  { href: "/chiang-mai/night-markets/", label: "Night markets" },
+  { href: "/chiang-mai/nimman-nightlife/", label: "Nimman bars & clubs" },
+  { href: "/chiang-mai/old-city-nightlife/", label: "Old City & riverside live music" },
 ] as const;
 
 export const generalGuides = [

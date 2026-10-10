@@ -21,7 +21,7 @@ export default function BangkokAirportPage() {
         <Bullets>
           <li>Main international airport.</li>
           <li>Airport Rail Link to Makkasan (walk to MRT Phetchaburi → Sukhumvit) or to Phaya Thai (BTS). Clean, cheap, no negotiating.</li>
-          <li>Tired or heavy bags: Grab from the official pickup point, or the public taxi queue with the meter.</li>
+          <li>Tired or heavy bags: Grab from the official pickup point, or the public taxi queue with the meter — see <A href="/bangkok/airport-to-sukhumvit-taxi-price/">taxi price to Sukhumvit</A>.</li>
         </Bullets>
       </Section>
 
