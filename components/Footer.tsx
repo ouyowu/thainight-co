@@ -23,6 +23,12 @@ export function Footer() {
           <Link href="/safety/" className="hover:text-accent">
             Safety
           </Link>
+          <Link href="/bangkok/faq/" className="hover:text-accent">
+            Bangkok FAQ
+          </Link>
+          <Link href="/pattaya/faq/" className="hover:text-accent">
+            Pattaya FAQ
+          </Link>
           <Link href="/bangkok/tonight/" className="hover:text-accent">
             Tonight Bangkok
           </Link>
