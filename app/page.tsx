@@ -60,9 +60,9 @@ export default function HomePage() {
           Pattaya Tonight
         </Link>
         {" · "}
-        <Link href: "/pattaya/areas/soi-6/" className="text-accent hover:underline">
+        <Link href="/pattaya/areas/soi-6/" className="text-accent hover:underline">
           Soi 6
-       </Link>
+        </Link>
       </p>
 
       <h2 className="mt-10 text-lg font-semibold">Start here</h2>
