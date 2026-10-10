@@ -25,7 +25,13 @@ export default function OneNightPlanPage() {
             </Link>{" "}
             end to end
           </li>
-          <li>One or two bars max (e.g. observe Baccara, sit somewhere that feels calmer)</li>
+          <li>
+            One or two bars max (e.g. observe{" "}
+            <Link href="/bangkok/areas/soi-cowboy/baccara/" className="text-accent hover:underline">
+              Baccara
+            </Link>
+            , sit somewhere that feels calmer)
+          </li>
           <li>
             Optional: short move to{" "}
             <Link href="/bangkok/areas/nana-plaza/" className="text-accent hover:underline">
@@ -43,7 +49,6 @@ export default function OneNightPlanPage() {
           ).
         </p>
       </section>
-
       <section>
         <h2 className="text-lg font-semibold text-foreground">Plan B — Bars first, go-go second</h2>
         <ol className="mt-2 list-decimal space-y-1 pl-5">
@@ -52,7 +57,6 @@ export default function OneNightPlanPage() {
           <li>Hard stop time set in advance</li>
         </ol>
       </section>
-
       <section>
         <h2 className="text-lg font-semibold text-foreground">Plan C — Club night (no go-go)</h2>
         <ol className="mt-2 list-decimal space-y-1 pl-5">
@@ -61,7 +65,6 @@ export default function OneNightPlanPage() {
           <li>Bring ID, expect cover</li>
         </ol>
       </section>
-
       <section>
         <h2 className="text-lg font-semibold text-foreground">Plan D — Market curiosity only</h2>
         <ol className="mt-2 list-decimal space-y-1 pl-5">
@@ -73,7 +76,6 @@ export default function OneNightPlanPage() {
           <li>One ground-floor drink max, then leave</li>
         </ol>
       </section>
-
       <p>
         Links:{" "}
         <Link href="/bangkok/first-timer/" className="text-accent hover:underline">
@@ -92,7 +94,6 @@ export default function OneNightPlanPage() {
           Soi Cowboy vs Nana Plaza
         </Link>
       </p>
-
       <section>
         <h2 className="text-lg font-semibold text-foreground">Stay nearby</h2>
         <p className="mt-2">Staying near BTS Nana or Asok keeps the night simple.</p>
