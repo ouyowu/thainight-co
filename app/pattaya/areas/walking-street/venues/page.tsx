@@ -16,7 +16,6 @@ export default function WalkingStreetVenuesPage() {
         Walking Street mixes several formats on one pedestrian strip. Knowing the type of venue
         matters more than memorising every name.
       </p>
-
       <section>
         <h2 className="text-lg font-semibold text-foreground">Venue types</h2>
         <div className="mt-3">
@@ -52,14 +51,23 @@ export default function WalkingStreetVenuesPage() {
           />
         </div>
       </section>
-
       <section>
         <h2 className="text-lg font-semibold text-foreground">
           Names that often come up (examples, not rankings)
         </h2>
         <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>Windmill — long-running, multi-level go-go, high production</li>
-          <li>Sapphire — frequently cited as more polished / less aggressive</li>
+          <li>
+            <Link href="/pattaya/areas/walking-street/windmill/" className="text-accent hover:underline">
+              Windmill
+            </Link>{" "}
+            — long-running, multi-level go-go, high production
+          </li>
+          <li>
+            <Link href="/pattaya/areas/walking-street/sapphire/" className="text-accent hover:underline">
+              Sapphire
+            </Link>{" "}
+            — frequently cited as more polished / less aggressive
+          </li>
           <li>Insomnia / major clubs — big-room club energy, later hours</li>
         </ul>
         <p className="mt-3">
@@ -67,7 +75,6 @@ export default function WalkingStreetVenuesPage() {
           you want.
         </p>
       </section>
-
       <section>
         <h2 className="text-lg font-semibold text-foreground">Practical order for a first night</h2>
         <ol className="mt-2 list-decimal space-y-1 pl-5">
@@ -78,7 +85,6 @@ export default function WalkingStreetVenuesPage() {
           <li>Hard spending limit set before the second lady drink</li>
         </ol>
       </section>
-
       <p>
         Links:{" "}
         <Link href="/pattaya/areas/walking-street/" className="text-accent hover:underline">

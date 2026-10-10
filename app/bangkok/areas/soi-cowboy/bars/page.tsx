@@ -16,7 +16,6 @@ export default function SoiCowboyBarsPage() {
         Soi Cowboy is only ~150 metres long. Names change, but a core of long-running rooms still
         anchors the strip. Walk end to end once, then sit where the vibe fits you.
       </p>
-
       <section>
         <h2 className="text-lg font-semibold text-foreground">Bars worth knowing</h2>
         <div className="mt-3">
@@ -70,7 +69,6 @@ export default function SoiCowboyBarsPage() {
           />
         </div>
       </section>
-
       <section>
         <h2 className="text-lg font-semibold text-foreground">How to use this list</h2>
         <ul className="mt-2 list-disc space-y-1 pl-5">
@@ -85,12 +83,28 @@ export default function SoiCowboyBarsPage() {
           <li>Confirm beer, lady drink and bar fine before the second round.</li>
         </ul>
       </section>
-
       <p>
         Typical Cowboy ranges (2026): beer 150–200 · lady drink 220–260 · bar fine often ~1,000
         (sometimes 800–1,200).
       </p>
-
+      <p>
+        Named rooms (notes only):{" "}
+        <Link href="/bangkok/areas/soi-cowboy/baccara/" className="text-accent hover:underline">
+          Baccara
+        </Link>
+        {" · "}
+        <Link href="/bangkok/areas/soi-cowboy/dollhouse/" className="text-accent hover:underline">
+          Dollhouse
+        </Link>
+        {" · "}
+        <Link href="/bangkok/areas/soi-cowboy/tilac/" className="text-accent hover:underline">
+          Tilac
+        </Link>
+        {" · "}
+        <Link href="/bangkok/areas/soi-cowboy/shark/" className="text-accent hover:underline">
+          Shark
+        </Link>
+      </p>
       <p>
         Links:{" "}
         <Link href="/bangkok/areas/soi-cowboy/" className="text-accent hover:underline">
