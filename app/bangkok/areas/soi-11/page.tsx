@@ -39,7 +39,10 @@ export default function Soi11Page() {
         <h2 className="text-lg font-semibold text-foreground">Practical notes</h2>
         <ul className="mt-2 list-disc space-y-1 pl-5">
           <li>
-            Nearest BTS: <strong>Nana</strong>
+            Nearest BTS: <strong>Nana</strong>. Rooftops nearby:{" "}
+            <Link href="/bangkok/soi-11-rooftop-bars/" className="text-accent hover:underline">
+              Soi 11 rooftop bars
+            </Link>
           </li>
           <li>Peak roughly 22:00–02:00, stronger on weekends</li>
           <li>Dress a step smarter for clubs (smart casual)</li>

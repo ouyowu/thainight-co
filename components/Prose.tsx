@@ -53,3 +53,13 @@ export function LinkList({ links }: { links: readonly GuideLink[] }) {
     </ul>
   );
 }
+
+/** Shown near price tables so readers know how fresh the numbers are. */
+export function CheckedNote({ what = "Prices" }: { what?: string }) {
+  return (
+    <p className="text-sm text-muted">
+      {what} checked October 2026 against operator pages, booking platforms and recent visitor
+      reports. They change — confirm before you pay.
+    </p>
+  );
+}

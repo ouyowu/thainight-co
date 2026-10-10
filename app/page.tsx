@@ -16,13 +16,23 @@ const highlights = [
   },
   {
     href: "/bangkok/muay-thai/",
-    title: "Muay Thai fight nights",
-    note: "Rajadamnern vs Lumpinee, seat classes, how to buy.",
+    title: "Muay Thai tickets",
+    note: "Rajadamnern & Lumpinee prices from 1,000 THB.",
   },
   {
     href: "/pattaya/cabaret-shows/",
-    title: "Pattaya cabaret shows",
-    note: "Tiffany’s vs Alcazar: show length, times, seats.",
+    title: "Pattaya cabaret show tickets",
+    note: "Tiffany’s vs Alcazar: 2026 seat prices and times.",
+  },
+  {
+    href: "/pattaya/bangkok-airport-to-pattaya-taxi-price/",
+    title: "Airport → Pattaya taxi price",
+    note: "Taxi, Grab, transfer or the 139 THB bus — real 2026 fares.",
+  },
+  {
+    href: "/bangkok/dinner-cruise/",
+    title: "Dinner cruise prices",
+    note: "Chao Phraya cruises from about 1,200 THB, compared.",
   },
   {
     href: "/scams/",

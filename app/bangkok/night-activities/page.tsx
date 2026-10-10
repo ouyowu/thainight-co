@@ -36,7 +36,8 @@ export default function BangkokNightActivitiesPage() {
       <Section title="Chao Phraya dinner cruise">
         <p>
           Two-hour buffet or set-menu cruises leave from Asiatique, ICONSIAM and River City past the
-          lit-up temples and Grand Palace. Good for couples and groups; dress smart casual.
+          lit-up temples and Grand Palace. Good for couples and groups; dress smart casual. Prices
+          compared: <A href="/bangkok/dinner-cruise/">dinner cruise prices 2026</A>.
         </p>
       </Section>
 

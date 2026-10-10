@@ -14,7 +14,8 @@ export default function PattayaAirportPage() {
     <PageShell title="Bangkok to Pattaya Transfer (2026) – BKK, City & U-Tapao">
       <p>
         Most visitors reach Pattaya by road from Bangkok Suvarnabhumi (BKK) or from the city. The
-        drive is usually around two hours, longer at rush hour and on Friday evenings.
+        drive is usually around two hours, longer at rush hour and on Friday evenings. Exact fares:{" "}
+        <A href="/pattaya/bangkok-airport-to-pattaya-taxi-price/">airport to Pattaya taxi price 2026</A>.
       </p>
 
       <Section title="From Suvarnabhumi (BKK)">

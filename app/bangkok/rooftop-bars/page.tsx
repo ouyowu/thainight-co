@@ -1,7 +1,7 @@
 import { BookingBox } from "@/components/BookingBox";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
-import { Bullets, Related, Section } from "@/components/Prose";
+import { A, Bullets, Related, Section } from "@/components/Prose";
 import { StayNearby } from "@/components/StayNearby";
 import { pageMeta } from "@/lib/seo";
 
@@ -35,12 +35,17 @@ export default function RooftopBarsPage() {
         <PriceTable caption="Famous Bangkok rooftops" headers={["Bar", "Area · Transit", "Why go"]} rows={famous} />
         <p>
           Best done as a sunset drink before a riverside evening or dinner in Silom. These are the
-          most expensive drinks in the city.
+          most expensive drinks in the city. Dress code and booking:{" "}
+          <A href="/bangkok/sky-bar/">Sky Bar guide</A>.
         </p>
       </Section>
 
       <Section title="Sukhumvit rooftops (easy before Soi 11 or Thonglor)">
         <PriceTable caption="Sukhumvit rooftops" headers={["Bar", "Transit", "Notes"]} rows={sukhumvit} />
+        <p>
+          Five more within walking distance of BTS Nana:{" "}
+          <A href="/bangkok/soi-11-rooftop-bars/">Soi 11 rooftop bars</A>.
+        </p>
       </Section>
 
       <Section title="Riverside">
