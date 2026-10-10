@@ -1,8 +1,7 @@
 import Link from "next/link";
-import { HotelsNearBlock } from "@/components/HotelsNearBlock";
+import { HotelCta } from "@/components/HotelCta";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
-import { affiliates } from "@/lib/affiliates";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -101,7 +100,29 @@ export default function WalkingStreetPage() {
         </ul>
       </section>
 
-      <HotelsNearBlock href={affiliates.hotelWalkingStreet} cta="Hotels near Walking Street" />
+      <section>
+        <h2 className="text-lg font-semibold text-foreground">Next steps</h2>
+        <p className="mt-2">
+          <Link href="/pattaya/areas/walking-street/venues/" className="text-accent hover:underline">
+            Venue types
+          </Link>{" "}
+          ·{" "}
+          <Link href="/pattaya/areas/soi-6/" className="text-accent hover:underline">
+            Soi 6
+          </Link>{" "}
+          ·{" "}
+          <Link href="/pattaya/first-timer/" className="text-accent hover:underline">
+            First-timer
+          </Link>{" "}
+          ·{" "}
+          <Link href="/prices/" className="text-accent hover:underline">
+            Prices
+          </Link>
+        </p>
+        <div className="mt-3">
+          <HotelCta label="Hotels near Walking Street" />
+        </div>
+      </section>
     </PageShell>
   );
 }

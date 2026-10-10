@@ -1,8 +1,7 @@
 import Link from "next/link";
-import { HotelsNearBlock } from "@/components/HotelsNearBlock";
+import { HotelCta } from "@/components/HotelCta";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
-import { affiliates } from "@/lib/affiliates";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -120,7 +119,30 @@ export default function Soi6Page() {
         </ul>
       </section>
 
-      <HotelsNearBlock href={affiliates.hotelSoi6} cta="Hotels near Soi 6 / Beach Road" />
+      <section>
+        <h2 className="text-lg font-semibold text-foreground">Next steps</h2>
+        <p className="mt-2">
+          <Link href="/pattaya/tonight/" className="text-accent hover:underline">
+            Pattaya Tonight notes
+          </Link>{" "}
+          ·{" "}
+          <Link href="/pattaya/areas/walking-street/" className="text-accent hover:underline">
+            Walking Street
+          </Link>{" "}
+          ·{" "}
+          <Link href="/pattaya/first-timer/" className="text-accent hover:underline">
+            First-timer
+          </Link>{" "}
+          ·{" "}
+          <Link href="/prices/" className="text-accent hover:underline">
+            Prices
+          </Link>
+        </p>
+        <p className="mt-3">Some bars ask for drink minimums — confirm before you sit.</p>
+        <div className="mt-3">
+          <HotelCta label="Hotels near Soi 6 / Beach Road" />
+        </div>
+      </section>
     </PageShell>
   );
 }
