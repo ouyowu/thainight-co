@@ -104,6 +104,52 @@ export default function PattayaPage() {
           </li>
         </ul>
       </section>
+
+      <section>
+        <h2 className="text-lg font-semibold text-foreground">More Pattaya guides</h2>
+        <ul className="mt-2 space-y-1">
+          <li>
+            <Link href="/pattaya/first-timer/" className="text-accent hover:underline">
+              First-timer guide
+            </Link>
+          </li>
+          <li>
+            <Link href="/pattaya/one-night-plan/" className="text-accent hover:underline">
+              One-night sample plans
+            </Link>
+          </li>
+          <li>
+            <Link href="/pattaya/areas/walking-street/" className="text-accent hover:underline">
+              Walking Street
+            </Link>
+          </li>
+          <li>
+            <Link href="/pattaya/areas/walking-street/venues/" className="text-accent hover:underline">
+              Walking Street venues
+            </Link>
+          </li>
+          <li>
+            <Link href="/pattaya/areas/soi-6/" className="text-accent hover:underline">
+              Soi 6
+            </Link>
+          </li>
+          <li>
+            <Link href="/pattaya/areas/lk-metro/" className="text-accent hover:underline">
+              LK Metro
+            </Link>
+          </li>
+          <li>
+            <Link href="/pattaya/areas/soi-buakhao/" className="text-accent hover:underline">
+              Soi Buakhao
+            </Link>
+          </li>
+          <li>
+            <Link href="/pattaya/areas/tree-town/" className="text-accent hover:underline">
+              Tree Town
+            </Link>
+          </li>
+        </ul>
+      </section>
     </PageShell>
   );
 }

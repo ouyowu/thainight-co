@@ -43,6 +43,18 @@ export default function PattayaAreasPage() {
           </Link>{" "}
           — often recommended as an easier start.
         </li>
+        <li>
+          <Link href="/pattaya/areas/soi-buakhao/" className="text-accent hover:underline">
+            Soi Buakhao
+          </Link>{" "}
+          — budget beer bars, lower pressure.
+        </li>
+        <li>
+          <Link href="/pattaya/areas/tree-town/" className="text-accent hover:underline">
+            Tree Town
+          </Link>{" "}
+          — open-air bars and food on/near Buakhao.
+        </li>
       </ul>
     </PageShell>
   );

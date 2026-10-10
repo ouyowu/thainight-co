@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HotelsNearBlock } from "@/components/HotelsNearBlock";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
@@ -25,6 +26,13 @@ export default function WalkingStreetPage() {
         </p>
         <p className="mt-2">
           Not ideal for: People looking for the cheapest drinks or a low-pressure evening.
+        </p>
+        <p className="mt-3">
+          Venue types and example names:{" "}
+          <Link href="/pattaya/areas/walking-street/venues/" className="text-accent hover:underline">
+            Walking Street venues
+          </Link>
+          .
         </p>
       </section>
 
