@@ -92,6 +92,7 @@ export default function CabaretShowsPage() {
       <Related
         links={[
           { href: "/pattaya/night-activities/", label: "Night activities" },
+          { href: "/bangkok/calypso-cabaret/", label: "Calypso Cabaret (Bangkok)" },
           { href: "/pattaya/one-night-plan/", label: "One-night plans" },
           { href: "/pattaya/hotels-walking-street/", label: "Where to stay" },
         ]}

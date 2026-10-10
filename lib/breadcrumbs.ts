@@ -3,6 +3,11 @@ import { SITE_URL } from "@/lib/site";
 const LABELS: Record<string, string> = {
   bangkok: "Bangkok",
   pattaya: "Pattaya",
+  "chiang-mai": "Chiang Mai",
+  "nimman-nightlife": "Nimman",
+  "old-city-nightlife": "Old City & riverside",
+  "calypso-cabaret": "Calypso Cabaret",
+  "airport-to-sukhumvit-taxi-price": "Airport to Sukhumvit taxi",
   "first-timer": "First-timer",
   faq: "FAQ",
   "getting-around": "Getting around",

@@ -29,7 +29,8 @@ export default function BangkokNightActivitiesPage() {
         <p>
           Calypso Cabaret is Bangkok’s long-running cabaret show at Asiatique The Riverfront, with
           evening shows of about 70 minutes. Book ahead on weekends. Get there via BTS Saphan Taksin
-          and the free shuttle boat from Sathorn Pier, then eat at Asiatique before or after.
+          and the free shuttle boat from Sathorn Pier, then eat at Asiatique before or after. Prices:{" "}
+          <A href="/bangkok/calypso-cabaret/">Calypso tickets 2026</A>.
         </p>
       </Section>
 

@@ -1,12 +1,12 @@
 import { GuidePhoto } from "@/components/GuidePhoto";
 import { A, LinkList } from "@/components/Prose";
-import { bangkokAreas, bangkokGuides, generalGuides, pattayaAreas, pattayaGuides } from "@/lib/guides";
+import { bangkokAreas, bangkokGuides, chiangMaiGuides, generalGuides, pattayaAreas, pattayaGuides } from "@/lib/guides";
 import { photos } from "@/lib/photos";
 import { pageMeta } from "@/lib/seo";
 
-const homeTitle = "Thai Night – Bangkok & Pattaya Nightlife Guides 2026";
+const homeTitle = "Thai Night – Bangkok, Pattaya & Chiang Mai Nightlife Guides 2026";
 const homeDescription =
-  "Practical nightlife guides for Bangkok and Pattaya: rooftop bars, clubs, Muay Thai, cabaret shows, night markets, real 2026 prices and common scams.";
+  "Practical nightlife guides for Bangkok, Pattaya and Chiang Mai: rooftop bars, clubs, Muay Thai, cabaret shows, night markets, real 2026 prices and common scams.";
 
 export const metadata = pageMeta(homeTitle, homeDescription, "/");
 
@@ -51,7 +51,7 @@ export default function HomePage() {
   return (
     <div className="mx-auto w-full max-w-3xl px-4 py-10 sm:py-14">
       <h1 className="text-3xl font-semibold tracking-tight text-pretty sm:text-4xl">
-        Thai Night – Practical Nightlife Guides for Bangkok & Pattaya
+        Thai Night – Practical Nightlife Guides for Bangkok, Pattaya & Chiang Mai
       </h1>
       <p className="mt-6 text-2xl font-semibold text-foreground">Know before you go.</p>
       <p className="mt-2 text-lg leading-7 text-zinc-100">
@@ -121,6 +121,15 @@ export default function HomePage() {
           </div>
         </section>
       </div>
+
+      <section className="mt-10">
+        <h2 className="text-lg font-semibold">
+          <A href="/chiang-mai/">Chiang Mai</A>
+        </h2>
+        <div className="mt-3 text-sm">
+          <LinkList links={chiangMaiGuides} />
+        </div>
+      </section>
 
       <h2 className="mt-10 text-lg font-semibold">Money & safety</h2>
       <div className="mt-3">
