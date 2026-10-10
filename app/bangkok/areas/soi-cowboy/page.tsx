@@ -92,7 +92,7 @@ export default function SoiCowboyPage() {
         </ul>
       </section>
 
-      <HotelsNearBlock href={affiliates.hotelSoiCowboy} area="Soi Cowboy" />
+      <HotelsNearBlock href={affiliates.hotelSoiCowboy} cta="Hotels near Soi Cowboy / Asok" />
     </PageShell>
   );
 }

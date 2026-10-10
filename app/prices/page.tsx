@@ -63,12 +63,9 @@ export default function PricesPage() {
         </ul>
       </section>
 
-      <section>
-        <p>Airport transfers and day trips can be booked in advance.</p>
-        <p className="mt-3">
-          → <AffiliateCta href={affiliates.klook} label="See options on Klook" />
-        </p>
-      </section>
+      <p>
+        <AffiliateCta href={affiliates.klook} label="Airport transfers" />
+      </p>
     </PageShell>
   );
 }

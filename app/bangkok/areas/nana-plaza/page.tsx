@@ -104,7 +104,7 @@ export default function NanaPlazaPage() {
         </ul>
       </section>
 
-      <HotelsNearBlock href={affiliates.hotelNanaPlaza} area="Nana Plaza" />
+      <HotelsNearBlock href={affiliates.hotelNanaPlaza} cta="Hotels near Nana Plaza" />
     </PageShell>
   );
 }

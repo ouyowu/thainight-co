@@ -1,6 +1,6 @@
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
-import { StayNearbyBlock } from "@/components/StayNearbyBlock";
+import { HotelsNearBlock } from "@/components/HotelsNearBlock";
 import { affiliates } from "@/lib/affiliates";
 import { pageMeta } from "@/lib/seo";
 
@@ -90,9 +90,9 @@ export default function PattayaFirstTimerPage() {
         </ul>
       </section>
 
-      <StayNearbyBlock
+      <HotelsNearBlock
         href={affiliates.hotelPattaya}
-        cta="Check current hotel deals near Walking Street or Central Pattaya"
+        cta="Hotels near Walking Street / Central Pattaya"
       />
     </PageShell>
   );

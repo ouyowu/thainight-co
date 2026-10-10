@@ -4,15 +4,8 @@ type AffiliateCtaProps = {
 };
 
 export function AffiliateCta({ href, label }: AffiliateCtaProps) {
-  const isLive = href !== "#";
   return (
-    <a
-      href={href}
-      className="text-accent hover:underline"
-      {...(isLive
-        ? { target: "_blank", rel: "nofollow sponsored noopener noreferrer" }
-        : {})}
-    >
+    <a href={href} className="text-accent hover:underline" target="_blank" rel="sponsored noopener">
       {label}
     </a>
   );

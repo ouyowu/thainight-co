@@ -110,7 +110,7 @@ export default function Soi6Page() {
         </ul>
       </section>
 
-      <HotelsNearBlock href={affiliates.hotelSoi6} area="Soi 6" />
+      <HotelsNearBlock href={affiliates.hotelSoi6} cta="Hotels near Soi 6 / Beach Road" />
     </PageShell>
   );
 }

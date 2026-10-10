@@ -1,6 +1,6 @@
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
-import { StayNearbyBlock } from "@/components/StayNearbyBlock";
+import { HotelsNearBlock } from "@/components/HotelsNearBlock";
 import { affiliates } from "@/lib/affiliates";
 import { pageMeta } from "@/lib/seo";
 
@@ -93,10 +93,7 @@ export default function BangkokFirstTimerPage() {
         </p>
       </section>
 
-      <StayNearbyBlock
-        href={affiliates.hotelBangkok}
-        cta="Check current hotel deals near Nana and Asok"
-      />
+      <HotelsNearBlock href={affiliates.hotelBangkok} cta="Check hotels near BTS Nana / Asok" />
     </PageShell>
   );
 }

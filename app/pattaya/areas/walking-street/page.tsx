@@ -93,7 +93,7 @@ export default function WalkingStreetPage() {
         </ul>
       </section>
 
-      <HotelsNearBlock href={affiliates.hotelWalkingStreet} area="Walking Street" />
+      <HotelsNearBlock href={affiliates.hotelWalkingStreet} cta="Hotels near Walking Street" />
     </PageShell>
   );
 }
