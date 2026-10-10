@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
@@ -20,15 +21,16 @@ const weekly = [
 
 type TonightGuideProps = {
   city: "Bangkok" | "Pattaya";
+  children?: ReactNode;
 };
 
-export function TonightGuide({ city }: TonightGuideProps) {
+export function TonightGuide({ city, children }: TonightGuideProps) {
   const firstTimer =
     city === "Bangkok" ? "/bangkok/first-timer/" : "/pattaya/first-timer/";
 
   return (
     <PageShell title={`Tonight in ${city}`} showUpdated={false}>
-      <p className="text-sm text-muted">Last checked: {LAST_CHECKED}</p>
+      {children ?? <p className="text-sm text-muted">Last checked: {LAST_CHECKED}</p>}
 
       <section>
         <h2 className="text-lg font-semibold text-foreground">What’s on this week</h2>

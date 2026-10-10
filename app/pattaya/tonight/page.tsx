@@ -1,3 +1,4 @@
+import { PattayaTonightNotes } from "@/components/PattayaTonightNotes";
 import { TonightGuide } from "@/components/TonightGuide";
 import { pageMeta } from "@/lib/seo";
 
@@ -8,5 +9,9 @@ export const metadata = pageMeta(
 );
 
 export default function PattayaTonightPage() {
-  return <TonightGuide city="Pattaya" />;
+  return (
+    <TonightGuide city="Pattaya">
+      <PattayaTonightNotes />
+    </TonightGuide>
+  );
 }

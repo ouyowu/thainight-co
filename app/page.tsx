@@ -32,6 +32,19 @@ export default function HomePage() {
         No fluff. No paid rankings. Just what actually works.
       </p>
 
+      <p className="mt-6 text-base leading-7 text-zinc-200">
+        Note (Oct 2026): Some Soi 6 bars now ask for lady-drink minimums before ST. Always confirm
+        room fee + girl’s fee + any minimum before you sit down. Details on the{" "}
+        <Link href="/pattaya/tonight/" className="text-accent hover:underline">
+          Pattaya Tonight
+        </Link>{" "}
+        /{" "}
+        <Link href="/pattaya/areas/soi-6/" className="text-accent hover:underline">
+          Soi 6
+        </Link>{" "}
+        pages.
+      </p>
+
       <h2 className="mt-10 text-lg font-semibold">Quick Links</h2>
       <ul className="mt-3 grid gap-2 sm:grid-cols-2">
         {quickLinks.map((link) => (
