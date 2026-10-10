@@ -4,7 +4,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Sukhumvit Soi 11 Guide",
-  "Bars and clubs near BTS Nana/Asok. Useful add-on to Soi Cowboy and Nana Plaza, not a first-night go-go street.",
+  "Sukhumvit Soi 11 is a bar and club street near BTS Nana and Asok. Different energy from Soi Cowboy and Nana Plaza.",
   "/bangkok/areas/soi-11/",
 );
 

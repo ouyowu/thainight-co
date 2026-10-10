@@ -2,8 +2,8 @@ import { TonightGuide } from "@/components/TonightGuide";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Tonight in Bangkok",
-  "What’s on this week in Bangkok nightlife, regular weekly patterns, and quick links. Updated periodically — verify on the day.",
+  "Tonight in Bangkok Nightlife – What’s On",
+  "Current Bangkok nightlife snapshot and weekly patterns. Check what’s active and plan your night with up-to-date notes.",
   "/bangkok/tonight/",
 );
 

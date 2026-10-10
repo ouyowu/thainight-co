@@ -1,46 +1,106 @@
 import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
+import { PriceTable } from "@/components/PriceTable";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Bangkok Nightlife Guide",
-  "Soi Cowboy, Nana Plaza, 2026 prices, and a first-timer plan for Bangkok nightlife.",
+  "Bangkok Nightlife Guide 2026 – Areas & Prices",
+  "Complete Bangkok nightlife overview: Soi Cowboy, Nana Plaza, prices, first-timer advice and how the main areas compare in 2026.",
   "/bangkok/",
 );
 
 export default function BangkokPage() {
   return (
-    <PageShell
-      title="Bangkok Nightlife"
-      lead="Bangkok’s main red-light nightlife sits on Sukhumvit, between BTS Nana and BTS Asok. The useful split is simple: Soi Cowboy for a first night, Nana Plaza for variety and shows, Patpong for curiosity only."
-    >
-      <ul className="grid gap-2 sm:grid-cols-2">
-        {[
-          ["/bangkok/first-timer/", "First-Timer Guide"],
-          ["/bangkok/areas/", "Areas"],
-          ["/bangkok/prices/", "Prices"],
-          ["/bangkok/tonight/", "Tonight"],
-        ].map(([href, label]) => (
-          <li key={href}>
-            <Link
-              href={href}
-              className="block rounded-lg border border-line bg-card px-4 py-3 font-medium hover:border-accent hover:text-accent"
-            >
-              {label}
+    <PageShell title="Bangkok Nightlife Guide 2026 – Areas, Prices & First-Timer Advice">
+      <section>
+        <h2 className="text-lg font-semibold text-foreground">Quick Overview</h2>
+        <p className="mt-2">
+          Bangkok’s main adult nightlife is concentrated in a few well-known areas around Sukhumvit.
+          The two primary go-go zones are Soi Cowboy and Nana Plaza. They are close to each other,
+          easy to reach by BTS, and suitable for both first-timers and returning visitors.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-lg font-semibold text-foreground">Main Areas at a Glance</h2>
+        <div className="mt-3">
+          <PriceTable
+            caption="Main Areas at a Glance"
+            headers={["Area", "Role", "What it is", "First-timer"]}
+            rows={[
+              ["Soi Cowboy", "Easiest first night", "Open-air street, compact", "Excellent"],
+              ["Nana Plaza", "Variety & shows", "3-floor complex, denser", "Very good"],
+              ["Patpong", "Curiosity / market", "Older, more touristy", "Low priority"],
+              ["Soi 11", "Mixed bars & clubs", "International, less “go-go only”", "Good for non-go-go nights"],
+            ]}
+          />
+        </div>
+      </section>
+
+      <section>
+        <h2 className="text-lg font-semibold text-foreground">Recommended Starting Point</h2>
+        <p className="mt-2">
+          Most first-timers do best starting on Soi Cowboy. It is linear, open-air, and easier to
+          read. Nana Plaza is better once you want more options or bigger productions.
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-lg font-semibold text-foreground">2026 Price Snapshot (Go-Go style)</h2>
+        <ul className="mt-2 list-disc space-y-1 pl-5">
+          <li>Beer: 150–200 THB</li>
+          <li>Lady drink: 200–280 THB</li>
+          <li>Bar fine (ST): 800–1,500 THB</li>
+          <li>Full short-time night: commonly 4,000–8,000+ THB</li>
+        </ul>
+        <p className="mt-3">
+          → Full details on the{" "}
+          <Link href="/prices/" className="text-accent hover:underline">
+            Prices page
+          </Link>
+        </p>
+      </section>
+
+      <section>
+        <h2 className="text-lg font-semibold text-foreground">Practical Notes</h2>
+        <ul className="mt-2 list-disc space-y-1 pl-5">
+          <li>Stay near BTS Nana or BTS Asok for easy access</li>
+          <li>Use Grab or Bolt late at night</li>
+          <li>Confirm lady drink and bar fine prices before ordering</li>
+          <li>Never follow street touts upstairs for “cheap shows”</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-lg font-semibold text-foreground">Quick Links</h2>
+        <ul className="mt-2 space-y-1">
+          <li>
+            <Link href="/bangkok/first-timer/" className="text-accent hover:underline">
+              Bangkok First-Timer Guide
             </Link>
           </li>
-        ))}
-      </ul>
-      <p>
-        Start late enough that the street is open. 21:00–21:30 is the usual window. Walk first, sit
-        second. Pay round by round. Confirm lady drinks and bar fines out loud. Use Grab or Bolt
-        late at night.
-      </p>
-      <p>
-        Stay near BTS Nana or BTS Asok if you want to walk or take a 5–10 minute ride. Soi 11 is
-        nearby and more clubs-and-bars than go-go. It is a useful add-on, not a replacement for
-        Cowboy or Nana Plaza.
-      </p>
+          <li>
+            <Link href="/bangkok/areas/soi-cowboy/" className="text-accent hover:underline">
+              Soi Cowboy detailed guide
+            </Link>
+          </li>
+          <li>
+            <Link href="/bangkok/areas/nana-plaza/" className="text-accent hover:underline">
+              Nana Plaza detailed guide
+            </Link>
+          </li>
+          <li>
+            <Link href="/scams/" className="text-accent hover:underline">
+              Scams to avoid
+            </Link>
+          </li>
+          <li>
+            <Link href="/prices/" className="text-accent hover:underline">
+              Current prices
+            </Link>
+          </li>
+        </ul>
+      </section>
     </PageShell>
   );
 }

@@ -3,8 +3,8 @@ import { PriceTable } from "@/components/PriceTable";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Soi Cowboy Bangkok Guide 2026 – Prices, Bars & First-Timer Tips",
-  "Soi Cowboy is Bangkok’s most beginner-friendly go-go strip. One open-air pedestrian lane (about 150 metres) between Sukhumvit Soi 21 and Soi 23.",
+  "Soi Cowboy Bangkok Guide 2026 – Prices & Tips",
+  "Soi Cowboy explained: 2026 drink and bar fine prices, layout, best for first-timers, and how a night on the strip actually works.",
   "/bangkok/areas/soi-cowboy/",
 );
 

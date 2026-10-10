@@ -3,8 +3,8 @@ import { PriceTable } from "@/components/PriceTable";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Bangkok Nightlife First-Timer Guide (2026)",
-  "If it’s your first night and you want the easiest start → Soi Cowboy. If you want more variety and bigger shows → Nana Plaza. 2026 prices and a simple first-night plan.",
+  "Bangkok Nightlife First-Timer Guide 2026",
+  "Step-by-step first night plan for Bangkok. Soi Cowboy vs Nana Plaza, current prices, bar fine rules and practical tips for 2026.",
   "/bangkok/first-timer/",
 );
 

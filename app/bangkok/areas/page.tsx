@@ -5,7 +5,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Bangkok Nightlife Areas",
-  "Soi Cowboy, Nana Plaza, Soi 11, and Patpong — what each area is for and who it suits.",
+  "Most visitors only need two streets: Soi Cowboy and Nana Plaza. Everything else is optional.",
   "/bangkok/areas/",
 );
 

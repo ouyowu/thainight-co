@@ -4,8 +4,8 @@ import { PriceTable } from "@/components/PriceTable";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Bangkok Nightlife Prices 2026",
-  "2026 Bangkok go-go ranges: beer, lady drink, bar fine, short-time fee, and a typical full-night total.",
+  "Bangkok Nightlife Prices (2026)",
+  "These are go-go ranges for Soi Cowboy and Nana Plaza. Individual bars sit inside the band. Confirm the number before you order.",
   "/bangkok/prices/",
 );
 

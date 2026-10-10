@@ -3,8 +3,8 @@ import { PriceTable } from "@/components/PriceTable";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Nana Plaza Bangkok Guide 2026 – Bars, Prices & What to Expect",
-  "Nana Plaza is Bangkok’s largest and most concentrated go-go complex. Three floors, 40+ venues, 2026 prices, and what to expect.",
+  "Nana Plaza Bangkok Guide 2026 – Bars & Prices",
+  "Nana Plaza complete guide: three floors, 2026 prices, how bar fines work, and practical tips for first and return visits.",
   "/bangkok/areas/nana-plaza/",
 );
 
