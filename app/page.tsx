@@ -12,6 +12,8 @@ const bangkokGuides = [
   { href: "/bangkok/", label: "Bangkok overview" },
   { href: "/bangkok/cowboy-vs-nana/", label: "Soi Cowboy vs Nana Plaza" },
   { href: "/bangkok/one-night-plan/", label: "One-night plan" },
+  { href: "/bangkok/hotels-nana-asok/", label: "Stay near Nana & Asok" },
+  { href: "/bangkok/hotels-soi-cowboy/", label: "Stay near Soi Cowboy" },
   { href: "/bangkok/areas/soi-cowboy/", label: "Soi Cowboy" },
   { href: "/bangkok/areas/nana-plaza/", label: "Nana Plaza" },
   { href: "/bangkok/areas/soi-11/", label: "Soi 11" },
@@ -22,6 +24,7 @@ const pattayaGuides = [
   { href: "/pattaya/", label: "Pattaya overview" },
   { href: "/pattaya/walking-street-vs-soi-6/", label: "Walking Street vs Soi 6" },
   { href: "/pattaya/one-night-plan/", label: "One-night plan" },
+  { href: "/pattaya/hotels-walking-street/", label: "Stay near Walking Street" },
   { href: "/pattaya/areas/walking-street/", label: "Walking Street" },
   { href: "/pattaya/areas/soi-6/", label: "Soi 6" },
   { href: "/pattaya/areas/lk-metro/", label: "LK Metro" },
@@ -57,9 +60,9 @@ export default function HomePage() {
           Pattaya Tonight
         </Link>
         {" · "}
-        <Link href="/pattaya/areas/soi-6/" className="text-accent hover:underline">
+        <Link href: "/pattaya/areas/soi-6/" className="text-accent hover:underline">
           Soi 6
-        </Link>
+       </Link>
       </p>
 
       <h2 className="mt-10 text-lg font-semibold">Start here</h2>

@@ -79,6 +79,22 @@ export default function BudgetsPage() {
       </section>
 
       <p>
+        Sleep in the same cluster you drink in. Hotel rates are not listed here — pick the block:{" "}
+        <Link href="/bangkok/hotels-nana-asok/" className="text-accent hover:underline">
+          Nana & Asok
+        </Link>
+        ,{" "}
+        <Link href="/bangkok/hotels-soi-cowboy/" className="text-accent hover:underline">
+          Soi Cowboy
+        </Link>
+        ,{" "}
+        <Link href="/pattaya/hotels-walking-street/" className="text-accent hover:underline">
+          Walking Street / Central
+        </Link>
+        .
+      </p>
+
+      <p>
         Links:{" "}
         <Link href="/prices/" className="text-accent hover:underline">
           Full price tables
