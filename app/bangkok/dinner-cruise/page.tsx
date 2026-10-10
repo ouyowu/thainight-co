@@ -2,70 +2,82 @@ import { BookingBox } from "@/components/BookingBox";
 import { FaqList } from "@/components/FaqList";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
-import { A, Bullets, Related, Section } from "@/components/Prose";
+import { A, Bullets, CheckedNote, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Bangkok Dinner Cruise 2026 - Chao Phraya Piers, Dress and How to Book",
-  "Chao Phraya dinner cruises from Asiatique, ICONSIAM and River City: what to expect, dress and how to book.",
+  "Chao Phraya Dinner Cruise Price 2026 – Bangkok Cruises Compared",
+  "Bangkok dinner cruise prices in 2026: buffet cruises from about 1,200 THB to luxury set-menu cruises over 3,000 THB, piers (Asiatique, ICONSIAM, River City), times and how to choose.",
   "/bangkok/dinner-cruise/",
 );
 
-export default function BangkokDinnerCruisePage() {
+export default function DinnerCruisePage() {
   return (
     <PageShell
       path="/bangkok/dinner-cruise/"
-      title="Bangkok Dinner Cruise (2026) - Chao Phraya from Asiatique, ICONSIAM and River City"
-      lead="A two-hour river cruise past the lit-up temples and Grand Palace is the easiest extra night in Bangkok. Pick the pier by where you stay, then book the boat."
+      title="Chao Phraya Dinner Cruise Prices (2026)"
+      lead="Buffet cruises cost about 1,200–2,000 THB per person at walk-in prices; luxury set-menu cruises run 2,800–3,800 THB. Online prices are often lower."
     >
-      <Section title="Which pier">
+      <Section title="Popular cruises and walk-in prices">
         <PriceTable
-          caption="Dinner cruise piers"
-          headers={["Pier", "Best if you are near", "How you get there"]}
+          caption="Bangkok dinner cruise prices 2026"
+          headers={["Cruise", "Pier · Departs", "Meal", "Walk-in (THB)"]}
           rows={[
-            ["Asiatique The Riverfront", "Silom, Sathorn, riverside hotels", "BTS Saphan Taksin, then the free shuttle boat from Sathorn Pier"],
-            ["ICONSIAM", "Sathorn, Khlong San, BTS Charoen Nakhon", "BTS Gold Line to Charoen Nakhon, or a boat to ICONSIAM pier"],
-            ["River City / Si Phraya", "Bang Rak, River City hotels, old-town Grab", "Short Grab from Silom or a Chao Phraya express boat"],
+            ["Royal Princess", "Asiatique · 19:30", "Buffet, 2 h", "about 1,190"],
+            ["Chao Phraya Princess", "ICONSIAM · 19:30/20:00", "Buffet, 2 h", "about 1,500"],
+            ["Bangkok Chaophraya Cruise", "Asiatique · 20:00", "Buffet, 2 h", "about 1,550"],
+            ["White Orchid", "Asiatique or ICONSIAM · 19:45", "Buffet, 2 h", "about 1,600"],
+            ["Wonderful Pearl", "River City · 19:30", "Buffet, 2 h", "about 1,800"],
+            ["Horizon (Shangri-La)", "NEXT2 pier · 19:15", "Buffet, ~2 h 45", "about 2,900"],
+            ["Saffron (Banyan Tree)", "ICONSIAM · 19:00", "4-course set, 3 h", "about 3,300"],
+            ["Manohra (Anantara)", "Anantara Riverside · 18:00/19:00", "5-course set, 2 h", "from about 3,500"],
+            ["Apsara (Banyan Tree)", "River City · 18:45", "4-course set, 3 h", "about 3,800"],
           ]}
         />
-        <p>Operators publish their own pier and boarding time. Confirm both on the booking, then arrive 30-45 minutes early.</p>
+        <CheckedNote />
       </Section>
-      <Section title="What to expect">
+
+      <BookingBox title="Book online" items={[{ label: "Compare Chao Phraya dinner cruise deals", link: "dinnerCruise" }]} />
+
+      <Section title="How to choose">
         <Bullets>
-          <li>Most sailings last about two hours: buffet or set menu, a live band or a short show, and a slow loop past Wat Arun and the Grand Palace lights.</li>
-          <li>Upper deck is for photos and breeze; indoor decks are air-conditioned and better if it rains.</li>
-          <li>Good for couples and groups. Most boats are back at the pier by about 21:00-22:00.</li>
-          <li>Drinks are often extra. Confirm whether water, soft drinks or a welcome drink are included.</li>
+          <li><strong>Budget, groups:</strong> a big buffet boat from Asiatique or ICONSIAM.</li>
+          <li><strong>Couples, special occasion:</strong> a small set-menu boat (Saffron, Manohra, Apsara).</li>
+          <li><strong>Want drinks included?</strong> Check the package — many include only soft drinks.</li>
+          <li>Prices rise on Loy Krathong, Christmas, New Year and Valentine’s Day; boats pause for annual dry-dock.</li>
         </Bullets>
       </Section>
-      <Section title="Dress">
-        <p>Smart casual is enough: closed shoes, no beachwear, no football shirts on the nicer boats. A light layer helps on the upper deck.</p>
-      </Section>
-      <BookingBox title="Book a cruise" items={[{ label: "Chao Phraya dinner cruise", link: "dinnerCruise" }]} />
-      <Section title="How to book">
+
+      <Section title="Getting to the piers">
         <Bullets>
-          <li>Book online the same day or a day ahead on weekends and holidays.</li>
-          <li>Use the official operator or a known reseller. Ignore pier touts quoting a special price in baht.</li>
-          <li>Read the meeting point twice. Some tickets say ICONSIAM when the boat boards at a nearby pontoon.</li>
+          <li><strong>Asiatique / River City / ICONSIAM:</strong> BTS Saphan Taksin, then the river shuttle from Sathorn Pier (ICONSIAM also has the Gold Line).</li>
+          <li>Hotel transfers are often extra — check before booking.</li>
+          <li>Arrive 30 minutes early to check in and pick a window table on buffet boats.</li>
         </Bullets>
       </Section>
-      <Section title="Fit it into the night">
-        <p>
-          Cruise first, drinks later. From Asiatique you can stay for the market or <A href="/bangkok/night-activities/">Calypso Cabaret</A> on another night. After River City or ICONSIAM, Silom bars or a <A href="/bangkok/rooftop-bars/">rooftop</A> are the short hop. Full list: <A href="/bangkok/night-activities/">night activities</A>.
-        </p>
+
+      <Section title="Traps">
+        <Bullets>
+          <li>Touts at Sathorn Pier selling “cruise tickets” for unknown boats — buy from the operator or a known platform.</li>
+          <li>Drinks and service charges added on board — read the package inclusions.</li>
+        </Bullets>
+        <p>Pair it with a sunset drink: <A href="/bangkok/sky-bar/">Sky Bar</A> is a short walk from Saphan Taksin.</p>
       </Section>
+
       <FaqList
         items={[
-          { q: "Which pier is easiest for a first visit?", a: "Asiatique: one BTS stop (Saphan Taksin) plus a free shuttle boat, and you can eat or walk the market if you arrive early." },
-          { q: "Do I need to book?", a: "Weeknights you can sometimes walk up. Weekends and holidays sell out. Book ahead and keep the boarding time." },
-          { q: "Can I combine it with Muay Thai the same night?", a: "Usually no. Rajadamnern is on the other side of the old town and cards start early. Pick one." },
+          { q: "How much is a Chao Phraya dinner cruise in 2026?", a: "About 1,200–2,000 THB for buffet cruises at walk-in prices, and 2,800–3,800 THB for luxury set-menu cruises." },
+          { q: "Which pier do dinner cruises leave from?", a: "Mostly Asiatique, ICONSIAM and River City, plus a few hotel piers." },
+          { q: "Is there a dress code?", a: "Smart casual for most; some luxury boats ask for more formal dress." },
         ]}
       />
+
       <Related
         links={[
           { href: "/bangkok/night-activities/", label: "Night activities" },
-          { href: "/bangkok/night-markets/", label: "Night markets" },
           { href: "/bangkok/one-night-plan/", label: "One-night plans" },
+          { href: "/bangkok/night-markets/", label: "Night markets" },
+          { href: "/bangkok/sky-bar/", label: "Sky Bar" },
         ]}
       />
     </PageShell>

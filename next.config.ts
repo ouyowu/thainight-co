@@ -16,6 +16,10 @@ const nextConfig: NextConfig = {
       { source: "/pattaya/areas/lk-metro/", destination: "/pattaya/areas/", permanent: true },
       { source: "/pattaya/areas/walking-street/:venue(venues|windmill|sapphire)/", destination: "/pattaya/areas/walking-street/", permanent: true },
       { source: "/pattaya/walking-street-vs-soi-6/", destination: "/pattaya/areas/", permanent: true },
+      { source: "/pattaya/tiffanys-show/", destination: "/pattaya/tiffany-show/", permanent: true },
+      { source: "/pattaya/tiffanys-show/:path*", destination: "/pattaya/tiffany-show/", permanent: true },
+      { source: "/bangkok/sky-bar-dress-code/", destination: "/bangkok/sky-bar/", permanent: true },
+      { source: "/bangkok/sky-bar-dress-code/:path*", destination: "/bangkok/sky-bar/", permanent: true },
     ];
   },
   turbopack: {

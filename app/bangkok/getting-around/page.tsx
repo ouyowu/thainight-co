@@ -35,7 +35,8 @@ export default function BangkokGettingAroundPage() {
         </p>
         <p>
           A “broken” meter or a fixed high price from a curbside taxi is a known pattern. Use the
-          app, or insist on the meter. See <A href="/scams/">scams</A>.
+          app, or insist on the meter. Rates:{" "}
+          <A href="/bangkok/taxi-fare/">Bangkok taxi fares 2026</A>. See <A href="/scams/">scams</A>.
         </p>
       </Section>
 

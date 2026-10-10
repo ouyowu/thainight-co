@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
-import { GuidePhoto } from "@/components/GuidePhoto";
-import { photos } from "@/lib/photos";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -14,7 +12,6 @@ export const metadata = pageMeta(
 export default function Soi11Page() {
   return (
     <PageShell path="/bangkok/areas/soi-11/" title="Sukhumvit Soi 11 Nightlife 2026">
-      <GuidePhoto {...photos.soi11} />
       <p>
         Soi 11 is the easiest all-round nightlife strip in Bangkok, right by BTS Nana. Rooftops,
         cocktail bars, live music and clubs — mixed tourist and local crowds. The best first-night
@@ -42,7 +39,10 @@ export default function Soi11Page() {
         <h2 className="text-lg font-semibold text-foreground">Practical notes</h2>
         <ul className="mt-2 list-disc space-y-1 pl-5">
           <li>
-            Nearest BTS: <strong>Nana</strong>
+            Nearest BTS: <strong>Nana</strong>. Rooftops nearby:{" "}
+            <Link href="/bangkok/soi-11-rooftop-bars/" className="text-accent hover:underline">
+              Soi 11 rooftop bars
+            </Link>
           </li>
           <li>Peak roughly 22:00–02:00, stronger on weekends</li>
           <li>Dress a step smarter for clubs (smart casual)</li>
