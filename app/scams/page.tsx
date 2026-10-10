@@ -61,6 +61,20 @@ export default function ScamsPage() {
             valuables out.
           </p>
         </li>
+        <li>
+          <p className="font-semibold text-foreground">
+            Drink-minimum surprises (especially some Soi 6 bars)
+          </p>
+          <p className="mt-1">
+            Some bars ask for a minimum number of lady drinks before a short-time / upstairs
+            arrangement.
+          </p>
+          <p className="mt-1">
+            <strong>Rule:</strong> Before you sit down or order rounds, ask: room fee, girl’s fee,
+            and whether there is any drink minimum. If the total doesn’t make sense, walk to another
+            bar.
+          </p>
+        </li>
       </ol>
 
       <section>

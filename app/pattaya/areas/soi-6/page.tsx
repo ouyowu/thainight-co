@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HotelsNearBlock } from "@/components/HotelsNearBlock";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
@@ -82,6 +83,15 @@ export default function Soi6Page() {
           <li>Don’t feel pressured to sit at the first place that pulls you in</li>
           <li>Keep the first stop short so you can compare</li>
         </ol>
+        <ul className="mt-2 list-disc space-y-1 pl-5">
+          <li>
+            Some bars now ask for lady-drink minimums before ST — confirm before you sit down (see{" "}
+            <Link href="/pattaya/tonight/" className="text-accent hover:underline">
+              Recent notes on Pattaya Tonight
+            </Link>
+            )
+          </li>
+        </ul>
       </section>
 
       <section>
