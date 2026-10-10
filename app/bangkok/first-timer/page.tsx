@@ -135,7 +135,17 @@ export default function BangkokFirstTimerPage() {
           </li>
         </ul>
         <h3 className="mt-5 text-base font-semibold text-foreground">Stay nearby</h3>
-        <p className="mt-2">Staying near BTS Nana or Asok keeps the night simple.</p>
+        <p className="mt-2">
+          Staying near BTS Nana or Asok keeps the night simple. Area notes:{" "}
+          <Link href="/bangkok/hotels-nana-asok/" className="text-accent hover:underline">
+            Nana & Asok
+          </Link>
+          {" · "}
+          <Link href="/bangkok/hotels-soi-cowboy/" className="text-accent hover:underline">
+            Soi Cowboy
+          </Link>
+          .
+        </p>
         <div className="mt-3">
           <HotelCta label="Hotels near Nana / Asok" helper />
         </div>

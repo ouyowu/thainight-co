@@ -147,7 +147,13 @@ export default function PattayaFirstTimerPage() {
           </li>
         </ul>
         <h3 className="mt-5 text-base font-semibold text-foreground">Stay nearby</h3>
-        <p className="mt-2">Central Pattaya or near Walking Street cuts transport friction.</p>
+        <p className="mt-2">
+          Central Pattaya or near Walking Street cuts transport friction. Area notes:{" "}
+          <Link href="/pattaya/hotels-walking-street/" className="text-accent hover:underline">
+            Where to stay near Walking Street
+          </Link>
+          .
+        </p>
         <div className="mt-3">
           <HotelCta label="Hotels near Walking Street / Central Pattaya" helper />
         </div>
