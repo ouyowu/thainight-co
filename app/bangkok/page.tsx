@@ -100,6 +100,16 @@ export default function BangkokPage() {
             </Link>
           </li>
           <li>
+            <Link href="/bangkok/getting-around/" className="text-accent hover:underline">
+              Getting around
+            </Link>
+          </li>
+          <li>
+            <Link href="/bangkok/airport/" className="text-accent hover:underline">
+              Airport to nightlife
+            </Link>
+          </li>
+          <li>
             <Link href="/bangkok/areas/soi-cowboy/" className="text-accent hover:underline">
               Soi Cowboy detailed guide
             </Link>
@@ -136,6 +146,36 @@ export default function BangkokPage() {
             </Link>
           </li>
           <li>
+            <Link href="/bangkok/getting-around/" className="text-accent hover:underline">
+              Getting around
+            </Link>
+          </li>
+          <li>
+            <Link href="/bangkok/airport/" className="text-accent hover:underline">
+              Airport to nightlife
+            </Link>
+          </li>
+          <li>
+            <Link href="/bangkok/night-activities/" className="text-accent hover:underline">
+              Night activities
+            </Link>
+          </li>
+          <li>
+            <Link href="/bangkok/bar-types/" className="text-accent hover:underline">
+              Bar types
+            </Link>
+          </li>
+          <li>
+            <Link href="/bangkok/ladies-night/" className="text-accent hover:underline">
+              Ladies night
+            </Link>
+          </li>
+          <li>
+            <Link href="/cash/" className="text-accent hover:underline">
+              Cash
+            </Link>
+          </li>
+          <li>
             <Link href="/bangkok/one-night-plan/" className="text-accent hover:underline">
               One-night sample plans
             </Link>
@@ -148,6 +188,23 @@ export default function BangkokPage() {
           <li>
             <Link href="/bangkok/areas/soi-cowboy/bars/" className="text-accent hover:underline">
               Soi Cowboy bars
+            </Link>
+          </li>
+          <li>
+            <Link href="/bangkok/areas/soi-cowboy/baccara/" className="text-accent hover:underline">
+              Baccara
+            </Link>
+            {" · "}
+            <Link href="/bangkok/areas/soi-cowboy/dollhouse/" className="text-accent hover:underline">
+              Dollhouse
+            </Link>
+            {" · "}
+            <Link href="/bangkok/areas/soi-cowboy/tilac/" className="text-accent hover:underline">
+              Tilac
+            </Link>
+            {" · "}
+            <Link href="/bangkok/areas/soi-cowboy/shark/" className="text-accent hover:underline">
+              Shark
             </Link>
           </li>
           <li>

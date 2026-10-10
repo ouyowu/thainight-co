@@ -103,6 +103,16 @@ export default function PattayaPage() {
             </Link>
           </li>
           <li>
+            <Link href="/pattaya/getting-around/" className="text-accent hover:underline">
+              Getting around
+            </Link>
+          </li>
+          <li>
+            <Link href="/pattaya/airport/" className="text-accent hover:underline">
+              Airport to nightlife
+            </Link>
+          </li>
+          <li>
             <Link href="/pattaya/areas/walking-street/" className="text-accent hover:underline">
               Walking Street detailed guide
             </Link>
@@ -139,6 +149,31 @@ export default function PattayaPage() {
             </Link>
           </li>
           <li>
+            <Link href="/pattaya/getting-around/" className="text-accent hover:underline">
+              Getting around
+            </Link>
+          </li>
+          <li>
+            <Link href="/pattaya/airport/" className="text-accent hover:underline">
+              Airport to nightlife
+            </Link>
+          </li>
+          <li>
+            <Link href="/pattaya/night-activities/" className="text-accent hover:underline">
+              Night activities
+            </Link>
+          </li>
+          <li>
+            <Link href="/pattaya/bar-types/" className="text-accent hover:underline">
+              Bar types
+            </Link>
+          </li>
+          <li>
+            <Link href="/cash/" className="text-accent hover:underline">
+              Cash
+            </Link>
+          </li>
+          <li>
             <Link href="/pattaya/one-night-plan/" className="text-accent hover:underline">
               One-night sample plans
             </Link>
@@ -151,6 +186,15 @@ export default function PattayaPage() {
           <li>
             <Link href="/pattaya/areas/walking-street/venues/" className="text-accent hover:underline">
               Walking Street venues
+            </Link>
+          </li>
+          <li>
+            <Link href="/pattaya/areas/walking-street/windmill/" className="text-accent hover:underline">
+              Windmill
+            </Link>
+            {" · "}
+            <Link href="/pattaya/areas/walking-street/sapphire/" className="text-accent hover:underline">
+              Sapphire
             </Link>
           </li>
           <li>

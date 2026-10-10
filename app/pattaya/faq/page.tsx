@@ -103,10 +103,14 @@ export default function PattayaFaqPage() {
           See{" "}
           <Link href="/prices/" className="text-accent hover:underline">
             Prices
-          </Link>{" "}
-          and{" "}
+          </Link>
+          ,{" "}
           <Link href="/budgets/" className="text-accent hover:underline">
             Budgets
+          </Link>
+          , and{" "}
+          <Link href="/cash/" className="text-accent hover:underline">
+            Cash
           </Link>
           .
         </p>
@@ -136,7 +140,15 @@ export default function PattayaFaqPage() {
         <h2 className="text-lg font-semibold text-foreground">Transport at night?</h2>
         <p className="mt-2">
           Prefer <strong>Grab/Bolt</strong>. Baht bus is fine on main roads if you know the route;
-          avoid opaque fixed prices from random touts.
+          avoid opaque fixed prices from random touts.{" "}
+          <Link href="/pattaya/getting-around/" className="text-accent hover:underline">
+            Getting around
+          </Link>
+          {" · "}
+          <Link href="/pattaya/airport/" className="text-accent hover:underline">
+            Airport
+          </Link>
+          .
         </p>
       </section>
 
@@ -160,6 +172,26 @@ export default function PattayaFaqPage() {
         ,{" "}
         <Link href="/pattaya/walking-street-vs-soi-6/" className="text-accent hover:underline">
           Walking Street vs Soi 6
+        </Link>
+        ,{" "}
+        <Link href="/pattaya/getting-around/" className="text-accent hover:underline">
+          Getting around
+        </Link>
+        ,{" "}
+        <Link href="/pattaya/airport/" className="text-accent hover:underline">
+          Airport
+        </Link>
+        ,{" "}
+        <Link href="/pattaya/night-activities/" className="text-accent hover:underline">
+          Night activities
+        </Link>
+        ,{" "}
+        <Link href="/pattaya/bar-types/" className="text-accent hover:underline">
+          Bar types
+        </Link>
+        ,{" "}
+        <Link href="/cash/" className="text-accent hover:underline">
+          Cash
         </Link>
       </p>
       <p className="mt-2">

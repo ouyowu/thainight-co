@@ -102,7 +102,12 @@ export default function BangkokFaqPage() {
         <h2 className="text-lg font-semibold text-foreground">How much cash should I carry?</h2>
         <p className="mt-2">
           Enough for your planned night plus a buffer. Don’t flash large stacks. Use the hotel safe
-          for the rest. Many places are cash-friendly; don’t assume every bar takes card.
+          for the rest. Many places are cash-friendly; don’t assume every bar takes card. Practical
+          notes: {" "}
+          <Link href="/cash/" className="text-accent hover:underline">
+            How much cash
+          </Link>
+          .
         </p>
       </section>
 
@@ -128,7 +133,15 @@ export default function BangkokFaqPage() {
       <section>
         <h2 className="text-lg font-semibold text-foreground">Where should I stay?</h2>
         <p className="mt-2">
-          Near <strong>BTS Nana</strong> or <strong>Asok</strong> keeps transport simple.
+          Near <strong>BTS Nana</strong> or <strong>Asok</strong> keeps transport simple.{" "}
+          <Link href="/bangkok/getting-around/" className="text-accent hover:underline">
+            Getting around
+          </Link>
+          {" · "}
+          <Link href="/bangkok/airport/" className="text-accent hover:underline">
+            Airport
+          </Link>
+          .
         </p>
       </section>
 
@@ -164,6 +177,26 @@ export default function BangkokFaqPage() {
         ,{" "}
         <Link href="/bangkok/cowboy-vs-nana/" className="text-accent hover:underline">
           Soi Cowboy vs Nana Plaza
+        </Link>
+        ,{" "}
+        <Link href="/bangkok/getting-around/" className="text-accent hover:underline">
+          Getting around
+        </Link>
+        ,{" "}
+        <Link href="/bangkok/airport/" className="text-accent hover:underline">
+          Airport
+        </Link>
+        ,{" "}
+        <Link href="/bangkok/night-activities/" className="text-accent hover:underline">
+          Night activities
+        </Link>
+        ,{" "}
+        <Link href="/bangkok/bar-types/" className="text-accent hover:underline">
+          Bar types
+        </Link>
+        ,{" "}
+        <Link href="/cash/" className="text-accent hover:underline">
+          Cash
         </Link>
       </p>
       <p className="mt-2">
