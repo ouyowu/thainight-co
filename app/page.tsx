@@ -7,8 +7,10 @@ const homeDescription =
 
 export const metadata = pageMeta(homeTitle, homeDescription, "/");
 
+
 const bangkokGuides = [
   { href: "/bangkok/", label: "Bangkok overview" },
+  { href: "/bangkok/cowboy-vs-nana/", label: "Soi Cowboy vs Nana Plaza" },
   { href: "/bangkok/one-night-plan/", label: "One-night plan" },
   { href: "/bangkok/areas/soi-cowboy/", label: "Soi Cowboy" },
   { href: "/bangkok/areas/nana-plaza/", label: "Nana Plaza" },
@@ -18,6 +20,7 @@ const bangkokGuides = [
 
 const pattayaGuides = [
   { href: "/pattaya/", label: "Pattaya overview" },
+  { href: "/pattaya/walking-street-vs-soi-6/", label: "Walking Street vs Soi 6" },
   { href: "/pattaya/one-night-plan/", label: "One-night plan" },
   { href: "/pattaya/areas/walking-street/", label: "Walking Street" },
   { href: "/pattaya/areas/soi-6/", label: "Soi 6" },
@@ -78,6 +81,15 @@ export default function HomePage() {
           and{" "}
           <Link href="/budgets/" className="text-accent hover:underline">
             Budgets
+          </Link>
+        </li>
+        <li>
+          <Link href="/bangkok/faq/" className="text-accent hover:underline">
+            Bangkok FAQ
+          </Link>
+          {" · "}
+          <Link href="/pattaya/faq/" className="text-accent hover:underline">
+            Pattaya FAQ
           </Link>
         </li>
         <li>

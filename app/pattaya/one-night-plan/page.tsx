@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { HotelCta } from "@/components/HotelCta";
 import { PageShell } from "@/components/PageShell";
 import { pageMeta } from "@/lib/seo";
 
@@ -74,7 +75,19 @@ export default function PattayaOneNightPlanPage() {
         <Link href="/scams/" className="text-accent hover:underline">
           Scams
         </Link>
+        ,{" "}
+        <Link href="/pattaya/walking-street-vs-soi-6/" className="text-accent hover:underline">
+          Walking Street vs Soi 6
+        </Link>
       </p>
+
+      <section>
+        <h2 className="text-lg font-semibold text-foreground">Stay nearby</h2>
+        <p className="mt-2">Central Pattaya or near Walking Street cuts transport friction.</p>
+        <div className="mt-3">
+          <HotelCta label="Hotels near Walking Street / Central Pattaya" />
+        </div>
+      </section>
     </PageShell>
   );
 }
