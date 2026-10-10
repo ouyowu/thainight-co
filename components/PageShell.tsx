@@ -6,12 +6,14 @@ type PageShellProps = {
   children: ReactNode;
   showUpdated?: boolean;
   lead?: string;
+  belowTitle?: ReactNode;
 };
 
-export function PageShell({ title, children, showUpdated = true, lead }: PageShellProps) {
+export function PageShell({ title, children, showUpdated = true, lead, belowTitle }: PageShellProps) {
   return (
     <article className="mx-auto w-full max-w-3xl px-4 py-8 sm:py-10">
       <h1 className="text-2xl font-semibold tracking-tight text-pretty sm:text-3xl">{title}</h1>
+      {belowTitle}
       {showUpdated ? (
         <p className="mt-2 text-sm text-muted">Last updated: {LAST_UPDATED}</p>
       ) : null}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { navLinks, tonightLinks } from "@/lib/site";
+import { navLinks } from "@/lib/site";
 
 export function Header() {
   return (
@@ -14,14 +14,25 @@ export function Header() {
               {link.label}
             </Link>
           ))}
-          <span className="flex items-center gap-2 text-zinc-200">
-            <span className="text-zinc-400">Tonight</span>
-            {tonightLinks.map((link) => (
-              <Link key={link.href} href={link.href} className="hover:text-accent">
-                {link.label}
+          <details className="relative">
+            <summary className="cursor-pointer list-none text-zinc-200 hover:text-accent [&::-webkit-details-marker]:hidden">
+              Tonight
+            </summary>
+            <div className="absolute right-0 z-50 mt-2 min-w-32 rounded-lg border border-line bg-card py-1 shadow-lg">
+              <Link
+                href="/bangkok/tonight/"
+                className="block px-3 py-1.5 text-zinc-200 hover:bg-background hover:text-accent"
+              >
+                Bangkok
               </Link>
-            ))}
-          </span>
+              <Link
+                href="/pattaya/tonight/"
+                className="block px-3 py-1.5 text-zinc-200 hover:bg-background hover:text-accent"
+              >
+                Pattaya
+              </Link>
+            </div>
+          </details>
         </nav>
       </div>
     </header>
