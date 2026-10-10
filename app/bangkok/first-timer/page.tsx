@@ -109,6 +109,11 @@ export default function BangkokFirstTimerPage() {
             — more variety, three floors
           </li>
           <li>
+            <Link href="/bangkok/faq/" className="text-accent hover:underline">
+              FAQ
+            </Link>
+          </li>
+          <li>
             <Link href="/bangkok/one-night-plan/" className="text-accent hover:underline">
               One-night plans
             </Link>{" "}

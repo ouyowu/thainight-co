@@ -116,6 +116,11 @@ export default function PattayaFirstTimerPage() {
             — lower pressure / lower spend
           </li>
           <li>
+            <Link href="/pattaya/faq/" className="text-accent hover:underline">
+              FAQ
+            </Link>
+          </li>
+          <li>
             <Link href="/pattaya/one-night-plan/" className="text-accent hover:underline">
               One-night plans
             </Link>
