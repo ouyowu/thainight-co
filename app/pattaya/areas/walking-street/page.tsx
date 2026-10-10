@@ -119,6 +119,11 @@ export default function WalkingStreetPage() {
             Prices
           </Link>
         </p>
+        <p className="mt-3">
+          <Link href="/pattaya/hotels-walking-street/" className="text-accent hover:underline">
+            Where to stay near Walking Street
+          </Link>
+        </p>
         <div className="mt-3">
           <HotelCta label="Hotels near Walking Street" />
         </div>

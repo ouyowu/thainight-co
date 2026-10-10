@@ -130,6 +130,11 @@ export default function NanaPlazaPage() {
             Prices
           </Link>
         </p>
+        <p className="mt-3">
+          <Link href="/bangkok/hotels-nana-asok/" className="text-accent hover:underline">
+            Where to stay near Nana & Asok
+          </Link>
+        </p>
         <div className="mt-3">
           <HotelCta label="Hotels near Nana Plaza" />
         </div>

@@ -118,7 +118,13 @@ export default function SoiCowboyPage() {
             Prices
           </Link>
         </p>
-        <p className="mt-3">Staying nearby makes the night simpler.</p>
+        <p className="mt-3">
+          Staying nearby makes the night simpler.{" "}
+          <Link href="/bangkok/hotels-soi-cowboy/" className="text-accent hover:underline">
+            Where to stay near Soi Cowboy
+          </Link>
+          .
+        </p>
         <div className="mt-3">
           <HotelCta label="Hotels near Soi Cowboy / Asok" />
         </div>
