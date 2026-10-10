@@ -1,6 +1,46 @@
 import Link from "next/link";
+import { FaqJsonLd } from "@/components/FaqJsonLd";
 import { PageShell } from "@/components/PageShell";
 import { pageMeta } from "@/lib/seo";
+
+const faqItems = [
+  {
+    q: "Soi Cowboy or Nana Plaza for the first night?",
+    a: "Soi Cowboy for the easiest layout (one open street). Nana Plaza if you want more venues in one complex. Many people do Cowboy first, Nana on another night.",
+  },
+  {
+    q: "Do I need a reservation?",
+    a: "No for normal go-go visits. Walk in. Peak hours can mean standing room only in popular bars.",
+  },
+  {
+    q: "What is a bar fine?",
+    a: "Money paid to the bar so a staff member can leave. Her time/fee is separate and agreed with her. Confirm both numbers before you leave.",
+  },
+  {
+    q: "What is a lady drink?",
+    a: "A drink you buy for someone sitting with you. Price is higher than your own beer. Ask the price before the first one.",
+  },
+  {
+    q: "How much cash should I carry?",
+    a: "Enough for your planned night plus a buffer. Don’t flash large stacks. Use the hotel safe for the rest. Many places are cash-friendly; don’t assume every bar takes card.",
+  },
+  {
+    q: "What time should I go?",
+    a: "Roughly 21:00–22:00 start is practical. Earlier is quieter; after midnight is busier and some places wind down near 02:00 on Cowboy.",
+  },
+  {
+    q: "Is Patpong worth it?",
+    a: "For the night market and a short look, yes. For the main go-go night in 2026, Cowboy or Nana are stronger. Never follow touts upstairs for “cheap shows.”",
+  },
+  {
+    q: "Where should I stay?",
+    a: "Near BTS Nana or Asok keeps transport simple.",
+  },
+  {
+    q: "Is it safe?",
+    a: "Use normal big-city caution. Biggest issues are bills, touts, and transport overcharge — not random violence. See Scams and Safety.",
+  },
+];
 
 export const metadata = pageMeta(
   "Bangkok Nightlife FAQ 2026",
@@ -11,6 +51,7 @@ export const metadata = pageMeta(
 export default function BangkokFaqPage() {
   return (
     <PageShell title="Bangkok Nightlife FAQ 2026">
+      <FaqJsonLd items={faqItems} />
       <section>
         <h2 className="text-lg font-semibold text-foreground">
           Soi Cowboy or Nana Plaza for the first night?
@@ -22,6 +63,12 @@ export default function BangkokFaqPage() {
           <strong>Nana Plaza</strong> if you want more venues in one complex.
         </p>
         <p className="mt-2">Many people do Cowboy first, Nana on another night.</p>
+        <p className="mt-2">
+          Full comparison:{" "}
+          <Link href="/bangkok/cowboy-vs-nana/" className="text-accent hover:underline">
+            Soi Cowboy vs Nana Plaza
+          </Link>
+        </p>
       </section>
 
       <section>
@@ -114,6 +161,17 @@ export default function BangkokFaqPage() {
         <Link href="/bangkok/one-night-plan/" className="text-accent hover:underline">
           One-night plans
         </Link>
+        ,{" "}
+        <Link href="/bangkok/cowboy-vs-nana/" className="text-accent hover:underline">
+          Soi Cowboy vs Nana Plaza
+        </Link>
+      </p>
+      <p className="mt-2">
+        Stay nearby / hotel notes:{" "}
+        <Link href="/bangkok/first-timer/" className="text-accent hover:underline">
+          First-timer guide
+        </Link>{" "}
+        (Stay nearby).
       </p>
     </PageShell>
   );
