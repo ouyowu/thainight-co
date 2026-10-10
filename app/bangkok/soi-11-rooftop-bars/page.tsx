@@ -15,6 +15,7 @@ export const metadata = pageMeta(
 export default function Soi11RooftopsPage() {
   return (
     <PageShell
+      path="/bangkok/soi-11-rooftop-bars/"
       title="Soi 11 Rooftop Bars, Bangkok (2026)"
       lead="Five rooftops sit within a 10-minute walk of BTS Nana. Do one at sunset, then walk down Soi 11 for bars and clubs."
     >

@@ -14,6 +14,7 @@ export const metadata = pageMeta(
 export default function CabaretShowsPage() {
   return (
     <PageShell
+      path="/pattaya/cabaret-shows/"
       title="Pattaya Cabaret Show Tickets (2026) – Tiffany’s vs Alcazar"
       lead="Alcazar is the cheaper ticket (VIP about 900 THB); Tiffany’s is the more polished production (from about 800–900 THB mezzanine up to 2,000+ THB Diamond). Both are on Pattaya 2nd Road and run several shows a night."
     >
@@ -91,6 +92,7 @@ export default function CabaretShowsPage() {
       <Related
         links={[
           { href: "/pattaya/night-activities/", label: "Night activities" },
+          { href: "/bangkok/calypso-cabaret/", label: "Calypso Cabaret (Bangkok)" },
           { href: "/pattaya/one-night-plan/", label: "One-night plans" },
           { href: "/pattaya/hotels-walking-street/", label: "Where to stay" },
         ]}

@@ -11,7 +11,8 @@ export const metadata = pageMeta(
 
 export default function BudgetsPage() {
   return (
-    <PageShell title="Nightlife Budgets 2026">
+    <PageShell
+      path="/budgets/" title="Nightlife Budgets 2026">
       <p>
         These are <strong>planning bands per person</strong>, not promises. They exclude your
         hotel. High season (roughly Nov–Apr) leans higher.

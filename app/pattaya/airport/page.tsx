@@ -11,7 +11,8 @@ export const metadata = pageMeta(
 
 export default function PattayaAirportPage() {
   return (
-    <PageShell title="Bangkok to Pattaya Transfer (2026) – BKK, City & U-Tapao">
+    <PageShell
+      path="/pattaya/airport/" title="Bangkok to Pattaya Transfer (2026) – BKK, City & U-Tapao">
       <p>
         Most visitors reach Pattaya by road from Bangkok Suvarnabhumi (BKK) or from the city. The
         drive is usually around two hours, longer at rush hour and on Friday evenings. Exact fares:{" "}

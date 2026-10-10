@@ -14,6 +14,7 @@ export const metadata = pageMeta(
 export default function DinnerCruisePage() {
   return (
     <PageShell
+      path="/bangkok/dinner-cruise/"
       title="Chao Phraya Dinner Cruise Prices (2026)"
       lead="Buffet cruises cost about 1,200–2,000 THB per person at walk-in prices; luxury set-menu cruises run 2,800–3,800 THB. Online prices are often lower."
     >

@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
-import { LAST_UPDATED } from "@/lib/site";
+import { PageJsonLd } from "@/components/PageJsonLd";
+import { LAST_UPDATED, LAST_UPDATED_ISO } from "@/lib/site";
 
 type PageShellProps = {
   title: string;
@@ -7,11 +8,14 @@ type PageShellProps = {
   showUpdated?: boolean;
   lead?: string;
   belowTitle?: ReactNode;
+  /** Page path (e.g. "/bangkok/"). Enables Article + BreadcrumbList JSON-LD. */
+  path?: string;
 };
 
-export function PageShell({ title, children, showUpdated = true, lead, belowTitle }: PageShellProps) {
+export function PageShell({ title, children, showUpdated = true, lead, belowTitle, path }: PageShellProps) {
   return (
     <article className="mx-auto w-full max-w-3xl px-4 py-8 sm:py-10">
+      {path ? <PageJsonLd path={path} title={title} dateModified={LAST_UPDATED_ISO} /> : null}
       <h1 className="text-2xl font-semibold tracking-tight text-pretty sm:text-3xl">{title}</h1>
       {belowTitle}
       {showUpdated ? (

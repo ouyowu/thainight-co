@@ -13,6 +13,7 @@ export const metadata = pageMeta(
 export default function SkyBarPage() {
   return (
     <PageShell
+      path="/bangkok/sky-bar/"
       title="Sky Bar Bangkok (2026) – Dress Code, Prices & Booking"
       lead="Sky Bar at lebua, State Tower, is Bangkok’s most famous rooftop: river views from about 247 m up, made famous by The Hangover Part II. It’s also one of the most expensive drinks in the city."
     >

@@ -11,7 +11,8 @@ export const metadata = pageMeta(
 
 export default function PattayaNightActivitiesPage() {
   return (
-    <PageShell title="Pattaya Night Activities 2026">
+    <PageShell
+      path="/pattaya/night-activities/" title="Pattaya Night Activities 2026">
       <p>
         Pick one anchor for the evening, then a bar area. Shows and fights start early, so they fit
         neatly before Walking Street.

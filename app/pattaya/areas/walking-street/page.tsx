@@ -13,7 +13,8 @@ export const metadata = pageMeta(
 
 export default function WalkingStreetPage() {
   return (
-    <PageShell title="Walking Street Pattaya Guide 2026 – Prices, Clubs & What to Expect">
+    <PageShell
+      path="/pattaya/areas/walking-street/" title="Walking Street Pattaya Guide 2026 – Prices, Clubs & What to Expect">
       <Section title="Quick overview">
         <p>
           Walking Street is Pattaya’s famous nightlife strip — neon, clubs, live-music bars,

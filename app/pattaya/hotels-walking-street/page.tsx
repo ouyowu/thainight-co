@@ -12,7 +12,8 @@ export const metadata = pageMeta(
 
 export default function HotelsWalkingStreetPage() {
   return (
-    <PageShell title="Where to Stay Near Walking Street Pattaya 2026">
+    <PageShell
+      path="/pattaya/hotels-walking-street/" title="Where to Stay Near Walking Street Pattaya 2026">
       <p>
         Walking Street is the south end of Pattaya Beach Road. It turns pedestrian at night. The
         hotel decision is Central vs Beach Road vs Second Road — not which neon tower a blog ranked

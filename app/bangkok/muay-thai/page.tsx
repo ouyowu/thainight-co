@@ -14,6 +14,7 @@ export const metadata = pageMeta(
 export default function MuayThaiBangkokPage() {
   return (
     <PageShell
+      path="/bangkok/muay-thai/"
       title="Muay Thai Tickets in Bangkok (2026) – Rajadamnern vs Lumpinee"
       lead="A live fight card is one of the best nights out in Bangkok. Pick the stadium by night and location, pick the seat by how close you want to be."
     >

@@ -54,7 +54,8 @@ export const metadata = pageMeta(
 
 export default function BangkokFaqPage() {
   return (
-    <PageShell title="Bangkok Nightlife FAQ 2026">
+    <PageShell
+      path="/bangkok/faq/" title="Bangkok Nightlife FAQ 2026">
       <FaqList items={faqItems} />
       <Related
         links={[

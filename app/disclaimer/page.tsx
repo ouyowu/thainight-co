@@ -10,7 +10,8 @@ export const metadata = pageMeta(
 
 export default function DisclaimerPage() {
   return (
-    <PageShell title="Disclaimer" showUpdated={false}>
+    <PageShell
+      path="/disclaimer/" title="Disclaimer" showUpdated={false}>
       <DisclaimerCopy heading="none" />
     </PageShell>
   );

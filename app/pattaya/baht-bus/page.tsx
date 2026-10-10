@@ -13,6 +13,7 @@ export const metadata = pageMeta(
 export default function BahtBusPage() {
   return (
     <PageShell
+      path="/pattaya/baht-bus/"
       title="Pattaya Baht Bus Price & Routes (2026)"
       lead="On a fixed route a baht bus costs 10–20 THB per person. The moment you tell the driver where you want to go, it becomes a private charter at a much higher price."
     >

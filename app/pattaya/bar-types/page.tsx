@@ -11,7 +11,8 @@ export const metadata = pageMeta(
 
 export default function PattayaBarTypesPage() {
   return (
-    <PageShell title="Pattaya Nightlife Bar Types 2026">
+    <PageShell
+      path="/pattaya/bar-types/" title="Pattaya Nightlife Bar Types 2026">
       <p>Type matters more than memorising every name. Pick the format, then the street.</p>
 
       <Section title="The formats">

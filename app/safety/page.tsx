@@ -10,7 +10,8 @@ export const metadata = pageMeta(
 
 export default function SafetyPage() {
   return (
-    <PageShell title="Nightlife Safety Tips (Bangkok & Pattaya)">
+    <PageShell
+      path="/safety/" title="Nightlife Safety Tips (Bangkok & Pattaya)">
       <section>
         <h2 className="text-lg font-semibold text-foreground">Before you go out</h2>
         <ul className="mt-2 list-disc space-y-1 pl-5">

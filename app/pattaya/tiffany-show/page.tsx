@@ -14,6 +14,7 @@ export const metadata = pageMeta(
 export default function TiffanyShowPage() {
   return (
     <PageShell
+      path="/pattaya/tiffany-show/"
       title="Tiffany’s Show Pattaya (2026) – Prices, Times & Seats"
       lead="Pattaya’s best-known cabaret: a 75-minute production on Pattaya 2nd Road with three shows a night. Seats run from about 800 THB to over 2,000 THB."
     >

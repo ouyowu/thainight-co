@@ -14,6 +14,7 @@ export const metadata = pageMeta(
 export default function AirportTaxiPricePage() {
   return (
     <PageShell
+      path="/pattaya/bangkok-airport-to-pattaya-taxi-price/"
       title="Bangkok Airport to Pattaya Taxi Price (2026)"
       lead="Short answer: expect about 1,200–1,700 THB for a car from Suvarnabhumi (BKK) to Pattaya, plus expressway tolls. The airport bus costs 139 THB but runs only a few times a day."
     >

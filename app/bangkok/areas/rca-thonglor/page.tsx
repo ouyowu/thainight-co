@@ -11,7 +11,8 @@ export const metadata = pageMeta(
 
 export default function RcaThonglorPage() {
   return (
-    <PageShell title="RCA & Thonglor Nightlife 2026">
+    <PageShell
+      path="/bangkok/areas/rca-thonglor/" title="RCA & Thonglor Nightlife 2026">
       <p>
         For <strong>clubs</strong> and polished bar nights, two names matter: <strong>RCA</strong>{" "}
         (Royal City Avenue) and <strong>Thonglor</strong>.

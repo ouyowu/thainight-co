@@ -8,6 +8,7 @@ export const bangkokGuides = [
   { href: "/bangkok/sky-bar/", label: "Sky Bar: dress code & prices" },
   { href: "/bangkok/muay-thai/", label: "Muay Thai tickets & prices" },
   { href: "/bangkok/dinner-cruise/", label: "Dinner cruise prices" },
+  { href: "/bangkok/calypso-cabaret/", label: "Calypso Cabaret tickets" },
   { href: "/bangkok/night-activities/", label: "Night activities: cabaret, markets, river" },
   { href: "/bangkok/bar-types/", label: "Bar & club types" },
   { href: "/bangkok/ladies-night/", label: "Ladies night & promo nights" },
@@ -15,6 +16,7 @@ export const bangkokGuides = [
   { href: "/bangkok/getting-around/", label: "Getting around at night" },
   { href: "/bangkok/taxi-fare/", label: "Taxi fares & scams" },
   { href: "/bangkok/airport/", label: "Airport to city" },
+  { href: "/bangkok/airport-to-sukhumvit-taxi-price/", label: "Airport → Sukhumvit taxi price" },
   { href: "/bangkok/faq/", label: "FAQ" },
 ] as const;
 
@@ -44,6 +46,12 @@ export const pattayaAreas = [
   { href: "/pattaya/areas/walking-street/", label: "Walking Street" },
   { href: "/pattaya/areas/soi-buakhao/", label: "Soi Buakhao" },
   { href: "/pattaya/areas/tree-town/", label: "Tree Town" },
+] as const;
+
+export const chiangMaiGuides = [
+  { href: "/chiang-mai/night-markets/", label: "Night markets" },
+  { href: "/chiang-mai/nimman-nightlife/", label: "Nimman bars & clubs" },
+  { href: "/chiang-mai/old-city-nightlife/", label: "Old City & riverside live music" },
 ] as const;
 
 export const generalGuides = [

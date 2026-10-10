@@ -11,7 +11,8 @@ export const metadata = pageMeta(
 
 export default function BangkokAirportPage() {
   return (
-    <PageShell title="Bangkok Airport to City (2026) – BKK & DMK">
+    <PageShell
+      path="/bangkok/airport/" title="Bangkok Airport to City (2026) – BKK & DMK">
       <p>
         Two airports: Suvarnabhumi (BKK) and Don Mueang (DMK). Most nightlife visitors stay on
         Sukhumvit — see <A href="/bangkok/hotels-nana-asok/">where to stay</A>.
@@ -21,7 +22,7 @@ export default function BangkokAirportPage() {
         <Bullets>
           <li>Main international airport.</li>
           <li>Airport Rail Link to Makkasan (walk to MRT Phetchaburi → Sukhumvit) or to Phaya Thai (BTS). Clean, cheap, no negotiating.</li>
-          <li>Tired or heavy bags: Grab from the official pickup point, or the public taxi queue with the meter.</li>
+          <li>Tired or heavy bags: Grab from the official pickup point, or the public taxi queue with the meter — see <A href="/bangkok/airport-to-sukhumvit-taxi-price/">taxi price to Sukhumvit</A>.</li>
         </Bullets>
       </Section>
 

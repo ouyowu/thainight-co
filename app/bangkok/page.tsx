@@ -14,6 +14,7 @@ export const metadata = pageMeta(
 export default function BangkokPage() {
   return (
     <PageShell
+      path="/bangkok/"
       title="Bangkok Nightlife Guide 2026 – Areas, Prices & First-Timer Advice"
       belowTitle={
         <p className="mt-3 text-base leading-7 text-zinc-200">

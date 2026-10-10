@@ -10,7 +10,8 @@ export const metadata = pageMeta(
 
 export default function SoiBuakhaoPage() {
   return (
-    <PageShell title="Soi Buakhao Pattaya 2026">
+    <PageShell
+      path="/pattaya/areas/soi-buakhao/" title="Soi Buakhao Pattaya 2026">
       <p>
         Soi Buakhao is central Pattaya’s <strong>budget-friendly</strong> nightlife and food
         corridor, between Second and Third Road. Beer bars, sports pubs, live music and street food

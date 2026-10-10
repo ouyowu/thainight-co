@@ -6,10 +6,12 @@ export const SITE_URL = (
 ).replace(/\/$/, "");
 export const SITE_NAME = "Thai Night";
 export const LAST_UPDATED = "October 2026";
+export const LAST_UPDATED_ISO = "2026-10-10";
 
 export const navLinks = [
   { href: "/bangkok/", label: "Bangkok" },
   { href: "/pattaya/", label: "Pattaya" },
+  { href: "/chiang-mai/", label: "Chiang Mai" },
   { href: "/prices/", label: "Prices" },
   { href: "/scams/", label: "Scams" },
 ] as const;
@@ -33,6 +35,8 @@ export const routes = [
   "/bangkok/sky-bar/",
   "/bangkok/dinner-cruise/",
   "/bangkok/taxi-fare/",
+  "/bangkok/calypso-cabaret/",
+  "/bangkok/airport-to-sukhumvit-taxi-price/",
   "/bangkok/ladies-night/",
   "/bangkok/bar-types/",
   "/bangkok/hotels-nana-asok/",
@@ -63,6 +67,10 @@ export const routes = [
   "/pattaya/one-night-plan/",
   "/pattaya/prices/",
   "/pattaya/tonight/",
+  "/chiang-mai/",
+  "/chiang-mai/night-markets/",
+  "/chiang-mai/nimman-nightlife/",
+  "/chiang-mai/old-city-nightlife/",
   "/scams/",
   "/budgets/",
   "/cash/",

@@ -14,6 +14,7 @@ export const metadata = pageMeta(
 export default function AlcazarShowPage() {
   return (
     <PageShell
+      path="/pattaya/alcazar-show/"
       title="Alcazar Show Pattaya (2026) – Prices, Times & Tips"
       lead="Alcazar is Pattaya’s better-value cabaret: about 70 minutes, four shows a day, VIP seats around 900 THB."
     >

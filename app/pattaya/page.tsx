@@ -14,6 +14,7 @@ export const metadata = pageMeta(
 export default function PattayaPage() {
   return (
     <PageShell
+      path="/pattaya/"
       title="Pattaya Nightlife Guide 2026 – Areas, Shows & Prices"
       belowTitle={
         <p className="mt-3 text-base leading-7 text-zinc-200">

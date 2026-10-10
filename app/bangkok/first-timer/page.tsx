@@ -12,7 +12,8 @@ export const metadata = pageMeta(
 
 export default function BangkokFirstTimerPage() {
   return (
-    <PageShell title="Bangkok Nightlife First-Timer Guide (2026)">
+    <PageShell
+      path="/bangkok/first-timer/" title="Bangkok Nightlife First-Timer Guide (2026)">
       <Section title="Quick answer">
         <p>
           Easiest first night: a rooftop for sunset, dinner, then Sukhumvit Soi 11 for bars and a

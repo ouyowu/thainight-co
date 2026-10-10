@@ -13,6 +13,7 @@ export const metadata = pageMeta(
 export default function TaxiFarePage() {
   return (
     <PageShell
+      path="/bangkok/taxi-fare/"
       title="Bangkok Taxi Fares (2026) – Meter Rates & Scams"
       lead="Metered taxis start at 35 THB. A 5 km ride is roughly 60 THB and 10 km about 95 THB in good traffic. Late at night, drivers who refuse the meter are the main problem."
     >

@@ -10,7 +10,8 @@ export const metadata = pageMeta("Bangkok Nightlife Areas 2026", lead, "/bangkok
 
 export default function BangkokAreasPage() {
   return (
-    <PageShell title="Bangkok Nightlife Areas" lead={lead}>
+    <PageShell
+      path="/bangkok/areas/" title="Bangkok Nightlife Areas" lead={lead}>
       <PriceTable
         caption="Bangkok nightlife areas"
         headers={["Area", "Best for", "Notes"]}
