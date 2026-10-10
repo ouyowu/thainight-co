@@ -3,8 +3,8 @@ import { PriceTable } from "@/components/PriceTable";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Thailand Nightlife Prices 2026 – Bangkok & Pattaya Quick Reference",
-  "Prices are approximate ranges based on recent visitor reports. Always confirm on the spot. High season (Nov–Apr) tends toward the higher end.",
+  "Thailand Nightlife Prices 2026 – Bangkok & Pattaya",
+  "2026 price reference for Bangkok and Pattaya: beer, lady drinks, bar fines and short-time ranges by area.",
   "/prices/",
 );
 

@@ -1,14 +1,11 @@
 import Link from "next/link";
 import { pageMeta } from "@/lib/seo";
 
-const homeTitle = "Thai Night – Practical Nightlife Guides for Bangkok & Pattaya";
+const homeTitle = "Thai Night – Bangkok & Pattaya Nightlife Guides 2026";
 const homeDescription =
-  "Know before you go. Real prices, real areas, real scams — updated for 2026. Free, no-nonsense guides for first-timers and returning visitors.";
+  "Practical nightlife guides for Bangkok and Pattaya. Real 2026 prices, area comparisons, first-timer tips and common scams. No fluff.";
 
-export const metadata = {
-  ...pageMeta(homeTitle, homeDescription, "/"),
-  title: { absolute: homeTitle },
-};
+export const metadata = pageMeta(homeTitle, homeDescription, "/");
 
 const quickLinks = [
   { href: "/bangkok/first-timer/", label: "Bangkok First-Timer Guide" },

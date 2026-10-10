@@ -3,7 +3,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "About Thai Night",
-  "Thai Night is a free practical guide to nightlife in Bangkok and Pattaya. Current prices, real area differences, and common pitfalls.",
+  "Thai Night is a free practical guide to nightlife in Bangkok and Pattaya, focused on current prices and real area differences.",
   "/about/",
 );
 

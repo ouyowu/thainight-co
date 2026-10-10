@@ -4,7 +4,7 @@ import { SITE_NAME, SITE_URL } from "@/lib/site";
 export function pageMeta(title: string, description: string, path: string): Metadata {
   const url = path === "/" ? `${SITE_URL}/` : `${SITE_URL}${path}`;
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: { canonical: url },
     openGraph: {

@@ -4,7 +4,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Nightlife Safety",
-  "Practical safety habits for Bangkok and Pattaya nightlife: money, phones, taxis, rooms, and Tourist Police 1155.",
+  "Most nights are uneventful if you treat this like a cash business: price things out loud, do not get herded, and do not leave valuables on a bed.",
   "/safety/",
 );
 

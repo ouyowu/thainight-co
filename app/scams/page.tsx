@@ -2,8 +2,8 @@ import { PageShell } from "@/components/PageShell";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Common Nightlife Scams in Bangkok & Pattaya (2026)",
-  "Ping-pong traps, padded bills, bar-fine confusion, taxi overcharge, jet-ski damage, and room theft — plus the rules that stop them.",
+  "Nightlife Scams in Bangkok & Pattaya 2026",
+  "Common nightlife scams and how to avoid them: padded bills, tout shows, bar fine confusion, taxis and more.",
   "/scams/",
 );
 
