@@ -21,7 +21,6 @@ export default function PattayaFirstTimerPage() {
           one night and Soi 6 the next.
         </p>
       </section>
-
       <section>
         <h2 className="text-lg font-semibold text-foreground">Main Areas Compared</h2>
         <div className="mt-3">
@@ -36,7 +35,6 @@ export default function PattayaFirstTimerPage() {
           />
         </div>
       </section>
-
       <section>
         <h2 className="text-lg font-semibold text-foreground">Recommended First Night Plan</h2>
         <ol className="mt-2 list-decimal space-y-1 pl-5">
@@ -47,7 +45,6 @@ export default function PattayaFirstTimerPage() {
           <li>Decide early how much you are willing to spend</li>
         </ol>
       </section>
-
       <section>
         <h2 className="text-lg font-semibold text-foreground">2026 Price Range Walking Street</h2>
         <div className="mt-3">
@@ -63,7 +60,6 @@ export default function PattayaFirstTimerPage() {
           />
         </div>
       </section>
-
       <section>
         <h2 className="text-lg font-semibold text-foreground">Soi 6</h2>
         <div className="mt-3">
@@ -79,7 +75,6 @@ export default function PattayaFirstTimerPage() {
           />
         </div>
       </section>
-
       <section>
         <h2 className="text-lg font-semibold text-foreground">Simple Rules</h2>
         <ul className="mt-2 list-disc space-y-1 pl-5">
@@ -89,7 +84,6 @@ export default function PattayaFirstTimerPage() {
           <li>Keep small bills (100s and 50s)</li>
         </ul>
       </section>
-
       <section>
         <h2 className="text-lg font-semibold text-foreground">Next steps</h2>
         <ul className="mt-2 list-disc space-y-1 pl-5">
@@ -118,6 +112,29 @@ export default function PattayaFirstTimerPage() {
           <li>
             <Link href="/pattaya/faq/" className="text-accent hover:underline">
               FAQ
+            </Link>
+          </li>
+          <li>
+            <Link href="/pattaya/getting-around/" className="text-accent hover:underline">
+              Getting around
+            </Link>{" "}
+            ·{" "}
+            <Link href="/pattaya/airport/" className="text-accent hover:underline">
+              Airport
+            </Link>
+          </li>
+          <li>
+            <Link href="/pattaya/night-activities/" className="text-accent hover:underline">
+              Night activities
+            </Link>{" "}
+            ·{" "}
+            <Link href="/pattaya/bar-types/" className="text-accent hover:underline">
+              Bar types
+            </Link>
+          </li>
+          <li>
+            <Link href="/cash/" className="text-accent hover:underline">
+              Cash
             </Link>
           </li>
           <li>
