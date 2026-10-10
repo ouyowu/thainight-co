@@ -36,7 +36,7 @@ export default function BangkokNightActivitiesPage() {
       <Section title="Chao Phraya dinner cruise">
         <p>
           Two-hour buffet or set-menu cruises leave from Asiatique, ICONSIAM and River City past the
-          lit-up temples and Grand Palace. Good for couples and groups; dress smart casual.
+          lit-up temples and Grand Palace. Good for couples and groups; dress smart casual. Full pier and booking notes: <A href="/bangkok/dinner-cruise/">dinner cruise</A>.
         </p>
       </Section>
 
@@ -51,7 +51,7 @@ export default function BangkokNightActivitiesPage() {
         <Bullets>
           <li><A href="/bangkok/areas/patpong/">Patpong</A> — Silom night market; skip any upstairs “show” offers.</li>
           <li>Asiatique — riverside market, restaurants and the big wheel.</li>
-          <li>Jodd Fairs and other weekend-style markets — food first; check the current location and days, as markets move.</li>
+          <li>Jodd Fairs Ratchada and other markets — food first; locations move. See <A href="/bangkok/night-markets/">night markets</A>.</li>
         </Bullets>
       </Section>
 
