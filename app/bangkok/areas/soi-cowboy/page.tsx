@@ -1,8 +1,7 @@
 import Link from "next/link";
-import { HotelsNearBlock } from "@/components/HotelsNearBlock";
+import { HotelCta } from "@/components/HotelCta";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
-import { affiliates } from "@/lib/affiliates";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -100,7 +99,30 @@ export default function SoiCowboyPage() {
         </ul>
       </section>
 
-      <HotelsNearBlock href={affiliates.hotelSoiCowboy} cta="Hotels near Soi Cowboy / Asok" />
+      <section>
+        <h2 className="text-lg font-semibold text-foreground">Next steps</h2>
+        <p className="mt-2">
+          <Link href="/bangkok/areas/soi-cowboy/bars/" className="text-accent hover:underline">
+            Bars on Soi Cowboy
+          </Link>{" "}
+          ·{" "}
+          <Link href="/bangkok/areas/nana-plaza/" className="text-accent hover:underline">
+            Nana Plaza
+          </Link>{" "}
+          ·{" "}
+          <Link href="/bangkok/first-timer/" className="text-accent hover:underline">
+            First-timer
+          </Link>{" "}
+          ·{" "}
+          <Link href="/prices/" className="text-accent hover:underline">
+            Prices
+          </Link>
+        </p>
+        <p className="mt-3">Staying nearby makes the night simpler.</p>
+        <div className="mt-3">
+          <HotelCta label="Hotels near Soi Cowboy / Asok" />
+        </div>
+      </section>
     </PageShell>
   );
 }

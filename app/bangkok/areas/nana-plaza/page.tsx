@@ -1,8 +1,7 @@
 import Link from "next/link";
-import { HotelsNearBlock } from "@/components/HotelsNearBlock";
+import { HotelCta } from "@/components/HotelCta";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
-import { affiliates } from "@/lib/affiliates";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -112,7 +111,29 @@ export default function NanaPlazaPage() {
         </ul>
       </section>
 
-      <HotelsNearBlock href={affiliates.hotelNanaPlaza} cta="Hotels near Nana Plaza" />
+      <section>
+        <h2 className="text-lg font-semibold text-foreground">Next steps</h2>
+        <p className="mt-2">
+          <Link href="/bangkok/areas/nana-plaza/floors/" className="text-accent hover:underline">
+            Floor guide
+          </Link>{" "}
+          ·{" "}
+          <Link href="/bangkok/areas/soi-cowboy/" className="text-accent hover:underline">
+            Soi Cowboy
+          </Link>{" "}
+          ·{" "}
+          <Link href="/bangkok/first-timer/" className="text-accent hover:underline">
+            First-timer
+          </Link>{" "}
+          ·{" "}
+          <Link href="/prices/" className="text-accent hover:underline">
+            Prices
+          </Link>
+        </p>
+        <div className="mt-3">
+          <HotelCta label="Hotels near Nana Plaza" />
+        </div>
+      </section>
     </PageShell>
   );
 }
