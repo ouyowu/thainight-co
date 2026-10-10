@@ -1,6 +1,8 @@
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
 import { A, Bullets } from "@/components/Prose";
+import { GuidePhoto } from "@/components/GuidePhoto";
+import { photos } from "@/lib/photos";
 import { pageMeta } from "@/lib/seo";
 
 const lead = "Four zones cover almost every Bangkok night out. Pick by the kind of night you want, then stay close to it.";
@@ -10,6 +12,7 @@ export const metadata = pageMeta("Bangkok Nightlife Areas 2026", lead, "/bangkok
 export default function BangkokAreasPage() {
   return (
     <PageShell path="/bangkok/areas/" title="Bangkok Nightlife Areas" lead={lead}>
+      <GuidePhoto {...photos.khaoSan} />
       <PriceTable caption="Bangkok nightlife areas" headers={["Area", "Best for", "Notes"]} rows={[["Sukhumvit Soi 11", "First night", "Bars, a rooftop and clubs near BTS Nana"], ["Thonglor / Ekkamai", "Cocktails, live music", "Upscale, younger Thai crowd"], ["RCA", "Big club nights", "Near MRT Phra Ram 9; ID checks"], ["Silom / Patpong", "Market, sky bars", "Night market; famous rooftops nearby"], ["Khao San Road", "Cheap and loud", "Backpacker street near the old town"]]} />
       <Bullets>
         <li><A href="/bangkok/areas/soi-11/">Soi 11</A></li>

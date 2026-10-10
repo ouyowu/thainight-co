@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
+import { GuidePhoto } from "@/components/GuidePhoto";
+import { photos } from "@/lib/photos";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -12,6 +14,7 @@ export const metadata = pageMeta(
 export default function RcaThonglorPage() {
   return (
     <PageShell path="/bangkok/areas/rca-thonglor/" title="RCA & Thonglor Nightlife 2026">
+      <GuidePhoto {...photos.rca} />
       <p>
         For <strong>clubs</strong> and polished bar nights, two names matter: <strong>RCA</strong>{" "}
         (Royal City Avenue) and <strong>Thonglor</strong>.

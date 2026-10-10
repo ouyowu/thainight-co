@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
+import { GuidePhoto } from "@/components/GuidePhoto";
+import { photos } from "@/lib/photos";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -11,6 +13,7 @@ export const metadata = pageMeta(
 export default function PatpongPage() {
   return (
     <PageShell path="/bangkok/areas/patpong/" title="Patpong Bangkok 2026">
+      <GuidePhoto {...photos.patpong} />
       <p>
         Patpong is two short lanes off Silom, near Sala Daeng BTS / Silom MRT, best known today
         for its <strong>night market</strong>. Treat it as market + history + a casual drink, and

@@ -1,5 +1,7 @@
 import { PageShell } from "@/components/PageShell";
 import { A, Bullets, Related, Section } from "@/components/Prose";
+import { GuidePhoto } from "@/components/GuidePhoto";
+import { photos } from "@/lib/photos";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -11,6 +13,8 @@ export const metadata = pageMeta(
 export default function SoiBuakhaoPage() {
   return (
     <PageShell path="/pattaya/areas/soi-buakhao/" title="Soi Buakhao Pattaya 2026">
+      <GuidePhoto {...photos.centralPattaya} />
+      <p className="text-sm text-muted">Licensed street photos of Soi Buakhao itself are scarce. The photo is CentralFestival on Beach Road — Soi Buakhao sits a few blocks inland, between Second and Third Road.</p>
       <p>
         Soi Buakhao is central Pattaya’s <strong>budget-friendly</strong> nightlife and food
         corridor, between Second and Third Road. Beer bars, sports pubs, live music and street food

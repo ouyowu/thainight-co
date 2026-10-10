@@ -3,6 +3,8 @@ import { FaqList } from "@/components/FaqList";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
 import { A, Bullets, Related, Section } from "@/components/Prose";
+import { GuidePhoto } from "@/components/GuidePhoto";
+import { photos } from "@/lib/photos";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -18,6 +20,7 @@ export default function KhaoSanPage() {
       title="Khao San Road Nightlife (2026)"
       lead="Bangkok backpacker street is loud, cheap and close to the old town. Use it for a low-spend bar hop or after Rajadamnern — not as your only Sukhumvit-style night."
     >
+      <GuidePhoto {...photos.khaoSan} />
       <Section title="What it is for">
         <Bullets>
           <li>Cheap beers and buckets on the main strip</li>

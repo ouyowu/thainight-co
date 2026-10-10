@@ -3,6 +3,8 @@ import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
 import { A, Bullets, Related, Section } from "@/components/Prose";
 import { StayNearby } from "@/components/StayNearby";
+import { GuidePhoto } from "@/components/GuidePhoto";
+import { photos } from "@/lib/photos";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -14,6 +16,7 @@ export const metadata = pageMeta(
 export default function WalkingStreetPage() {
   return (
     <PageShell path="/pattaya/areas/walking-street/" title="Walking Street Pattaya Guide 2026 – Prices, Clubs & What to Expect">
+      <GuidePhoto {...photos.walkingStreet} />
       <Section title="Quick overview">
         <p>
           Walking Street is Pattaya’s famous nightlife strip — neon, clubs, live-music bars,
