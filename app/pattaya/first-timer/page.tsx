@@ -1,7 +1,7 @@
+import Link from "next/link";
+import { HotelCta } from "@/components/HotelCta";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
-import { HotelsNearBlock } from "@/components/HotelsNearBlock";
-import { affiliates } from "@/lib/affiliates";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -90,10 +90,63 @@ export default function PattayaFirstTimerPage() {
         </ul>
       </section>
 
-      <HotelsNearBlock
-        href={affiliates.hotelPattaya}
-        cta="Hotels near Walking Street / Central Pattaya"
-      />
+      <section>
+        <h2 className="text-lg font-semibold text-foreground">Next steps</h2>
+        <ul className="mt-2 list-disc space-y-1 pl-5">
+          <li>
+            <Link href="/pattaya/areas/walking-street/" className="text-accent hover:underline">
+              Walking Street guide
+            </Link>{" "}
+            — classic neon strip
+          </li>
+          <li>
+            <Link href="/pattaya/areas/soi-6/" className="text-accent hover:underline">
+              Soi 6 guide
+            </Link>{" "}
+            — direct, daytime-friendly
+          </li>
+          <li>
+            <Link href="/pattaya/areas/lk-metro/" className="text-accent hover:underline">
+              LK Metro
+            </Link>{" "}
+            ·{" "}
+            <Link href="/pattaya/areas/soi-buakhao/" className="text-accent hover:underline">
+              Soi Buakhao
+            </Link>{" "}
+            — lower pressure / lower spend
+          </li>
+          <li>
+            <Link href="/pattaya/one-night-plan/" className="text-accent hover:underline">
+              One-night plans
+            </Link>
+          </li>
+          <li>
+            <Link href="/pattaya/tonight/" className="text-accent hover:underline">
+              Recent notes
+            </Link>{" "}
+            — drink-minimum updates
+          </li>
+          <li>
+            <Link href="/prices/" className="text-accent hover:underline">
+              2026 prices
+            </Link>{" "}
+            ·{" "}
+            <Link href="/budgets/" className="text-accent hover:underline">
+              Budget bands
+            </Link>
+          </li>
+          <li>
+            <Link href="/scams/" className="text-accent hover:underline">
+              Scams to avoid
+            </Link>
+          </li>
+        </ul>
+        <h3 className="mt-5 text-base font-semibold text-foreground">Stay nearby</h3>
+        <p className="mt-2">Central Pattaya or near Walking Street cuts transport friction.</p>
+        <div className="mt-3">
+          <HotelCta label="Hotels near Walking Street / Central Pattaya" helper />
+        </div>
+      </section>
     </PageShell>
   );
 }

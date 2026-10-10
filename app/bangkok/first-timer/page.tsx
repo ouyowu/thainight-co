@@ -1,7 +1,7 @@
+import Link from "next/link";
+import { HotelCta } from "@/components/HotelCta";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
-import { HotelsNearBlock } from "@/components/HotelsNearBlock";
-import { affiliates } from "@/lib/affiliates";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
@@ -93,7 +93,48 @@ export default function BangkokFirstTimerPage() {
         </p>
       </section>
 
-      <HotelsNearBlock href={affiliates.hotelBangkok} cta="Check hotels near BTS Nana / Asok" />
+      <section>
+        <h2 className="text-lg font-semibold text-foreground">Next steps</h2>
+        <ul className="mt-2 list-disc space-y-1 pl-5">
+          <li>
+            <Link href="/bangkok/areas/soi-cowboy/" className="text-accent hover:underline">
+              Soi Cowboy guide
+            </Link>{" "}
+            — easiest first strip
+          </li>
+          <li>
+            <Link href="/bangkok/areas/nana-plaza/" className="text-accent hover:underline">
+              Nana Plaza guide
+            </Link>{" "}
+            — more variety, three floors
+          </li>
+          <li>
+            <Link href="/bangkok/one-night-plan/" className="text-accent hover:underline">
+              One-night plans
+            </Link>{" "}
+            — sample routes
+          </li>
+          <li>
+            <Link href="/prices/" className="text-accent hover:underline">
+              2026 prices
+            </Link>{" "}
+            ·{" "}
+            <Link href="/budgets/" className="text-accent hover:underline">
+              Budget bands
+            </Link>
+          </li>
+          <li>
+            <Link href="/scams/" className="text-accent hover:underline">
+              Scams to avoid
+            </Link>
+          </li>
+        </ul>
+        <h3 className="mt-5 text-base font-semibold text-foreground">Stay nearby</h3>
+        <p className="mt-2">Staying near BTS Nana or Asok keeps the night simple.</p>
+        <div className="mt-3">
+          <HotelCta label="Hotels near Nana / Asok" helper />
+        </div>
+      </section>
     </PageShell>
   );
 }
