@@ -9,7 +9,7 @@ export const metadata = pageMeta(
 
 export default function AffiliateDisclosurePage() {
   return (
-    <PageShell title="Affiliate Disclosure">
+    <PageShell path="/affiliate-disclosure/" title="Affiliate Disclosure">
       <p>
         Some links on Thai Night go to booking partners for hotels, transfers, tickets and other
         travel services. If you book through one of these links, we may earn a commission. The

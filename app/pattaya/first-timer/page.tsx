@@ -12,7 +12,7 @@ export const metadata = pageMeta(
 
 export default function PattayaFirstTimerPage() {
   return (
-    <PageShell title="Pattaya Nightlife First-Timer Guide (2026)">
+    <PageShell path="/pattaya/first-timer/" title="Pattaya Nightlife First-Timer Guide (2026)">
       <Section title="Quick answer">
         <p>
           Classic first night: a cabaret show around 19:00–20:00, dinner, then Walking Street from

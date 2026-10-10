@@ -10,7 +10,7 @@ export const metadata = pageMeta("Bangkok Nightlife Prices (2026)", lead, "/bang
 
 export default function BangkokPricesPage() {
   return (
-    <PageShell title="Bangkok Nightlife Prices (2026)" lead={lead}>
+    <PageShell path="/bangkok/prices/" title="Bangkok Nightlife Prices (2026)" lead={lead}>
       <PriceTable
         caption="Bangkok 2026 nightlife prices"
         headers={["Item", "Typical range"]}

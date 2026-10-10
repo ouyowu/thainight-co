@@ -11,7 +11,7 @@ export const metadata = pageMeta(
 
 export default function CashPage() {
   return (
-    <PageShell title="Cash & Payments for a Night Out (2026)">
+    <PageShell path="/cash/" title="Cash & Payments for a Night Out (2026)">
       <p>
         Carry enough for the night you planned, plus a buffer. Leave the rest in the hotel safe.
         Hotel bars and rooftops take cards; street bars, markets and small bars are mostly cash.

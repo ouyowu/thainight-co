@@ -14,6 +14,7 @@ export const metadata = pageMeta(
 export default function BangkokToPattayaPage() {
   return (
     <PageShell
+      path="/pattaya/bangkok-to-pattaya/"
       title="Bangkok to Pattaya (2026) - Bus vs Private Car vs Grab vs Coach"
       lead="The road trip is usually about two hours, longer on Friday evenings. Pick the option that matches your bags, landing time and drop point."
     >

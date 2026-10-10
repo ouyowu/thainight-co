@@ -11,7 +11,7 @@ export const metadata = pageMeta(
 
 export default function BangkokAirportPage() {
   return (
-    <PageShell title="Bangkok Airport to City (2026) – BKK & DMK">
+    <PageShell path="/bangkok/airport/" title="Bangkok Airport to City (2026) – BKK & DMK">
       <p>
         Two airports: Suvarnabhumi (BKK) and Don Mueang (DMK). Most nightlife visitors stay on
         Sukhumvit — see <A href="/bangkok/hotels-nana-asok/">where to stay</A>.

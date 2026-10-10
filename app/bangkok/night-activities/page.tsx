@@ -11,7 +11,7 @@ export const metadata = pageMeta(
 
 export default function BangkokNightActivitiesPage() {
   return (
-    <PageShell title="Bangkok Night Activities 2026">
+    <PageShell path="/bangkok/night-activities/" title="Bangkok Night Activities 2026">
       <p>
         One anchor activity plus drinks makes a better night than four rushed ones. Pick one from
         below, then finish on <A href="/bangkok/areas/soi-11/">Soi 11</A> or near your hotel.

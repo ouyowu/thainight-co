@@ -14,6 +14,7 @@ export const metadata = pageMeta(
 export default function BangkokDinnerCruisePage() {
   return (
     <PageShell
+      path="/bangkok/dinner-cruise/"
       title="Bangkok Dinner Cruise (2026) - Chao Phraya from Asiatique, ICONSIAM and River City"
       lead="A two-hour river cruise past the lit-up temples and Grand Palace is the easiest extra night in Bangkok. Pick the pier by where you stay, then book the boat."
     >

@@ -13,7 +13,7 @@ export const metadata = pageMeta(
 
 export default function BangkokNightMarketsPage() {
   return (
-    <PageShell title="Bangkok Night Markets (2026)" lead="Pick one market, eat, then move on. Locations and days change. Jodd Fairs is now Ratchada, not Rama 9. Confirm the pin and hours on the day.">
+    <PageShell path="/bangkok/night-markets/" title="Bangkok Night Markets (2026)" lead="Pick one market, eat, then move on. Locations and days change. Jodd Fairs is now Ratchada, not Rama 9. Confirm the pin and hours on the day.">
       <Section title="The ones worth a night">
         <PriceTable caption="Bangkok night markets 2026" headers={["Market", "Usual days / hours", "Get there", "Best for"]} rows={[["Jodd Fairs Ratchada", "Usually daily, about 17:00-01:00", "MRT Thailand Cultural Centre, Exit 4 (Ratchadaphisek Rd, by Big C)", "Street food, one easy weekday market"], ["Asiatique The Riverfront", "Daily; stalls from late afternoon to about midnight", "BTS Saphan Taksin plus free shuttle boat from Sathorn Pier", "Riverside walk, dinner, Ferris wheel, Calypso"], ["Train Night Market (Rot Fai) Srinakarin", "Usually Thu-Sun evenings", "MRT Yellow Line (Suan Luang Rama IX) or a Grab", "Vintage stalls, longer wander"], ["Patpong night market", "Evenings on Patpong 1, Silom", "BTS Sala Daeng / MRT Silom", "Short tourist market after a Silom dinner"]]} />
         <p>Hours above are the usual published windows as of 2026. Search Jodd Fairs Ratchada, not just Jodd Fairs, so maps do not send you to a closed site.</p>

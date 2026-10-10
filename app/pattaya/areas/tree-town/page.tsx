@@ -10,7 +10,7 @@ export const metadata = pageMeta(
 
 export default function TreeTownPage() {
   return (
-    <PageShell title="Tree Town Pattaya 2026">
+    <PageShell path="/pattaya/areas/tree-town/" title="Tree Town Pattaya 2026">
       <p>
         Tree Town is an <strong>open-air bar and food complex</strong> on/near Soi Buakhao. Multiple
         bars, street food, live music overlapping in one compound — more “festival courtyard” than

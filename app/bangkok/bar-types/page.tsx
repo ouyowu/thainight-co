@@ -11,7 +11,7 @@ export const metadata = pageMeta(
 
 export default function BangkokBarTypesPage() {
   return (
-    <PageShell title="Bangkok Nightlife Bar Types 2026">
+    <PageShell path="/bangkok/bar-types/" title="Bangkok Nightlife Bar Types 2026">
       <p>
         Pick the format first, then the street. Mixing everything on night one is how people get
         tired and overspend.

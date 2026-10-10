@@ -12,7 +12,7 @@ export const metadata = pageMeta(
 
 export default function OneNightPlanPage() {
   return (
-    <PageShell title="One Night in Bangkok – Sample Plans (2026)">
+    <PageShell path="/bangkok/one-night-plan/" title="One Night in Bangkok – Sample Plans (2026)">
       <p>Pick one plan. Trying to do a stadium, two rooftops and a club in one night is how people end up tired and over budget.</p>
 
       <Section title="Plan A — Rooftop + Soi 11 (recommended first night)">

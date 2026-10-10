@@ -12,7 +12,7 @@ export const metadata = pageMeta(
 
 export default function PricesPage() {
   return (
-    <PageShell title="Thailand Nightlife Prices 2026 – Bangkok & Pattaya Quick Reference">
+    <PageShell path="/prices/" title="Thailand Nightlife Prices 2026 – Bangkok & Pattaya Quick Reference">
       <p>
         Prices are approximate ranges in Thai baht, based on venue menus and recent visitor
         reports. Always confirm on the spot. High season (Nov–Apr) leans to the higher end. Many

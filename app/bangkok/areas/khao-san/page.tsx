@@ -14,6 +14,7 @@ export const metadata = pageMeta(
 export default function KhaoSanPage() {
   return (
     <PageShell
+      path="/bangkok/areas/khao-san/"
       title="Khao San Road Nightlife (2026)"
       lead="Bangkok backpacker street is loud, cheap and close to the old town. Use it for a low-spend bar hop or after Rajadamnern — not as your only Sukhumvit-style night."
     >

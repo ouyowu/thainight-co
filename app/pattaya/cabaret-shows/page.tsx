@@ -14,6 +14,7 @@ export const metadata = pageMeta(
 export default function CabaretShowsPage() {
   return (
     <PageShell
+      path="/pattaya/cabaret-shows/"
       title="Pattaya Cabaret Shows (2026) – Tiffany’s vs Alcazar"
       lead="Pattaya’s cabaret shows are big-production song-and-dance revues with elaborate costumes. They’re family-friendly, start early, and make a perfect first half of the night."
     >

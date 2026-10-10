@@ -28,6 +28,7 @@ const sukhumvit = [
 export default function RooftopBarsPage() {
   return (
     <PageShell
+      path="/bangkok/rooftop-bars/"
       title="Best Rooftop Bars in Bangkok (2026)"
       lead="Pick the rooftop by where you’ll be that night, not by the most famous name. Go for sunset, dress smart casual, and expect hotel pricing."
     >
