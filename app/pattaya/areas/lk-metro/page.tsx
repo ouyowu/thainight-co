@@ -1,41 +1,33 @@
-import Link from "next/link";
 import { PageShell } from "@/components/PageShell";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "LK Metro Pattaya Guide",
-  "Mid-priced Pattaya go-go area with live music. Slightly calmer than Walking Street; often an easier start.",
+  "LK Metro Pattaya Guide 2026",
+  "LK Metro is a compact go-go / bar area off Soi Diana / Soi Buakhao side. Smaller and generally less tourist-heavy than Walking Street.",
   "/pattaya/areas/lk-metro/",
 );
 
 export default function LkMetroPage() {
   return (
-    <PageShell
-      title="LK Metro"
-      lead="Go-go, slightly calmer than Walking Street. Mid cost. Live music. Often recommended as an easier start if the main strip feels like too much on night one."
-    >
-      <p>
-        Hours are roughly 20:00–01:00. You still walk first and sit second. You still confirm lady
-        drink and any fine before ordering rounds. Prices sit between Soi 6 and Walking Street —
-        expect more than a Soi 6 beer, less circus than the neon strip.
-      </p>
-      <p>
-        If you want the classic big neon experience, do Walking Street. If you want cheaper, faster,
-        more direct, do Soi 6. LK Metro is the middle ground.
-      </p>
-      <p>
-        Same rules: bar fine is paid to the bar; her fee is separate; do not follow touts upstairs
-        anywhere in town.
-      </p>
-      <p>
-        <Link href="/pattaya/first-timer/" className="text-accent hover:underline">
-          First-timer guide
-        </Link>
-        {" · "}
-        <Link href="/pattaya/areas/" className="text-accent hover:underline">
-          All Pattaya areas
-        </Link>
-      </p>
+    <PageShell title="LK Metro Pattaya Guide 2026">
+      <section>
+        <h2 className="text-lg font-semibold text-foreground">Quick Overview</h2>
+        <p className="mt-2">
+          LK Metro is a compact go-go / bar area off Soi Diana / Soi Buakhao side. Smaller and
+          generally less tourist-heavy than Walking Street. Many visitors find it more manageable
+          for a first or second night.
+        </p>
+        <p className="mt-3">Typical 2026 ranges:</p>
+        <ul className="mt-2 list-disc space-y-1 pl-5">
+          <li>Beer: 80–150 THB</li>
+          <li>Lady drink: roughly 150–220 THB</li>
+          <li>Bar fine: often lower than Walking Street (commonly mid-range)</li>
+        </ul>
+        <p className="mt-3">
+          Good for: People who want go-go style without the full Walking Street intensity and price
+          premium.
+        </p>
+      </section>
     </PageShell>
   );
 }
