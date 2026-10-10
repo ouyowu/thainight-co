@@ -36,4 +36,5 @@ export const routes = [
   "/prices/",
   "/safety/",
   "/about/",
+  "/disclaimer/",
 ] as const;
