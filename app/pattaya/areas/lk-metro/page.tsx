@@ -3,7 +3,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "LK Metro Pattaya Guide 2026",
-  "LK Metro is a compact go-go / bar area off Soi Diana / Soi Buakhao side. Smaller and generally less tourist-heavy than Walking Street.",
+  "LK Metro overview: compact go-go area, mid-range prices and why many visitors find it easier than Walking Street.",
   "/pattaya/areas/lk-metro/",
 );
 

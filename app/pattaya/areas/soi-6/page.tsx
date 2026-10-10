@@ -3,8 +3,8 @@ import { PriceTable } from "@/components/PriceTable";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Soi 6 Pattaya Guide 2026 – Prices, Bars & First-Timer Tips",
-  "Soi 6 is Pattaya’s most direct short-time street. Open-front beer bars, daytime-active, 2026 prices and first-timer tips.",
+  "Soi 6 Pattaya Guide 2026 – Prices & First-Timer Tips",
+  "Soi 6 explained: daytime-friendly short-time street, 2026 prices, how it works and how it differs from Walking Street.",
   "/pattaya/areas/soi-6/",
 );
 

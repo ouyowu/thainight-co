@@ -4,8 +4,8 @@ import { PriceTable } from "@/components/PriceTable";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Pattaya Nightlife Prices 2026",
-  "2026 Walking Street and Soi 6 price ranges: beer, lady drink, bar fine, and typical short-time totals.",
+  "Pattaya Nightlife Prices (2026)",
+  "Walking Street costs more. Soi 6 is cheaper and more all-in. LK Metro sits in the middle. Confirm the number before the first lady drink.",
   "/pattaya/prices/",
 );
 

@@ -3,8 +3,8 @@ import { PriceTable } from "@/components/PriceTable";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Pattaya Nightlife First-Timer Guide (2026)",
-  "Want the classic big neon experience → Walking Street; cheaper and more direct → Soi 6; middle ground with live music → LK Metro.",
+  "Pattaya Nightlife First-Timer Guide 2026",
+  "First night plan for Pattaya. Walking Street vs Soi 6 vs LK Metro, current prices and practical rules for 2026.",
   "/pattaya/first-timer/",
 );
 

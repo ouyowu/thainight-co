@@ -3,8 +3,8 @@ import { PriceTable } from "@/components/PriceTable";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Walking Street Pattaya Guide 2026 – Prices, Clubs & What to Expect",
-  "Walking Street is Pattaya’s most famous nightlife strip — neon, go-go bars, clubs, live music, heavy foot traffic.",
+  "Walking Street Pattaya Guide 2026 – Prices & Clubs",
+  "Walking Street complete guide: 2026 prices, go-go and club scene, best arrival time and how to avoid common bill issues.",
   "/pattaya/areas/walking-street/",
 );
 

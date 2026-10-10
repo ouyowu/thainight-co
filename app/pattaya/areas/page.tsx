@@ -5,7 +5,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Pattaya Nightlife Areas",
-  "Walking Street, Soi 6, and LK Metro compared: hours, style, cost, and who each area suits.",
+  "Three areas cover almost every first visit. Pick by energy, not by brochure photos.",
   "/pattaya/areas/",
 );
 
