@@ -5,6 +5,8 @@ export const bangkokGuides = [
   { href: "/bangkok/one-night-plan/", label: "One-night plans" },
   { href: "/bangkok/rooftop-bars/", label: "Rooftop bars" },
   { href: "/bangkok/muay-thai/", label: "Muay Thai fight nights" },
+  { href: "/bangkok/dinner-cruise/", label: "Chao Phraya dinner cruise" },
+  { href: "/bangkok/night-markets/", label: "Night markets" },
   { href: "/bangkok/night-activities/", label: "Night activities: cabaret, markets, river" },
   { href: "/bangkok/bar-types/", label: "Bar & club types" },
   { href: "/bangkok/ladies-night/", label: "Ladies night & promo nights" },
@@ -16,6 +18,7 @@ export const bangkokGuides = [
 
 export const bangkokAreas = [
   { href: "/bangkok/areas/soi-11/", label: "Sukhumvit Soi 11" },
+  { href: "/bangkok/areas/khao-san/", label: "Khao San Road" },
   { href: "/bangkok/areas/rca-thonglor/", label: "RCA & Thonglor" },
   { href: "/bangkok/areas/patpong/", label: "Patpong & Silom" },
 ] as const;
@@ -28,12 +31,14 @@ export const pattayaGuides = [
   { href: "/pattaya/bar-types/", label: "Bar & club types" },
   { href: "/pattaya/hotels-walking-street/", label: "Where to stay for nightlife" },
   { href: "/pattaya/getting-around/", label: "Getting around at night" },
+  { href: "/pattaya/bangkok-to-pattaya/", label: "Bangkok to Pattaya transfer" },
   { href: "/pattaya/airport/", label: "Airport / Bangkok to Pattaya" },
   { href: "/pattaya/faq/", label: "FAQ" },
 ] as const;
 
 export const pattayaAreas = [
   { href: "/pattaya/areas/walking-street/", label: "Walking Street" },
+  { href: "/pattaya/areas/jomtien-beach-road/", label: "Jomtien Beach Road" },
   { href: "/pattaya/areas/soi-buakhao/", label: "Soi Buakhao" },
   { href: "/pattaya/areas/tree-town/", label: "Tree Town" },
 ] as const;
