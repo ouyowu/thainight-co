@@ -17,7 +17,8 @@ export const bangkokGuides = [
   { href: "/bangkok/getting-around/", label: "Getting around at night" },
   { href: "/bangkok/taxi-fare/", label: "Taxi fares & scams" },
   { href: "/bangkok/airport/", label: "Airport to city" },
-  { href: "/bangkok/airport-to-sukhumvit-taxi-price/", label: "Airport → Sukhumvit taxi price" },
+  { href: "/bangkok/airport-to-sukhumvit-taxi-price/", label: "Suvarnabhumi → Sukhumvit taxi price" },
+  { href: "/bangkok/don-mueang-to-sukhumvit-taxi-price/", label: "Don Mueang → Sukhumvit taxi price" },
   { href: "/bangkok/faq/", label: "FAQ" },
 ] as const;
 
@@ -35,6 +36,8 @@ export const pattayaGuides = [
   { href: "/pattaya/tiffany-show/", label: "Tiffany’s Show prices" },
   { href: "/pattaya/alcazar-show/", label: "Alcazar Show prices" },
   { href: "/pattaya/night-activities/", label: "Night activities: Muay Thai, markets" },
+  { href: "/pattaya/max-muay-thai-stadium/", label: "Max Muay Thai ticket price" },
+  { href: "/pattaya/night-markets/", label: "Thepprasit night market" },
   { href: "/pattaya/bar-types/", label: "Bar & club types" },
   { href: "/pattaya/hotels-walking-street/", label: "Where to stay for nightlife" },
   { href: "/pattaya/getting-around/", label: "Getting around at night" },
