@@ -38,3 +38,19 @@ button:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
 }
+
+/* Demo routes only. Production pages do not render .demo-shell. */
+.demo-script {
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-style: italic;
+}
+
+body:has(.demo-shell) {
+  background: #ffffff;
+  color: #1c1c1c;
+}
+
+body:has(.demo-shell) > header,
+body:has(.demo-shell) > footer {
+  display: none;
+}
