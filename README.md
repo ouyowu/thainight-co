@@ -28,7 +28,7 @@ Cloudflare nameservers are in use (`alberto` / `asa`). Point `@` and `www` CNAME
 ## Configuration
 
 - `NEXT_PUBLIC_SITE_URL` — canonical origin. Unset = `https://thainight-co.vercel.app`. Set to `https://thainight.co` only once that domain serves this site.
-- `NEXT_PUBLIC_AFFILIATE_*` — affiliate URLs (see `.env.example`). Any block whose URL is empty is hidden, so pages never show dead `#` links.
+- `NEXT_PUBLIC_AFFILIATE_*` — affiliate URLs (see `.env.example`). Any block whose URL is empty is hidden, so pages never show dead `#` links. Bangkok, Pattaya, Phuket, and Chiang Mai hotel buttons have a built-in Agoda city search in `lib/affiliates.ts` and show even when those env vars are unset. Set the env var only to replace that URL.
 
 ## Content scope
 
