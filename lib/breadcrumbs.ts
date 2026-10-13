@@ -13,6 +13,8 @@ const LABELS: Record<string, string> = {
   "old-city-nightlife": "Old City & riverside",
   "calypso-cabaret": "Calypso Cabaret",
   "airport-to-sukhumvit-taxi-price": "Airport to Sukhumvit taxi",
+  "don-mueang-to-sukhumvit-taxi-price": "Don Mueang to Sukhumvit taxi",
+  "max-muay-thai-stadium": "Max Muay Thai",
   "first-timer": "First-timer",
   faq: "FAQ",
   "getting-around": "Getting around",

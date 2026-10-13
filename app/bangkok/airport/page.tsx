@@ -28,7 +28,7 @@ export default function BangkokAirportPage() {
       <Section title="Don Mueang (DMK)">
         <Bullets>
           <li>Many regional and low-cost flights.</li>
-          <li>SRT Red Line to Bang Sue, then MRT toward Sukhumvit — or Grab / the taxi queue straight to the hotel.</li>
+          <li>SRT Red Line to Bang Sue, then MRT toward Sukhumvit — or Grab / the taxi queue straight to the hotel. Fares: <A href="/bangkok/don-mueang-to-sukhumvit-taxi-price/">Don Mueang to Sukhumvit taxi price</A>.</li>
         </Bullets>
       </Section>
 

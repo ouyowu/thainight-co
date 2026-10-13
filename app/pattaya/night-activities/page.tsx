@@ -27,8 +27,8 @@ export default function PattayaNightActivitiesPage() {
       <Section title="Muay Thai">
         <p>
           Max Muay Thai Stadium, on Sukhumvit Road next to King Power Pattaya, holds regular
-          evening cards, typically starting around 19:00. Check the card and seat options on the
-          day; VIP seats cost noticeably more than standard ones.
+          evening cards. The published visitor ticket is 1,500 THB. Times and seats:{" "}
+          <A href="/pattaya/max-muay-thai-stadium/">Max Muay Thai ticket price</A>.
         </p>
       </Section>
 
@@ -49,9 +49,9 @@ export default function PattayaNightActivitiesPage() {
 
       <Section title="Night markets">
         <p>
-          Pattaya has several evening markets for street food and shopping, some only on certain
-          days of the week. Check the current days before you go and eat early — food stalls sell
-          out.
+          <A href="/pattaya/night-markets/">Thepprasit Night Market</A> is the large one: free
+          entry, fullest Friday to Sunday, most dishes about 40–150 THB. Eat early — popular stalls
+          sell out.
         </p>
       </Section>
 
