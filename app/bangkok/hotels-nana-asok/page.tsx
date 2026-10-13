@@ -10,9 +10,9 @@ export const metadata = pageMeta(
   "/bangkok/hotels-nana-asok/",
 );
 
-export default function HotelsNanaAsokPage() {
+export function WhereToStayGuide({ path }: { path: string }) {
   return (
-    <PageShell path="/bangkok/hotels-nana-asok/" title="Where to Stay in Bangkok for Nightlife (2026)">
+    <PageShell path={path} title="Where to Stay in Bangkok for Nightlife (2026)">
       <p>
         For nightlife, the useful decision is the <strong>BTS stop</strong>, not a “best hotel”
         list. The Sukhumvit line from Nana to Thonglor puts Soi 11, most rooftops and the club
@@ -74,4 +74,8 @@ export default function HotelsNanaAsokPage() {
       </StayNearby>
     </PageShell>
   );
+}
+
+export default function HotelsNanaAsokPage() {
+  return <WhereToStayGuide path="/bangkok/hotels-nana-asok/" />;
 }

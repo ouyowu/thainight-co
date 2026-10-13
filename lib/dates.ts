@@ -15,6 +15,7 @@ export const PAGE_MODIFIED: Record<string, string> = {
   "/bangkok/ladies-night/": "2026-10-10",
   "/bangkok/bar-types/": "2026-10-10",
   "/bangkok/hotels-nana-asok/": "2026-10-10",
+  "/bangkok/where-to-stay/": "2026-10-10",
   "/bangkok/areas/": "2026-10-10",
   "/bangkok/areas/soi-11/": "2026-10-10",
   "/bangkok/areas/khao-san/": "2026-10-10",

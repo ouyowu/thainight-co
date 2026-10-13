@@ -27,6 +27,7 @@ const LABELS: Record<string, string> = {
   "ladies-night": "Ladies night",
   "bar-types": "Bar types",
   "hotels-nana-asok": "Where to stay",
+  "where-to-stay": "Where to stay",
   "hotels-walking-street": "Where to stay",
   areas: "Areas",
   "soi-11": "Soi 11",

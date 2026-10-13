@@ -42,6 +42,7 @@ export const routes = [
   "/bangkok/ladies-night/",
   "/bangkok/bar-types/",
   "/bangkok/hotels-nana-asok/",
+  "/bangkok/where-to-stay/",
   "/bangkok/areas/",
   "/bangkok/areas/soi-11/",
   "/bangkok/areas/khao-san/",

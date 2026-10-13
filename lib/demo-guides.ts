@@ -81,6 +81,7 @@ export const demoGuides: DemoGuide[] = [
     category: "Rooftops",
     description:
       "Sky Bar at lebua (State Tower): dress code rules, reservation deposits, what to expect on price and cheaper rooftops with similar views.",
+    image: "rooftop",
     tone: "#2a2438",
   },
   {
@@ -186,6 +187,7 @@ export const demoGuides: DemoGuide[] = [
     category: "Taxis",
     description:
       "Phuket airport to Patong: metered taxi with the 100 THB surcharge, Grab, pre-booked transfers and the 100 THB Smart Bus.",
+    image: "taxiMeter",
     tone: "#16343a",
   },
   {

@@ -6,7 +6,7 @@ export function GuideCard({ guide }: { guide: DemoGuide }) {
     <article className="bg-white">
       <a href={guide.href} className="group block">
         <div className="relative">
-          <GuideMedia guide={guide} className="h-56" sizes="(max-width: 640px) 100vw, 33vw" />
+          <GuideMedia guide={guide} caption className="h-56" sizes="(max-width: 640px) 100vw, 33vw" />
           <span className="absolute bottom-3 left-3 bg-white px-2 py-1 text-xs font-semibold uppercase tracking-wide text-accent">
             {guide.category}
           </span>

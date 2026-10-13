@@ -6,9 +6,11 @@ type GuideMediaProps = {
   className?: string;
   sizes: string;
   priority?: boolean;
+  /** When there is no photo, show the guide title on the color panel. */
+  caption?: boolean;
 };
 
-export function GuideMedia({ guide, className = "", sizes, priority }: GuideMediaProps) {
+export function GuideMedia({ guide, className = "", sizes, priority, caption = false }: GuideMediaProps) {
   const photo = guidePhoto(guide);
   return (
     <div className={`relative overflow-hidden bg-zinc-200 ${className}`} style={photo ? undefined : { background: guide.tone }}>
@@ -21,9 +23,12 @@ export function GuideMedia({ guide, className = "", sizes, priority }: GuideMedi
           sizes={sizes}
           className="object-cover"
         />
-      ) : (
-        <span className="absolute inset-0 flex items-end p-3 text-sm font-semibold text-white">{guide.city}</span>
-      )}
+      ) : caption ? (
+        <div className="absolute inset-0 flex flex-col justify-start p-4 pr-6 pt-5 text-white">
+          <p className="text-xs font-semibold uppercase tracking-[0.16em] text-white/80">{guide.city}</p>
+          <p className="mt-2 max-w-[16rem] text-xl font-semibold leading-tight">{guide.title}</p>
+        </div>
+      ) : null}
     </div>
   );
 }

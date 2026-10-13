@@ -59,8 +59,6 @@ const nextConfig: NextConfig = {
       { source: "/demo/listeo", destination: "/", permanent: false },
       { source: "/demo/listeo/", destination: "/", permanent: false },
       { source: "/demo/listeo/:path*", destination: "/", permanent: false },
-      { source: "/bangkok/where-to-stay", destination: "/bangkok/hotels-nana-asok/", permanent: false },
-      { source: "/bangkok/where-to-stay/", destination: "/bangkok/hotels-nana-asok/", permanent: false },
     ];
   },
   turbopack: {

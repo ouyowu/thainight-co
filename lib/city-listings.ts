@@ -1,5 +1,6 @@
 import type { AffiliateKey } from "@/lib/affiliates";
 import { demoGuides, type DemoCity, type DemoGuide } from "@/lib/demo-guides";
+import type { photos } from "@/lib/photos";
 import {
   bangkokAreas,
   bangkokGuides,
@@ -32,6 +33,28 @@ const HOTELS: { prefix: string; city: DemoCity; link: AffiliateKey; label: strin
 
 const HUB_PATHS = new Set(Object.keys(HUBS));
 
+/** Photos already published on other guides. Only used when the picture matches the topic. */
+const CARD_IMAGE: Record<string, keyof typeof photos> = {
+  "/bangkok/one-night-plan/": "rooftop",
+  "/bangkok/night-activities/": "patpong",
+  "/bangkok/bar-types/": "soi11",
+  "/bangkok/ladies-night/": "rca",
+  "/bangkok/hotels-nana-asok/": "soi11",
+  "/bangkok/getting-around/": "taxiMeter",
+  "/bangkok/taxi-fare/": "taxiMeter",
+  "/bangkok/airport/": "taxiMeter",
+  "/bangkok/don-mueang-to-sukhumvit-taxi-price/": "taxiMeter",
+  "/bangkok/areas/patpong/": "patpong",
+  "/pattaya/one-night-plan/": "walkingStreet",
+  "/pattaya/night-activities/": "muayThai",
+  "/pattaya/max-muay-thai-stadium/": "muayThai",
+  "/pattaya/bar-types/": "walkingStreet",
+  "/pattaya/hotels-walking-street/": "walkingStreet",
+  "/pattaya/getting-around/": "centralPattaya",
+  "/pattaya/bangkok-to-pattaya/": "taxiMeter",
+  "/pattaya/airport/": "taxiMeter",
+};
+
 export function isCityHub(path: string): path is keyof typeof HUBS {
   return path in HUBS;
 }
@@ -41,13 +64,15 @@ export function cityListingCards(path: string): DemoGuide[] {
   if (!hub) return [];
   return hub.links.map((link) => {
     const found = demoGuides.find((guide) => guide.href === link.href);
-    if (found) return found;
+    const image = CARD_IMAGE[link.href];
+    if (found) return found.image || !image ? found : { ...found, image };
     return {
       href: link.href,
       title: link.label,
       city: hub.city,
       category: "Guides",
       description: "",
+      image,
       tone: TONE[hub.city],
     };
   });
