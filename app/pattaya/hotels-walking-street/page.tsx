@@ -16,7 +16,11 @@ export default function HotelsWalkingStreetPage() {
       <p>
         Walking Street is the south end of Pattaya Beach Road. It turns pedestrian at night. The
         hotel decision is Central vs Beach Road vs Second Road — not which neon tower a blog ranked
-        first.
+        first. Jomtien and Pratumnak are on the{" "}
+        <Link href="/pattaya/where-to-stay/" className="text-accent hover:underline">
+          Pattaya where-to-stay guide
+        </Link>
+        .
       </p>
 
       <section>
