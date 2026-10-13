@@ -23,7 +23,7 @@ export function AreaSketch({ caption, items }: AreaSketchProps) {
             className={`rounded-md border px-2 py-2 text-sm leading-5 ${
               item.accent
                 ? "border-accent/50 bg-accent/10 text-foreground"
-                : "border-line bg-background text-zinc-200"
+                : "border-line bg-background text-foreground"
             }`}
           >
             <div className="font-semibold">{item.label}</div>

@@ -1,33 +1,35 @@
 "use client";
 
-import Link from "next/link";
-import { useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { GuideMedia, PhotoCredit } from "@/components/demo/GuideMedia";
 import { HotelBand } from "@/components/demo/HotelBand";
 import { useGuideFilter } from "@/components/demo/useGuideFilter";
-import { demoCategories, demoCities, demoGuides, guidesIn, type DemoGuide } from "@/lib/demo-guides";
+import { GuideCard } from "@/components/site/GuideCard";
+import { demoCategories, demoCities, demoGuides, guidesIn, type DemoCity, type DemoGuide } from "@/lib/demo-guides";
 import { LAST_UPDATED } from "@/lib/site";
 
-const accent = "#ff4b6e";
 const teal = "#2bbbad";
 
 const iconCategories = ["Rooftops", "Shows", "Night markets", "Taxis", "First-timer", "Safety", "Areas"] as const;
 
-const nav = [
-  { href: "/demo/urbango/", label: "Home" },
-  { href: "/bangkok/", label: "Bangkok" },
-  { href: "/pattaya/", label: "Pattaya" },
-  { href: "/phuket/", label: "Phuket" },
-  { href: "/chiang-mai/", label: "Chiang Mai" },
-  { href: "/prices/", label: "Prices" },
-  { href: "/safety/", label: "Safety" },
-];
+const cityHub: Record<DemoCity, string> = {
+  Bangkok: "/bangkok/",
+  Pattaya: "/pattaya/",
+  Phuket: "/phuket/",
+  "Chiang Mai": "/chiang-mai/",
+};
 
-export function UrbanGoDemo() {
-  const filter = useGuideFilter(demoGuides);
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [showAll, setShowAll] = useState(false);
-  const cards = showAll ? filter.filtered : filter.filtered.slice(0, 6);
+export function HomeView() {
+  const params = useSearchParams();
+  const query = params.get("q") ?? "";
+  const city = params.get("city") ?? "All";
+  const category = params.get("category") ?? "All";
+  return <HomeFilter key={`${query}|${city}|${category}`} query={query} city={city} category={category} />;
+}
+
+function HomeFilter({ query, city, category }: { query: string; city: string; category: string }) {
+  const filter = useGuideFilter(demoGuides, { query, city, category });
+  const cards = filter.filtered.slice(0, 9);
   const posts = demoGuides.filter((guide) =>
     ["/bangkok/first-timer/", "/pattaya/cabaret-shows/", "/bangkok/night-markets/"].includes(guide.href),
   );
@@ -39,73 +41,7 @@ export function UrbanGoDemo() {
   }
 
   return (
-    <div className="bg-white text-[#1c1c1c]">
-      <div className="border-b border-zinc-100 bg-white text-xs text-zinc-500 sm:text-sm">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2 sm:px-6">
-          <p>Practical nightlife guides · English</p>
-          <div className="flex items-center gap-4">
-            <a href="/about/" className="hover:text-[#1c1c1c]">
-              About
-            </a>
-            <a href="/demo/listeo/" className="font-semibold hover:text-[#1c1c1c]" style={{ color: accent }}>
-              Other layout
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <header className="sticky top-0 z-40 border-b border-zinc-100 bg-white">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-          <a href="/demo/urbango/" className="leading-none">
-            <span className="text-xl font-bold tracking-tight text-[#1c1c1c]">Thai Night</span>
-            <span className="demo-script ml-1 text-lg" style={{ color: accent }}>
-              guides
-            </span>
-          </a>
-          <nav aria-label="Demo" className="hidden items-center gap-5 text-sm lg:flex">
-            {nav.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="hover:text-[#ff4b6e]"
-                style={item.href === "/demo/urbango/" ? { color: accent } : undefined}
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
-          <div className="flex items-center gap-2">
-            <a
-              href="/bangkok/first-timer/"
-              className="hidden rounded-sm px-4 py-2 text-sm font-semibold text-white sm:inline-block"
-              style={{ background: accent }}
-            >
-              First-timer guide
-            </a>
-            <button
-              type="button"
-              className="rounded-sm border border-zinc-200 px-3 py-2 text-sm lg:hidden"
-              aria-expanded={menuOpen}
-              onClick={() => setMenuOpen((open) => !open)}
-            >
-              Menu
-            </button>
-          </div>
-        </div>
-        {menuOpen ? (
-          <nav aria-label="Demo mobile" className="grid gap-1 border-t border-zinc-100 px-4 py-3 text-sm lg:hidden">
-            {nav.map((item) => (
-              <a key={item.href} href={item.href} className="py-2">
-                {item.label}
-              </a>
-            ))}
-            <a href="/bangkok/first-timer/" className="py-2 font-semibold" style={{ color: accent }}>
-              First-timer guide
-            </a>
-          </nav>
-        ) : null}
-      </header>
-
+    <div>
       <section className="relative">
         <div className="relative min-h-[460px] sm:min-h-[540px]">
           <div className="absolute inset-0">
@@ -113,10 +49,8 @@ export function UrbanGoDemo() {
           </div>
           <div className="absolute inset-0 bg-black/45" />
           <div className="relative z-10 mx-auto max-w-4xl px-4 pb-28 pt-16 text-center text-white sm:pt-24">
-            <p className="demo-script text-3xl text-white/90 sm:text-5xl">explore</p>
-            <h1 className="mt-1 text-4xl font-bold leading-tight tracking-tight sm:text-6xl">
-              Discover the nightlife guides
-            </h1>
+            <p className="script-face text-3xl text-white/90 sm:text-5xl">explore</p>
+            <h1 className="mt-1 text-4xl font-bold leading-tight tracking-tight sm:text-6xl">Discover the nightlife guides</h1>
           </div>
         </div>
 
@@ -130,7 +64,7 @@ export function UrbanGoDemo() {
               value={filter.query}
               onChange={(event) => filter.setQuery(event.target.value)}
               placeholder="Rooftops, taxis, cabaret…"
-              className="w-full border border-zinc-200 px-3 py-3 text-base outline-none focus:border-[#ff4b6e]"
+              className="w-full border border-zinc-200 px-3 py-3 text-base outline-none focus:border-accent"
             />
           </label>
           <label className="block text-sm">
@@ -138,7 +72,7 @@ export function UrbanGoDemo() {
             <select
               value={filter.city}
               onChange={(event) => filter.setCity(event.target.value)}
-              className="w-full border border-zinc-200 bg-white px-3 py-3 text-base outline-none focus:border-[#ff4b6e]"
+              className="w-full border border-zinc-200 bg-white px-3 py-3 text-base outline-none focus:border-accent"
             >
               <option>All</option>
               {demoCities.map((city) => (
@@ -151,7 +85,7 @@ export function UrbanGoDemo() {
             <select
               value={filter.category}
               onChange={(event) => filter.setCategory(event.target.value)}
-              className="w-full border border-zinc-200 bg-white px-3 py-3 text-base outline-none focus:border-[#ff4b6e]"
+              className="w-full border border-zinc-200 bg-white px-3 py-3 text-base outline-none focus:border-accent"
             >
               <option>All</option>
               {demoCategories.map((category) => (
@@ -159,10 +93,10 @@ export function UrbanGoDemo() {
               ))}
             </select>
           </label>
-          <button type="submit" className="px-6 py-3 text-sm font-semibold tracking-wide text-white" style={{ background: accent }}>
+          <button type="submit" className="bg-accent px-6 py-3 text-sm font-semibold tracking-wide text-white">
             Search
           </button>
-          <p className="text-sm text-zinc-500 sm:col-span-4">or select a category below to open a real guide</p>
+          <p className="text-sm text-zinc-500 sm:col-span-4">Search opens a guide when there is one match. Otherwise the cards below update.</p>
         </form>
       </section>
 
@@ -173,7 +107,7 @@ export function UrbanGoDemo() {
               key={category}
               type="button"
               onClick={() => pickCategory(category)}
-              className="flex flex-col items-center gap-2 px-2 py-3 text-sm text-zinc-700 hover:text-[#ff4b6e]"
+              className="flex flex-col items-center gap-2 px-2 py-3 text-sm text-zinc-700 hover:text-accent"
             >
               <CategoryIcon name={category} />
               <span>{category}</span>
@@ -183,9 +117,7 @@ export function UrbanGoDemo() {
       </div>
 
       <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6">
-        <p className="demo-script text-center text-3xl" style={{ color: accent }}>
-          discover
-        </p>
+        <p className="script-face text-center text-3xl text-accent">discover</p>
         <h2 className="text-center text-3xl font-bold tracking-tight sm:text-4xl">Most popular categories</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {categoryCards.map((card) => (
@@ -205,19 +137,14 @@ export function UrbanGoDemo() {
         </div>
       </section>
 
-      <section className="bg-[#f6f7f8] py-16">
+      <section className="bg-card py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <p className="demo-script text-center text-3xl" style={{ color: accent }}>
-            find out
-          </p>
+          <p className="script-face text-center text-3xl text-accent">find out</p>
           <h2 className="text-center text-3xl font-bold tracking-tight sm:text-4xl">How it works</h2>
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {steps.map((step) => (
               <article key={step.n} className="relative bg-white px-6 pb-8 pt-10 text-center shadow-sm">
-                <span
-                  className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 bg-white px-3 text-lg font-semibold"
-                  style={{ color: accent }}
-                >
+                <span className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/2 bg-white px-3 text-lg font-semibold text-accent">
                   {step.n}.
                 </span>
                 <h3 className="text-lg font-semibold">{step.title}</h3>
@@ -235,59 +162,31 @@ export function UrbanGoDemo() {
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 mx-auto flex max-w-6xl flex-col justify-center px-4 py-16 text-white sm:px-6 sm:py-20">
           <h2 className="max-w-xl text-3xl font-bold leading-tight sm:text-5xl">Walking Street, shows and how to get there</h2>
-          <a href="/pattaya/areas/walking-street/" className="mt-6 inline-flex w-fit px-5 py-3 text-sm font-semibold text-white" style={{ background: accent }}>
+          <a href="/pattaya/areas/walking-street/" className="mt-6 inline-flex w-fit bg-accent px-5 py-3 text-sm font-semibold text-white">
             View guide
           </a>
         </div>
       </section>
 
-      <section id="listings" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-16 sm:px-6">
-        <p className="demo-script text-center text-3xl" style={{ color: accent }}>
-          checkout
-        </p>
+      <section id="listings" className="mx-auto max-w-6xl scroll-mt-28 px-4 py-16 sm:px-6">
+        <p className="script-face text-center text-3xl text-accent">checkout</p>
         <h2 className="text-center text-3xl font-bold tracking-tight sm:text-4xl">Guides to open</h2>
         <p className="mx-auto mt-3 max-w-2xl text-center text-sm leading-6 text-zinc-500 sm:text-base">
-          These are published Thai Night guides, not venue listings. No phone numbers or review scores.
+          Published Thai Night guides. No phone numbers or review scores.
         </p>
         {filter.filtered.length === 0 ? (
           <EmptyGuides />
         ) : (
           <div className="mt-8 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {cards.map((guide) => (
-              <article key={guide.href} className="border border-zinc-100 bg-white shadow-sm transition hover:border-[#ff4b6e]">
-                <a href={guide.href} className="block">
-                  <div className="relative">
-                    <GuideMedia guide={guide} className="h-48" sizes="(max-width: 640px) 100vw, 33vw" />
-                    <span className="absolute left-3 top-3 bg-white/95 px-2 py-1 text-xs font-semibold" style={{ color: accent }}>
-                      {guide.category}
-                    </span>
-                  </div>
-                  <div className="p-4">
-                    <h3 className="text-lg font-semibold leading-snug">{guide.title}</h3>
-                    <p className="mt-1 text-sm text-zinc-500">{guide.city}</p>
-                    <p className="mt-3 text-sm leading-6 text-zinc-600">{guide.description}</p>
-                    <p className="mt-3 text-sm font-semibold" style={{ color: accent }}>
-                      Open guide
-                    </p>
-                  </div>
-                </a>
-                <div className="px-4 pb-4">
-                  <PhotoCredit guide={guide} />
-                </div>
-              </article>
+              <GuideCard key={guide.href} guide={guide} />
             ))}
           </div>
         )}
-        {filter.filtered.length > 6 ? (
-          <div className="mt-8 text-center">
-            <button
-              type="button"
-              onClick={() => setShowAll((value) => !value)}
-              className="border border-zinc-200 bg-zinc-100 px-6 py-3 text-xs font-semibold tracking-widest text-zinc-600"
-            >
-              {showAll ? "SHOW LESS" : "VIEW MORE"}
-            </button>
-          </div>
+        {filter.filtered.length > cards.length ? (
+          <p className="mt-6 text-center text-sm text-zinc-500">
+            Showing {cards.length} of {filter.filtered.length}. Narrow the search to open one guide.
+          </p>
         ) : null}
       </section>
 
@@ -299,7 +198,7 @@ export function UrbanGoDemo() {
             <p className="mt-4 text-sm leading-7 text-zinc-600 sm:text-base">
               Free guides for first-timers and returning visitors. No paid rankings. Confirm prices, hours and dress codes on the spot.
             </p>
-            <a href="/bangkok/first-timer/" className="mt-6 inline-flex px-5 py-3 text-sm font-semibold text-white" style={{ background: accent }}>
+            <a href="/bangkok/first-timer/" className="mt-6 inline-flex bg-accent px-5 py-3 text-sm font-semibold text-white">
               View guide
             </a>
             <PhotoCredit guide={soi} />
@@ -313,7 +212,7 @@ export function UrbanGoDemo() {
         </div>
         <div className="absolute inset-0 bg-black/55" />
         <div className="relative z-10 px-4 py-16 text-center text-white sm:py-20">
-          <p className="demo-script text-3xl">plan the night</p>
+          <p className="script-face text-3xl">plan the night</p>
           <h2 className="mt-1 text-3xl font-bold sm:text-5xl">Shows, markets and taxi prices</h2>
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-white/85 sm:text-base">
             Cabaret tickets, night-market days and airport taxi ranges are already written up. Open the guide, then confirm on the day.
@@ -325,9 +224,7 @@ export function UrbanGoDemo() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <p className="demo-script text-center text-3xl" style={{ color: accent }}>
-          read our
-        </p>
+        <p className="script-face text-center text-3xl text-accent">read our</p>
         <h2 className="text-center text-3xl font-bold sm:text-4xl">Latest guides</h2>
         <div className="mt-8 grid gap-6 md:grid-cols-3">
           {posts.map((guide) => (
@@ -335,7 +232,7 @@ export function UrbanGoDemo() {
               <a href={guide.href} className="block">
                 <div className="relative">
                   <GuideMedia guide={guide} className="h-52" sizes="(max-width: 768px) 100vw, 33vw" />
-                  <span className="absolute left-3 top-3 px-2 py-1 text-center text-xs font-bold leading-tight text-white" style={{ background: accent }}>
+                  <span className="absolute left-3 top-3 bg-accent px-2 py-1 text-center text-xs font-bold leading-tight text-white">
                     {LAST_UPDATED}
                   </span>
                 </div>
@@ -351,20 +248,20 @@ export function UrbanGoDemo() {
         </div>
       </section>
 
-      <section className="bg-[#f6f7f8] py-14">
+      <section className="bg-card py-14">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
           <h2 className="text-center text-3xl font-bold">Cities</h2>
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {demoCities.map((city) => {
               const sample = guidesIn(city)[0];
               return (
-                <a key={city} href={sample.href} className="relative block h-48 overflow-hidden text-white">
+                <a key={city} href={cityHub[city]} className="relative block h-48 overflow-hidden text-white">
                   <div className="absolute inset-0">
                     <GuideMedia guide={sample} className="h-full" sizes="(max-width: 640px) 100vw, 25vw" />
                   </div>
                   <div className="absolute inset-0 bg-black/40" />
                   <div className="relative flex h-full flex-col justify-end p-4">
-                    <p className="demo-script text-2xl">guides in</p>
+                    <p className="script-face text-2xl">guides in</p>
                     <p className="text-2xl font-bold">{city}</p>
                     <p className="text-sm">{guidesIn(city).length} guides</p>
                   </div>
@@ -376,41 +273,6 @@ export function UrbanGoDemo() {
       </section>
 
       <HotelBand />
-
-      <footer className="bg-[#1c1c1c] text-zinc-300">
-        <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-3">
-          <div>
-            <p className="text-lg font-semibold text-white">Thai Night</p>
-            <p className="mt-2 text-sm leading-6">
-              Visual demo of a directory homepage. The live guide stays at the normal homepage.
-            </p>
-          </div>
-          <div className="text-sm leading-7">
-            {demoCities.map((city) => (
-              <a key={city} href={guidesIn(city)[0].href} className="block hover:text-white">
-                {city}
-              </a>
-            ))}
-          </div>
-          <div className="text-sm leading-7">
-            <Link href="/" className="block hover:text-white">
-              Live homepage
-            </Link>
-            <a href="/demo/listeo/" className="block hover:text-white">
-              Other layout demo
-            </a>
-            <a href="/about/" className="block hover:text-white">
-              About
-            </a>
-            <a href="/disclaimer/" className="block hover:text-white">
-              Disclaimer
-            </a>
-            <a href="/affiliate-disclosure/" className="block hover:text-white">
-              Affiliate disclosure
-            </a>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
@@ -418,11 +280,11 @@ export function UrbanGoDemo() {
 function EmptyGuides() {
   return (
     <div className="mt-8 border border-zinc-200 bg-zinc-50 p-6 text-sm leading-6">
-      <p>No guide matches that search. Try a city or open one of these:</p>
+      <p>No guide matches that search. Open a city hub:</p>
       <ul className="mt-3 space-y-1">
         {demoCities.map((city) => (
           <li key={city}>
-            <a href={guidesIn(city)[0].href} className="font-semibold underline" style={{ color: accent }}>
+            <a href={cityHub[city]} className="font-semibold text-accent underline">
               {city} nightlife guide
             </a>
           </li>

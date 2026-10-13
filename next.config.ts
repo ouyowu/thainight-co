@@ -53,6 +53,12 @@ const nextConfig: NextConfig = {
       { source: "/pattaya/tiffanys-show/:path*", destination: "/pattaya/tiffany-show/", permanent: true },
       { source: "/bangkok/sky-bar-dress-code/", destination: "/bangkok/sky-bar/", permanent: true },
       { source: "/bangkok/sky-bar-dress-code/:path*", destination: "/bangkok/sky-bar/", permanent: true },
+      { source: "/demo/urbango", destination: "/", permanent: false },
+      { source: "/demo/urbango/", destination: "/", permanent: false },
+      { source: "/demo/urbango/:path*", destination: "/", permanent: false },
+      { source: "/demo/listeo", destination: "/", permanent: false },
+      { source: "/demo/listeo/", destination: "/", permanent: false },
+      { source: "/demo/listeo/:path*", destination: "/", permanent: false },
     ];
   },
   turbopack: {

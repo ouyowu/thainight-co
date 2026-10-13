@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0b0b10;
-  --foreground: #f4f4f5;
-  --muted: #a1a1aa;
-  --card: #14141c;
-  --line: #2a2a36;
-  --accent: #f5c14a;
-  --accent-ink: #1a1406;
+  --background: #ffffff;
+  --foreground: #1c1c1c;
+  --muted: #6b7280;
+  --card: #f6f7f8;
+  --line: #e5e7eb;
+  --accent: #ff4b6e;
+  --accent-ink: #ffffff;
 }
 
 @theme inline {
@@ -39,18 +39,8 @@ button:focus-visible {
   outline-offset: 3px;
 }
 
-/* Demo routes only. Production pages do not render .demo-shell. */
+.script-face,
 .demo-script {
   font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
   font-style: italic;
-}
-
-body:has(.demo-shell) {
-  background: #ffffff;
-  color: #1c1c1c;
-}
-
-body:has(.demo-shell) > header,
-body:has(.demo-shell) > footer {
-  display: none;
 }

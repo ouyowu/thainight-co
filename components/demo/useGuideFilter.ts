@@ -2,27 +2,39 @@
 
 import { useMemo, useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
-import type { DemoGuide } from "@/lib/demo-guides";
+import { searchGuides, type DemoGuide } from "@/lib/demo-guides";
 
-export function useGuideFilter(listings: DemoGuide[]) {
+type FilterStart = {
+  query?: string;
+  city?: string;
+  category?: string;
+};
+
+export function useGuideFilter(listings: DemoGuide[], initial: FilterStart = {}) {
   const router = useRouter();
-  const [query, setQuery] = useState("");
-  const [city, setCity] = useState("All");
-  const [category, setCategory] = useState("All");
+  const [query, setQuery] = useState(initial.query ?? "");
+  const [city, setCity] = useState(initial.city ?? "All");
+  const [category, setCategory] = useState(initial.category ?? "All");
 
   const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    return listings.filter((item) => {
-      if (city !== "All" && item.city !== city) return false;
-      if (category !== "All" && item.category !== category) return false;
-      if (!q) return true;
-      return [item.title, item.city, item.category, item.description].join(" ").toLowerCase().includes(q);
-    });
+    const hits = new Set(searchGuides(query, city, category).map((guide) => guide.href));
+    return listings.filter((item) => hits.has(item.href));
   }, [listings, query, city, category]);
 
   function applySearch(event: FormEvent) {
     event.preventDefault();
-    if (filtered.length === 1) router.push(filtered[0].href);
+    if (filtered.length === 1) {
+      router.push(filtered[0].href);
+      return;
+    }
+    const params = new URLSearchParams();
+    const q = query.trim();
+    if (q) params.set("q", q);
+    if (city !== "All") params.set("city", city);
+    if (category !== "All") params.set("category", category);
+    const search = params.toString();
+    router.push(search ? `/?${search}#listings` : "/#listings");
+    document.getElementById("listings")?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   return { query, setQuery, city, setCity, category, setCategory, filtered, applySearch };

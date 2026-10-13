@@ -391,6 +391,16 @@ export function guidesIn(city: DemoCity): DemoGuide[] {
   return demoGuides.filter((guide) => guide.city === city);
 }
 
+export function searchGuides(query: string, city = "All", category = "All"): DemoGuide[] {
+  const q = query.trim().toLowerCase();
+  return demoGuides.filter((item) => {
+    if (city !== "All" && item.city !== city) return false;
+    if (category !== "All" && item.category !== category) return false;
+    if (!q) return true;
+    return [item.title, item.city, item.category, item.description].join(" ").toLowerCase().includes(q);
+  });
+}
+
 export function guidePhoto(guide: DemoGuide) {
   return guide.image ? photos[guide.image] : undefined;
 }
