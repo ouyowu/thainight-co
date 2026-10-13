@@ -13,7 +13,7 @@ export const bangkokGuides = [
   { href: "/bangkok/night-activities/", label: "Night activities: cabaret, markets, river" },
   { href: "/bangkok/bar-types/", label: "Bar & club types" },
   { href: "/bangkok/ladies-night/", label: "Ladies night & promo nights" },
-  { href: "/bangkok/hotels-nana-asok/", label: "Where to stay for nightlife" },
+  { href: "/bangkok/where-to-stay/", label: "Where to stay for nightlife" },
   { href: "/bangkok/getting-around/", label: "Getting around at night" },
   { href: "/bangkok/taxi-fare/", label: "Taxi fares & scams" },
   { href: "/bangkok/airport/", label: "Airport to city" },
@@ -39,7 +39,7 @@ export const pattayaGuides = [
   { href: "/pattaya/max-muay-thai-stadium/", label: "Max Muay Thai ticket price" },
   { href: "/pattaya/night-markets/", label: "Thepprasit night market" },
   { href: "/pattaya/bar-types/", label: "Bar & club types" },
-  { href: "/pattaya/hotels-walking-street/", label: "Where to stay for nightlife" },
+  { href: "/pattaya/where-to-stay/", label: "Where to stay for nightlife" },
   { href: "/pattaya/getting-around/", label: "Getting around at night" },
   { href: "/pattaya/baht-bus/", label: "Baht bus prices" },
   { href: "/pattaya/bangkok-to-pattaya/", label: "Bangkok to Pattaya transfer" },
@@ -56,12 +56,14 @@ export const pattayaAreas = [
 ] as const;
 
 export const chiangMaiGuides = [
+  { href: "/chiang-mai/where-to-stay/", label: "Where to stay for nightlife" },
   { href: "/chiang-mai/night-markets/", label: "Night markets" },
   { href: "/chiang-mai/nimman-nightlife/", label: "Nimman bars & clubs" },
   { href: "/chiang-mai/old-city-nightlife/", label: "Old City & riverside live music" },
 ] as const;
 
 export const phuketGuides = [
+  { href: "/phuket/where-to-stay/", label: "Where to stay for nightlife" },
   { href: "/phuket/bangla-road/", label: "Bangla Road clubs & prices" },
   { href: "/phuket/beach-clubs/", label: "Beach clubs: minimum spend" },
   { href: "/phuket/simon-cabaret/", label: "Simon Cabaret tickets" },

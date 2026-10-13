@@ -23,10 +23,10 @@ const migrationRedirects: Redirect[] = onRootDomain
       })),
       { source: "/api/agoda/:path*", destination: `${PLANNER}/api/agoda/:path*`, permanent: false },
       // Planner city guides → the guide site's own pages.
-      { source: "/guides/bangkok/:path*", destination: "/bangkok/hotels-nana-asok/", permanent: true },
-      { source: "/guides/pattaya/:path*", destination: "/pattaya/hotels-walking-street/", permanent: true },
-      { source: "/guides/chiang-mai/:path*", destination: "/chiang-mai/", permanent: true },
-      { source: "/guides/phuket/:path*", destination: "/phuket/", permanent: true },
+      { source: "/guides/bangkok/:path*", destination: "/bangkok/where-to-stay/", permanent: true },
+      { source: "/guides/pattaya/:path*", destination: "/pattaya/where-to-stay/", permanent: true },
+      { source: "/guides/chiang-mai/:path*", destination: "/chiang-mai/where-to-stay/", permanent: true },
+      { source: "/guides/phuket/:path*", destination: "/phuket/where-to-stay/", permanent: true },
       { source: "/guides/koh-samui/:path*", destination: `${PLANNER}/guides/koh-samui`, permanent: false },
       { source: "/guides/", destination: "/", permanent: true },
     ]
