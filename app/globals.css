@@ -44,3 +44,12 @@ button:focus-visible {
   font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
   font-style: italic;
 }
+
+.widget-title {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.55rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
