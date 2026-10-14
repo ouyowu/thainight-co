@@ -34,6 +34,10 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  verification: {
+    // Bing Webmaster Tools site ownership. Removing it un-verifies the site.
+    other: { "msvalidate.01": "8B79FB030ACA54F6BAFA97F76A103875" },
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
