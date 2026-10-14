@@ -126,6 +126,16 @@ export default function PhuketWhereToStayPage() {
         <HotelCta label="Search hotels in Phuket" link="hotelPhuket" />
       </Section>
 
+      <Section title="Hotel types">
+        <p>
+          The areas above are the first choice. These pages go one step further, still without a
+          ranking: <A href="/phuket/luxury-hotels/">luxury hotels</A>,{" "}
+          <A href="/phuket/pool-villas/">pool villas</A>, and{" "}
+          <A href="/phuket/couples-hotels/">hotels for couples</A> (a private pool and a view).
+          Each button on those pages is the same city-wide search.
+        </p>
+      </Section>
+
       <FaqList
         items={[
           {
@@ -145,6 +155,9 @@ export default function PhuketWhereToStayPage() {
 
       <Related
         links={[
+          { href: "/phuket/luxury-hotels/", label: "Luxury hotels" },
+          { href: "/phuket/pool-villas/", label: "Pool villas" },
+          { href: "/phuket/couples-hotels/", label: "Hotels for couples" },
           { href: "/phuket/bangla-road/", label: "Bangla Road" },
           { href: "/phuket/night-markets/", label: "Night markets" },
           { href: "/phuket/airport-to-patong-taxi-price/", label: "Airport to Patong taxi" },

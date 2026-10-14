@@ -131,6 +131,16 @@ export default function ChiangMaiWhereToStayPage() {
         <HotelCta label="Search hotels in Chiang Mai" link="hotelChiangMai" />
       </Section>
 
+      <Section title="Hotel types">
+        <p>
+          The areas above are the first choice. These pages go one step further, still without a
+          ranking: <A href="/chiang-mai/luxury-hotels/">luxury hotels</A>,{" "}
+          <A href="/chiang-mai/boutique-hotels/">boutique hotels</A>, and{" "}
+          <A href="/chiang-mai/couples-hotels/">hotels for couples</A> (a pavilion, a suite, a
+          pool, or the river). Each button on those pages is the same city-wide search.
+        </p>
+      </Section>
+
       <FaqList
         items={[
           {
@@ -150,6 +160,9 @@ export default function ChiangMaiWhereToStayPage() {
 
       <Related
         links={[
+          { href: "/chiang-mai/luxury-hotels/", label: "Luxury hotels" },
+          { href: "/chiang-mai/boutique-hotels/", label: "Boutique hotels" },
+          { href: "/chiang-mai/couples-hotels/", label: "Hotels for couples" },
           { href: "/chiang-mai/nimman-nightlife/", label: "Nimman nightlife" },
           { href: "/chiang-mai/old-city-nightlife/", label: "Old City nightlife" },
           { href: "/chiang-mai/night-markets/", label: "Night markets" },
