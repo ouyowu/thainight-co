@@ -176,7 +176,7 @@ export const demoGuides: DemoGuide[] = [
     city: "Pattaya",
     category: "Taxis",
     description:
-      "Suvarnabhumi to Pattaya: official taxi counter, Grab and Bolt, private transfers and the 139 THB airport bus compared.",
+      "Suvarnabhumi to Pattaya: official taxi counter, Grab and Bolt, private transfers and the airport bus compared.",
     image: "taxiMeter",
     tone: "#1c2830",
   },
