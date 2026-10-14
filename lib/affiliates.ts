@@ -45,6 +45,23 @@ const AGODA_HOTEL = {
   trisaraPhuket: agodaHotel("3073929"),
 };
 
+/** GetYourGuide partner IMR8EUB. The portal's link builder appends these two params to an activity URL. */
+function gyg(path: string): string {
+  return `https://www.getyourguide.com${path}?partner_id=IMR8EUB&utm_medium=online_publisher`;
+}
+
+// Activity pages checked on getyourguide.com, 14 October 2026. Second source next to Klook, so readers can compare.
+const GYG = {
+  muayThaiBangkok: gyg("/bangkok-l169/bangkok-muay-thai-boxing-tickets-at-rajadamnern-stadium-t505196"),
+  muayThaiPattaya: gyg("/pattaya-l182/pattaya-max-muay-thai-stadium-ticket-with-vip-seating-t613041"),
+  muayThaiPhuket: gyg("/patong-l93618/phuket-bangla-boxing-stadium-muay-thai-fight-ticket-t947228"),
+  cabaretBangkok: gyg("/bangkok-l169/calypso-cabaret-at-asiatique-live-ladyboy-show-front-seats-t1095966"),
+  cabaretPattaya: gyg("/pattaya-l182/pattaya-tiffany-s-show-admission-ticket-t364820"),
+  alcazarPattaya: gyg("/pattaya-l182/pattaya-alcazar-cabaret-show-admission-ticket-t979815"),
+  cabaretPhuket: gyg("/patong-l93618/phuket-simon-cabaret-show-tickets-optional-first-3-rows-t944502"),
+  dinnerCruise: gyg("/bangkok-l169/bangkok-white-orchid-chao-phraya-dinner-cruise-free-beer-t616103"),
+};
+
 /** Klook affiliate site "Thai Night" (AID 139170). Klook tracks any klook.com URL that carries aid. */
 function klook(path: string): string {
   const url = new URL(`https://www.klook.com/en-US${path}`);
@@ -91,10 +108,34 @@ export const affiliates = {
   rooftopBangkok: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_ROOFTOP_BANGKOK, KLOOK.rooftopBangkok),
   transferBangkokPattaya: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_TRANSFER_BKK_PATTAYA, KLOOK.transferBangkokPattaya),
   esim: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_ESIM, KLOOK.esim),
+  // GetYourGuide alternatives, shown next to the Klook button so readers can compare.
+  gygMuayThaiBangkok: GYG.muayThaiBangkok,
+  gygMuayThaiPattaya: GYG.muayThaiPattaya,
+  gygMuayThaiPhuket: GYG.muayThaiPhuket,
+  gygCabaretBangkok: GYG.cabaretBangkok,
+  gygCabaretPattaya: GYG.cabaretPattaya,
+  gygAlcazarPattaya: GYG.alcazarPattaya,
+  gygCabaretPhuket: GYG.cabaretPhuket,
+  gygDinnerCruise: GYG.dinnerCruise,
   ...AGODA_HOTEL,
 } as const;
 
 export type AffiliateKey = keyof typeof affiliates;
+
+/**
+ * Second seller for the same activity. BookingBox renders it as a "compare" link
+ * beside the main button, so a reader can check both prices.
+ */
+export const alternateSeller: Partial<Record<AffiliateKey, { href: string; seller: string }>> = {
+  muayThaiBangkok: { href: affiliates.gygMuayThaiBangkok, seller: "GetYourGuide" },
+  muayThaiPattaya: { href: affiliates.gygMuayThaiPattaya, seller: "GetYourGuide" },
+  muayThaiPhuket: { href: affiliates.gygMuayThaiPhuket, seller: "GetYourGuide" },
+  cabaretBangkok: { href: affiliates.gygCabaretBangkok, seller: "GetYourGuide" },
+  cabaretPattaya: { href: affiliates.gygCabaretPattaya, seller: "GetYourGuide" },
+  alcazarPattaya: { href: affiliates.gygAlcazarPattaya, seller: "GetYourGuide" },
+  cabaretPhuket: { href: affiliates.gygCabaretPhuket, seller: "GetYourGuide" },
+  dinnerCruise: { href: affiliates.gygDinnerCruise, seller: "GetYourGuide" },
+};
 
 /** True when a real affiliate URL is configured (not empty / placeholder). */
 export function hasAffiliate(href: string | undefined): href is string {
