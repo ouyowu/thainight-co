@@ -1,85 +1,135 @@
-import Link from "next/link";
+import { FaqList } from "@/components/FaqList";
 import { PageShell } from "@/components/PageShell";
+import { PriceTable } from "@/components/PriceTable";
+import { StayNearby } from "@/components/StayNearby";
+import { A, Bullets, Related, Section } from "@/components/Prose";
 import { GuidePhoto } from "@/components/GuidePhoto";
 import { photos } from "@/lib/photos";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Patpong Bangkok 2026 – Market, Bars & What to Skip",
-  "Patpong in 2026: the Silom night market, casual bars, nearby sky bars and the upstairs show scam to avoid.",
+  "Patpong in 2026: the Silom night market, casual bars, haggling, the sky bars nearby, how to get there, and the upstairs show scam to avoid.",
   "/bangkok/areas/patpong/",
 );
 
 export default function PatpongPage() {
   return (
-    <PageShell path="/bangkok/areas/patpong/" title="Patpong Bangkok 2026">
+    <PageShell
+      path="/bangkok/areas/patpong/"
+      title="Patpong Bangkok 2026"
+      lead="Patpong is two short lanes off Silom, near Sala Daeng BTS and Silom MRT, best known today for its night market. Treat it as market, history and a casual drink, paired with a Silom dinner or a nearby sky bar."
+    >
       <GuidePhoto {...photos.patpong} />
-      <p>
-        Patpong is two short lanes off Silom, near Sala Daeng BTS / Silom MRT, best known today
-        for its <strong>night market</strong>. Treat it as market + history + a casual drink, and
-        pair it with a Silom dinner or a nearby sky bar.
-      </p>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">What’s there</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>Night market down the middle of Patpong 1 (souvenirs, street food, tourist goods)</li>
-          <li>Casual ground-floor bars and pubs around the market</li>
-          <li>
-            Upstairs “show” rooms heavily associated with <strong>padded bills</strong>
-          </li>
-        </ul>
-      </section>
+      <Section title="What’s there">
+        <Bullets>
+          <li>A night market down the middle of Patpong 1: souvenirs, copy goods, street food and T-shirts.</li>
+          <li>Casual ground-floor bars and pubs around the market, plus Irish pubs and restaurants on Silom itself.</li>
+          <li>Upstairs “show” rooms heavily associated with padded bills. Thai Night does not cover them.</li>
+          <li>Silom Soi 4 and the surrounding lanes, a separate and more relaxed bar strip a short walk away.</li>
+        </Bullets>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Is it worth going?</h2>
-        <p className="mt-2">
+      <Section title="Is it worth going?">
+        <p>
           <strong>Yes, if:</strong> you want the market, the story, or a short look after dinner in
-          Silom.
+          Silom. The market itself is genuinely busy and the lanes are easy to walk.
         </p>
-        <p className="mt-2">
+        <p>
           <strong>No, if:</strong> you only have one night — a{" "}
-          <Link href="/bangkok/rooftop-bars/" className="text-accent hover:underline">
-            rooftop
-          </Link>{" "}
-          plus Soi 11 is a stronger first night.
+          <A href="/bangkok/rooftop-bars/">rooftop</A> plus Soi 11 is a stronger first night, and
+          Patpong is a twenty-minute stop rather than an evening.
         </p>
-      </section>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Critical rule</h2>
-        <p className="mt-2">
+      <Section title="Critical rule">
+        <p>
           <strong>Never follow touts upstairs for “cheap shows.”</strong>
         </p>
-        <p className="mt-2">
-          Confirm any drink price before you sit. Pay round by round. Upstairs rooms are where
-          the classic bill scams concentrate; Thai Night does not cover them.
+        <p>
+          The pattern is always the same: a flyer with a low price, a room upstairs, then a bill
+          many times what was quoted and a doorway you have to pay to leave through. Confirm any
+          drink price before you sit, pay round by round, and keep the slip. If a bill is wrong,
+          call the Tourist Police on 1155 rather than arguing it out.
         </p>
-      </section>
+      </Section>
 
-      <section>
-        <h2 className="text-lg font-semibold text-foreground">Practical tips</h2>
-        <ul className="mt-2 list-disc space-y-1 pl-5">
-          <li>Arrive after 19:00 for market atmosphere</li>
-          <li>Sky Bar (lebua) and Vertigo (Banyan Tree) are a short Grab away for a view first</li>
-          <li>Use Grab/Bolt back to Sukhumvit if that’s where you’re staying</li>
-        </ul>
-      </section>
+      <Section title="What things cost">
+        <PriceTable
+          caption="Patpong and Silom 2026"
+          headers={["Item", "Typical range"]}
+          rows={[
+            ["Beer, ground-floor bar", "120–220 THB"],
+            ["Market T-shirt after haggling", "150–300 THB"],
+            ["Street food plate", "60–150 THB"],
+            ["Cocktail at a nearby sky bar", "500–900+ THB, plus ++"],
+            ["Grab back to Sukhumvit", "100–200 THB"],
+          ]}
+        />
+        <p className="text-sm text-muted">
+          Checked October 2026 against venue listings and recent visitor reports. “++” adds 10%
+          service and 7% VAT. Full table: <A href="/bangkok/prices/">Bangkok nightlife prices</A>.
+        </p>
+      </Section>
 
-      <p>
-        Links:{" "}
-        <Link href="/scams/" className="text-accent hover:underline">
-          Scams
-        </Link>
-        ,{" "}
-        <Link href="/bangkok/" className="text-accent hover:underline">
-          Bangkok overview
-        </Link>
-        ,{" "}
-        <Link href="/bangkok/first-timer/" className="text-accent hover:underline">
-          First-timer guide
-        </Link>
-      </p>
+      <Section title="Haggling at the market">
+        <Bullets>
+          <li>First prices are high. Starting around half and settling near two-thirds is normal.</li>
+          <li>Walking away genuinely works, and often produces a better price before you reach the next stall.</li>
+          <li>Cash only, and small notes. Vendors are slow to change a 1,000.</li>
+          <li>Everything here is sold elsewhere too. If the price is not right, nothing is lost.</li>
+        </Bullets>
+      </Section>
+
+      <Section title="Getting there and home">
+        <Bullets>
+          <li>BTS Sala Daeng and MRT Silom are both at the top of the lanes, connected to each other.</li>
+          <li>Arrive after 19:00 for market atmosphere; the stalls build through the evening.</li>
+          <li>Sky Bar at lebua and Vertigo at Banyan Tree are a short Grab away for a view first.</li>
+          <li>The trains stop around midnight. Use Grab or Bolt back to Sukhumvit if that is where you are staying.</li>
+        </Bullets>
+        <p>
+          Fares: <A href="/bangkok/taxi-fare/">Bangkok taxi fares</A>.
+        </p>
+      </Section>
+
+      <StayNearby label="Hotels in Bangkok" link="hotelBangkok">
+        <p>
+          Silom and Sathorn suit a market-and-rooftop night and sit on both train lines. Most
+          nightlife visitors still base themselves on Sukhumvit.
+        </p>
+      </StayNearby>
+
+      <FaqList
+        items={[
+          {
+            q: "Is Patpong worth visiting in 2026?",
+            a: "For the night market and a short look after dinner in Silom, yes. As a whole evening, Soi 11 or Thonglor is a better use of one night.",
+          },
+          {
+            q: "What time does Patpong night market open?",
+            a: "Stalls build through the evening; after 19:00 is when it feels busy.",
+          },
+          {
+            q: "Is Patpong safe?",
+            a: "The market and ground-floor bars are fine. The risk is financial: never follow a tout upstairs for a cheap show, and confirm drink prices before you sit.",
+          },
+          {
+            q: "How do I get to Patpong?",
+            a: "BTS Sala Daeng or MRT Silom, both at the top of the lanes. The trains stop around midnight, so plan a Grab home.",
+          },
+        ]}
+      />
+
+      <Related
+        links={[
+          { href: "/bangkok/areas/", label: "All Bangkok areas" },
+          { href: "/bangkok/rooftop-bars/", label: "Rooftop bars" },
+          { href: "/bangkok/night-markets/", label: "Night markets" },
+          { href: "/scams/", label: "Common scams" },
+        ]}
+      />
     </PageShell>
   );
 }
