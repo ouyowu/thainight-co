@@ -61,6 +61,10 @@ export default function PattayaPage() {
           { label: "Hotels near Walking Street", link: "hotelWalkingStreet" },
         ]}
       />
+      <p>
+        Compare neighbourhoods first: <A href="/pattaya/where-to-stay/">where to stay in Pattaya</A>.
+        The hotel button searches Agoda for the whole city.
+      </p>
 
       <Section title="2026 price snapshot">
         <Bullets>

@@ -69,6 +69,10 @@ export default function BangkokPage() {
           { label: "Hotels in Sukhumvit", link: "hotelBangkok" },
         ]}
       />
+      <p>
+        Compare neighbourhoods first: <A href="/bangkok/where-to-stay/">where to stay in Bangkok</A>.
+        The hotel button searches Agoda for the whole city.
+      </p>
 
       <Section title="2026 price snapshot">
         <Bullets>

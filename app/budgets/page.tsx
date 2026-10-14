@@ -54,8 +54,10 @@ export default function BudgetsPage() {
 
       <p>
         Sleep in the same area you go out in:{" "}
-        <A href="/bangkok/hotels-nana-asok/">Bangkok (Sukhumvit)</A>,{" "}
-        <A href="/pattaya/hotels-walking-street/">Pattaya (Walking Street / Central)</A>.
+        <A href="/bangkok/where-to-stay/">Bangkok</A>,{" "}
+        <A href="/pattaya/where-to-stay/">Pattaya</A>,{" "}
+        <A href="/phuket/where-to-stay/">Phuket</A>,{" "}
+        <A href="/chiang-mai/where-to-stay/">Chiang Mai</A>.
       </p>
       <Related
         links={[

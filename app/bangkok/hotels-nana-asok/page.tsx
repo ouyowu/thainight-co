@@ -16,7 +16,8 @@ export function WhereToStayGuide({ path }: { path: string }) {
       <p>
         For nightlife, the useful decision is the <strong>BTS stop</strong>, not a “best hotel”
         list. The Sukhumvit line from Nana to Thonglor puts Soi 11, most rooftops and the club
-        strips within a short walk or one train ride.
+        strips within a short walk or one train ride. Silom, the river and the Old Town are on the{" "}
+        <A href="/bangkok/where-to-stay/">Bangkok where-to-stay guide</A>.
       </p>
 
       <Section title="The corridor">

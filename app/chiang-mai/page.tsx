@@ -60,6 +60,10 @@ export default function ChiangMaiPage() {
       <SisterTour />
 
       <BookingBox items={[{ label: "Hotels in Chiang Mai (Nimman / Old City)", link: "hotelChiangMai" }]} />
+      <p>
+        Compare neighbourhoods first: <A href="/chiang-mai/where-to-stay/">where to stay in Chiang Mai</A>.
+        The hotel button searches Agoda for the whole city.
+      </p>
 
       <Section title="Chiang Mai guides">
         <LinkList links={chiangMaiGuides} />

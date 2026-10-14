@@ -54,6 +54,10 @@ export default function PhuketPage() {
           { label: "Hotels in Patong", link: "hotelPhuket" },
         ]}
       />
+      <p>
+        Compare neighbourhoods first: <A href="/phuket/where-to-stay/">where to stay in Phuket</A>.
+        The hotel button searches Agoda for the whole city.
+      </p>
 
       <Section title="Practical notes">
         <Bullets>
