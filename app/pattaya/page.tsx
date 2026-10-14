@@ -55,7 +55,8 @@ export default function PattayaPage() {
 
       <BookingBox
         items={[
-          { label: "Cabaret show tickets (Tiffany’s / Alcazar)", link: "cabaretPattaya" },
+          { label: "Tiffany’s Show tickets", link: "cabaretPattaya" },
+          { label: "Alcazar tickets", link: "alcazarPattaya" },
           { label: "Muay Thai tickets in Pattaya", link: "muayThaiPattaya" },
           { label: "Bangkok → Pattaya transfer", link: "transferBangkokPattaya" },
           { label: "Hotels near Walking Street", link: "hotelWalkingStreet" },

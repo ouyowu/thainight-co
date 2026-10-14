@@ -53,7 +53,10 @@ export default function CabaretShowsPage() {
 
       <BookingBox
         title="Book tickets"
-        items={[{ label: "Tiffany’s / Alcazar tickets", link: "cabaretPattaya" }]}
+        items={[
+          { label: "Tiffany’s Show tickets", link: "cabaretPattaya" },
+          { label: "Alcazar tickets", link: "alcazarPattaya" },
+        ]}
       />
 
       <Section title="Which one?">

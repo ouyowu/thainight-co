@@ -31,7 +31,7 @@ export default function AlcazarShowPage() {
         <CheckedNote />
       </Section>
 
-      <BookingBox title="Book Alcazar" items={[{ label: "Alcazar tickets (VIP / VVIP)", link: "cabaretPattaya" }]} />
+      <BookingBox title="Book Alcazar" items={[{ label: "Alcazar tickets (VIP / VVIP)", link: "alcazarPattaya" }]} />
 
       <Section title="Show times & practical">
         <Bullets>
