@@ -1,4 +1,11 @@
-/** Licensed Wikimedia Commons stills. Credit required (CC BY / BY-SA). */
+/**
+ * Site photos. Two sources:
+ * - Unsplash / Pexels: free licence, no credit required, but we credit anyway.
+ *   These carry a thainight.co stamp bottom-right.
+ * - Wikimedia Commons (CC BY / BY-SA): credit is required by the licence, so the
+ *   photographer stays named and the href points at the file page. No stamp: the
+ *   licences forbid implying the work is ours.
+ */
 
 export type Photo = {
   src: string;
@@ -10,15 +17,15 @@ export type Photo = {
 export const photos = {
   rooftop: {
     src: "/images/rooftop.webp",
-    alt: "Bangkok city lights at night seen from a rooftop bar",
-    credit: "Jorge Láscar / Wikimedia Commons (CC BY 2.0)",
-    href: "https://commons.wikimedia.org/wiki/File:Lascar_Bangkok_at_night_from_Moon_Bar_at_Vertigo_(4509100955).jpg",
+    alt: "Rooftop bar at sunset in Bangkok, city lights below the terrace",
+    credit: "Florian Peeters / Unsplash",
+    href: "https://unsplash.com/@fpeeters",
   },
   muayThai: {
     src: "/images/muay-thai.webp",
-    alt: "Muay Thai fighter in the corner between rounds at Lumpinee Stadium, Bangkok",
-    credit: "Peerapong Prasutr / Wikimedia Commons (CC BY-SA 4.0)",
-    href: "https://commons.wikimedia.org/wiki/File:Bangkok_Lumpinee_Boxing_Stadium_4.jpg",
+    alt: "Muay Thai fighters in the ring at a Bangkok stadium, crowd behind",
+    credit: "Mateusz Turbiński / Pexels",
+    href: "https://www.pexels.com/photo/2607922/",
   },
   cabaret: {
     src: "/images/cabaret.webp",
@@ -28,27 +35,27 @@ export const photos = {
   },
   taxiMeter: {
     src: "/images/taxi-meter.webp",
-    alt: "Green-and-yellow Bangkok taxi with a taxi-meter roof sign",
-    credit: "Ilya Plekhanov / Wikimedia Commons (CC BY-SA 4.0)",
-    href: "https://commons.wikimedia.org/wiki/File:Taxi-meter_in_Bangkok_10.jpg",
+    alt: "Green-and-yellow and all-yellow metered taxis parked on a Bangkok street",
+    credit: "Tanawin Wichit / Unsplash",
+    href: "https://unsplash.com/@rektplorer64",
   },
   khaoSan: {
     src: "/images/khao-san.webp",
-    alt: "Khao San Road at night with street stalls and pedestrians",
-    credit: "Kevin Poh / Wikimedia Commons (CC BY 2.0)",
-    href: "https://commons.wikimedia.org/wiki/File:Khao_San_Road_at_night_by_kevinpoh.jpg",
+    alt: "Neon bar and taco signs over the crowd on Khao San Road at night",
+    credit: "Waranont (Joe) / Unsplash",
+    href: "https://unsplash.com/@tricell1991",
   },
   patpong: {
     src: "/images/patpong.webp",
-    alt: "Covered stall at Patpong Night Bazaar selling bags and jewellery",
-    credit: "nakhon100 / Wikimedia Commons (CC BY 2.0)",
-    href: "https://commons.wikimedia.org/wiki/File:Patpong_Night_Bazaar_(5828832361).jpg",
+    alt: "Lit food stall and Thai signage on a Bangkok street at night",
+    credit: "Pexels",
+    href: "https://www.pexels.com/photo/12681089/",
   },
   soi11: {
     src: "/images/soi-11.webp",
-    alt: "Tuk-tuks lined up on Sukhumvit Soi 11 at night",
-    credit: "Mark Fischer / Wikimedia Commons (CC BY-SA 2.0)",
-    href: "https://commons.wikimedia.org/wiki/File:Sukhumvit_Soi_11_tuktuks.jpg",
+    alt: "Tuk-tuks under neon signs on a Bangkok street at night",
+    credit: "Mario Scheibl / Unsplash",
+    href: "https://unsplash.com/@aguyonecam",
   },
   rca: {
     src: "/images/rca.webp",
@@ -64,14 +71,14 @@ export const photos = {
   },
   jomtien: {
     src: "/images/jomtien.webp",
-    alt: "Sunset over the sand and sea at Jomtien Beach",
-    credit: "Slyronit / Wikimedia Commons (CC BY-SA 4.0)",
-    href: "https://commons.wikimedia.org/wiki/File:Jomtien_beach_at_sunset.jpg",
+    alt: "Pattaya Bay from above: the beach road curve and hotel towers",
+    credit: "Ryutaro Uozumi / Unsplash",
+    href: "https://unsplash.com/@ryutarouozumi",
   },
   centralPattaya: {
     src: "/images/central-pattaya.webp",
-    alt: "CentralFestival mall lit at night on Pattaya Beach Road",
-    credit: "Arthur Taksin / Wikimedia Commons (CC BY 4.0)",
-    href: "https://commons.wikimedia.org/wiki/File:CentralFestival_Pattaya_Beach_back.jpg",
+    alt: "Pattaya hotel towers lit up at night above the bay",
+    credit: "Pexels",
+    href: "https://www.pexels.com/photo/30594686/",
   },
 } as const satisfies Record<string, Photo>;
