@@ -64,7 +64,11 @@ export default function PhuketPage() {
           <li>Bangla Road closes to traffic around 18:00; it peaks from about 23:00 to 01:00.</li>
           <li>Walk a couple of blocks off Bangla before booking a Grab — fares spike at the street ends.</li>
           <li>Tuk-tuks in Phuket are expensive and negotiated; Grab and Bolt are usually cheaper.</li>
-          <li>Shops sell alcohol only at set hours; bars serve until closing. Buddhist holidays and election days can bring alcohol bans.</li>
+          <li>
+            Shops sell alcohol only at set hours; bars serve until closing. Buddhist holidays and
+            election days can bring alcohol bans. Dates we could confirm:{" "}
+            <A href="/thailand/alcohol-ban-days-2026/">alcohol ban days 2026</A>.
+          </li>
           <li>Parts of Bangla Road include adult-entertainment venues, which Thai Night does not cover.</li>
         </Bullets>
       </Section>

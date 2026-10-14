@@ -52,6 +52,7 @@ export default function CashPage() {
 
       <Related
         links={[
+          { href: "/thailand/esim-for-tourists/", label: "Tourist eSIM" },
           { href: "/prices/", label: "Prices" },
           { href: "/bangkok/getting-around/", label: "Bangkok getting around" },
           { href: "/pattaya/getting-around/", label: "Pattaya getting around" },

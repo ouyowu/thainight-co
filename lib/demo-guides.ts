@@ -308,6 +308,24 @@ export const demoGuides: DemoGuide[] = [
     tone: "#3a2e22",
   },
   {
+    href: "/phuket/first-timer/",
+    title: "Phuket first-timer guide",
+    city: "Phuket",
+    category: "First-timer",
+    description:
+      "First night in Phuket: Simon Cabaret or Muay Thai, then Bangla Road, with beach clubs and Old Town as the quieter options.",
+    tone: "#16343a",
+  },
+  {
+    href: "/phuket/getting-around/",
+    title: "Getting around Phuket at night",
+    city: "Phuket",
+    category: "Taxis",
+    description:
+      "How to move around Phuket after dark: walk Patong, use Grab or Bolt, and the songthaew and Smart Bus fares we could confirm.",
+    tone: "#16343a",
+  },
+  {
     href: "/phuket/bangla-road/",
     title: "Bangla Road clubs",
     city: "Phuket",
