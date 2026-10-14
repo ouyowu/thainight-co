@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Pattaya Luxury Hotels 2026 – Five-Star Nightly Rates",
-  "What large Pattaya five-star hotels cost in 2026. Published nightly samples for Hilton Pattaya and Royal Cliff, to confirm on the spot, plus a city-wide search.",
+  "What large Pattaya five-star hotels cost in 2026. Published nightly samples for Hilton Pattaya and Royal Cliff, to confirm on the spot, plus Agoda links for both hotels.",
   "/pattaya/luxury-hotels/",
 );
 
@@ -37,8 +37,7 @@ export default function PattayaLuxuryHotelsPage() {
         />
         <p className="text-sm text-muted">
           Ranges checked 14 October 2026. Confirm on the spot. Thai Night does not rank hotels
-          and does not take payment for placement. The button searches Agoda for the whole of
-          Pattaya (city 8584), not one hotel.
+          and does not take payment for placement. Each hotel button opens Agoda with that hotel shown first.
         </p>
         <Bullets>
           <li>
@@ -71,7 +70,8 @@ export default function PattayaLuxuryHotelsPage() {
         <p>
           The bands above are listing samples, not a promise for New Year. Confirm on the spot.
         </p>
-        <HotelCta label="Search hotels in Pattaya" link="hotelPattaya" />
+        <HotelCta label="Hilton Pattaya on Agoda" link="hiltonPattaya" />
+        <HotelCta label="Royal Cliff Grand on Agoda" link="royalCliffGrandPattaya" />
       </Section>
 
       <FaqList
@@ -86,7 +86,7 @@ export default function PattayaLuxuryHotelsPage() {
           },
           {
             q: "Does the hotel button book Hilton Pattaya?",
-            a: "No. It opens a Pattaya-wide Agoda search. Thai Night does not link to a single hotel.",
+            a: "It opens Agoda with Hilton Pattaya shown first, and you book there. Royal Cliff Grand has its own button.",
           },
         ]}
       />

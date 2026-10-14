@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Chiang Mai Boutique Hotels 2026 – Nimman and the Old City",
-  "Chiang Mai boutique hotel rates in 2026 for Nimman and the Old City. Published ranges to confirm on the spot, plus a city-wide hotel search.",
+  "Chiang Mai boutique hotel rates in 2026 for Nimman and the Old City. Published ranges to confirm on the spot, plus an Agoda link for Nimman Mai.",
   "/chiang-mai/boutique-hotels/",
 );
 
@@ -42,8 +42,7 @@ export default function ChiangMaiBoutiqueHotelsPage() {
         />
         <p className="text-sm text-muted">
           Ranges checked 14 October 2026. January sits higher than the green season. Confirm on
-          the spot. Thai Night does not rank hotels and does not take payment for placement. The
-          button searches Agoda for the whole of Chiang Mai (city 7401), not one neighbourhood.
+          the spot. Thai Night does not rank hotels and does not take payment for placement. The Nimman Mai button opens Agoda with that hotel shown first. The second button searches all of Chiang Mai (city 7401), not one neighbourhood.
         </p>
         <Bullets>
           <li>
@@ -81,7 +80,8 @@ export default function ChiangMaiBoutiqueHotelsPage() {
           A “boutique” label on a booking site is not a rate. Use the bands above and confirm
           on the spot.
         </p>
-        <HotelCta label="Search hotels in Chiang Mai" link="hotelChiangMai" />
+        <HotelCta label="Nimman Mai Design Hotel on Agoda" link="nimmanMaiChiangMai" />
+        <HotelCta label="Search other Chiang Mai hotels" link="hotelChiangMai" />
       </Section>
 
       <FaqList
@@ -96,7 +96,7 @@ export default function ChiangMaiBoutiqueHotelsPage() {
           },
           {
             q: "Does the button book a boutique hotel?",
-            a: "No. It opens a Chiang Mai-wide Agoda search. Filter there. Thai Night does not link to a single hotel.",
+            a: "The Nimman Mai button opens Agoda with that hotel shown first. The other button searches all of Chiang Mai; filter there for Nimman or the Old City.",
           },
         ]}
       />

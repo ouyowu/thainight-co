@@ -38,7 +38,7 @@ export default function PattayaCouplesHotelsPage() {
         <p className="text-sm text-muted">
           Ranges checked 14 October 2026. The Cape Dara floor is a standard room, not the pool
           suite. Confirm on the spot. Thai Night does not rank hotels and does not take payment
-          for placement. The button searches Agoda for the whole of Pattaya (city 8584).
+          for placement. Each hotel button opens Agoda with that hotel shown first.
         </p>
         <Bullets>
           <li>
@@ -70,7 +70,8 @@ export default function PattayaCouplesHotelsPage() {
           beach hotels are on <A href="/pattaya/beachfront-resorts/">beachfront resorts</A>.
         </p>
         <p>Book a full night and confirm the room type on the spot.</p>
-        <HotelCta label="Search hotels in Pattaya" link="hotelPattaya" />
+        <HotelCta label="Royal Cliff Grand on Agoda" link="royalCliffGrandPattaya" />
+        <HotelCta label="Cape Dara Resort on Agoda" link="capeDaraPattaya" />
       </Section>
 
       <FaqList
@@ -85,7 +86,7 @@ export default function PattayaCouplesHotelsPage() {
           },
           {
             q: "Does the button book a suite?",
-            a: "No. It opens a Pattaya-wide Agoda search. Filter there. Thai Night does not link to a single hotel.",
+            a: "Yes. Each button opens Agoda with that hotel shown first. The pool suite is a separate rate from the cheapest room.",
           },
         ]}
       />

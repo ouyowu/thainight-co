@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Chiang Mai Luxury Hotels 2026 – Nightly Rates",
-  "What a Chiang Mai luxury hotel costs in 2026: Four Seasons in Mae Rim and 137 Pillars House. Ranges to confirm on the spot, plus a city-wide search.",
+  "What a Chiang Mai luxury hotel costs in 2026: Four Seasons in Mae Rim and 137 Pillars House. Ranges to confirm on the spot, plus Agoda links for both hotels.",
   "/chiang-mai/luxury-hotels/",
 );
 
@@ -38,8 +38,7 @@ export default function ChiangMaiLuxuryHotelsPage() {
         <p className="text-sm text-muted">
           Ranges checked 14 October 2026. “+++” means the hotel still adds service charge and
           tax. Confirm on the spot. Thai Night does not rank hotels and does not take payment
-          for placement. The button searches Agoda for the whole of Chiang Mai (city 7401), not
-          one hotel.
+          for placement. Each hotel button opens Agoda with that hotel shown first.
         </p>
         <Bullets>
           <li>
@@ -74,7 +73,8 @@ export default function ChiangMaiLuxuryHotelsPage() {
           Cool season and the smoky weeks after February change both the rate and the view.
           Confirm on the spot.
         </p>
-        <HotelCta label="Search hotels in Chiang Mai" link="hotelChiangMai" />
+        <HotelCta label="Four Seasons Resort Chiang Mai on Agoda" link="fourSeasonsChiangMai" />
+        <HotelCta label="137 Pillars House on Agoda" link="pillarsHouseChiangMai" />
       </Section>
 
       <FaqList
@@ -89,7 +89,7 @@ export default function ChiangMaiLuxuryHotelsPage() {
           },
           {
             q: "Does the button book the Four Seasons?",
-            a: "No. It opens a Chiang Mai-wide Agoda search. Thai Night does not link to a single hotel.",
+            a: "Yes. Each button opens Agoda with that hotel shown first. Confirm the room and the rate for your dates there.",
           },
         ]}
       />

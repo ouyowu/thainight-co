@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Phuket Luxury Hotels 2026 – Keemala Nightly Rates",
-  "What a Phuket luxury hotel costs in 2026, using Keemala in Kamala as the hotel two sources both price. Confirm on the spot. City-wide hotel search.",
+  "What a Phuket luxury hotel costs in 2026, using Keemala in Kamala as the hotel two sources both price. Confirm on the spot. Agoda link for Keemala.",
   "/phuket/luxury-hotels/",
 );
 
@@ -33,8 +33,7 @@ export default function PhuketLuxuryHotelsPage() {
         <p className="text-sm text-muted">
           Ranges checked 14 October 2026. The baht band and the dollar band come from different
           sites and do not convert into each other on this page. Confirm on the spot. Thai Night
-          does not rank hotels and does not take payment for placement. The button searches Agoda
-          for the whole of Phuket (city 16056), not Kamala and not this hotel.
+          does not rank hotels and does not take payment for placement. The hotel button opens Agoda with Keemala shown first.
         </p>
         <Bullets>
           <li>
@@ -66,7 +65,7 @@ export default function PhuketLuxuryHotelsPage() {
           High season is roughly November to April. The top of these bands is the December stay.
           Confirm on the spot.
         </p>
-        <HotelCta label="Search hotels in Phuket" link="hotelPhuket" />
+        <HotelCta label="Keemala on Agoda" link="keemalaPhuket" />
       </Section>
 
       <FaqList
@@ -81,7 +80,7 @@ export default function PhuketLuxuryHotelsPage() {
           },
           {
             q: "Does the button book Keemala?",
-            a: "No. It opens a Phuket-wide Agoda search. Thai Night does not link to a single hotel.",
+            a: "Yes. It opens Agoda with Keemala shown first. Confirm the villa type and the rate for your dates there.",
           },
         ]}
       />

@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Bangkok Design Hotels 2026 – Sukhumvit Suites",
-  "Design and boutique suites on Sukhumvit in 2026, with a published nightly band for 137 Pillars Suites. Confirm on the spot. City-wide hotel search.",
+  "Design and boutique suites on Sukhumvit in 2026, with a published nightly band for 137 Pillars Suites. Confirm on the spot. Agoda link for 137 Pillars Suites.",
   "/bangkok/design-hotels/",
 );
 
@@ -32,8 +32,7 @@ export default function BangkokDesignHotelsPage() {
         />
         <p className="text-sm text-muted">
           Ranges checked 14 October 2026. Confirm on the spot. Thai Night does not rank hotels
-          and does not take payment for placement. The button searches Agoda for the whole of
-          Bangkok (city 9395), not this hotel and not Thong Lo alone.
+          and does not take payment for placement. The 137 Pillars button opens Agoda with that hotel shown first. The second button searches all of Bangkok (city 9395), not Thong Lo alone.
         </p>
         <Bullets>
           <li>
@@ -69,7 +68,8 @@ export default function BangkokDesignHotelsPage() {
           For this suite hotel, the two sources above land about ฿9,000–12,500 a night. Confirm
           on the spot.
         </p>
-        <HotelCta label="Search hotels in Bangkok" link="hotelSukhumvit" />
+        <HotelCta label="137 Pillars Suites Bangkok on Agoda" link="pillarsSuitesBangkok" />
+        <HotelCta label="Search other Bangkok hotels" link="hotelSukhumvit" />
       </Section>
 
       <FaqList
@@ -84,7 +84,7 @@ export default function BangkokDesignHotelsPage() {
           },
           {
             q: "Does the button book Sukhumvit Soi 39?",
-            a: "No. It opens a Bangkok-wide Agoda search. Filter there for Thong Lo or Sukhumvit. Thai Night does not link to a single hotel.",
+            a: "The first button opens Agoda with 137 Pillars Suites shown first. The second searches all of Bangkok; filter there for Thong Lo or Sukhumvit.",
           },
         ]}
       />
