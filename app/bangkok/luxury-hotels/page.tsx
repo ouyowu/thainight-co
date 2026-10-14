@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Bangkok Luxury Hotels 2026 – River Rates to Confirm",
-  "What a famous Bangkok luxury hotel costs in 2026: riverside entry rates and the Aman ceiling. Ranges to confirm on the spot, plus a city-wide hotel search.",
+  "What a famous Bangkok luxury hotel costs in 2026: riverside entry rates and the Aman ceiling. Ranges to confirm on the spot, plus Agoda links for each river hotel.",
   "/bangkok/luxury-hotels/",
 );
 
@@ -37,8 +37,7 @@ export default function BangkokLuxuryHotelsPage() {
         />
         <p className="text-sm text-muted">
           Ranges checked 14 October 2026. They move with the date. Confirm on the spot. Thai Night
-          does not rank hotels and does not take payment for placement. The button below searches
-          Agoda for the whole of Bangkok (city 9395), not one hotel.
+          does not rank hotels and does not take payment for placement. Each hotel button opens Agoda with that hotel shown first. Aman Nai Lert is not listed on Agoda, so its section keeps a Bangkok-wide search.
         </p>
         <Bullets>
           <li>
@@ -76,7 +75,11 @@ export default function BangkokLuxuryHotelsPage() {
           Use the two published bands above, not a single “from” price. December and Chinese New
           Year sit at the top. Confirm on the spot.
         </p>
-        <HotelCta label="Search hotels in Bangkok" link="hotelBangkok" />
+        <HotelCta label="The Peninsula Bangkok on Agoda" link="peninsulaBangkok" />
+        <HotelCta label="Mandarin Oriental, Bangkok on Agoda" link="mandarinOrientalBangkok" />
+        <HotelCta label="Four Seasons at Chao Phraya River on Agoda" link="fourSeasonsBangkok" />
+        <HotelCta label="The Siam on Agoda" link="siamHotelBangkok" />
+        <HotelCta label="Capella Bangkok on Agoda" link="capellaBangkok" />
       </Section>
 
       <Section title="A higher ceiling">
@@ -100,7 +103,7 @@ export default function BangkokLuxuryHotelsPage() {
           },
           {
             q: "Does the hotel button open one of these hotels?",
-            a: "No. It opens a Bangkok-wide Agoda search. Filter there. Thai Night does not link to a single hotel.",
+            a: "Yes for the five river hotels: each button opens Agoda with that hotel shown first. Aman Nai Lert is not listed on Agoda, so that section searches all of Bangkok.",
           },
         ]}
       />

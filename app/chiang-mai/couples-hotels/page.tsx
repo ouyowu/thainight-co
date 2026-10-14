@@ -37,8 +37,7 @@ export default function ChiangMaiCouplesHotelsPage() {
         />
         <p className="text-sm text-muted">
           Ranges checked 14 October 2026. Entry rates are not the private-pool suite. Confirm on
-          the spot. Thai Night does not rank hotels and does not take payment for placement. The
-          button searches Agoda for the whole of Chiang Mai (city 7401).
+          the spot. Thai Night does not rank hotels and does not take payment for placement. Each hotel button opens Agoda with that hotel shown first.
         </p>
         <Bullets>
           <li>
@@ -75,7 +74,8 @@ export default function ChiangMaiCouplesHotelsPage() {
           Ask for the pool villa or the pool suite by name. The bands above are the entry room
           unless the source says otherwise. Confirm on the spot.
         </p>
-        <HotelCta label="Search hotels in Chiang Mai" link="hotelChiangMai" />
+        <HotelCta label="Four Seasons Resort Chiang Mai on Agoda" link="fourSeasonsChiangMai" />
+        <HotelCta label="137 Pillars House on Agoda" link="pillarsHouseChiangMai" />
       </Section>
 
       <FaqList
@@ -90,7 +90,7 @@ export default function ChiangMaiCouplesHotelsPage() {
           },
           {
             q: "Does the button book a pool villa?",
-            a: "No. It opens a Chiang Mai-wide Agoda search. Thai Night does not link to a single hotel.",
+            a: "Yes. Each button opens Agoda with that hotel shown first. A private-pool room is a separate rate.",
           },
         ]}
       />

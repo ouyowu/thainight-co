@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Pattaya Beachfront Resorts 2026 – Nightly Rates",
-  "Pattaya beachfront hotel rates in 2026: Cape Dara and Hilton Pattaya, from published listings. Confirm on the spot. City-wide hotel search.",
+  "Pattaya beachfront hotel rates in 2026: Cape Dara and Hilton Pattaya, from published listings. Confirm on the spot. Agoda links for both hotels.",
   "/pattaya/beachfront-resorts/",
 );
 
@@ -38,7 +38,7 @@ export default function PattayaBeachfrontResortsPage() {
         <p className="text-sm text-muted">
           Ranges checked 14 October 2026. A sea-view suite costs more than the cheapest room.
           Confirm on the spot. Thai Night does not rank hotels and does not take payment for
-          placement. The button searches Agoda for the whole of Pattaya (city 8584), not one beach.
+          placement. Each hotel button opens Agoda with that hotel shown first.
         </p>
         <Bullets>
           <li>
@@ -73,7 +73,8 @@ export default function PattayaBeachfrontResortsPage() {
           The floors above are the cheap end of recent listings. A beachfront suite is a
           different number. Confirm on the spot.
         </p>
-        <HotelCta label="Search hotels in Pattaya" link="hotelBeachRoad" />
+        <HotelCta label="Cape Dara Resort on Agoda" link="capeDaraPattaya" />
+        <HotelCta label="Hilton Pattaya on Agoda" link="hiltonPattaya" />
       </Section>
 
       <FaqList
@@ -88,7 +89,7 @@ export default function PattayaBeachfrontResortsPage() {
           },
           {
             q: "Does the button book a beachfront room?",
-            a: "No. It opens a Pattaya-wide Agoda search. Filter there for beachfront. Thai Night does not link to a single hotel.",
+            a: "Yes. Each button opens Agoda with that hotel shown first. Check that the room you pick faces the sea.",
           },
         ]}
       />

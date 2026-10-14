@@ -22,6 +22,29 @@ const AGODA_PHUKET = agodaCitySearch("16056");
 /** city=7401 from https://www.agoda.com/city/chiang-mai-th.html defaultSearchURL. */
 const AGODA_CHIANG_MAI = agodaCitySearch("7401");
 
+/** Agoda partner hotel link: opens the city search with this hotel pinned first. */
+function agodaHotel(hotelId: string): string {
+  return `https://www.agoda.com/partners/partnersearch.aspx?cid=1969005&hid=${hotelId}&hl=en-us`;
+}
+
+// Hotel ids from Agoda's own search suggestions, 14 October 2026. Aman Nai Lert is not sold on Agoda.
+const AGODA_HOTEL = {
+  peninsulaBangkok: agodaHotel("10715"),
+  mandarinOrientalBangkok: agodaHotel("10713"),
+  fourSeasonsBangkok: agodaHotel("8634385"),
+  siamHotelBangkok: agodaHotel("296765"),
+  capellaBangkok: agodaHotel("16997294"),
+  pillarsSuitesBangkok: agodaHotel("1266554"),
+  fourSeasonsChiangMai: agodaHotel("10742"),
+  pillarsHouseChiangMai: agodaHotel("288296"),
+  nimmanMaiChiangMai: agodaHotel("276670"),
+  hiltonPattaya: agodaHotel("241427"),
+  royalCliffGrandPattaya: agodaHotel("197206"),
+  capeDaraPattaya: agodaHotel("295589"),
+  keemalaPhuket: agodaHotel("3072111"),
+  trisaraPhuket: agodaHotel("3073929"),
+};
+
 /** Klook affiliate site "Thai Night" (AID 139170). Klook tracks any klook.com URL that carries aid. */
 function klook(path: string): string {
   const url = new URL(`https://www.klook.com/en-US${path}`);
@@ -68,6 +91,7 @@ export const affiliates = {
   rooftopBangkok: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_ROOFTOP_BANGKOK, KLOOK.rooftopBangkok),
   transferBangkokPattaya: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_TRANSFER_BKK_PATTAYA, KLOOK.transferBangkokPattaya),
   esim: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_ESIM, KLOOK.esim),
+  ...AGODA_HOTEL,
 } as const;
 
 export type AffiliateKey = keyof typeof affiliates;

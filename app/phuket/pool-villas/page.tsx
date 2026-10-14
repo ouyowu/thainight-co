@@ -38,8 +38,7 @@ export default function PhuketPoolVillasPage() {
         <p className="text-sm text-muted">
           Ranges checked 14 October 2026. Low season in these guides is about May–October, high
           season about November–April. Confirm on the spot. Thai Night does not rank hotels and
-          does not take payment for placement. The button searches Agoda for the whole of Phuket
-          (city 16056), not one villa.
+          does not take payment for placement. The hotel button opens Agoda with Trisara shown first.
         </p>
         <Bullets>
           <li>
@@ -73,7 +72,7 @@ export default function PhuketPoolVillasPage() {
           The two guides do not match to the baht. Read both columns and confirm the villa type
           on the spot.
         </p>
-        <HotelCta label="Search hotels in Phuket" link="hotelPhuket" />
+        <HotelCta label="Trisara on Agoda" link="trisaraPhuket" />
       </Section>
 
       <FaqList
@@ -88,7 +87,7 @@ export default function PhuketPoolVillasPage() {
           },
           {
             q: "Does the button book Trisara?",
-            a: "No. It opens a Phuket-wide Agoda search. Thai Night does not link to a single hotel.",
+            a: "Yes. It opens Agoda with Trisara shown first. Pick the pool suite or the pool villa there; they are different rates.",
           },
         ]}
       />

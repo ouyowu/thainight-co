@@ -42,8 +42,7 @@ export default function BangkokCouplesHotelsPage() {
         />
         <p className="text-sm text-muted">
           Ranges checked 14 October 2026. Confirm on the spot. Thai Night does not rank hotels
-          and does not take payment for placement. The button searches Agoda for the whole of
-          Bangkok (city 9395), not one of these hotels.
+          and does not take payment for placement. Each hotel button opens Agoda with that hotel shown first.
         </p>
         <Bullets>
           <li>
@@ -81,7 +80,9 @@ export default function BangkokCouplesHotelsPage() {
           Book a full night. Confirm the room type: a pool villa is not the entry room, and the
           bands above are entry rates unless the source says otherwise.
         </p>
-        <HotelCta label="Search hotels in Bangkok" link="hotelBangkok" />
+        <HotelCta label="The Siam on Agoda" link="siamHotelBangkok" />
+        <HotelCta label="The Peninsula Bangkok on Agoda" link="peninsulaBangkok" />
+        <HotelCta label="Capella Bangkok on Agoda" link="capellaBangkok" />
       </Section>
 
       <FaqList
@@ -96,7 +97,7 @@ export default function BangkokCouplesHotelsPage() {
           },
           {
             q: "Does the button book The Siam or Capella?",
-            a: "No. It opens a Bangkok-wide Agoda search. Thai Night does not link to a single hotel.",
+            a: "Yes. Each button opens Agoda with that hotel shown first. Pick the room there; the pool villa is a separate rate.",
           },
         ]}
       />
