@@ -17,7 +17,7 @@ export default function PattayaPage() {
       path="/pattaya/"
       title="Pattaya Nightlife Guide 2026 – Areas, Shows & Prices"
       belowTitle={
-        <p className="mt-3 text-base leading-7 text-zinc-200">
+        <p className="mt-3 text-base leading-7 text-foreground">
           New here? Start with the <A href="/pattaya/first-timer/">first-timer guide</A> or a{" "}
           <A href="/pattaya/one-night-plan/">one-night plan</A>.
         </p>

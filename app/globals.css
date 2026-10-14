@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0b0b10;
-  --foreground: #f4f4f5;
-  --muted: #a1a1aa;
-  --card: #14141c;
-  --line: #2a2a36;
-  --accent: #f5c14a;
-  --accent-ink: #1a1406;
+  --background: #ffffff;
+  --foreground: #1c1c1c;
+  --muted: #6b7280;
+  --card: #f6f7f8;
+  --line: #e5e7eb;
+  --accent: #ff4b6e;
+  --accent-ink: #ffffff;
 }
 
 @theme inline {
@@ -37,4 +37,19 @@ a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
+}
+
+.script-face,
+.demo-script {
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-style: italic;
+}
+
+.widget-title {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.55rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
 }

@@ -17,7 +17,7 @@ export default function BangkokPage() {
       path="/bangkok/"
       title="Bangkok Nightlife Guide 2026 – Areas, Prices & First-Timer Advice"
       belowTitle={
-        <p className="mt-3 text-base leading-7 text-zinc-200">
+        <p className="mt-3 text-base leading-7 text-foreground">
           New here? Start with the <A href="/bangkok/first-timer/">first-timer guide</A> or a{" "}
           <A href="/bangkok/one-night-plan/">one-night plan</A>.
         </p>

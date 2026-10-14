@@ -1,65 +1,68 @@
 import Link from "next/link";
 
+const cities = [
+  { href: "/bangkok/", label: "Bangkok" },
+  { href: "/pattaya/", label: "Pattaya" },
+  { href: "/phuket/", label: "Phuket" },
+  { href: "/chiang-mai/", label: "Chiang Mai" },
+];
+
+const guides = [
+  { href: "/prices/", label: "Prices" },
+  { href: "/budgets/", label: "Budgets" },
+  { href: "/cash/", label: "Cash" },
+  { href: "/safety/", label: "Safety" },
+  { href: "/scams/", label: "Scams" },
+];
+
+const legal = [
+  { href: "/about/", label: "About" },
+  { href: "/disclaimer/", label: "Disclaimer" },
+  { href: "/affiliate-disclosure/", label: "Affiliate disclosure" },
+  { href: "/bangkok/hotels-nana-asok/", label: "Where to stay" },
+  { href: "/bangkok/tonight/", label: "Tonight Bangkok" },
+  { href: "/pattaya/tonight/", label: "Tonight Pattaya" },
+];
+
 export function Footer() {
   return (
-    <footer className="mt-auto border-t border-line">
-      <div className="mx-auto flex max-w-3xl flex-col gap-3 px-4 py-8 text-sm text-muted">
-        <p className="flex flex-wrap gap-x-4 gap-y-1">
-          <Link href="/bangkok/" className="hover:text-accent">
-            Bangkok
-          </Link>
-          <Link href="/pattaya/" className="hover:text-accent">
-            Pattaya
-          </Link>
-          <Link href="/prices/" className="hover:text-accent">
-            Prices
-          </Link>
-          <Link href="/budgets/" className="hover:text-accent">
-            Budgets
-          </Link>
-          <Link href="/cash/" className="hover:text-accent">
-            Cash
-          </Link>
-          <Link href="/bangkok/getting-around/" className="hover:text-accent">
-            Bangkok getting around
-          </Link>
-          <Link href="/pattaya/getting-around/" className="hover:text-accent">
-            Pattaya getting around
-          </Link>
-          <Link href="/scams/" className="hover:text-accent">
-            Scams
-          </Link>
-          <Link href="/safety/" className="hover:text-accent">
-            Safety
-          </Link>
-          <Link href="/bangkok/faq/" className="hover:text-accent">
-            Bangkok FAQ
-          </Link>
-          <Link href="/pattaya/faq/" className="hover:text-accent">
-            Pattaya FAQ
-          </Link>
-          <Link href="/bangkok/tonight/" className="hover:text-accent">
-            Tonight Bangkok
-          </Link>
-          <Link href="/pattaya/tonight/" className="hover:text-accent">
-            Tonight Pattaya
-          </Link>
-          <Link href="/about/" className="hover:text-accent">
-            About
-          </Link>
-          <Link href="/disclaimer/" className="hover:text-accent">
-            Disclaimer
-          </Link>
-          <Link href="/affiliate-disclosure/" className="hover:text-accent">
-            Affiliate disclosure
-          </Link>
-        </p>
-        <p>
+    <footer className="mt-auto bg-[#1b1b1b] text-zinc-300">
+      <div className="mx-auto grid max-w-6xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <p className="text-lg font-semibold text-white">
+            Thai Night <span className="script-face text-accent">guides</span>
+          </p>
+          <p className="mt-4 text-sm leading-7">
+            Practical nightlife guides for Bangkok, Pattaya, Phuket and Chiang Mai.
+          </p>
+        </div>
+        <LinkColumn title="Cities" links={cities} />
+        <LinkColumn title="Guides" links={guides} />
+        <LinkColumn title="About" links={legal} />
+      </div>
+      <div className="border-t border-white/10">
+        <p className="mx-auto max-w-6xl px-4 py-5 text-sm leading-6 text-zinc-400 sm:px-6">
           © Thai Night. Legal drinking age in Thailand is 20. Information is for general guidance only and may change.
-          Confirm prices and conditions locally. We are not responsible for third-party venues or
-          services.
+          Confirm prices and conditions locally. We are not responsible for third-party venues or services.
         </p>
       </div>
     </footer>
+  );
+}
+
+function LinkColumn({ title, links }: { title: string; links: { href: string; label: string }[] }) {
+  return (
+    <div>
+      <h2 className="mb-4 border-b border-white/15 pb-2 text-base font-semibold text-white">{title}</h2>
+      <ul className="space-y-2 text-sm">
+        {links.map((item) => (
+          <li key={item.href}>
+            <Link href={item.href} className="hover:text-white">
+              {item.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
