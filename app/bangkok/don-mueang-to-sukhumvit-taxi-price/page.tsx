@@ -39,12 +39,56 @@ export default function DonMueangSukhumvitTaxiPage() {
         <CheckedNote />
       </Section>
 
+      <Section title="How the meter adds up">
+        <p>
+          Bangkok meters start at 35 THB, then charge about 6.50 THB per km to 10 km, 7 THB from
+          10 to 20 km and 8 THB from 20 to 40 km. Each minute under 6 km/h adds 3 THB.
+        </p>
+        <PriceTable
+          caption="Worked example: about 25 km to Nana or Asok"
+          headers={["Item", "THB"]}
+          rows={[
+            ["Meter (35 start + distance bands)", "about 205"],
+            ["Slow-traffic minutes", "0 late at night; often 50–150+ at rush hour"],
+            ["Airport surcharge", "50"],
+            ["Expressway tolls, if used", "about 70–100"],
+            ["Typical total", "about 325–355 late at night with tolls; more in traffic"],
+          ]}
+        />
+        <p>
+          Skipping the expressway saves the toll but usually costs more in traffic minutes at
+          busy times. At night the expressway is the faster and only slightly dearer choice.
+        </p>
+      </Section>
+
       <BookingBox
         items={[
           { label: "Pre-book an airport transfer", link: "klook" },
           { label: "Thailand eSIM (for Grab on landing)", link: "esim" },
         ]}
       />
+
+      <Section title="Grab and Bolt at Don Mueang">
+        <p>
+          Since 1 March 2026 Don Mueang keeps taxis, Grab and other ride services at separate
+          pick-up points, and stops unbooked cars from waiting inside the airport. Book after you
+          have your bags, then follow the pick-up pin and directions in the app; signs on Level 1
+          point to the ride-hailing area. Terminal 1 is international, Terminal 2 domestic, so
+          set the right terminal in the app.
+        </p>
+        <p>
+          The app price is fixed before you ride. It is often close to the meter at night and can
+          beat it at rush hour, when the meter adds traffic minutes.
+        </p>
+      </Section>
+
+      <Section title="Landing after midnight">
+        <p>
+          The Red Line and MRT stop around midnight, so after that it is the taxi queue, an app,
+          or the A1 and A2 buses if they are still running; check their last times at the stop. Night is when the meter is
+          cheapest: light traffic keeps the total close to the worked example above.
+        </p>
+      </Section>
 
       <StayNearby label="Hotels in Sukhumvit (Nana / Asok)" link="hotelSukhumvit">
         <p>
@@ -82,6 +126,10 @@ export default function DonMueangSukhumvitTaxiPage() {
           {
             q: "How long does Don Mueang to Nana or Asok take?",
             a: "About 35–90 minutes by taxi depending on traffic, and about 55–70 minutes by Red Line plus MRT.",
+          },
+          {
+            q: "Where do I find Grab at Don Mueang?",
+            a: "Since March 2026 Grab has its own pick-up point, separate from the taxi queue. Follow the pin and directions in the app and the ride-hailing signs on Level 1.",
           },
         ]}
       />
