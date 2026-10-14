@@ -158,6 +158,16 @@ export default function PattayaWhereToStayPage() {
         <HotelCta label="Search hotels in Pattaya" link="hotelPattaya" />
       </Section>
 
+      <Section title="Hotel types">
+        <p>
+          The areas above are the first choice. These pages go one step further, still without a
+          ranking: <A href="/pattaya/luxury-hotels/">luxury hotels</A>,{" "}
+          <A href="/pattaya/beachfront-resorts/">beachfront resorts</A>, and{" "}
+          <A href="/pattaya/couples-hotels/">hotels for couples</A> (a suite, a pool, or a sea
+          view). Each button on those pages is the same city-wide search.
+        </p>
+      </Section>
+
       <FaqList
         items={[
           {
@@ -178,6 +188,9 @@ export default function PattayaWhereToStayPage() {
       <Related
         links={[
           { href: "/pattaya/hotels-walking-street/", label: "Walking Street hotels" },
+          { href: "/pattaya/luxury-hotels/", label: "Luxury hotels" },
+          { href: "/pattaya/beachfront-resorts/", label: "Beachfront resorts" },
+          { href: "/pattaya/couples-hotels/", label: "Hotels for couples" },
           { href: "/pattaya/first-timer/", label: "First-timer" },
           { href: "/pattaya/one-night-plan/", label: "One-night plans" },
           { href: "/pattaya/getting-around/", label: "Getting around at night" },

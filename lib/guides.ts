@@ -14,6 +14,9 @@ export const bangkokGuides = [
   { href: "/bangkok/bar-types/", label: "Bar & club types" },
   { href: "/bangkok/ladies-night/", label: "Ladies night & promo nights" },
   { href: "/bangkok/where-to-stay/", label: "Where to stay for nightlife" },
+  { href: "/bangkok/luxury-hotels/", label: "Luxury hotels" },
+  { href: "/bangkok/design-hotels/", label: "Sukhumvit design hotels" },
+  { href: "/bangkok/couples-hotels/", label: "Hotels for couples" },
   { href: "/bangkok/getting-around/", label: "Getting around at night" },
   { href: "/bangkok/taxi-fare/", label: "Taxi fares & scams" },
   { href: "/bangkok/airport/", label: "Airport to city" },
@@ -40,6 +43,9 @@ export const pattayaGuides = [
   { href: "/pattaya/night-markets/", label: "Thepprasit night market" },
   { href: "/pattaya/bar-types/", label: "Bar & club types" },
   { href: "/pattaya/where-to-stay/", label: "Where to stay for nightlife" },
+  { href: "/pattaya/luxury-hotels/", label: "Luxury hotels" },
+  { href: "/pattaya/beachfront-resorts/", label: "Beachfront resorts" },
+  { href: "/pattaya/couples-hotels/", label: "Hotels for couples" },
   { href: "/pattaya/getting-around/", label: "Getting around at night" },
   { href: "/pattaya/baht-bus/", label: "Baht bus prices" },
   { href: "/pattaya/bangkok-to-pattaya/", label: "Bangkok to Pattaya transfer" },
@@ -57,6 +63,9 @@ export const pattayaAreas = [
 
 export const chiangMaiGuides = [
   { href: "/chiang-mai/where-to-stay/", label: "Where to stay for nightlife" },
+  { href: "/chiang-mai/luxury-hotels/", label: "Luxury hotels" },
+  { href: "/chiang-mai/boutique-hotels/", label: "Boutique hotels" },
+  { href: "/chiang-mai/couples-hotels/", label: "Hotels for couples" },
   { href: "/chiang-mai/night-markets/", label: "Night markets" },
   { href: "/chiang-mai/nimman-nightlife/", label: "Nimman bars & clubs" },
   { href: "/chiang-mai/old-city-nightlife/", label: "Old City & riverside live music" },
@@ -64,6 +73,9 @@ export const chiangMaiGuides = [
 
 export const phuketGuides = [
   { href: "/phuket/where-to-stay/", label: "Where to stay for nightlife" },
+  { href: "/phuket/luxury-hotels/", label: "Luxury hotels" },
+  { href: "/phuket/pool-villas/", label: "Pool villas" },
+  { href: "/phuket/couples-hotels/", label: "Hotels for couples" },
   { href: "/phuket/bangla-road/", label: "Bangla Road clubs & prices" },
   { href: "/phuket/beach-clubs/", label: "Beach clubs: minimum spend" },
   { href: "/phuket/simon-cabaret/", label: "Simon Cabaret tickets" },

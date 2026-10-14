@@ -164,6 +164,16 @@ export default function BangkokWhereToStayPage() {
         <HotelCta label="Search hotels in Bangkok" link="hotelBangkok" />
       </Section>
 
+      <Section title="Hotel types">
+        <p>
+          The areas above are the first choice. These pages go one step further, still without a
+          ranking: <A href="/bangkok/luxury-hotels/">luxury hotels</A> on the river,{" "}
+          <A href="/bangkok/design-hotels/">design suites on Sukhumvit</A>, and{" "}
+          <A href="/bangkok/couples-hotels/">hotels for couples</A> (a private suite, a pool, or
+          a river view). Each button on those pages is the same city-wide search.
+        </p>
+      </Section>
+
       <FaqList
         items={[
           {
@@ -184,6 +194,9 @@ export default function BangkokWhereToStayPage() {
       <Related
         links={[
           { href: "/bangkok/hotels-nana-asok/", label: "Sukhumvit hotels (Nana–Asok)" },
+          { href: "/bangkok/luxury-hotels/", label: "Luxury hotels" },
+          { href: "/bangkok/design-hotels/", label: "Sukhumvit design hotels" },
+          { href: "/bangkok/couples-hotels/", label: "Hotels for couples" },
           { href: "/bangkok/first-timer/", label: "First-timer" },
           { href: "/bangkok/one-night-plan/", label: "One-night plans" },
           { href: "/bangkok/getting-around/", label: "Getting around at night" },
