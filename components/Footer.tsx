@@ -11,6 +11,8 @@ const guides = [
   { href: "/prices/", label: "Prices" },
   { href: "/budgets/", label: "Budgets" },
   { href: "/cash/", label: "Cash" },
+  { href: "/thailand/esim-for-tourists/", label: "Tourist eSIM" },
+  { href: "/thailand/alcohol-ban-days-2026/", label: "Alcohol ban days" },
   { href: "/safety/", label: "Safety" },
   { href: "/scams/", label: "Scams" },
 ];

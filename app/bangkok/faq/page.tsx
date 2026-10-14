@@ -26,7 +26,7 @@ const faqItems: FaqItem[] = [
   },
   {
     q: "Are there days when bars don’t serve alcohol?",
-    a: "Yes. Alcohol sales are restricted on some Buddhist holidays and on election days. Many bars close or serve soft drinks only. Check the calendar before you plan a big night.",
+    a: "Shops and ordinary restaurants stop selling on listed Buddhist holidays and during an election window. Licensed hotels and many licensed bars may still serve on the Buddhist days. Check the 2026 dates before you plan a big night.",
   },
   {
     q: "Is Patpong worth it?",
@@ -61,6 +61,7 @@ export default function BangkokFaqPage() {
           { href: "/bangkok/first-timer/", label: "First-timer guide" },
           { href: "/bangkok/rooftop-bars/", label: "Rooftop bars" },
           { href: "/scams/", label: "Scams" },
+          { href: "/thailand/alcohol-ban-days-2026/", label: "Alcohol ban days 2026" },
           { href: "/safety/", label: "Safety" },
         ]}
       />

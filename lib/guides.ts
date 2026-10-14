@@ -72,6 +72,8 @@ export const chiangMaiGuides = [
 ] as const;
 
 export const phuketGuides = [
+  { href: "/phuket/first-timer/", label: "First-timer guide" },
+  { href: "/phuket/getting-around/", label: "Getting around at night" },
   { href: "/phuket/where-to-stay/", label: "Where to stay for nightlife" },
   { href: "/phuket/luxury-hotels/", label: "Luxury hotels" },
   { href: "/phuket/pool-villas/", label: "Pool villas" },
@@ -88,6 +90,8 @@ export const generalGuides = [
   { href: "/prices/", label: "Prices" },
   { href: "/budgets/", label: "Budgets" },
   { href: "/cash/", label: "Cash & payments" },
+  { href: "/thailand/esim-for-tourists/", label: "Tourist eSIM" },
+  { href: "/thailand/alcohol-ban-days-2026/", label: "Alcohol ban days 2026" },
   { href: "/scams/", label: "Scams" },
   { href: "/safety/", label: "Safety" },
 ] as const;
