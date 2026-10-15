@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Bangkok Airport to City 2026 – BKK & DMK to Sukhumvit",
-  "Suvarnabhumi (BKK) and Don Mueang (DMK) to Sukhumvit, Silom and the riverside in 2026: Airport Rail Link, Red Line, BTS, MRT, taxi and Grab compared with prices, times and late arrivals.",
+  "Suvarnabhumi (BKK) and Don Mueang (DMK) to Sukhumvit, Silom and the riverside in 2026: Rail Link, Red Line, BTS, MRT, taxi and Grab, with prices.",
   "/bangkok/airport/",
 );
 

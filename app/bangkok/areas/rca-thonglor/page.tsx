@@ -9,7 +9,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "RCA & Thonglor Nightlife 2026 – Clubs and Cocktails Compared",
-  "RCA and Thonglor for club and cocktail nights in Bangkok 2026: what each costs, cover charges, ID checks, dress code, when they fill, and how to get home after the trains stop.",
+  "RCA and Thonglor clubs and cocktails in Bangkok 2026: costs, cover charges, ID checks, dress code, when they fill, and getting home after the trains stop.",
   "/bangkok/areas/rca-thonglor/",
 );
 

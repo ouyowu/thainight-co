@@ -6,7 +6,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Getting Around Pattaya at Night 2026",
-  "Baht buses, motorbike taxis, Grab and Bolt in Pattaya 2026: fares, the Beach Road and Second Road loops, how to pay, Walking Street pedestrian hours and what to avoid.",
+  "Baht buses, motorbike taxis, Grab and Bolt in Pattaya 2026: fares, Beach Road and Second Road loops, how to pay, Walking Street hours and what to avoid.",
   "/pattaya/getting-around/",
 );
 

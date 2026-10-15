@@ -8,8 +8,8 @@ const lead =
   "A night out in Bangkok costs about 600–900 THB for street beers, 1,800–2,800 THB for a Sukhumvit bar plus a club, and 3,500–5,000 THB if you start at a rooftop. Street beer runs 80–150 THB, club entry 300–500 THB, and rooftops often add ++ (10% service plus 7% VAT).";
 
 export const metadata = pageMeta(
-  "Bangkok Nightlife Prices (2026) – Drinks, Clubs & a Night's Budget",
-  "What a night out in Bangkok costs in 2026: beer and cocktail prices by venue type, club entry, what ++ adds, three worked night budgets, tipping, and how to spend less.",
+  "Bangkok Nightlife Prices 2026 – Drinks, Clubs & a Night's Budget",
+  "What a Bangkok night costs in 2026: beer and cocktail prices by venue, club entry, what ++ adds, three night budgets, tipping, and how to spend less.",
   "/bangkok/prices/",
 );
 

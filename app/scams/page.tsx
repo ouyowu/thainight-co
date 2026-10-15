@@ -84,7 +84,7 @@ export default function ScamsPage() {
       <ol className="list-decimal space-y-5 pl-5">
         {scams.map((scam) => (
           <li key={scam.key}>
-            <p className="font-semibold text-foreground">{scam.title}</p>
+            <h2 className="text-base font-semibold text-foreground">{scam.title}</h2>
             <p className="mt-1">{scam.body}</p>
             <p className="mt-1">
               <strong>Rule:</strong> {scam.rule}

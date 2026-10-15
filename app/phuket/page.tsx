@@ -6,8 +6,8 @@ import { phuketGuides } from "@/lib/guides";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Phuket Nightlife Guide 2026 – Bangla Road, Beach Clubs, Shows & Prices",
-  "Phuket nightlife overview: Bangla Road clubs in Patong, beach clubs, Simon Cabaret, Muay Thai, Old Town bars and night markets, with 2026 prices, closing times and transport.",
+  "Phuket Nightlife 2026: Bangla Road, Beach Clubs, Shows & Prices",
+  "Phuket nightlife: Bangla Road clubs in Patong, beach clubs, Simon Cabaret, Muay Thai, Old Town bars and night markets, with 2026 prices and transport.",
   "/phuket/",
 );
 

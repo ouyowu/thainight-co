@@ -8,7 +8,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Don Mueang to Sukhumvit Taxi Price 2026 – Meter, Tolls & Red Line",
-  "Don Mueang (DMK) to Sukhumvit (Nana, Asok) in 2026: metered taxi about 220–400 THB plus tolls, the 50 THB airport surcharge, and the Red Line plus MRT for about 75 THB.",
+  "Don Mueang (DMK) to Sukhumvit (Nana, Asok) in 2026: taxi about 220–400 THB plus tolls, a 50 THB airport surcharge, and Red Line plus MRT for about 75 THB.",
   "/bangkok/don-mueang-to-sukhumvit-taxi-price/",
 );
 

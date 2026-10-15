@@ -7,8 +7,8 @@ import { chiangMaiGuides } from "@/lib/guides";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Chiang Mai Nightlife Guide 2026 – Nimman, Old City, Night Markets & Prices",
-  "Chiang Mai nightlife overview: Nimman bars and clubs, Old City live music, riverside bars and the night markets, with 2026 drink prices, closing times and getting around.",
+  "Chiang Mai Nightlife 2026: Nimman, Old City & Night Markets",
+  "Chiang Mai nightlife: Nimman bars and clubs, Old City live music, riverside bars and night markets, with 2026 drink prices and closing times.",
   "/chiang-mai/",
 );
 

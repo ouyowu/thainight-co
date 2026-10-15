@@ -9,7 +9,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Soi Buakhao Pattaya 2026 – Budget Nightlife & Food Guide",
-  "Soi Buakhao in 2026: cheap beer bars, sports pubs, street food and live music, what a night costs against Walking Street, how the bar bill works, and how to get there.",
+  "Soi Buakhao in 2026: cheap beer bars, sports pubs, street food and live music, a night's cost against Walking Street, how the bar bill works, and getting there.",
   "/pattaya/areas/soi-buakhao/",
 );
 

@@ -6,8 +6,8 @@ import { SisterTour } from "@/components/SisterTour";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Chiang Mai Night Markets 2026 – Sunday & Saturday Walking Streets, Night Bazaar",
-  "Chiang Mai night markets in 2026: Sunday Walking Street, Wualai Saturday market, Night Bazaar, Chang Phueak and Chiang Mai Gate — days, hours, what to buy and how to bargain.",
+  "Chiang Mai 2026: Sunday & Saturday Streets, Night Bazaar",
+  "Chiang Mai night markets in 2026: Sunday Walking Street, Wualai Saturday, Night Bazaar, Chang Phueak and Chiang Mai Gate — days, hours and bargaining.",
   "/chiang-mai/night-markets/",
 );
 

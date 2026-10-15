@@ -6,7 +6,7 @@ import { A, Bullets, CheckedNote, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Calypso Cabaret Bangkok Tickets 2026 – Prices, Show Times & How to Get There",
+  "Calypso Cabaret Bangkok 2026 – Prices, Show Times & Getting There",
   "Calypso Cabaret at Asiatique in 2026: online vs walk-up ticket prices, dinner and cruise combos, show times, the free shuttle boat and the photo-tip trap.",
   "/bangkok/calypso-cabaret/",
 );

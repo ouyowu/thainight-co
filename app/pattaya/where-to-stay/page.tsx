@@ -6,8 +6,8 @@ import { A, Bullets, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Where to Stay in Pattaya 2026 – Walking Street, Beach Road, Jomtien, Pratumnak",
-  "Which Pattaya area to sleep in: Walking Street and Central, Beach Road, Jomtien, or Pratumnak. Nightly ranges to confirm on the spot, plus a city-wide hotel search.",
+  "Pattaya Stay 2026: Walking Street, Beach Road, Jomtien, Pratumnak",
+  "Which Pattaya area to sleep in: Walking Street and Central, Beach Road, Jomtien, or Pratumnak. Nightly ranges to confirm, plus a city-wide hotel search.",
   "/pattaya/where-to-stay/",
 );
 

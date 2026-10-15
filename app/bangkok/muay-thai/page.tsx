@@ -6,8 +6,8 @@ import { A, Bullets, CheckedNote, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Muay Thai Tickets Bangkok 2026 – Rajadamnern & Lumpinee Prices, Seats, Schedule",
-  "Muay Thai ticket prices in Bangkok for 2026: Rajadamnern from 1,000 THB and Lumpinee from 1,000 THB, seat classes, weekly fight schedule, how to buy and ticket scams.",
+  "Muay Thai Tickets Bangkok 2026 – Rajadamnern & Lumpinee Prices",
+  "Muay Thai tickets in Bangkok for 2026: Rajadamnern from 1,000 THB and Lumpinee from 1,000 THB, seat classes, weekly schedule, how to buy and ticket scams.",
   "/bangkok/muay-thai/",
 );
 

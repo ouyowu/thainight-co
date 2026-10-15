@@ -6,7 +6,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Bangkok Taxi Fare 2026 – Meter Rates, Airport Surcharge & Scams",
-  "Bangkok taxi meter rates in 2026: 35 THB flag fall, per-km bands, the 3 THB a minute traffic charge, airport and app fees, worked fares, how to report a driver, and the common taxi and tuk-tuk scams.",
+  "Bangkok taxi meter rates in 2026: 35 THB flag fall, per-km bands, 3 THB a minute in traffic, airport and app fees, worked fares, and taxi and tuk-tuk scams.",
   "/bangkok/taxi-fare/",
 );
 

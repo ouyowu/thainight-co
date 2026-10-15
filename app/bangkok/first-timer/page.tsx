@@ -35,7 +35,7 @@ export default function BangkokFirstTimerPage() {
             ["Sukhumvit Soi 11", "First night, low stress", "Bars, rooftops, clubs near BTS Nana", "★★★★★"],
             ["Thonglor / Ekkamai", "Cocktails, live music", "Upscale strip, Thai crowd", "★★★★"],
             ["RCA", "Late club night", "Big clubs, smart casual", "★★★"],
-            ["Silom / riverside", "Sky bars, markets", "Famous views, Patpong market", "★★★★"],
+            ["Silom / riverside", "Sky bars, markets", <>Famous views, <A href="/bangkok/areas/patpong/">Patpong</A> market</>, "★★★★"],
           ]}
         />
       </Section>

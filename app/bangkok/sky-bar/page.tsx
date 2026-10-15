@@ -5,8 +5,8 @@ import { A, Bullets, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Sky Bar Bangkok 2026 – Dress Code, Prices, Booking & Better-Value Options",
-  "Sky Bar at lebua (State Tower) in 2026: dress code rules, reservation deposits, what to expect on price, best time to go and cheaper rooftops with similar views.",
+  "Sky Bar Bangkok 2026 – Dress Code, Prices, Booking & Value",
+  "Sky Bar at lebua (State Tower) in 2026: dress code, reservation deposits, price expectations, best time to go and cheaper rooftops with similar views.",
   "/bangkok/sky-bar/",
 );
 

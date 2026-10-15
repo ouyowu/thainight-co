@@ -8,8 +8,8 @@ const lead =
   "Typical 2026 ranges for a night out in Pattaya, from open beer bars to Walking Street clubs. Confirm before you order.";
 
 export const metadata = pageMeta(
-  "Pattaya Nightlife Prices (2026) – Drinks, Clubs & a Night's Budget",
-  "What a night out in Pattaya costs in 2026: beer and cocktail prices by bar type, Walking Street versus Soi Buakhao, three worked night budgets, baht bus fares, and lady drinks and bar fines explained.",
+  "Pattaya Nightlife Prices 2026 – Drinks, Clubs & a Night's Budget",
+  "What a Pattaya night costs in 2026: beer and cocktails, Walking Street versus Soi Buakhao, three night budgets, baht bus fares, lady drinks and bar fines.",
   "/pattaya/prices/",
 );
 

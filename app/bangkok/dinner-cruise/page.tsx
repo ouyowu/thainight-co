@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Chao Phraya Dinner Cruise Price 2026 – Bangkok Cruises Compared",
-  "Bangkok dinner cruise prices in 2026: buffet cruises from about 1,200 THB to luxury set-menu cruises over 3,000 THB, piers (Asiatique, ICONSIAM, River City), times and how to choose.",
+  "Bangkok dinner cruise prices in 2026: buffet cruises from about 1,200 THB to luxury set menus over 3,000 THB, piers at Asiatique, ICONSIAM and River City.",
   "/bangkok/dinner-cruise/",
 );
 

@@ -16,7 +16,7 @@ export default function BangkokPage() {
     <PageShell
       path="/bangkok/"
       title="Bangkok Nightlife Guide 2026 – Areas, Prices & First-Timer Advice"
-      opening="Bangkok nightlife depends on the area: Sukhumvit Soi 11 for bars and clubs, Thonglor for upscale cocktail bars, and RCA for big club nights."
+      opening="Bangkok nightlife depends on the area: Sukhumvit Soi 11 for bars and clubs, Thonglor for upscale cocktail bars, and RCA for big club nights. Add a rooftop, Muay Thai at Rajadamnern most nights or Lumpinee on weekends, or a Chao Phraya dinner cruise."
       belowTitle={
         <p className="mt-3 text-base leading-7 text-foreground">
           New here? Start with the <A href="/bangkok/first-timer/">first-timer guide</A> or a{" "}
