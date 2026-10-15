@@ -16,6 +16,7 @@ export default function BangkokPage() {
     <PageShell
       path="/bangkok/"
       title="Bangkok Nightlife Guide 2026 – Areas, Prices & First-Timer Advice"
+      opening="Bangkok nightlife depends on the area: Sukhumvit Soi 11 for bars and clubs, Thonglor for upscale cocktail bars, and RCA for big club nights."
       belowTitle={
         <p className="mt-3 text-base leading-7 text-foreground">
           New here? Start with the <A href="/bangkok/first-timer/">first-timer guide</A> or a{" "}
@@ -90,7 +91,10 @@ export default function BangkokPage() {
           <li>Stay near BTS Nana, Asok or Phrom Phong for an easy night</li>
           <li>Use Grab or Bolt late at night; insist on the meter in taxis</li>
           <li>Rooftops enforce dress codes — no flip-flops, shorts or sleeveless tops</li>
-          <li>Never follow street touts upstairs for “cheap shows”</li>
+          <li>
+            Never follow street touts upstairs for “cheap shows”. See{" "}
+            <A href="/scams/">nightlife scams</A>.
+          </li>
         </Bullets>
       </Section>
 

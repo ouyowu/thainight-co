@@ -111,7 +111,8 @@ export default function RcaThonglorPage() {
       <StayNearby label="Hotels in Bangkok" link="hotelBangkok">
         <p>
           Thonglor and Ekkamai suit a cocktail-led trip. For RCA most people stay on Sukhumvit
-          and take a Grab, since there is little reason to sleep by the club strip.
+          and take a Grab, since there is little reason to sleep by the club strip. See{" "}
+          <A href="/bangkok/where-to-stay/">where to stay in Bangkok</A>.
         </p>
       </StayNearby>
 
@@ -154,6 +155,7 @@ export default function RcaThonglorPage() {
 
       <Related
         links={[
+          { href: "/bangkok/", label: "Bangkok" },
           { href: "/bangkok/areas/", label: "All Bangkok areas" },
           { href: "/bangkok/areas/soi-11/", label: "Soi 11" },
           { href: "/bangkok/prices/", label: "Bangkok prices" },

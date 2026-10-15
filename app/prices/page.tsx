@@ -24,11 +24,29 @@ export default function PricesPage() {
           caption="Bangkok nightlife prices"
           headers={["Item", "Typical range (THB)", "Notes"]}
           rows={[
-            ["Beer, street or open bar", "80–150", "Cheapest on Khao San and in markets"],
-            ["Beer, Sukhumvit / Soi 11 bar", "120–220", "Happy hours common before 21:00"],
+            [
+              "Beer, street or open bar",
+              "80–150",
+              <>
+                Cheapest on <A href="/bangkok/areas/khao-san/">Khao San</A> and in markets
+              </>,
+            ],
+            [
+              "Beer, Sukhumvit / Soi 11 bar",
+              "120–220",
+              <>
+                Happy hours common before 21:00 on <A href="/bangkok/areas/soi-11/">Soi 11</A>
+              </>,
+            ],
             ["Cocktail, cocktail bar", "250–450", "Thonglor / Ekkamai range"],
             ["Cocktail, hotel rooftop", "400–900+", "Often ++ on top"],
-            ["Club entry (RCA etc.)", "300–500", "Sometimes includes a drink"],
+            [
+              "Club entry (RCA etc.)",
+              "300–500",
+              <>
+                Sometimes includes a drink on <A href="/bangkok/areas/rca-thonglor/">RCA</A>
+              </>,
+            ],
             ["Grab across Sukhumvit", "80–200", "Surge late at night"],
           ]}
         />
@@ -42,8 +60,21 @@ export default function PricesPage() {
           caption="Pattaya nightlife prices"
           headers={["Item", "Typical range (THB)", "Notes"]}
           rows={[
-            ["Beer, open beer bar", "60–130", "Soi Buakhao, Tree Town"],
-            ["Beer, Walking Street bar / club", "150–250", "Premium zone"],
+            [
+              "Beer, open beer bar",
+              "60–130",
+              <>
+                <A href="/pattaya/areas/soi-buakhao/">Soi Buakhao</A>,{" "}
+                <A href="/pattaya/areas/tree-town/">Tree Town</A>
+              </>,
+            ],
+            [
+              "Beer, Walking Street bar / club",
+              "150–250",
+              <>
+                Premium zone on <A href="/pattaya/areas/walking-street/">Walking Street</A>
+              </>,
+            ],
             ["Cocktail, club", "250–400", "—"],
             ["Baht bus, fixed route", "10–20 per person", "Private hire costs much more — agree first"],
           ]}

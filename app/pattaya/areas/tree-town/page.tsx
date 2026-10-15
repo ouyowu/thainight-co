@@ -125,6 +125,7 @@ export default function TreeTownPage() {
 
       <Related
         links={[
+          { href: "/pattaya/", label: "Pattaya" },
           { href: "/pattaya/areas/", label: "All Pattaya areas" },
           { href: "/pattaya/areas/soi-buakhao/", label: "Soi Buakhao" },
           { href: "/pattaya/prices/", label: "Pattaya prices" },

@@ -64,10 +64,14 @@ export default function KhaoSanPage() {
       </Section>
       <Section title="With Rajadamnern">
         <p>
-          Rajadamnern Stadium is a short Grab from Khao San. Fights usually start in the early evening. Full seat and ticket notes: <A href="/bangkok/muay-thai/">Muay Thai in Bangkok</A>. Do not buy tickets from street sellers near the gates.
+          Rajadamnern Stadium is a short Grab from Khao San. Fights usually start in the early evening. Full seat and ticket notes: <A href="/bangkok/muay-thai/">Muay Thai in Bangkok</A>. Do not buy tickets from street sellers near the gates. See <A href="/scams/">nightlife scams</A>.
         </p>
       </Section>
       <BookingBox items={[{ label: "Rajadamnern / Lumpinee tickets", link: "muayThaiBangkok" }, { label: "Hotels in Bangkok", link: "hotelBangkok" }]} />
+      <p>
+        The street sits by the old town. <A href="/bangkok/where-to-stay/">Old Town hotels</A> are
+        the base for a night that stays here. The hotel button searches the whole of Bangkok.
+      </p>
       <Section title="Practical notes">
         <Bullets>
           <li>No BTS on the doorstep. Grab or a river boat plus walk from Phra Athit / the old town.</li>
@@ -86,7 +90,7 @@ export default function KhaoSanPage() {
         { q: "Is Khao San Road safe at night?", a: "It is crowded rather than dangerous. Keep your bag zipped on the strip and watch ATM fees and friendly bar tabs, which is where people overpay." },
         { q: "Is there a cover charge at Khao San live-music bars?", a: "On busy live-music nights some rooms ask for a cover charge or a drink minimum. Ask at the door." },
       ]} />
-      <Related links={[{ href: "/bangkok/muay-thai/", label: "Muay Thai" }, { href: "/bangkok/areas/", label: "Other Bangkok areas" }, { href: "/bangkok/getting-around/", label: "Getting around" }]} />
+      <Related links={[{ href: "/bangkok/", label: "Bangkok" }, { href: "/bangkok/muay-thai/", label: "Muay Thai" }, { href: "/bangkok/areas/", label: "Other Bangkok areas" }, { href: "/bangkok/getting-around/", label: "Getting around" }]} />
     </PageShell>
   );
 }

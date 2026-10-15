@@ -21,14 +21,18 @@ export default function SoiBuakhaoPage() {
       <p>
         Soi Buakhao is central Pattaya’s <strong>budget-friendly</strong> nightlife and food
         corridor, between Second and Third Road. Beer bars, sports pubs, live music and street food
-        — lower prices and a more relaxed pace than Walking Street.
+        — lower prices and a more relaxed pace than{" "}
+        <A href="/pattaya/areas/walking-street/">Walking Street</A>.
       </p>
 
       <Section title="Best for">
         <Bullets>
           <li>Cheap drinks-and-food nights</li>
           <li>Watching football in a sports pub</li>
-          <li>A warm-up before Tree Town or Walking Street</li>
+          <li>
+            A warm-up before Tree Town or{" "}
+            <A href="/pattaya/areas/walking-street/">Walking Street</A>
+          </li>
         </Bullets>
       </Section>
 
@@ -55,7 +59,14 @@ export default function SoiBuakhaoPage() {
             ["A beer", "70–120 THB", "150–250 THB"],
             ["Four beers", "about 280–480 THB", "about 600–1,000 THB"],
             ["Busy from", "19:00", "22:00"],
-            ["Style", "Open-front bars, pool, food", "Clubs, bands, neon"],
+            [
+              "Style",
+              "Open-front bars, pool, food",
+              <>
+                Clubs, bands, neon on{" "}
+                <A href="/pattaya/areas/walking-street/">Walking Street</A>
+              </>,
+            ],
             ["Pressure", "Low — easy to walk away", "Touts at the entrance"],
           ]}
         />
@@ -79,7 +90,10 @@ export default function SoiBuakhaoPage() {
         <Bullets>
           <li>Soi Buakhao runs between Second and Third Road, a few blocks inland from Beach Road.</li>
           <li>Baht buses on the Second Road loop drop you at the top of the soi for 10–20 THB, paid when you get off.</li>
-          <li>From central hotels it is a ten to fifteen minute walk, and about ten minutes on foot to Walking Street.</li>
+          <li>
+            From central hotels it is a ten to fifteen minute walk, and about ten minutes on foot
+            to <A href="/pattaya/areas/walking-street/">Walking Street</A>.
+          </li>
           <li>A driver offering to take you somewhere direct is quoting a charter, not the fixed fare: <A href="/pattaya/baht-bus/">baht bus prices</A>.</li>
         </Bullets>
       </Section>
@@ -94,8 +108,8 @@ export default function SoiBuakhaoPage() {
 
       <StayNearby label="Hotels in Pattaya" link="hotelPattaya">
         <p>
-          A central hotel between Second and Third Road puts Soi Buakhao, Tree Town and Walking
-          Street all within a walk.
+          A central hotel between Second and Third Road puts Soi Buakhao, Tree Town and{" "}
+          <A href="/pattaya/areas/walking-street/">Walking Street</A> all within a walk.
         </p>
       </StayNearby>
 
@@ -122,6 +136,7 @@ export default function SoiBuakhaoPage() {
 
       <Related
         links={[
+          { href: "/pattaya/", label: "Pattaya" },
           { href: "/pattaya/areas/", label: "All Pattaya areas" },
           { href: "/pattaya/areas/tree-town/", label: "Tree Town" },
           { href: "/pattaya/prices/", label: "Pattaya prices" },

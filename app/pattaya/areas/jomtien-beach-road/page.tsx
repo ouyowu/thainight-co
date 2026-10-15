@@ -43,7 +43,14 @@ export default function JomtienBeachRoadPage() {
         </p>
       </Section>
       <Section title="How it compares">
-        <p>Walking Street is the spectacle and the late clubs. Tree Town is open-air bands in Central. Jomtien is slower. Combine: sunset here, then a Grab to <A href="/pattaya/areas/walking-street/">Walking Street</A> if you still want neon.</p>
+        <p>
+          Walking Street is the spectacle and the late clubs.{" "}
+          <A href="/pattaya/areas/tree-town/">Tree Town</A> is open-air bands in Central. Jomtien is
+          slower. Combine: sunset here, then a Grab to{" "}
+          <A href="/pattaya/areas/walking-street/">Walking Street</A> if you still want neon. Drink
+          bands are on <A href="/pattaya/prices/">Pattaya nightlife prices</A>. For a hotel on this
+          beach, see <A href="/pattaya/where-to-stay/#jomtien">where to stay in Jomtien</A>.
+        </p>
       </Section>
       <BookingBox items={[{ label: "Hotels on Jomtien / Beach Road", link: "hotelBeachRoad" }, { label: "Hotels in Pattaya", link: "hotelPattaya" }]} />
       <Section title="Getting there">
@@ -62,7 +69,7 @@ export default function JomtienBeachRoadPage() {
         { q: "Is there a rooftop bar in Jomtien?", a: "Yes. ZAMA Skybar is on level 38 of D Varee Jomtien Beach and is open until 03:00." },
         { q: "How do I get from Walking Street to Jomtien?", a: "About 10–20 minutes by Grab. Baht buses also run Beach Road and Second Road routes, so check the fare before you sit down." },
       ]} />
-      <Related links={[{ href: "/pattaya/areas/walking-street/", label: "Walking Street" }, { href: "/pattaya/hotels-walking-street/", label: "Where to stay" }, { href: "/pattaya/night-activities/", label: "Night activities" }]} />
+      <Related links={[{ href: "/pattaya/", label: "Pattaya" }, { href: "/pattaya/areas/walking-street/", label: "Walking Street" }, { href: "/pattaya/hotels-walking-street/", label: "Where to stay" }, { href: "/pattaya/night-activities/", label: "Night activities" }]} />
     </PageShell>
   );
 }

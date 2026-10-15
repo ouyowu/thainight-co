@@ -22,15 +22,22 @@ export default function PattayaPricesPage() {
           headers={["Item", "Typical range"]}
           rows={[
             ["Beer, open beer bar", "60–130 THB"],
-            ["Beer, Walking Street bar / club", "150–250 THB"],
+            [
+              <>
+                Beer, <A href="/pattaya/areas/walking-street/">Walking Street</A> bar / club
+              </>,
+              "150–250 THB",
+            ],
             ["Cocktail, club", "250–400 THB"],
             ["Bucket / tower deals", "Varies — count the drinks"],
             ["Baht bus, fixed route", "10–20 THB per person"],
           ]}
         />
         <p>
-          Pattaya is cheaper than Bangkok at the bottom and similar at the top. A beer on Soi
-          Buakhao is about half a Walking Street beer, and the walk between them is ten minutes.
+          Pattaya is cheaper than Bangkok at the bottom and similar at the top. A beer on{" "}
+          <A href="/pattaya/areas/soi-buakhao/">Soi Buakhao</A> is about half a{" "}
+          <A href="/pattaya/areas/walking-street/">Walking Street</A> beer, and the walk between
+          them is ten minutes.
         </p>
       </Section>
 
@@ -39,8 +46,20 @@ export default function PattayaPricesPage() {
           caption="Same four beers, two streets"
           headers={["Street", "Four beers", "What you get"]}
           rows={[
-            ["Soi Buakhao", "about 240–520 THB", "Open beer bars, pool, street food"],
-            ["Walking Street", "about 600–1,000 THB", "Clubs, live bands, the spectacle"],
+            [
+              <A key="buakhao" href="/pattaya/areas/soi-buakhao/">
+                Soi Buakhao
+              </A>,
+              "about 240–520 THB",
+              "Open beer bars, pool, street food",
+            ],
+            [
+              <A key="walking" href="/pattaya/areas/walking-street/">
+                Walking Street
+              </A>,
+              "about 600–1,000 THB",
+              "Clubs, live bands, the spectacle",
+            ],
           ]}
         />
         <p>
@@ -89,7 +108,10 @@ export default function PattayaPricesPage() {
           <li>Drink on Soi Buakhao or in Tree Town, then move to Walking Street late.</li>
           <li>Tree Town’s courtyard has bands and no entry fee: <A href="/pattaya/areas/tree-town/">Tree Town</A>.</li>
           <li>Buy show tickets online rather than from a street seller: <A href="/pattaya/cabaret-shows/">cabaret shows</A>.</li>
-          <li>Stay central. A Jomtien base adds a ride to every night out: <A href="/pattaya/where-to-stay/">where to stay</A>.</li>
+          <li>
+            Stay central. A <A href="/pattaya/areas/jomtien-beach-road/">Jomtien Beach Road</A> base
+            adds a ride to every night out: <A href="/pattaya/where-to-stay/">where to stay</A>.
+          </li>
         </Bullets>
       </Section>
 
