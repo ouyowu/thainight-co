@@ -22,7 +22,8 @@ export default function BangkokFirstTimerPage() {
         <p>
           Easiest first night: a rooftop for sunset, dinner, then Sukhumvit Soi 11 for bars and a
           club if you still have energy. Want something more local and polished → Thonglor. Want a
-          big club night → RCA after midnight.
+          big club night → RCA after midnight.{" "}
+          <A href="/bangkok/areas/rca-thonglor/">RCA and Thonglor</A> are those two nights.
         </p>
       </Section>
 
@@ -66,7 +67,8 @@ export default function BangkokFirstTimerPage() {
           ]}
         />
         <p>
-          More: <A href="/prices/">prices</A> · <A href="/budgets/">budget bands</A>.
+          More: <A href="/bangkok/prices/">Bangkok nightlife prices</A> · <A href="/prices/">prices</A>{" "}
+          · <A href="/budgets/">budget bands</A>.
         </p>
       </Section>
 
@@ -91,7 +93,8 @@ export default function BangkokFirstTimerPage() {
       <Section title="Where to stay">
         <p>
           Stay near BTS Nana, Asok or Phrom Phong. Soi 11 is walkable, rooftops and Thonglor are a
-          few BTS stops away. See <A href="/bangkok/hotels-nana-asok/">where to stay for nightlife</A>.
+          few BTS stops away. See <A href="/bangkok/where-to-stay/">where to stay in Bangkok</A> and{" "}
+          <A href="/bangkok/hotels-nana-asok/">where to stay for nightlife</A>.
         </p>
       </Section>
 

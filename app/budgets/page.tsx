@@ -23,7 +23,14 @@ export default function BudgetsPage() {
           caption="Bangkok budgets"
           headers={["Night", "THB", "What it covers"]}
           rows={[
-            ["Casual bars", "500–1,500", "4–6 beers on Soi 11 or Khao San, Grab home"],
+            [
+              "Casual bars",
+              "500–1,500",
+              <>
+                4–6 beers on <A href="/bangkok/areas/soi-11/">Soi 11</A> or{" "}
+                <A href="/bangkok/areas/khao-san/">Khao San</A>, Grab home
+              </>,
+            ],
             ["Rooftop + bars", "1,500–3,000", "2 rooftop cocktails, dinner, a few bar drinks"],
             ["Club night", "2,000–4,000", "Entry, drinks, late Grab"],
             ["Show night", "1,500–4,000+", "Muay Thai or cabaret ticket plus drinks"],
@@ -36,8 +43,21 @@ export default function BudgetsPage() {
           caption="Pattaya budgets"
           headers={["Night", "THB", "What it covers"]}
           rows={[
-            ["Beer-bar night", "500–1,500", "Tree Town / Soi Buakhao drinks and food"],
-            ["Walking Street", "1,500–3,500", "Bar and club drinks, cover where charged"],
+            [
+              "Beer-bar night",
+              "500–1,500",
+              <>
+                <A href="/pattaya/areas/tree-town/">Tree Town</A> /{" "}
+                <A href="/pattaya/areas/soi-buakhao/">Soi Buakhao</A> drinks and food
+              </>,
+            ],
+            [
+              <A key="walking" href="/pattaya/areas/walking-street/">
+                Walking Street
+              </A>,
+              "1,500–3,500",
+              "Bar and club drinks, cover where charged",
+            ],
             ["Show night", "1,000–3,000+", "Cabaret or Muay Thai ticket plus drinks"],
           ]}
         />

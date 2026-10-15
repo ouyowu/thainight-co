@@ -14,6 +14,8 @@ type PageShellProps = {
   children: ReactNode;
   showUpdated?: boolean;
   lead?: string;
+  /** Direct-answer paragraph under the H1, before cards and the existing lead. */
+  opening?: string;
   belowTitle?: ReactNode;
 };
 
@@ -23,6 +25,7 @@ export function PageShell({
   children,
   showUpdated = true,
   lead,
+  opening,
   belowTitle,
 }: PageShellProps) {
   const url = `${SITE_URL}${path === "/" ? "/" : path}`;
@@ -52,6 +55,10 @@ export function PageShell({
     })),
   };
 
+  const openingEl = opening ? (
+    <p className="text-base leading-7 text-foreground">{opening}</p>
+  ) : null;
+
   const copy = (
     <>
       {belowTitle}
@@ -68,6 +75,7 @@ export function PageShell({
       {hub ? (
         <div className="mx-auto grid max-w-6xl gap-x-12 gap-y-12 px-4 py-14 sm:px-6 lg:grid-cols-12">
           <div className="min-w-0 lg:col-span-8">
+            {openingEl}
             <CityGrid cards={cityListingCards(path)} />
             <article className="mt-16 space-y-6 border-t border-line pt-12">{copy}</article>
           </div>
@@ -78,6 +86,7 @@ export function PageShell({
       ) : (
         <div className="mx-auto grid max-w-6xl gap-x-12 gap-y-12 px-4 py-14 sm:px-6 lg:grid-cols-12">
           <article className="min-w-0 space-y-6 lg:col-span-8">
+            {openingEl}
             {copy}
             <RelatedPosts path={path} />
           </article>

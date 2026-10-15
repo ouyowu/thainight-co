@@ -38,7 +38,8 @@ export default function PatpongPage() {
         </p>
         <p>
           <strong>No, if:</strong> you only have one night — a{" "}
-          <A href="/bangkok/rooftop-bars/">rooftop</A> plus Soi 11 is a stronger first night, and
+          <A href="/bangkok/rooftop-bars/">rooftop</A> plus{" "}
+          <A href="/bangkok/areas/soi-11/">Soi 11</A> is a stronger first night, and
           Patpong is a twenty-minute stop rather than an evening.
         </p>
       </Section>
@@ -124,6 +125,7 @@ export default function PatpongPage() {
 
       <Related
         links={[
+          { href: "/bangkok/", label: "Bangkok" },
           { href: "/bangkok/areas/", label: "All Bangkok areas" },
           { href: "/bangkok/rooftop-bars/", label: "Rooftop bars" },
           { href: "/bangkok/night-markets/", label: "Night markets" },

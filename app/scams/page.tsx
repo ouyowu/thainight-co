@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { FaqList } from "@/components/FaqList";
 import { PageShell } from "@/components/PageShell";
 import { A, Bullets, Section } from "@/components/Prose";
@@ -9,38 +10,64 @@ export const metadata = pageMeta(
   "/scams/",
 );
 
-const scams = [
+const scams: { key: string; title: ReactNode; body: ReactNode; rule: ReactNode }[] = [
   {
-    title: "“Cheap show” tout trap (Patpong, side sois in Pattaya)",
+    key: "cheap-show",
+    title: (
+      <>
+        “Cheap show” tout trap (<A href="/bangkok/areas/patpong/">Patpong</A>, side sois in Pattaya)
+      </>
+    ),
     body: "Someone offers a cheap or free show upstairs. Inside, the drinks bill becomes thousands of baht and the door is blocked.",
     rule: "Never follow street touts upstairs or down side alleys.",
   },
   {
+    key: "padded-bill",
     title: "Padded bar bill",
     body: "Extra drinks or inflated prices appear on the final bill.",
-    rule: "Check the menu, pay round by round, and keep the bill tab in view.",
+    rule: (
+      <>
+        Check the menu, pay round by round, keep the bill tab in view, and{" "}
+        <A href="/prices/">check typical prices</A>.
+      </>
+    ),
   },
   {
+    key: "taxi",
     title: "Taxi / tuk-tuk overcharge",
     body: "Meter “broken”, a fixed high price, or a tuk-tuk detour to a gem shop or tailor.",
-    rule: "Use Grab or Bolt, or insist on the meter. Ignore “the temple is closed today”.",
+    rule: (
+      <>
+        Use Grab or Bolt, or insist on the meter. See{" "}
+        <A href="/bangkok/taxi-fare/">Bangkok taxi fares</A>. Ignore “the temple is closed today”.
+      </>
+    ),
   },
   {
+    key: "fake-tickets",
     title: "Fake or inflated tickets",
     body: "Street sellers near stadiums and show venues sell overpriced or fake seats.",
-    rule: "Buy at the official box office or a known booking platform.",
+    rule: (
+      <>
+        Buy at the official box office or a known booking platform. For stadium cards, see{" "}
+        <A href="/bangkok/muay-thai/">Muay Thai tickets</A>.
+      </>
+    ),
   },
   {
+    key: "jet-ski",
     title: "Jet-ski damage claim (Pattaya beach)",
     body: "The operator claims pre-existing damage after you return the jet-ski and demands cash.",
     rule: "Avoid main-beach jet-ski rentals, or photograph and film everything beforehand.",
   },
   {
+    key: "spiking",
     title: "Drink spiking",
     body: "Rare, but reported in crowded bars and clubs.",
     rule: "Watch your drink being made, don’t leave it unattended, and leave with friends if you feel unwell.",
   },
   {
+    key: "snatching",
     title: "Phone and bag snatching",
     body: "Motorbike snatches and pickpocketing in crowds and at the end of the night.",
     rule: "Phone in a front pocket, bag on the wall side, valuables in the hotel safe.",
@@ -56,7 +83,7 @@ export default function ScamsPage() {
     >
       <ol className="list-decimal space-y-5 pl-5">
         {scams.map((scam) => (
-          <li key={scam.title}>
+          <li key={scam.key}>
             <p className="font-semibold text-foreground">{scam.title}</p>
             <p className="mt-1">{scam.body}</p>
             <p className="mt-1">

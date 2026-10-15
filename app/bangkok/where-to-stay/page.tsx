@@ -16,6 +16,7 @@ export default function BangkokWhereToStayPage() {
     <PageShell
       path="/bangkok/where-to-stay/"
       title="Where to Stay in Bangkok (2026)"
+      opening="For nightlife, stay on Sukhumvit (Nana–Asok–Thong Lo) for Soi 11, hotel rooftops and Thong Lo; in Silom or Sathorn for the sky bars; by the river for a dinner cruise; or in the Old Town for temples by day and Khao San at night. There is no ranked winner: match the area to your night."
       lead="Stay on Sukhumvit if the night is Soi 11, hotel rooftops and Thong Lo. Stay in Silom or Sathorn for the sky bars. Stay on the river for a dinner cruise. Stay in the Old Town if the day is temples and the night is Khao San. There is no ranked winner."
     >
       <Section title="Which area?">
@@ -96,8 +97,9 @@ export default function BangkokWhereToStayPage() {
           Nights already covered here: <A href="/bangkok/areas/soi-11/">Soi 11</A>,{" "}
           <A href="/bangkok/rooftop-bars/">rooftop bars</A>,{" "}
           <A href="/bangkok/soi-11-rooftop-bars/">Soi 11 rooftops</A>, and{" "}
-          <A href="/bangkok/areas/rca-thonglor/">RCA and Thong Lo</A>. RCA itself is a ride toward
-          Rama 9, not a walk from Asok.
+          <A href="/bangkok/areas/rca-thonglor/">RCA and Thong Lo</A>. Drink ranges for this
+          strip are on <A href="/bangkok/prices/">Bangkok nightlife prices</A>. RCA itself is a
+          ride toward Rama 9, not a walk from Asok.
         </p>
         <p>
           The stop-by-stop breakdown lives on the{" "}
@@ -200,6 +202,7 @@ export default function BangkokWhereToStayPage() {
           { href: "/bangkok/first-timer/", label: "First-timer" },
           { href: "/bangkok/one-night-plan/", label: "One-night plans" },
           { href: "/bangkok/getting-around/", label: "Getting around at night" },
+          { href: "/budgets/", label: "nightlife budgets" },
         ]}
       />
     </PageShell>

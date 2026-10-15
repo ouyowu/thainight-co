@@ -16,6 +16,7 @@ export default function PattayaWhereToStayPage() {
     <PageShell
       path="/pattaya/where-to-stay/"
       title="Where to Stay in Pattaya (2026)"
+      opening="For nightlife, stay in Central Pattaya near Walking Street for the strip and a cabaret, on Beach Road to keep the sand on the same walk, in Jomtien for a calmer beach evening, or on Pratumnak for the hill between both beaches. There is no ranked winner; rates were checked 13 October 2026."
       lead="Stay in Central Pattaya, near Walking Street, if the night is the strip and a cabaret. Stay on Beach Road if you want the sand on the same walk. Stay in Jomtien for a beach evening. Stay on Pratumnak if you want the hill between those two beaches. There is no ranked winner."
     >
       <Section title="Which area?">
@@ -122,7 +123,7 @@ export default function PattayaWhereToStayPage() {
         <HotelCta label="Search hotels in Pattaya" link="hotelBeachRoad" />
       </Section>
 
-      <Section title="Jomtien">
+      <Section title="Jomtien" id="jomtien">
         <p>
           This suits a beach stay when Walking Street is one night, not the whole trip. The beach
           is longer and the bars wind down earlier than Central.

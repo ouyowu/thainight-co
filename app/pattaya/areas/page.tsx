@@ -111,6 +111,7 @@ export default function PattayaAreasPage() {
 
       <Related
         links={[
+          { href: "/pattaya/", label: "Pattaya" },
           { href: "/pattaya/prices/", label: "Pattaya prices" },
           { href: "/pattaya/bar-types/", label: "Bar types" },
           { href: "/pattaya/one-night-plan/", label: "One night in Pattaya" },

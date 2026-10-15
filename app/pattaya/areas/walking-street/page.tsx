@@ -66,8 +66,13 @@ export default function WalkingStreetPage() {
 
       <Section title="Practical tips">
         <Bullets>
-          <li>Check the menu price before ordering; watch the bill tab</li>
-          <li>Ignore touts offering “free shows” on side sois</li>
+          <li>
+            Check the menu price before ordering; watch the bill tab. Full bands:{" "}
+            <A href="/pattaya/prices/">Pattaya nightlife prices</A>.
+          </li>
+          <li>
+            Ignore touts offering “free shows” on side sois. See <A href="/scams/">scams</A>.
+          </li>
           <li>Keep phones and wallets in front pockets in crowds</li>
           <li>Use Grab or a baht bus; avoid high fixed-price offers at the street ends</li>
         </Bullets>
@@ -82,6 +87,7 @@ export default function WalkingStreetPage() {
 
       <Related
         links={[
+          { href: "/pattaya/", label: "Pattaya" },
           { href: "/pattaya/first-timer/", label: "First-timer" },
           { href: "/pattaya/areas/tree-town/", label: "Tree Town" },
           { href: "/prices/", label: "Prices" },
@@ -90,7 +96,10 @@ export default function WalkingStreetPage() {
       />
 
       <StayNearby label="Hotels near Walking Street" link="hotelWalkingStreet">
-        <p className="mt-2">Central Pattaya or southern Beach Road keeps the walk home short.</p>
+        <p className="mt-2">
+          Central Pattaya or southern Beach Road keeps the walk home short. Compare areas on{" "}
+          <A href="/pattaya/where-to-stay/">where to stay in Pattaya</A>.
+        </p>
       </StayNearby>
     </PageShell>
   );

@@ -118,6 +118,7 @@ export default function BangkokAreasPage() {
 
       <Related
         links={[
+          { href: "/bangkok/", label: "Bangkok" },
           { href: "/bangkok/prices/", label: "Bangkok prices" },
           { href: "/bangkok/bar-types/", label: "Bar types" },
           { href: "/bangkok/one-night-plan/", label: "One night in Bangkok" },

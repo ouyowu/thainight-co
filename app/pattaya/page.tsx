@@ -16,6 +16,7 @@ export default function PattayaPage() {
     <PageShell
       path="/pattaya/"
       title="Pattaya Nightlife Guide 2026 – Areas, Shows & Prices"
+      opening="Pattaya nightlife centres on Walking Street, with Tree Town and Soi Buakhao as alternatives. Many first nights start with a cabaret show, Tiffany's or Alcazar, before the strip."
       belowTitle={
         <p className="mt-3 text-base leading-7 text-foreground">
           New here? Start with the <A href="/pattaya/first-timer/">first-timer guide</A> or a{" "}
@@ -84,7 +85,10 @@ export default function PattayaPage() {
           <li>Walk the street once before sitting down</li>
           <li>Check the drinks menu and pay round by round</li>
           <li>Use Grab, Bolt or a baht bus; agree the fare before you get in a private ride</li>
-          <li>Jet-ski rentals on the main beach carry a well-known damage-claim scam risk</li>
+          <li>
+            Jet-ski rentals on the main beach carry a well-known damage-claim scam risk. See{" "}
+            <A href="/scams/">nightlife scams</A>.
+          </li>
         </Bullets>
       </Section>
 

@@ -308,6 +308,24 @@ export const demoGuides: DemoGuide[] = [
     tone: "#3a2e22",
   },
   {
+    href: "/chiang-mai/first-timer/",
+    title: "Chiang Mai first-timer guide",
+    city: "Chiang Mai",
+    category: "First-timer",
+    description:
+      "First night in Chiang Mai: a night market, Old City live music or Nimman bars, and where to stay.",
+    tone: "#3a2e22",
+  },
+  {
+    href: "/phuket/prices/",
+    title: "Phuket nightlife prices",
+    city: "Phuket",
+    category: "Prices",
+    description:
+      "Phuket nightlife prices where two 2026 sources agree: Bangla Road drinks and club entry, plus the airport limousine and Smart Bus to Patong.",
+    tone: "#16343a",
+  },
+  {
     href: "/phuket/first-timer/",
     title: "Phuket first-timer guide",
     city: "Phuket",

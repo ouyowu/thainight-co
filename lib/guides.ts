@@ -62,6 +62,7 @@ export const pattayaAreas = [
 ] as const;
 
 export const chiangMaiGuides = [
+  { href: "/chiang-mai/first-timer/", label: "First-timer guide" },
   { href: "/chiang-mai/where-to-stay/", label: "Where to stay for nightlife" },
   { href: "/chiang-mai/luxury-hotels/", label: "Luxury hotels" },
   { href: "/chiang-mai/boutique-hotels/", label: "Boutique hotels" },
@@ -73,6 +74,7 @@ export const chiangMaiGuides = [
 
 export const phuketGuides = [
   { href: "/phuket/first-timer/", label: "First-timer guide" },
+  { href: "/phuket/prices/", label: "Nightlife prices" },
   { href: "/phuket/getting-around/", label: "Getting around at night" },
   { href: "/phuket/where-to-stay/", label: "Where to stay for nightlife" },
   { href: "/phuket/luxury-hotels/", label: "Luxury hotels" },

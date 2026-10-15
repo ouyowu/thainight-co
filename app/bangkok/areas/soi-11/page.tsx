@@ -61,7 +61,7 @@ export default function Soi11Page() {
       <Section title="What it is and is not for">
         <Bullets>
           <li><strong>Good for:</strong> bar-hopping, groups and couples, and a first night before you know the city.</li>
-          <li><strong>Not the cheapest.</strong> Khao San and ordinary street bars cost less; Soi 11 carries a rooftop and club premium.</li>
+          <li><strong>Not the cheapest.</strong> <A href="/bangkok/areas/khao-san/">Khao San</A> and ordinary street bars cost less; Soi 11 carries a rooftop and club premium.</li>
           <li><strong>Not a local-crowd night.</strong> For that, Thonglor and Ekkamai are two BTS stops away.</li>
           <li><strong>Not a quiet night.</strong> The far end is loud until late.</li>
         </Bullets>
@@ -97,15 +97,18 @@ export default function Soi11Page() {
           headers={["Goal", "Area"]}
           rows={[
             ["Bars, clubs and rooftops in one walk", "Soi 11"],
-            ["Upscale cocktails, live music", "Thonglor"],
-            ["Big club night", "RCA"],
-            ["Market and sky bars", "Patpong / Silom"],
-            ["Cheap and loud", "Khao San"],
+            ["Upscale cocktails, live music", <A key="thonglor" href="/bangkok/areas/rca-thonglor/">Thonglor</A>],
+            ["Big club night", <A key="rca" href="/bangkok/areas/rca-thonglor/">RCA</A>],
+            ["Market and sky bars", <><A key="patpong" href="/bangkok/areas/patpong/">Patpong</A> / Silom</>],
+            ["Cheap and loud", <A key="khao-san" href="/bangkok/areas/khao-san/">Khao San</A>],
           ]}
         />
         <p>
           Rooftops on this street: <A href="/bangkok/soi-11-rooftop-bars/">Soi 11 rooftop bars</A>.
-          All areas compared: <A href="/bangkok/areas/">Bangkok nightlife areas</A>.
+          Compare <A href="/bangkok/areas/khao-san/">Khao San</A>,{" "}
+          <A href="/bangkok/areas/rca-thonglor/">RCA and Thonglor</A>, and{" "}
+          <A href="/bangkok/areas/patpong/">Patpong</A>. All areas:{" "}
+          <A href="/bangkok/areas/">Bangkok nightlife areas</A>.
         </p>
       </Section>
 
@@ -136,6 +139,7 @@ export default function Soi11Page() {
 
       <Related
         links={[
+          { href: "/bangkok/", label: "Bangkok" },
           { href: "/bangkok/areas/", label: "All Bangkok areas" },
           { href: "/bangkok/soi-11-rooftop-bars/", label: "Soi 11 rooftop bars" },
           { href: "/bangkok/prices/", label: "Bangkok prices" },
