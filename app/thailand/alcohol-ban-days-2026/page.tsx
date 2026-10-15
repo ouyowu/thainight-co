@@ -6,7 +6,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Thailand Alcohol Ban Days 2026",
-  "2026 Thailand alcohol-ban dates we could confirm: Makha Bucha, Visakha Bucha, Asalha Bucha, Buddhist Lent and the February election window. Recheck before you travel.",
+  "2026 Thailand alcohol-ban dates confirmed: Makha Bucha, Visakha Bucha, Asalha Bucha, Buddhist Lent and the February election window. Recheck before you travel.",
   "/thailand/alcohol-ban-days-2026/",
 );
 

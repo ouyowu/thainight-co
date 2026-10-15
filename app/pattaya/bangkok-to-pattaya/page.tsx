@@ -6,7 +6,7 @@ import { A, Bullets, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Bangkok to Pattaya Transfer 2026 - Bus, Private Car, Grab and Coach",
+  "Bangkok to Pattaya Transfer 2026: Bus, Private Car, Grab, Coach",
   "Compare Bangkok to Pattaya options: airport coach from BKK, Ekkamai bus, private car and Grab. Typical time and how to avoid fake baht quotes.",
   "/pattaya/bangkok-to-pattaya/",
 );

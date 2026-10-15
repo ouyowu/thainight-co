@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Pattaya Luxury Hotels 2026 – Five-Star Nightly Rates",
-  "What large Pattaya five-star hotels cost in 2026. Published nightly samples for Hilton Pattaya and Royal Cliff, to confirm on the spot, plus Agoda links for both hotels.",
+  "What large Pattaya five-star hotels cost in 2026. Nightly samples for Hilton Pattaya and Royal Cliff, to confirm on the spot, plus Agoda links for both.",
   "/pattaya/luxury-hotels/",
 );
 

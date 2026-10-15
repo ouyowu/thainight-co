@@ -9,7 +9,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Tree Town Pattaya 2026 – Open-Air Bars, Food & Live Music",
-  "Tree Town on Soi Buakhao in 2026: an open-air complex of small bars, street food and overlapping live bands, with no entry fee. What it costs, when it fills, and how it compares to Walking Street.",
+  "Tree Town on Soi Buakhao in 2026: open-air bars, street food and live bands, no entry fee. What it costs, when it fills, and how it compares to Walking Street.",
   "/pattaya/areas/tree-town/",
 );
 

@@ -10,7 +10,7 @@ const lead = "Four zones cover almost every Bangkok night out. Pick by the kind 
 
 export const metadata = pageMeta(
   "Bangkok Nightlife Areas 2026 – Which One to Pick",
-  "Sukhumvit Soi 11, Thonglor, RCA, Silom and Khao San compared for 2026: what each area is for, what it costs, how late the BTS and MRT run, and which to pick on a first night.",
+  "Sukhumvit Soi 11, Thonglor, RCA, Silom and Khao San compared for 2026: what each area is for, what it costs, how late the BTS and MRT run, and a first night.",
   "/bangkok/areas/",
 );
 
@@ -57,7 +57,8 @@ export default function BangkokAreasPage() {
         />
         <p className="text-sm text-muted">
           Checked October 2026 against venue listings and recent visitor reports. Full table:{" "}
-          <A href="/bangkok/prices/">Bangkok nightlife prices</A>.
+          <A href="/bangkok/prices/">Bangkok nightlife prices</A> and the{" "}
+          <A href="/budgets/">nightlife budgets</A>.
         </p>
       </Section>
 

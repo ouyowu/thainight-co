@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Best Rooftop Bars in Bangkok 2026 – By Area, Budget & Dress Code",
-  "Bangkok rooftop bars compared: Sky Bar, Vertigo, Sky Beach, Octave, Spectrum and value picks near Asok and Nana. Nearest BTS, dress codes, hours and what a drink costs.",
+  "Bangkok rooftop bars: Sky Bar, Vertigo, Sky Beach, Octave, Spectrum and value picks near Asok and Nana. Nearest BTS, dress codes, hours and what a drink costs.",
   "/bangkok/rooftop-bars/",
 );
 

@@ -5,8 +5,8 @@ import { Bullets, CheckedNote, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Chiang Mai Old City & Riverside Nightlife 2026 – Live Music Bars & Prices",
-  "Old City and riverside nightlife in Chiang Mai for 2026: North Gate Jazz Co-Op, backpacker bars near Tha Phae Gate, live-music riverside restaurants, prices and bill tips.",
+  "Old City & Riverside Nightlife 2026 – Chiang Mai Bars & Prices",
+  "Old City and riverside nightlife in Chiang Mai for 2026: North Gate Jazz Co-Op, bars near Tha Phae Gate, riverside live music, prices and bill tips.",
   "/chiang-mai/old-city-nightlife/",
 );
 

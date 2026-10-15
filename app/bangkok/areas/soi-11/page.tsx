@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Sukhumvit Soi 11 Nightlife 2026 – Bars, Rooftops & Clubs",
-  "Sukhumvit Soi 11 nightlife in 2026: what the street holds end to end, drink prices, when each part fills, the dress code, how to get home after the BTS stops, and where to stay.",
+  "Sukhumvit Soi 11 nightlife in 2026: the street end to end, drink prices, when it fills, the dress code, getting home after the BTS stops, and where to stay.",
   "/bangkok/areas/soi-11/",
 );
 

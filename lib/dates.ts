@@ -1,4 +1,11 @@
-/** Per-route last-modified dates (YYYY-MM-DD). Used by sitemap and PageShell JSON-LD. */
+import { execFileSync } from "node:child_process";
+
+/**
+ * Per-route last-modified dates (YYYY-MM-DD). Used by sitemap and PageShell JSON-LD.
+ * When this build has a full git history, lastmod is that page file's last commit
+ * date. A missing git binary or a shallow clone keeps the map below so the sitemap
+ * still builds and does not publish a truncated history as if it were complete.
+ */
 
 export const PAGE_MODIFIED: Record<string, string> = {
   "/": "2026-10-10",
@@ -91,8 +98,48 @@ export const PAGE_MODIFIED: Record<string, string> = {
   "/affiliate-disclosure/": "2026-10-10",
 };
 
+const FALLBACK_DATE = "2026-10-10";
+const cache = new Map<string, string>();
+let gitMode: "full" | "off" | null = null;
+
+function git(args: string[]): string | null {
+  try {
+    return execFileSync("git", args, {
+      cwd: process.cwd(),
+      encoding: "utf8",
+      stdio: ["ignore", "pipe", "ignore"],
+    }).trim();
+  } catch {
+    return null;
+  }
+}
+
+function gitDatesAvailable(): boolean {
+  if (gitMode) return gitMode === "full";
+  const inside = git(["rev-parse", "--is-inside-work-tree"]);
+  const shallow = git(["rev-parse", "--is-shallow-repository"]);
+  const sample = git(["log", "-1", "--format=%cs", "--", "app/page.tsx"]);
+  gitMode = inside === "true" && shallow === "false" && /^\d{4}-\d{2}-\d{2}$/.test(sample ?? "") ? "full" : "off";
+  return gitMode === "full";
+}
+
+function routeFile(path: string): string {
+  if (path === "/") return "app/page.tsx";
+  const clean = path.endsWith("/") ? path : `${path}/`;
+  return `app${clean}page.tsx`;
+}
+
 export function lastModifiedIso(path: string): string {
-  return PAGE_MODIFIED[path] ?? "2026-10-10";
+  const cached = cache.get(path);
+  if (cached) return cached;
+  let date: string | null = null;
+  if (gitDatesAvailable()) {
+    const out = git(["log", "-1", "--format=%cs", "--", routeFile(path)]);
+    if (out && /^\d{4}-\d{2}-\d{2}$/.test(out)) date = out;
+  }
+  const value = date ?? PAGE_MODIFIED[path] ?? FALLBACK_DATE;
+  cache.set(path, value);
+  return value;
 }
 
 export function lastModifiedDate(path: string): Date {

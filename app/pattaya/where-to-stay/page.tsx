@@ -6,8 +6,8 @@ import { A, Bullets, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Where to Stay in Pattaya 2026 – Walking Street, Beach Road, Jomtien, Pratumnak",
-  "Which Pattaya area to sleep in: Walking Street and Central, Beach Road, Jomtien, or Pratumnak. Nightly ranges to confirm on the spot, plus a city-wide hotel search.",
+  "Pattaya Stay 2026: Walking Street, Beach Road, Jomtien, Pratumnak",
+  "Which Pattaya area to sleep in: Walking Street and Central, Beach Road, Jomtien, or Pratumnak. Nightly ranges to confirm, plus a city-wide hotel search.",
   "/pattaya/where-to-stay/",
 );
 
@@ -90,7 +90,8 @@ export default function PattayaWhereToStayPage() {
         <p>
           Nights already covered: <A href="/pattaya/areas/walking-street/">Walking Street</A>,{" "}
           <A href="/pattaya/cabaret-shows/">cabaret shows</A> on Second Road, and{" "}
-          <A href="/pattaya/areas/tree-town/">Tree Town</A> as another night in the same cluster.
+          <A href="/pattaya/areas/tree-town/">Tree Town</A> as another night in the same cluster,
+          priced in the <A href="/budgets/">nightlife budgets</A>.
         </p>
         <p>
           Block-by-block notes (Central, Beach Road, Second Road) are on the{" "}

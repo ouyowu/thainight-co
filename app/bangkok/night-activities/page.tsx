@@ -4,7 +4,7 @@ import { A, Bullets, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Bangkok Night Activities 2026 – Muay Thai, Cabaret, Cruises, Markets",
+  "Bangkok Nights 2026: Muay Thai, Cabaret, Cruises and Markets",
   "Things to do in Bangkok at night: Muay Thai stadiums, Calypso Cabaret, Chao Phraya dinner cruises, rooftops and night markets — and how to sequence them.",
   "/bangkok/night-activities/",
 );

@@ -50,7 +50,10 @@ export default function PattayaPage() {
         <Bullets>
           <li>One night only → a cabaret show early, then Walking Street for the atmosphere</li>
           <li>Two or more nights → Walking Street one night, Tree Town / Soi Buakhao another</li>
-          <li>Lower budget → Soi Buakhao and Tree Town give the most for the money</li>
+          <li>
+            Lower <A href="/budgets/">nightlife budgets</A> → Soi Buakhao and Tree Town give the most
+            for the money
+          </li>
         </Bullets>
       </Section>
 

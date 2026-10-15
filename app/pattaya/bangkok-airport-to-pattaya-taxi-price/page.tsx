@@ -8,7 +8,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Bangkok Airport to Pattaya Taxi Price 2026 – Real Fares & Scams",
-  "Suvarnabhumi (BKK) to Pattaya taxi price in 2026: official taxi counter, Grab and Bolt, private transfers and the airport bus compared, plus Motorway 7 tolls, late arrivals and common scams.",
+  "Suvarnabhumi (BKK) to Pattaya taxi price in 2026: official taxi counter, Grab and Bolt, private transfers, the airport bus, Motorway 7 tolls and common scams.",
   "/pattaya/bangkok-airport-to-pattaya-taxi-price/",
 );
 

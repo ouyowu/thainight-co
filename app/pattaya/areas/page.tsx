@@ -10,7 +10,7 @@ const lead = "A few areas cover almost every Pattaya night out. Pick by energy a
 
 export const metadata = pageMeta(
   "Pattaya Nightlife Areas 2026 – Which One to Pick",
-  "Walking Street, Tree Town, Soi Buakhao and the beach roads compared for 2026: what each area is for, what a night costs, how far apart they are, and which to pick first.",
+  "Walking Street, Tree Town, Soi Buakhao and the beach roads in 2026: what each is for, what a night costs, how far apart they are, and which to pick.",
   "/pattaya/areas/",
 );
 
@@ -55,7 +55,8 @@ export default function PattayaAreasPage() {
         />
         <p className="text-sm text-muted">
           Checked October 2026 against venue listings and recent visitor reports. Full table:{" "}
-          <A href="/pattaya/prices/">Pattaya nightlife prices</A>.
+          <A href="/pattaya/prices/">Pattaya nightlife prices</A> and the{" "}
+          <A href="/budgets/">nightlife budgets</A>.
         </p>
       </Section>
 

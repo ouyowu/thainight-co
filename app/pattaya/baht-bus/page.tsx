@@ -5,8 +5,8 @@ import { A, Bullets, CheckedNote, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Pattaya Baht Bus Price 2026 – Routes, How to Ride & Avoid Overpaying",
-  "Pattaya baht bus (songthaew) fares in 2026: 10–20 THB on fixed routes vs private charter, Beach Road and Second Road loops, how to ride and how not to get charged charter prices.",
+  "Pattaya Baht Bus Price 2026 – Routes, Riding & Overpaying",
+  "Pattaya baht bus (songthaew) fares in 2026: 10–20 THB on fixed routes vs private charter, Beach Road and Second Road, and how not to pay charter prices.",
   "/pattaya/baht-bus/",
 );
 

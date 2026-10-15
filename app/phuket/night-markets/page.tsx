@@ -5,8 +5,8 @@ import { Bullets, CheckedNote, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Phuket Night Markets 2026 – Old Town Sunday Market, Naka, Chillva & Patong",
-  "Phuket night markets in 2026: Old Town Sunday Walking Street, Naka Weekend Market, Chillva, Banzaan and Malin Plaza in Patong, Kata and Karon — days, hours and what to eat.",
+  "Phuket Night Markets 2026: Old Town Sunday, Naka, Chillva, Patong",
+  "Phuket night markets in 2026: Old Town Sunday Walking Street, Naka Weekend Market, Chillva, Banzaan and Malin Plaza in Patong, Kata and Karon — days and hours.",
   "/phuket/night-markets/",
 );
 

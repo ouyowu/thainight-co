@@ -6,8 +6,8 @@ import { A, Bullets, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Where to Stay in Bangkok 2026 – Sukhumvit, Silom, Riverside, Old Town",
-  "Which Bangkok area to sleep in for nightlife: Sukhumvit, Silom and Sathorn, the riverside, or the Old Town. Nightly ranges to confirm on the spot, plus a city-wide hotel search.",
+  "Bangkok Where to Stay 2026: Sukhumvit, Silom, Riverside, Old Town",
+  "Which Bangkok area to sleep in for nightlife: Sukhumvit, Silom and Sathorn, the riverside, or the Old Town. Nightly ranges to confirm, plus a city hotel search.",
   "/bangkok/where-to-stay/",
 );
 

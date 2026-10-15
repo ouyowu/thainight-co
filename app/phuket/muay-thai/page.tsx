@@ -6,8 +6,8 @@ import { A, Bullets, CheckedNote, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Muay Thai Phuket 2026 – Bangla Boxing Stadium & Patong Stadium Tickets",
-  "Watching Muay Thai in Patong in 2026: Bangla Boxing Stadium vs Patong Boxing Stadium, fight nights, start times, ticket prices (about 1,500–1,900 THB) and how to book.",
+  "Muay Thai Phuket 2026 – Bangla Boxing & Patong Stadium Tickets",
+  "Muay Thai in Patong in 2026: Bangla Boxing Stadium vs Patong Boxing Stadium, fight nights, start times, tickets about 1,500–1,900 THB, and how to book.",
   "/phuket/muay-thai/",
 );
 

@@ -8,7 +8,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "One Night in Pattaya Nightlife – 2026 Sample Plans",
-  "Four sample one-night plans for Pattaya with timings and costs: cabaret and Walking Street, a Muay Thai night, budget Tree Town and Soi Buakhao, and a beachfront evening.",
+  "Four one-night Pattaya plans with timings and costs: cabaret and Walking Street, a Muay Thai night, budget Tree Town and Soi Buakhao, and a beachfront evening.",
   "/pattaya/one-night-plan/",
 );
 

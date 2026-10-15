@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Thailand eSIM for Tourists 2026",
-  "Tourist eSIM options for Thailand: Airalo and Nomad price ranges checked in October 2026, plus the existing Klook Thailand eSIM. Confirm the price on the seller page.",
+  "Tourist eSIM options for Thailand: Airalo and Nomad ranges checked in October 2026, plus the Klook Thailand eSIM. Confirm the price on the seller page.",
   "/thailand/esim-for-tourists/",
 );
 

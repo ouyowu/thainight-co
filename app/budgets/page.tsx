@@ -6,7 +6,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Nightlife Budgets 2026 – Bangkok, Pattaya, Phuket & Chiang Mai",
-  "Realistic nightlife budget bands per person for 2026: casual bar nights, rooftop evenings, club nights and show nights, what a three-night trip costs, and the rules that actually save money.",
+  "Nightlife budget bands per person for 2026: casual bar nights, rooftop evenings, club nights and show nights, a three-night trip, and the rules that save money.",
   "/budgets/",
 );
 

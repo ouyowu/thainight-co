@@ -7,8 +7,8 @@ import { StayNearby } from "@/components/StayNearby";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Soi 11 Rooftop Bars Bangkok 2026 – Above Eleven, Pastel, Spectrum & Prices",
-  "Rooftop bars on and around Sukhumvit Soi 11 near BTS Nana: Above Eleven, Pastel, Spectrum, RedSquare and Belga. Floors, hours, dress codes and 2026 drink prices.",
+  "Soi 11 Rooftops Bangkok 2026: Above Eleven, Pastel & Spectrum",
+  "Rooftop bars on Sukhumvit Soi 11 near BTS Nana: Above Eleven, Pastel, Spectrum, RedSquare and Belga. Floors, hours, dress codes and 2026 drink prices.",
   "/bangkok/soi-11-rooftop-bars/",
 );
 

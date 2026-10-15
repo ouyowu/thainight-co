@@ -6,7 +6,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Nightlife Safety Tips – Bangkok & Pattaya",
-  "Practical safety for Bangkok and Pattaya nightlife in 2026: what to carry, how bar bills go wrong, drink safety, getting home, emergency numbers and what to do if something happens.",
+  "Safety for Bangkok and Pattaya nightlife in 2026: what to carry, bar bills, drink safety, getting home, emergency numbers and what to do if something happens.",
   "/safety/",
 );
 

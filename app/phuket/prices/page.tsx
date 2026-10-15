@@ -5,7 +5,7 @@ import { A, LinkList, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Phuket Nightlife Prices 2026 – Bangla Road, Clubs & Airport",
+  "Phuket Nightlife Prices 2026 – Drinks, Clubs & Airport Transfers",
   "Phuket nightlife prices for 2026 where two public sources agree: Bangla Road beer, cocktails and club entry, plus the airport limousine and Smart Bus to Patong.",
   "/phuket/prices/",
 );
@@ -31,8 +31,8 @@ export default function PhuketPricesPage() {
           Open-air beer and ordinary-bar cocktails are the same bands in the Swanpass Bangla Road
           prices note and the July 2026 OutThailand Bangla Road guide. Club entry of 300–500 THB
           on a regular night, often with a drink, is the band both OutThailand and Eve Phuket
-          publish. Event nights cost more. Venue-by-venue notes are on{" "}
-          <A href="/phuket/bangla-road/">Bangla Road</A>.
+          publish. Event nights cost more. Venue-by-venue notes are on the{" "}
+          <A href="/phuket/bangla-road/">Bangla Road guide</A>.
         </p>
         <p className="text-sm text-muted">
           Sources: Swanpass, Bangla Road prices 2026 (

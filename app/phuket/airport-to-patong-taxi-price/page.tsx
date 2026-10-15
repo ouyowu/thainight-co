@@ -7,8 +7,8 @@ import { A, Bullets, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Phuket Airport to Patong Taxi Price 2026 – Taxi, Grab, Bus & Transfers",
-  "Phuket airport (HKT) to Patong in 2026: metered taxi with the 100 THB surcharge, limousine counter, Grab, pre-booked transfers, minivan and the 100 THB Smart Bus compared, with what to expect on the road.",
+  "Phuket Airport to Patong Price 2026 – Taxi, Grab, Bus, Transfer",
+  "Phuket airport (HKT) to Patong in 2026: metered taxi with the 100 THB surcharge, limousine, Grab, transfers, minivan and the 100 THB Smart Bus.",
   "/phuket/airport-to-patong-taxi-price/",
 );
 

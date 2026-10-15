@@ -7,7 +7,7 @@ import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
   "Bangkok Luxury Hotels 2026 – River Rates to Confirm",
-  "What a famous Bangkok luxury hotel costs in 2026: riverside entry rates and the Aman ceiling. Ranges to confirm on the spot, plus Agoda links for each river hotel.",
+  "What a famous Bangkok luxury hotel costs in 2026: riverside entry rates and the Aman ceiling. Ranges to confirm, plus Agoda links for each river hotel.",
   "/bangkok/luxury-hotels/",
 );
 

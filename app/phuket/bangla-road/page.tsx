@@ -6,8 +6,8 @@ import { StayNearby } from "@/components/StayNearby";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Bangla Road Phuket 2026 – Clubs, Cover Charges, Drink Prices & Scams",
-  "Bangla Road in Patong for 2026: Illuzion and the main clubs, cover charges, drink prices, opening hours, the best nights to go and how to avoid tab and taxi overcharges.",
+  "Bangla Road Phuket 2026 – Clubs, Cover Charges & Scams",
+  "Bangla Road in Patong for 2026: Illuzion and the main clubs, cover charges, drink prices, hours, best nights, and how to avoid tab and taxi overcharges.",
   "/phuket/bangla-road/",
 );
 
@@ -66,6 +66,7 @@ export default function BanglaRoadPage() {
       <Related
         links={[
           { href: "/phuket/", label: "Phuket nightlife" },
+          { href: "/phuket/prices/", label: "Phuket nightlife prices" },
           { href: "/phuket/muay-thai/", label: "Bangla Boxing Stadium" },
           { href: "/phuket/simon-cabaret/", label: "Simon Cabaret" },
         ]}

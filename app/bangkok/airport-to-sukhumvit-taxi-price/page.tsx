@@ -7,8 +7,8 @@ import { A, Bullets, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Suvarnabhumi to Sukhumvit Taxi Price 2026 – Nana & Asok, Rail Link vs Grab",
-  "Suvarnabhumi (BKK) airport to Sukhumvit (Nana, Asok) in 2026: metered taxi total with the 50 THB surcharge and tolls, where the taxi and Grab queues are, and the 45 THB Airport Rail Link plus BTS.",
+  "Suvarnabhumi–Sukhumvit Taxi Price 2026: Nana, Asok, Rail Link",
+  "Suvarnabhumi (BKK) to Sukhumvit (Nana, Asok) in 2026: metered taxi, 50 THB surcharge and tolls, Grab, and the 45 THB Airport Rail Link plus BTS.",
   "/bangkok/airport-to-sukhumvit-taxi-price/",
 );
 
