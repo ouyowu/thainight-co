@@ -21,7 +21,24 @@ export default function BangkokPricesPage() {
           caption="Bangkok 2026 nightlife prices"
           headers={["Item", "Typical range"]}
           rows={[
-            ["Beer, street / Khao San", "80–150 THB"],
+            [
+              <A key="khao-san-beer" href="/bangkok/areas/khao-san/#what-a-khao-san-night-costs">
+                Beer, street / Khao San
+              </A>,
+              "80–150 THB",
+            ],
+            [
+              <A key="khao-san-bucket" href="/bangkok/areas/khao-san/#what-a-khao-san-night-costs">
+                Khao San bucket
+              </A>,
+              "about 200–350 THB",
+            ],
+            [
+              <A key="khao-san-night" href="/bangkok/areas/khao-san/#what-a-khao-san-night-costs">
+                Khao San night, per person
+              </A>,
+              "about 800–1,200 THB",
+            ],
             ["Beer, Sukhumvit bar", "120–220 THB"],
             ["Craft beer", "250–400 THB"],
             ["Cocktail, cocktail bar", "250–450 THB"],
