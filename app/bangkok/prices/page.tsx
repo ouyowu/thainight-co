@@ -5,7 +5,7 @@ import { A, Bullets, Related, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
 
 const lead =
-  "Typical 2026 ranges for a night out in Bangkok, from street bars to hotel rooftops. Individual venues sit inside the band. Confirm before you order.";
+  "A night out in Bangkok costs about 600–900 THB for street beers, 1,800–2,800 THB for a Sukhumvit bar plus a club, and 3,500–5,000 THB if you start at a rooftop. Street beer runs 80–150 THB, club entry 300–500 THB, and rooftops often add ++ (10% service plus 7% VAT).";
 
 export const metadata = pageMeta(
   "Bangkok Nightlife Prices (2026) – Drinks, Clubs & a Night's Budget",
@@ -16,6 +16,9 @@ export const metadata = pageMeta(
 export default function BangkokPricesPage() {
   return (
     <PageShell path="/bangkok/prices/" title="Bangkok Nightlife Prices (2026)" lead={lead}>
+      <p>
+        Typical 2026 ranges for a night out in Bangkok, from street bars to hotel rooftops. Individual venues sit inside the band. Confirm before you order.
+      </p>
       <Section title="What drinks cost">
         <PriceTable
           caption="Bangkok 2026 nightlife prices"
@@ -144,6 +147,22 @@ export default function BangkokPricesPage() {
           {
             q: "Is Bangkok nightlife cash or card?",
             a: "Street bars and most clubs are cash. Hotel bars and rooftops take cards.",
+          },
+          {
+            q: "How much is club entry in Bangkok?",
+            a: "Typically 300–500 THB. Some clubs cut or waive entry early, and clubs are cheapest before midnight.",
+          },
+          {
+            q: "How much is a cocktail at a Bangkok rooftop bar?",
+            a: "About 400–900+ THB, often plus ++. A 450 THB cocktail comes to about 530 THB on the bill with ++.",
+          },
+          {
+            q: "How much is a Grab across Sukhumvit at night?",
+            a: "Usually about 80–200 THB.",
+          },
+          {
+            q: "What is the cheapest way to drink in Bangkok?",
+            a: "Street bars and night markets. A street beer runs about 80–150 THB, and a cheap night of four street beers, food and a Grab home is about 600–900 THB.",
           },
         ]}
       />

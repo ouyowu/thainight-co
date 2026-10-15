@@ -13,7 +13,7 @@ export const metadata = {
     "Which RCA club fits your night: music, crowd, entry and dress code for Onyx, Route 66 and the other big rooms on Royal City Avenue. Checked Oct 2026.",
     "/bangkok/rca-clubs/",
   ),
-  robots: { index: false, follow: false },
+  robots: { index: false, follow: true },
 };
 
 export default function RcaClubsPage() {

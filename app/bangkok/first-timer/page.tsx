@@ -1,4 +1,5 @@
 import { BookingBox } from "@/components/BookingBox";
+import { FaqList } from "@/components/FaqList";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
 import { A, Bullets, LinkList, Section } from "@/components/Prose";
@@ -12,7 +13,11 @@ export const metadata = pageMeta(
 
 export default function BangkokFirstTimerPage() {
   return (
-    <PageShell path="/bangkok/first-timer/" title="Bangkok Nightlife First-Timer Guide (2026)">
+    <PageShell
+      path="/bangkok/first-timer/"
+      title="Bangkok Nightlife First-Timer Guide (2026)"
+      lead="For a first night in Bangkok, start at a rooftop for sunset, have dinner, then go to Sukhumvit Soi 11 for bars and a club. Pick Thonglor for something more polished, or RCA after midnight for a big club night. Prefer a show? Slot in Muay Thai or Calypso Cabaret early."
+    >
       <Section title="Quick answer">
         <p>
           Easiest first night: a rooftop for sunset, dinner, then Sukhumvit Soi 11 for bars and a
@@ -89,6 +94,31 @@ export default function BangkokFirstTimerPage() {
           few BTS stops away. See <A href="/bangkok/hotels-nana-asok/">where to stay for nightlife</A>.
         </p>
       </Section>
+
+      <FaqList
+        items={[
+          {
+            q: "Where should I go on my first night out in Bangkok?",
+            a: "Start with a rooftop at sunset and dinner, then Sukhumvit Soi 11 for bars. Choose Thonglor for a more polished night or RCA after midnight for a big club.",
+          },
+          {
+            q: "Do Bangkok clubs check ID?",
+            a: "Yes. Bring your passport, or a clear photo of it plus another ID.",
+          },
+          {
+            q: "How much does a beer cost in a Bangkok bar?",
+            a: "About 100–200 THB in an ordinary bar, and 250–450 THB for a cocktail in a cocktail bar.",
+          },
+          {
+            q: "What should I wear to a Bangkok rooftop bar?",
+            a: "Smart casual.",
+          },
+          {
+            q: "Where should I stay for my first Bangkok nightlife trip?",
+            a: "Near BTS Nana, Asok or Phrom Phong. Soi 11 is walkable, and the rooftops and Thonglor are a few BTS stops away.",
+          },
+        ]}
+      />
 
       <Section title="Next steps">
         <LinkList
