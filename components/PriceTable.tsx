@@ -1,7 +1,9 @@
+import type { ReactNode } from "react";
+
 type PriceTableProps = {
   caption?: string;
   headers: string[];
-  rows: string[][];
+  rows: ReactNode[][];
 };
 
 export function PriceTable({ caption, headers, rows }: PriceTableProps) {
@@ -24,7 +26,7 @@ export function PriceTable({ caption, headers, rows }: PriceTableProps) {
         </thead>
         <tbody>
           {rows.map((row, rowIndex) => (
-            <tr key={`${rowIndex}-${row.join("|")}`} className="odd:bg-background even:bg-card/60">
+            <tr key={rowIndex} className="odd:bg-background even:bg-card/60">
               {row.map((cell, index) => (
                 <td
                   key={`${rowIndex}-${index}`}

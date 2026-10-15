@@ -11,10 +11,20 @@ export function A({ href, children }: { href: string; children: ReactNode }) {
   );
 }
 
-export function Section({ title, children }: { title: string; children: ReactNode }) {
+export function Section({
+  title,
+  id,
+  children,
+}: {
+  title: string;
+  id?: string;
+  children: ReactNode;
+}) {
   return (
     <section>
-      <h2 className="text-lg font-semibold text-foreground">{title}</h2>
+      <h2 id={id} className="text-lg font-semibold text-foreground">
+        {title}
+      </h2>
       <div className="mt-2 space-y-3">{children}</div>
     </section>
   );

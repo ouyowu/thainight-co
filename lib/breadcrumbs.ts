@@ -43,6 +43,7 @@ const LABELS: Record<string, string> = {
   "khao-san": "Khao San",
   patpong: "Patpong",
   "rca-thonglor": "RCA & Thonglor",
+  "rca-clubs": "RCA clubs",
   "one-night-plan": "One-night plans",
   prices: "Prices",
   tonight: "Tonight",

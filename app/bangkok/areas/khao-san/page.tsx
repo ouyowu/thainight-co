@@ -8,8 +8,8 @@ import { photos } from "@/lib/photos";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Khao San Road Nightlife 2026 - Cheap Bars, Live Music and Rajadamnern",
-  "Khao San Road at night: cheap street bars, live-music rooms, Soi Rambuttri, and how to pair it with a Rajadamnern fight night.",
+  "Khao San Road Nightlife 2026 – Prices, Cheap Bars and Live Music",
+  "Khao San Road at night: cheap street bars, what a night costs, live-music rooms, Soi Rambuttri, and how to pair it with a Rajadamnern fight night.",
   "/bangkok/areas/khao-san/",
 );
 
@@ -41,6 +41,23 @@ export default function KhaoSanPage() {
           ]}
         />
         <p>Peak is usually after 22:00, louder on Friday and Saturday. Cover or a drink minimum appears on busy live-music nights. Ask at the door.</p>
+      </Section>
+      <Section title="What a Khao San night costs" id="what-a-khao-san-night-costs">
+        <PriceTable
+          caption="What a Khao San night costs"
+          headers={["Item", "About"]}
+          rows={[
+            ["Local beer", "80–150 THB"],
+            ["Bucket", "200–350 THB"],
+            ["A night, per person", "800–1,200 THB"],
+          ]}
+        />
+        <p>
+          Local beer is the same 80–150 THB band as on{" "}
+          <A href="/bangkok/prices/">Bangkok nightlife prices</A>. The night line is a fuller
+          evening than the short street-beer example on that page. Checked October 2026; confirm
+          on the night.
+        </p>
       </Section>
       <Section title="With Rajadamnern">
         <p>
