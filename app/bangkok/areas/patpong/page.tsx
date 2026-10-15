@@ -39,7 +39,8 @@ export default function PatpongPage() {
         <p>
           <strong>No, if:</strong> you only have one night — a{" "}
           <A href="/bangkok/rooftop-bars/">rooftop</A> plus{" "}
-          <A href="/bangkok/areas/soi-11/">Soi 11</A> is a stronger first night, and
+          <A href="/bangkok/areas/soi-11/">Soi 11</A> or{" "}
+          <A href="/bangkok/areas/rca-thonglor/">RCA and Thonglor</A> is a stronger first night, and
           Patpong is a twenty-minute stop rather than an evening.
         </p>
       </Section>
@@ -106,7 +107,7 @@ export default function PatpongPage() {
         items={[
           {
             q: "Is Patpong worth visiting in 2026?",
-            a: "For the night market and a short look after dinner in Silom, yes. As a whole evening, Soi 11 or Thonglor is a better use of one night.",
+            a: "For the night market and a short look after dinner in Silom, yes. As a whole evening, Soi 11 or RCA and Thonglor is a better use of one night.",
           },
           {
             q: "What time does Patpong night market open?",

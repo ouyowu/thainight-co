@@ -74,7 +74,8 @@ export default function RcaThonglorPage() {
         <p className="text-sm text-muted">
           Checked October 2026 against venue listings and recent visitor reports. Many Thonglor
           bars add “++”: 10% service and 7% VAT. Full table:{" "}
-          <A href="/bangkok/prices/">Bangkok nightlife prices</A>.
+          <A href="/bangkok/prices/">Bangkok nightlife prices</A>. Compare them with the{" "}
+          <A href="/budgets/">nightlife budgets</A>.
         </p>
       </Section>
 

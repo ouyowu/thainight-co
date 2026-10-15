@@ -19,8 +19,9 @@ export default function SoiBuakhaoPage() {
       <GuidePhoto {...photos.centralPattaya} />
       <p className="text-sm text-muted">Licensed street photos of Soi Buakhao itself are scarce. The photo is CentralFestival on Beach Road — Soi Buakhao sits a few blocks inland, between Second and Third Road.</p>
       <p>
-        Soi Buakhao is central Pattaya’s <strong>budget-friendly</strong> nightlife and food
-        corridor, between Second and Third Road. Beer bars, sports pubs, live music and street food
+        Soi Buakhao is central Pattaya’s nightlife and food corridor for tighter{" "}
+        <A href="/budgets/">nightlife budgets</A>, between Second and Third Road. Beer bars, sports
+        pubs, live music and street food
         — lower prices and a more relaxed pace than{" "}
         <A href="/pattaya/areas/walking-street/">Walking Street</A>.
       </p>

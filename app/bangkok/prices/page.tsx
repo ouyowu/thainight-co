@@ -42,7 +42,12 @@ export default function BangkokPricesPage() {
               </A>,
               "about 800–1,200 THB",
             ],
-            ["Beer, Sukhumvit bar", "120–220 THB"],
+            [
+              <span key="sukhumvit-soi-11">
+                Beer, <A href="/bangkok/areas/soi-11/">Sukhumvit Soi 11</A>
+              </span>,
+              "120–220 THB",
+            ],
             ["Craft beer", "250–400 THB"],
             ["Cocktail, cocktail bar", "250–450 THB"],
             ["Cocktail, hotel rooftop", "400–900+ THB (often ++)"],

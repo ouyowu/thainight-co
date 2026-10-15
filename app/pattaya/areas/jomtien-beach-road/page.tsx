@@ -48,7 +48,8 @@ export default function JomtienBeachRoadPage() {
           <A href="/pattaya/areas/tree-town/">Tree Town</A> is open-air bands in Central. Jomtien is
           slower. Combine: sunset here, then a Grab to{" "}
           <A href="/pattaya/areas/walking-street/">Walking Street</A> if you still want neon. Drink
-          bands are on <A href="/pattaya/prices/">Pattaya nightlife prices</A>. For a hotel on this
+          bands are on <A href="/pattaya/prices/">Pattaya nightlife prices</A> and the{" "}
+          <A href="/budgets/">nightlife budgets</A>. For a hotel on this
           beach, see <A href="/pattaya/where-to-stay/#jomtien">where to stay in Jomtien</A>.
         </p>
       </Section>

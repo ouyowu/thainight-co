@@ -57,7 +57,8 @@ export default function BangkokAreasPage() {
         />
         <p className="text-sm text-muted">
           Checked October 2026 against venue listings and recent visitor reports. Full table:{" "}
-          <A href="/bangkok/prices/">Bangkok nightlife prices</A>.
+          <A href="/bangkok/prices/">Bangkok nightlife prices</A> and the{" "}
+          <A href="/budgets/">nightlife budgets</A>.
         </p>
       </Section>
 

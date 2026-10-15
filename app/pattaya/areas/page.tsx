@@ -55,7 +55,8 @@ export default function PattayaAreasPage() {
         />
         <p className="text-sm text-muted">
           Checked October 2026 against venue listings and recent visitor reports. Full table:{" "}
-          <A href="/pattaya/prices/">Pattaya nightlife prices</A>.
+          <A href="/pattaya/prices/">Pattaya nightlife prices</A> and the{" "}
+          <A href="/budgets/">nightlife budgets</A>.
         </p>
       </Section>
 

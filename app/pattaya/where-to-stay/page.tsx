@@ -90,7 +90,8 @@ export default function PattayaWhereToStayPage() {
         <p>
           Nights already covered: <A href="/pattaya/areas/walking-street/">Walking Street</A>,{" "}
           <A href="/pattaya/cabaret-shows/">cabaret shows</A> on Second Road, and{" "}
-          <A href="/pattaya/areas/tree-town/">Tree Town</A> as another night in the same cluster.
+          <A href="/pattaya/areas/tree-town/">Tree Town</A> as another night in the same cluster,
+          priced in the <A href="/budgets/">nightlife budgets</A>.
         </p>
         <p>
           Block-by-block notes (Central, Beach Road, Second Road) are on the{" "}
