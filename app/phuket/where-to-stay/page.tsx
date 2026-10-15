@@ -162,6 +162,7 @@ export default function PhuketWhereToStayPage() {
           { href: "/phuket/night-markets/", label: "Night markets" },
           { href: "/phuket/airport-to-patong-taxi-price/", label: "Airport to Patong taxi" },
           { href: "/phuket/beach-clubs/", label: "Beach clubs" },
+          { href: "/koh-samui/where-to-stay/", label: "Koh Samui where to stay" },
         ]}
       />
     </PageShell>

@@ -1,5 +1,5 @@
 import type { AffiliateKey } from "@/lib/affiliates";
-import { demoGuides, type DemoCity, type DemoGuide } from "@/lib/demo-guides";
+import { demoGuides, type DemoCity, type DemoGuide, type GuideCity } from "@/lib/demo-guides";
 import type { photos } from "@/lib/photos";
 import {
   bangkokAreas,
@@ -24,11 +24,12 @@ const TONE: Record<DemoCity, string> = {
   "Chiang Mai": "#3a2e22",
 };
 
-const HOTELS: { prefix: string; city: DemoCity; link: AffiliateKey; label: string }[] = [
+const HOTELS: { prefix: string; city: GuideCity; link: AffiliateKey; label: string }[] = [
   { prefix: "/bangkok/", city: "Bangkok", link: "hotelBangkok", label: "Search Bangkok hotels" },
   { prefix: "/pattaya/", city: "Pattaya", link: "hotelPattaya", label: "Search Pattaya hotels" },
   { prefix: "/phuket/", city: "Phuket", link: "hotelPhuket", label: "Search Phuket hotels" },
   { prefix: "/chiang-mai/", city: "Chiang Mai", link: "hotelChiangMai", label: "Search Chiang Mai hotels" },
+  { prefix: "/koh-samui/", city: "Koh Samui", link: "hotelKohSamui", label: "Search Koh Samui hotels" },
 ];
 
 const HUB_PATHS = new Set(Object.keys(HUBS));

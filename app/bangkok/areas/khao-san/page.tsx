@@ -90,7 +90,7 @@ export default function KhaoSanPage() {
         { q: "Is Khao San Road safe at night?", a: "It is crowded rather than dangerous. Keep your bag zipped on the strip and watch ATM fees and friendly bar tabs, which is where people overpay." },
         { q: "Is there a cover charge at Khao San live-music bars?", a: "On busy live-music nights some rooms ask for a cover charge or a drink minimum. Ask at the door." },
       ]} />
-      <Related links={[{ href: "/bangkok/", label: "Bangkok" }, { href: "/bangkok/muay-thai/", label: "Muay Thai" }, { href: "/bangkok/areas/", label: "Other Bangkok areas" }, { href: "/bangkok/getting-around/", label: "Getting around" }]} />
+      <Related links={[{ href: "/bangkok/", label: "Bangkok" }, { href: "/bangkok/songkran/", label: "Songkran nightlife" }, { href: "/bangkok/muay-thai/", label: "Muay Thai" }, { href: "/bangkok/areas/", label: "Other Bangkok areas" }, { href: "/bangkok/getting-around/", label: "Getting around" }]} />
     </PageShell>
   );
 }

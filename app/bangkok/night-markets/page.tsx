@@ -19,7 +19,7 @@ export default function BangkokNightMarketsPage() {
         <p>Hours above are the usual published windows as of 2026. Search Jodd Fairs Ratchada, not just Jodd Fairs, so maps do not send you to a closed site.</p>
       </Section>
       <Section title="Jodd Fairs - use Ratchada">
-        <p>The Rama 9 Jodd Fairs site closed. The market people mean in 2026 is <strong>Jodd Fairs Ratchada</strong> on Ratchadaphisek Road, a few minutes walk from MRT Thailand Cultural Centre Exit 4. Food-heavy, busy from about 19:00. Bring cash or a Thai QR app.</p>
+        <p>The Rama 9 Jodd Fairs site closed. The market people mean in 2026 is <strong>Jodd Fairs Ratchada</strong> on Ratchadaphisek Road, a few minutes walk from MRT Thailand Cultural Centre Exit 4. Food-heavy, busy from about 19:00. Bring cash or a Thai QR app. For a head-to-head with the riverfront, see <A href="/bangkok/jodd-fairs-vs-asiatique/">Jodd Fairs vs Asiatique</A>.</p>
       </Section>
       <Section title="Asiatique">
         <p>More riverfront complex than a street market. Pair with a <A href="/bangkok/dinner-cruise/">dinner cruise</A> from the same pier on a different night, not the same evening. Cabaret notes: <A href="/bangkok/night-activities/">night activities</A>.</p>
