@@ -245,7 +245,7 @@ export const demoGuides: DemoGuide[] = [
     city: "Bangkok",
     category: "Areas",
     description:
-      "Khao San Road at night: cheap street bars, live-music rooms, Soi Rambuttri, and how to pair it with a Rajadamnern fight night.",
+      "Khao San Road at night: cheap street bars, what a night costs, live-music rooms, Soi Rambuttri, and how to pair it with a Rajadamnern fight night.",
     image: "khaoSan",
     tone: "#2a241c",
   },
@@ -285,7 +285,7 @@ export const demoGuides: DemoGuide[] = [
     city: "Pattaya",
     category: "Areas",
     description:
-      "Jomtien Beach Road at night: sunset beach bars, live-music cafes and a calmer alternative to Walking Street.",
+      "Jomtien Beach Road at night: sunset beach bars, a checked rooftop, live-music cafes and a calmer alternative to Walking Street.",
     image: "jomtien",
     tone: "#16343a",
   },
@@ -340,7 +340,7 @@ export const demoGuides: DemoGuide[] = [
     city: "Bangkok",
     category: "Muay Thai",
     description:
-      "Muay Thai ticket prices in Bangkok: Rajadamnern from 1,000 THB and Lumpinee from 1,000 THB, seat classes and weekly fight schedule.",
+      "Muay Thai ticket prices in Bangkok: Rajadamnern from 1,000 THB and Lumpinie from 1,000 THB, seat classes and weekly fight schedule.",
     image: "muayThai",
     tone: "#2a241c",
   },
