@@ -2,6 +2,7 @@
 
 export const bangkokGuides = [
   { href: "/bangkok/first-timer/", label: "First-timer guide" },
+  { href: "/bangkok/songkran/", label: "Songkran nightlife 2027" },
   { href: "/bangkok/one-night-plan/", label: "One-night plans" },
   { href: "/bangkok/rooftop-bars/", label: "Rooftop bars" },
   { href: "/bangkok/soi-11-rooftop-bars/", label: "Soi 11 rooftop bars" },
@@ -10,6 +11,7 @@ export const bangkokGuides = [
   { href: "/bangkok/dinner-cruise/", label: "Dinner cruise prices" },
   { href: "/bangkok/calypso-cabaret/", label: "Calypso Cabaret tickets" },
   { href: "/bangkok/night-markets/", label: "Night markets" },
+  { href: "/bangkok/jodd-fairs-vs-asiatique/", label: "Jodd Fairs vs Asiatique" },
   { href: "/bangkok/night-activities/", label: "Night activities: cabaret, markets, river" },
   { href: "/bangkok/bar-types/", label: "Bar & club types" },
   { href: "/bangkok/ladies-night/", label: "Ladies night & promo nights" },
@@ -93,6 +95,8 @@ export const generalGuides = [
   { href: "/budgets/", label: "Budgets" },
   { href: "/cash/", label: "Cash & payments" },
   { href: "/thailand/esim-for-tourists/", label: "Tourist eSIM" },
+  { href: "/bangkok/songkran/", label: "Songkran nightlife 2027" },
+  { href: "/koh-samui/where-to-stay/", label: "Koh Samui where to stay" },
   { href: "/thailand/alcohol-ban-days-2026/", label: "Alcohol ban days 2026" },
   { href: "/scams/", label: "Scams" },
   { href: "/safety/", label: "Safety" },

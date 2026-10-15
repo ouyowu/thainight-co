@@ -21,6 +21,8 @@ const AGODA_PATTAYA = agodaCitySearch("8584");
 const AGODA_PHUKET = agodaCitySearch("16056");
 /** city=7401 from https://www.agoda.com/city/chiang-mai-th.html defaultSearchURL. */
 const AGODA_CHIANG_MAI = agodaCitySearch("7401");
+/** city=17198 from https://www.agoda.com/city/koh-samui-th.html defaultSearchURL. geoName "Koh Samui", objectId 17198. Checked 15 October 2026. */
+const AGODA_KOH_SAMUI = agodaCitySearch("17198");
 
 /** Agoda partner hotel link: opens the city search with this hotel pinned first. */
 function agodaHotel(hotelId: string): string {
@@ -93,6 +95,7 @@ export const affiliates = {
   hotelSukhumvit: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_SUKHUMVIT, AGODA_BANGKOK),
   hotelWalkingStreet: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_WALKING_STREET, AGODA_PATTAYA),
   hotelChiangMai: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_CHIANG_MAI, AGODA_CHIANG_MAI),
+  hotelKohSamui: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_KOH_SAMUI, AGODA_KOH_SAMUI),
   hotelPhuket: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_HOTEL_PHUKET, AGODA_PHUKET),
   cabaretPhuket: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_CABARET_PHUKET, KLOOK.cabaretPhuket),
   muayThaiPhuket: affiliateHref(process.env.NEXT_PUBLIC_AFFILIATE_MUAY_THAI_PHUKET, KLOOK.muayThaiPhuket),

@@ -118,6 +118,13 @@ export default function AlcoholBanDaysPage() {
           Ordinary daily sale hours are a separate rule and are not listed here. Local elections
           after 8 February 2026 are not listed either: none showed up in the sources above.
         </p>
+        <p>
+          Songkran 2027 is a bank holiday on 13–15 April, covered on the{" "}
+          <a href="/bangkok/songkran/" className="text-accent hover:underline">
+            Songkran nightlife
+          </a>{" "}
+          page. Those three days are not sales-ban days in the sources on this page.
+        </p>
       </Section>
 
       <Section title="Sources">
@@ -160,6 +167,7 @@ export default function AlcoholBanDaysPage() {
 
       <Related
         links={[
+          { href: "/bangkok/songkran/", label: "Songkran nightlife 2027" },
           { href: "/thailand/esim-for-tourists/", label: "Tourist eSIM" },
           { href: "/bangkok/faq/", label: "Bangkok FAQ" },
           { href: "/phuket/", label: "Phuket nightlife" },

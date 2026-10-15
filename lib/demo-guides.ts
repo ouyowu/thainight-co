@@ -4,10 +4,13 @@ export const demoCities = ["Bangkok", "Pattaya", "Phuket", "Chiang Mai"] as cons
 
 export type DemoCity = (typeof demoCities)[number];
 
+/** Koh Samui is a single guide, not a homepage city tile. */
+export type GuideCity = DemoCity | "Koh Samui";
+
 export type DemoGuide = {
   href: string;
   title: string;
-  city: DemoCity;
+  city: GuideCity;
   category: string;
   description: string;
   image?: keyof typeof photos;
@@ -408,6 +411,33 @@ export const demoGuides: DemoGuide[] = [
     description:
       "Realistic nightlife budget bands for Bangkok and Pattaya: casual bar nights, rooftop evenings, club nights and show nights.",
     tone: "#243044",
+  },
+  {
+    href: "/bangkok/jodd-fairs-vs-asiatique/",
+    title: "Jodd Fairs vs Asiatique",
+    city: "Bangkok",
+    category: "Night markets",
+    description:
+      "One Bangkok night: Jodd Fairs Ratchada for street food until 01:00, or Asiatique for the river until midnight.",
+    tone: "#2a241c",
+  },
+  {
+    href: "/bangkok/songkran/",
+    title: "Songkran nightlife 2027",
+    city: "Bangkok",
+    category: "City guides",
+    description:
+      "Songkran 2027 public holiday is 13–15 April. Where a Bangkok night fits, and which 2026 street hours this site will not copy.",
+    tone: "#1c2430",
+  },
+  {
+    href: "/koh-samui/where-to-stay/",
+    title: "Koh Samui where to stay",
+    city: "Koh Samui",
+    category: "City guides",
+    description:
+      "Chaweng for beach bars, Fisherman's Village for an earlier walking-street night, Lamai for a quieter Sunday market.",
+    tone: "#16343a",
   },
 ];
 

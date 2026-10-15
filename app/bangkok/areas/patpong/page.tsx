@@ -129,6 +129,7 @@ export default function PatpongPage() {
           { href: "/bangkok/areas/", label: "All Bangkok areas" },
           { href: "/bangkok/rooftop-bars/", label: "Rooftop bars" },
           { href: "/bangkok/night-markets/", label: "Night markets" },
+          { href: "/bangkok/songkran/", label: "Songkran nightlife" },
           { href: "/scams/", label: "Common scams" },
         ]}
       />
