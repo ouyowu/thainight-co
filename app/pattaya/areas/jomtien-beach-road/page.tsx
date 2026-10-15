@@ -18,8 +18,11 @@ export default function JomtienBeachRoadPage() {
     <PageShell
       path="/pattaya/areas/jomtien-beach-road/"
       title="Jomtien Beach Road Nightlife (2026)"
-      lead="South of Central Pattaya, Jomtien is the sunset-and-sea-breeze night: beach bars, hotel rooftops and live-music cafes. Come for the light, not for a club crawl."
+      lead="Jomtien, south of Central Pattaya, is a sunset-and-sea-breeze night: beach bars, hotel rooftops and live-music cafes, not a club crawl. Golden hour is around 18:00–18:30, most beach bars wind down around midnight to 01:00, and ZAMA Skybar on level 38 of D Varee Jomtien Beach is open until 03:00."
     >
+      <p>
+        South of Central Pattaya, Jomtien is the sunset-and-sea-breeze night: beach bars, hotel rooftops and live-music cafes. Come for the light, not for a club crawl.
+      </p>
       <GuidePhoto {...photos.jomtien} />
       <Section title="What it is for">
         <Bullets>
@@ -50,7 +53,15 @@ export default function JomtienBeachRoadPage() {
           <li>If you arrive from Bangkok, say Jomtien or the hotel name. See <A href="/pattaya/bangkok-to-pattaya/">Bangkok to Pattaya</A>.</li>
         </Bullets>
       </Section>
-      <FaqList items={[{ q: "Is Jomtien a full nightlife district?", a: "It is an evening district: sunset, dinner, live music. For clubs after midnight, go to Walking Street." }, { q: "Do I need to book a sunset table?", a: "Walk-in is fine on weekdays. Weekends and holidays fill the beach-facing seats. Arrive early." }, { q: "Can I stay here and visit Walking Street?", a: "Yes. Budget a Grab each way." }]} />
+      <FaqList items={[
+        { q: "Is Jomtien a full nightlife district?", a: "It is an evening district: sunset, dinner, live music. For clubs after midnight, go to Walking Street." },
+        { q: "Do I need to book a sunset table?", a: "Walk-in is fine on weekdays. Weekends and holidays fill the beach-facing seats. Arrive early." },
+        { q: "Can I stay here and visit Walking Street?", a: "Yes. Budget a Grab each way." },
+        { q: "What time do Jomtien beach bars close?", a: "Most wind down earlier than Walking Street, often around midnight to 01:00. Confirm hours on the day." },
+        { q: "What time is sunset in Jomtien?", a: "Golden hour is usually around 18:00–18:30. Sit down by 17:30 for a beach-facing table." },
+        { q: "Is there a rooftop bar in Jomtien?", a: "Yes. ZAMA Skybar is on level 38 of D Varee Jomtien Beach and is open until 03:00." },
+        { q: "How do I get from Walking Street to Jomtien?", a: "About 10–20 minutes by Grab. Baht buses also run Beach Road and Second Road routes, so check the fare before you sit down." },
+      ]} />
       <Related links={[{ href: "/pattaya/areas/walking-street/", label: "Walking Street" }, { href: "/pattaya/hotels-walking-street/", label: "Where to stay" }, { href: "/pattaya/night-activities/", label: "Night activities" }]} />
     </PageShell>
   );

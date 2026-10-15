@@ -3,7 +3,7 @@
 export const PAGE_MODIFIED: Record<string, string> = {
   "/": "2026-10-10",
   "/bangkok/": "2026-10-13",
-  "/bangkok/first-timer/": "2026-10-10",
+  "/bangkok/first-timer/": "2026-10-15",
   "/bangkok/faq/": "2026-10-10",
   "/bangkok/getting-around/": "2026-10-09",
   "/bangkok/airport/": "2026-10-13",
@@ -79,7 +79,7 @@ export const PAGE_MODIFIED: Record<string, string> = {
   "/thailand/": "2026-10-14",
   "/thailand/alcohol-ban-days-2026/": "2026-10-14",
   "/thailand/esim-for-tourists/": "2026-10-14",
-  "/scams/": "2026-10-10",
+  "/scams/": "2026-10-15",
   "/budgets/": "2026-10-13",
   "/cash/": "2026-10-09",
   "/prices/": "2026-10-10",

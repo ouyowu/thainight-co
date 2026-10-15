@@ -1,3 +1,4 @@
+import { FaqList } from "@/components/FaqList";
 import { PageShell } from "@/components/PageShell";
 import { A, Bullets, Section } from "@/components/Prose";
 import { pageMeta } from "@/lib/seo";
@@ -48,7 +49,11 @@ const scams = [
 
 export default function ScamsPage() {
   return (
-    <PageShell path="/scams/" title="Common Nightlife Scams in Bangkok & Pattaya (2026)">
+    <PageShell
+      path="/scams/"
+      title="Common Nightlife Scams in Bangkok & Pattaya (2026)"
+      lead="The common nightlife scams in Bangkok and Pattaya are 'cheap show' tout traps, padded bar bills, taxi and tuk-tuk overcharges, fake tickets, Pattaya jet-ski damage claims, drink spiking and phone snatching. Never follow touts upstairs, pay round by round, use Grab or Bolt, and call Tourist Police on 1155."
+    >
       <ol className="list-decimal space-y-5 pl-5">
         {scams.map((scam) => (
           <li key={scam.title}>
@@ -71,6 +76,31 @@ export default function ScamsPage() {
           More: <A href="/safety/">safety tips</A> · <A href="/cash/">cash & payments</A>.
         </p>
       </Section>
+
+      <FaqList
+        items={[
+          {
+            q: "Is Bangkok nightlife safe for tourists?",
+            a: "Mostly, if you avoid the common traps. Never follow street touts upstairs, check the bill round by round, and use Grab or Bolt. Tourist Police is 1155 (English-speaking).",
+          },
+          {
+            q: "What is the Tourist Police number in Thailand?",
+            a: "1155, and English is spoken.",
+          },
+          {
+            q: "How do I avoid a padded bar bill?",
+            a: "Check the menu, pay round by round, and keep the bill tab in view.",
+          },
+          {
+            q: "What should I do if a taxi driver won't use the meter?",
+            a: "Use Grab or Bolt, or insist on the meter. Ignore claims that 'the temple is closed today'.",
+          },
+          {
+            q: "Is drink spiking common in Thai bars?",
+            a: "It is rare but reported in crowded bars and clubs. Watch your drink being made, don't leave it unattended, and leave with friends if you feel unwell.",
+          },
+        ]}
+      />
     </PageShell>
   );
 }

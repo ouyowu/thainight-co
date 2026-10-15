@@ -18,8 +18,11 @@ export default function RcaThonglorPage() {
     <PageShell
       path="/bangkok/areas/rca-thonglor/"
       title="RCA & Thonglor Nightlife 2026"
-      lead="For clubs and polished bar nights, two names matter: RCA (Royal City Avenue) and Thonglor. They are different nights out, not two versions of the same one."
+      lead="RCA (Royal City Avenue) is Bangkok's purpose-built club strip: big rooms, EDM and hip-hop, a young Thai crowd and cover often 300–500 THB. Thonglor (Sukhumvit 55) is the upscale cocktail-bar night with higher drink prices. Bring ID for RCA and reach it via MRT Phra Ram 9 plus a short Grab."
     >
+      <p>
+        For clubs and polished bar nights, two names matter: RCA (Royal City Avenue) and Thonglor. They are different nights out, not two versions of the same one.
+      </p>
       <GuidePhoto {...photos.rca} />
 
       <Section title="RCA">
@@ -129,6 +132,22 @@ export default function RcaThonglorPage() {
           {
             q: "What should I wear?",
             a: "Smart casual. No shorts or sandals at clubs in either area. RCA checks ID at the door.",
+          },
+          {
+            q: "What time do RCA clubs get busy?",
+            a: "RCA gets busy after midnight, and the clubs are empty before then. Friday and Saturday are strongest, and midweek can be quiet.",
+          },
+          {
+            q: "How much does a night at RCA cost?",
+            a: "About 1,800–2,600 THB including transport. Beer runs 150–250 THB and cocktails 250–400 THB.",
+          },
+          {
+            q: "How much is entry to Route 66 in RCA?",
+            a: "Usually around 300 THB and normally with drink coupons. Confirm at the door on the night.",
+          },
+          {
+            q: "How do I get home from RCA after the trains stop?",
+            a: "Budget a Grab home. The BTS and MRT stop around midnight, before RCA peaks.",
           },
         ]}
       />
