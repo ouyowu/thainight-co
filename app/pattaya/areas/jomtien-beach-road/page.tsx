@@ -8,8 +8,8 @@ import { photos } from "@/lib/photos";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Jomtien Beach Road Nightlife 2026 - Sunset Bars and Where to Stay",
-  "Jomtien Beach Road at night: sunset beach bars, live-music cafes and a calmer alternative to Walking Street.",
+  "Jomtien Beach Road Nightlife 2026 – Beach Bars and Rooftops",
+  "Jomtien Beach Road at night: sunset beach bars, a checked rooftop, live-music cafes and a calmer alternative to Walking Street.",
   "/pattaya/areas/jomtien-beach-road/",
 );
 
@@ -32,6 +32,12 @@ export default function JomtienBeachRoadPage() {
       <Section title="Sunset first">
         <p>Golden hour is usually around 18:00-18:30. Sit down by 17:30 if you want a beach-facing table. Most beach bars wind down earlier than Walking Street, often around midnight to 01:00. Confirm hours on the day.</p>
         <PriceTable caption="Jomtien night pockets" headers={["Spot type", "When", "Notes"]} rows={[["Beachfront bars / cafes", "Sunset to late", "Sea breeze, mixed Thai and visitor crowds, live singers at several rooms"], ["Hotel rooftops", "Afternoon to evening", "Wider view, hotel prices; handy if you are staying in Jomtien"], ["Second Road / side sois", "Evening", "Cheaper drinks, less view"]]} />
+      </Section>
+      <Section title="Jomtien beach bars and rooftops to know" id="jomtien-beach-bars">
+        <p>
+          ZAMA Skybar is on level 38 of D Varee Jomtien Beach and is open until 03:00. Checked
+          October 2026; confirm on the night.
+        </p>
       </Section>
       <Section title="How it compares">
         <p>Walking Street is the spectacle and the late clubs. Tree Town is open-air bands in Central. Jomtien is slower. Combine: sunset here, then a Grab to <A href="/pattaya/areas/walking-street/">Walking Street</A> if you still want neon.</p>
