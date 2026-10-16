@@ -1,4 +1,5 @@
 import { BookingBox } from "@/components/BookingBox";
+import { HotelCta } from "@/components/HotelCta";
 import { FaqList } from "@/components/FaqList";
 import { PageShell } from "@/components/PageShell";
 import { PriceTable } from "@/components/PriceTable";
@@ -8,8 +9,8 @@ import { photos } from "@/lib/photos";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Jomtien Beach Road Nightlife 2026 – Beach Bars and Rooftops",
-  "Jomtien Beach Road at night: sunset beach bars, a checked rooftop, live-music cafes and a calmer alternative to Walking Street.",
+  "Jomtien Beach Bars & Nightlife 2026 – Sunset Rooftops, Where to Stay",
+  "Jomtien Beach Road at night: beach bars, ZAMA and Torien rooftops, sports bars, and where to stay for sunset evenings. Checked October 2026.",
   "/pattaya/areas/jomtien-beach-road/",
 );
 
@@ -18,7 +19,7 @@ export default function JomtienBeachRoadPage() {
     <PageShell
       path="/pattaya/areas/jomtien-beach-road/"
       title="Jomtien Beach Road Nightlife (2026)"
-      lead="Jomtien, south of Central Pattaya, is a sunset-and-sea-breeze night: beach bars, hotel rooftops and live-music cafes, not a club crawl. Golden hour is around 18:00–18:30, most beach bars wind down around midnight to 01:00, and ZAMA Skybar on level 38 of D Varee Jomtien Beach is open until 03:00."
+      lead="Jomtien, south of Central Pattaya, is a sunset-and-sea-breeze night: beach bars, hotel rooftops and live-music cafes, not a club crawl. Golden hour is around 18:00–18:30, most beach bars wind down around midnight to 01:00, and ZAMA Skybar, on the 38th floor of D Varee, is open daily 16:00–03:00."
     >
       <p>
         South of Central Pattaya, Jomtien is the sunset-and-sea-breeze night: beach bars, hotel rooftops and live-music cafes. Come for the light, not for a club crawl.
@@ -37,10 +38,24 @@ export default function JomtienBeachRoadPage() {
         <PriceTable caption="Jomtien night pockets" headers={["Spot type", "When", "Notes"]} rows={[["Beachfront bars / cafes", "Sunset to late", "Sea breeze, mixed Thai and visitor crowds, live singers at several rooms"], ["Hotel rooftops", "Afternoon to evening", "Wider view, hotel prices; handy if you are staying in Jomtien"], ["Second Road / side sois", "Evening", "Cheaper drinks, less view"]]} />
       </Section>
       <Section title="Jomtien beach bars and rooftops to know" id="jomtien-beach-bars">
+        <PriceTable
+          caption="Jomtien bars and rooftops"
+          headers={["Place", "Hours"]}
+          rows={[
+            ["ZAMA Skybar, 38th floor of D Varee", "Daily 16:00–03:00"],
+            ["Torien, rooftop bar", "Wednesday–Sunday 17:00–24:00"],
+            ["The Clubhouse", "Open until 02:00"],
+          ]}
+        />
+        <p>Checked October 2026; confirm on the night.</p>
+      </Section>
+      <Section title="Where to stay for Jomtien nights" id="where-to-stay-for-jomtien-nights">
         <p>
-          ZAMA Skybar is on level 38 of D Varee Jomtien Beach and is open until 03:00. Checked
-          October 2026; confirm on the night.
+          Stay on this beach when the plan is sunset and a rooftop, then ride into Central Pattaya
+          if the night continues. Rooms and neighbourhoods are on the{" "}
+          <A href="/pattaya/where-to-stay/#jomtien">Pattaya where-to-stay guide</A>.
         </p>
+        <HotelCta label="Search hotels in Pattaya" link="hotelPattaya" />
       </Section>
       <Section title="How it compares">
         <p>
@@ -67,7 +82,8 @@ export default function JomtienBeachRoadPage() {
         { q: "Can I stay here and visit Walking Street?", a: "Yes. Budget a Grab each way." },
         { q: "What time do Jomtien beach bars close?", a: "Most wind down earlier than Walking Street, often around midnight to 01:00. Confirm hours on the day." },
         { q: "What time is sunset in Jomtien?", a: "Golden hour is usually around 18:00–18:30. Sit down by 17:30 for a beach-facing table." },
-        { q: "Is there a rooftop bar in Jomtien?", a: "Yes. ZAMA Skybar is on level 38 of D Varee Jomtien Beach and is open until 03:00." },
+        { q: "Is there a rooftop bar in Jomtien?", a: "ZAMA Skybar is on the 38th floor of D Varee and is open daily 16:00–03:00. Torien is a rooftop bar open Wednesday to Sunday, 17:00–24:00. Checked October 2026; confirm on the night." },
+        { q: "How late is The Clubhouse open?", a: "The Clubhouse is open until 02:00. Checked October 2026; confirm on the night." },
         { q: "How do I get from Walking Street to Jomtien?", a: "About 10–20 minutes by Grab. Baht buses also run Beach Road and Second Road routes, so check the fare before you sit down." },
       ]} />
       <Related links={[{ href: "/pattaya/", label: "Pattaya" }, { href: "/pattaya/areas/walking-street/", label: "Walking Street" }, { href: "/pattaya/hotels-walking-street/", label: "Where to stay" }, { href: "/pattaya/night-activities/", label: "Night activities" }]} />
