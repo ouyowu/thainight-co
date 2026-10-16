@@ -29,7 +29,7 @@ export function BookingBox({ title = "Book ahead", items }: BookingBoxProps) {
                     href={alt.href}
                     className="text-xs text-muted hover:text-accent"
                     target="_blank"
-                    rel="sponsored noopener"
+                    rel="sponsored nofollow noopener"
                   >
                     compare on {alt.seller}
                   </a>
