@@ -8,8 +8,8 @@ import { photos } from "@/lib/photos";
 import { pageMeta } from "@/lib/seo";
 
 export const metadata = pageMeta(
-  "Khao San Road Nightlife 2026 – Prices, Cheap Bars and Live Music",
-  "Khao San Road at night: cheap street bars, what a night costs, live-music rooms, Soi Rambuttri, and how to pair it with a Rajadamnern fight night.",
+  "Khao San Road Nightlife 2026 – Prices, Cheap Bars, Live Music",
+  "Khao San Road at night: beer and bucket prices, live-music rooms off the strip, hostel prices, and how to pair it with Rajadamnern. Checked October 2026.",
   "/bangkok/areas/khao-san/",
 );
 
@@ -18,7 +18,7 @@ export default function KhaoSanPage() {
     <PageShell
       path="/bangkok/areas/khao-san/"
       title="Khao San Road Nightlife (2026)"
-      lead="Khao San Road is Bangkok's loud, cheap backpacker street near the old town. Local beer costs about 80–150 THB, a bucket about 200–350 THB, and a full night about 800–1,200 THB per person. It peaks after 22:00, with live music around Soi Rambuttri, a short Grab from Rajadamnern Stadium."
+      lead="Khao San Road is Bangkok's loud, cheap backpacker street near the old town. Local beer costs about 80–150 THB, a bucket about 250–350 THB, and a full night about 800–1,200 THB per person. Hostel dorm beds are about 250–400 THB. It peaks after 22:00, with live music around Soi Rambuttri, a short Grab from Rajadamnern Stadium."
     >
       <p>
         Bangkok backpacker street is loud, cheap and close to the old town. Use it for a low-spend bar hop or after Rajadamnern — not as your only Sukhumvit-style night.
@@ -43,7 +43,7 @@ export default function KhaoSanPage() {
             ["Buddy complex / side rooms", "Dark live-music rooms", "Brick Bar is the long-running ska/reggae room — arrive before it fills on weekends"],
           ]}
         />
-        <p>Peak is usually after 22:00, louder on Friday and Saturday. Cover or a drink minimum appears on busy live-music nights. Ask at the door.</p>
+        <p>Peak is usually after 22:00, louder on Friday and Saturday.</p>
       </Section>
       <Section title="What a Khao San night costs" id="what-a-khao-san-night-costs">
         <PriceTable
@@ -51,8 +51,9 @@ export default function KhaoSanPage() {
           headers={["Item", "About"]}
           rows={[
             ["Local beer", "80–150 THB"],
-            ["Bucket", "200–350 THB"],
-            ["A night, per person", "800–1,200 THB"],
+            ["Bucket", "250–350 THB"],
+            ["A night, per person", "about 800–1,200 THB"],
+            ["Hostel dorm bed", "about 250–400 THB"],
           ]}
         />
         <p>
@@ -84,11 +85,11 @@ export default function KhaoSanPage() {
         { q: "Is Khao San worth a night if I am staying in Sukhumvit?", a: "Only if you also want the old town or Rajadamnern. Otherwise the crossing time is better spent on Soi 11." },
         { q: "Where is the live music?", a: "Off the main kerb: Buddy complex rooms and Soi Rambuttri bars. Line-ups change. Check the door that night." },
         { q: "Is it only backpackers?", a: "The strip is tourist-heavy. Live-music rooms pull more locals. Dress is casual everywhere." },
-        { q: "How much does a night on Khao San Road cost?", a: "About 800–1,200 THB for a full night. Local beer usually costs around 80–150 THB, and buckets around 200–350 THB." },
+        { q: "How much does a night on Khao San Road cost?", a: "About 800–1,200 THB per person for a full night. Local beer is about 80–150 THB, and buckets are about 250–350 THB. Checked October 2026; confirm on the night." },
+        { q: "How much is a hostel dorm bed near Khao San Road?", a: "About 250–400 THB. Checked October 2026; confirm on the night." },
         { q: "How much is a beer on Khao San Road?", a: "Usually around 80–150 THB for a local beer on the street or in a bar on the strip." },
         { q: "What time does Khao San Road get busy?", a: "It usually peaks after 22:00 and is loudest on Friday and Saturday. Soi Rambuttri gets going earlier and stays calmer." },
         { q: "Is Khao San Road safe at night?", a: "It is crowded rather than dangerous. Keep your bag zipped on the strip and watch ATM fees and friendly bar tabs, which is where people overpay." },
-        { q: "Is there a cover charge at Khao San live-music bars?", a: "On busy live-music nights some rooms ask for a cover charge or a drink minimum. Ask at the door." },
       ]} />
       <Related links={[{ href: "/bangkok/", label: "Bangkok" }, { href: "/bangkok/muay-thai/", label: "Muay Thai" }, { href: "/bangkok/areas/", label: "Other Bangkok areas" }, { href: "/bangkok/getting-around/", label: "Getting around" }]} />
     </PageShell>

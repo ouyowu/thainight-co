@@ -11,7 +11,7 @@ export function AffiliateCta({ href, label }: AffiliateCtaProps) {
   if (!hasAffiliate(href)) return null;
   return (
     <>
-      <a href={href} className="text-accent hover:underline" target="_blank" rel="sponsored noopener">
+      <a href={href} className="text-accent hover:underline" target="_blank" rel="sponsored nofollow noopener">
         {label}
       </a>{" "}
       <Link href="/affiliate-disclosure/" className="text-xs text-muted hover:text-accent">

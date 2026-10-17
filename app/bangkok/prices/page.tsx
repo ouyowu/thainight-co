@@ -34,7 +34,7 @@ export default function BangkokPricesPage() {
               <A key="khao-san-bucket" href="/bangkok/areas/khao-san/#what-a-khao-san-night-costs">
                 Khao San bucket
               </A>,
-              "about 200–350 THB",
+              "250–350 THB",
             ],
             [
               <A key="khao-san-night" href="/bangkok/areas/khao-san/#what-a-khao-san-night-costs">
